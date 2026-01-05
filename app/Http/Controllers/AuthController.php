@@ -39,21 +39,28 @@ class AuthController extends Controller
             $request->session()->put('verification_code', $verificationCode);
             $request->session()->put('tel', $tel);
 
+            $user->update([
+                'verificationCode' => $verificationCode
+            ]);
+
             // TODO: ارسال کد به شماره موبایل (SMS)
             // در اینجا می‌توانید از سرویس SMS استفاده کنید
 
-            return back()->with([
-                'success' => 'کد تایید به شماره موبایل شما ارسال شد.',
+            $data = [
+                'success' => 'حساب کاربری شما ایجاد شد. کد تایید به شماره موبایل شما ارسال شد.',
                 'code' => $verificationCode // برای تست - در تولید حذف کنید
-            ]);
+            ];
+            return view('auth.verify', $data);
         } else {
+            // تولید و ارسال کد تایید
+            $verificationCode = rand(1000, 9999);
+
             // اگر کاربر وجود نداشت، ایجاد کن
             $user = User::create([
                 'tel' => $tel,
+                'verificationCode' =>  $verificationCode
             ]);
 
-            // تولید و ارسال کد تایید
-            $verificationCode = rand(1000, 9999);
 
             // ذخیره کد در سشن
             $request->session()->put('verification_code', $verificationCode);
@@ -61,13 +68,20 @@ class AuthController extends Controller
 
             // TODO: ارسال کد به شماره موبایل (SMS)
             // در اینجا می‌توانید از سرویس SMS استفاده کنید
-
-            return back()->with([
+            $data = [
                 'success' => 'حساب کاربری شما ایجاد شد. کد تایید به شماره موبایل شما ارسال شد.',
                 'code' => $verificationCode // برای تست - در تولید حذف کنید
-            ]);
+            ];
+
+            // echo json_encode($data);
+            // die();
+
+            return view('auth.verify', $data);
         }
     }
+
+
+    
 
     // خروج از سیستم
     public function logout(Request $request)

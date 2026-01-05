@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'default'     => env('DB_CONNECTION', 'sqlite'),
+    'default'     => env('DB_CONNECTION', 'mongodb'),
 
     /*
     |--------------------------------------------------------------------------
@@ -31,10 +31,20 @@ return [
 
     'connections' => [
 
+        // 'mongodb' => [
+        //     'driver'   => 'mongodb',
+        //     'url'      => env('DB_URI', 'mongodb://localhost:27017'),
+        //     'database' => env('DB_DATABASE', 'amlak'),
+        // ],
+
         'mongodb' => [
-            'driver'   => 'mongodb',
-            'dsn'      => env('DB_URI', 'mongodb://localhost:27017'),
-            'database' => env('DB_DATABASE', 'amlak'),
+            'driver' => 'mongodb',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', 27017),
+            'database' => env('DB_DATABASE', 'laravel'),
+            'username' => env('DB_USERNAME', ''),
+            'password' => env('DB_PASSWORD', ''),
+            
         ],
 
         'sqlite'  => [

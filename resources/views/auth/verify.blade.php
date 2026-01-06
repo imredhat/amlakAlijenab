@@ -20,10 +20,10 @@
                     <div class="mb-4">
                       <label class="form-label mb-2" for="signin-email">کد ارسالی</label>
                     <div class="d-flex gap-2" style="direction: ltr;">
-                        <input class="form-control form-control-lg text-center" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" required>
-                        <input class="form-control form-control-lg text-center" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" required>
-                        <input class="form-control form-control-lg text-center" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" required>
-                        <input class="form-control form-control-lg text-center" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" required name="code">
+                        <input class="form-control form-control-lg text-center" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" required name="code[]">
+                        <input class="form-control form-control-lg text-center" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" required name="code[]">
+                        <input class="form-control form-control-lg text-center" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" required name="code[]">
+                        <input class="form-control form-control-lg text-center" type="text" maxlength="1" inputmode="numeric" pattern="[0-9]" required name="code[]">
                     </div>
 
                     <br/>

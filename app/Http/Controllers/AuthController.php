@@ -15,7 +15,6 @@ class AuthController extends Controller
         return view('auth.login');
     }
 
-    // پردازش لاگین
     public function prosrsslogin(Request $request)
     {
         // برای دیباگ
@@ -81,7 +80,42 @@ class AuthController extends Controller
     }
 
 
-    
+    // پردازش ثبت نام
+    public function signUp(Request $request)
+    {
+        // اعتبارسنجی داده‌ها
+        $request->validate([
+            'tel' => 'required|string|min:10|max:15',
+            'verification_code' => 'required|integer|digits:4'
+        ]);
+
+        $tel = $request->session()->get('tel');
+        $code = $request->input('code');
+
+        $verificationCode = $code[0] . $code[1] . $code[2] . $code[3];
+
+
+        // بررسی کد تایید
+        if ($request->session()->get('verification_code') == $verificationCode && $request->session()->get('tel') == $tel) {
+            // کاربر را ثبت نام کن
+            $user = User::where('tel', $tel)->first();
+
+            if ($user) {
+                $user->update(['status' => 'verified']);
+            }
+            // ورود کاربر
+            Auth::login($user);
+            
+
+            return redirect('/home')->with('success', 'شما با موفقیت ثبت نام و وارد شدید.');
+        } else {
+
+            // echo "NOK"; // die();
+
+            return back()->back()->withErrors(['verification_code' => 'کد تایید نادرست است.']);
+        }
+    }
+
 
     // خروج از سیستم
     public function logout(Request $request)

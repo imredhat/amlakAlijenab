@@ -76,15 +76,8 @@
     <script src="{{ url('') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ url('') }}/vendor/simplebar/dist/simplebar.min.js"></script>
     <script src="{{ url('') }}/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="{{ url('') }}/vendor/leaflet/dist/leaflet.js"></script>
-    <script src="{{ url('') }}/vendor/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.min.js"></script>
-    <script src="{{ url('') }}/vendor/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"></script>
-    <script src="{{ url('') }}/vendor/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
-    <script src="{{ url('') }}/vendor/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.min.js"></script>
-    <script src="{{ url('') }}/vendor/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.min.js"></script>
-    <script src="{{ url('') }}/vendor/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.min.js"></script>
-    <script src="{{ url('') }}/vendor/filepond/dist/filepond.min.js"></script>
-    <script src="{{ url('') }}/vendor/cleave.js/dist/cleave.min.js"></script>
+    <script src="{{ url('') }}/vendor/nouislider/dist/nouislider.min.js"></script>
+    <script src="{{ url('') }}/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
     <!-- Main theme script-->
     <script src="{{ url('') }}/js/theme.min.js"></script>
   </body>

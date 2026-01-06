@@ -1,4 +1,4 @@
-@include('partials.header')
+@include('partials.home.header')
 
     <!-- Demo switcher (offcanvas)-->
 
@@ -114,7 +114,7 @@
       <!-- Navbar-->
       <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-scroll-header>
         <div class="container"><a class="navbar-brand ms-3 ms-xl-4 logo" href="real-estate-home-v1.html"><img class="d-block" src="img/logo/logo-dark.svg" width="116" alt="Finder"></a>
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="btn btn-sm text-primary d-none d-lg-block order-lg-3" href="real-estate-home-v1.html#signin-modal" data-bs-toggle="modal"><i class="fi-user me-2"></i>ورود به حساب کاربری</a><a class="btn btn-primary btn-sm ms-2 order-lg-3" href="real-estate-add-property.html"><i class="fi-plus me-2"></i>ثبت<span class='d-none d-sm-inline'> ملک</span></a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="btn btn-sm text-primary d-none d-lg-block order-lg-3" href="real-estate-home-v1.html#signin-modal" data-bs-toggle="modal"><i class="fi-user me-2"></i>ورود به حساب کاربری</a><a class="btn btn-primary btn-sm ms-2 order-lg-3" href="{{url('/')}}/property/add"><i class="fi-plus me-2"></i>ثبت<span class='d-none d-sm-inline'> ملک</span></a>
           <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
             <ul class="navbar-nav navbar-nav-scroll" style="max-height: 35rem;">
               <!-- Demos switcher-->
@@ -771,4 +771,4 @@
       </section>
     </main>
     <!-- Footer-->
-@include('partials.footer')
+@include('partials.home.footer')

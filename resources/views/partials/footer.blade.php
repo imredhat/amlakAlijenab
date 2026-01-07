@@ -54,7 +54,7 @@
           </div>
         </div>
         <!-- Banner-->
-        <div class="bg-dark rounded-3">
+        <!-- <div class="bg-dark rounded-3">
           <div class="col-xxl-10 col-md-11 col-10 d-flex flex-md-row flex-column-reverse align-items-md-end align-items-center mx-auto px-0"><img class="flex-shrink-0 mt-md-n5 me-md-5" src="{{ url('') }}/img/real-estate/illustrations/mobile.svg" width="240" alt="اپلیکیشن">
             <div class="align-self-center d-flex flex-lg-row flex-column align-items-lg-center pt-md-3 pt-5 ps-xxl-4 text-md-start text-center">
               <div class="me-md-5">
@@ -66,7 +66,7 @@
 </svg></a></div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="text-center fs-sm pt-4 mt-3 pb-2">&copy; تمام حقوق این سایت محفوظ است .  <a href='../../../www.rtl-theme.com/www_rtl-theme_default.html' class='d-inline-block nav-link p-0' rel='noopener'></a></div>
       </div>
     </footer>

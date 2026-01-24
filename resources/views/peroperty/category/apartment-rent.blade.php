@@ -62,11 +62,11 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="property_type">نوع ملک *</label></br/>
         <div class="btn-group btn-group-sm" role="group" aria-label="نوع ملک">
-            <input class="btn-check" type="radio" id="property-apartment" name="property_type" value="apartment" required>
+            <input class="btn-check" type="radio" id="property-apartment" name="property_type" value="آپارتمان" required>
             <label class="btn btn-outline-secondary fw-normal" for="property-apartment">آپارتمان</label>
-            <input class="btn-check" type="radio" id="property-house" name="property_type" value="house" required>
+            <input class="btn-check" type="radio" id="property-house" name="property_type" value="خانه" required>
             <label class="btn btn-outline-secondary fw-normal" for="property-house">خانه</label>
-            <input class="btn-check" type="radio" id="property-villa" name="property_type" value="villa" required>
+            <input class="btn-check" type="radio" id="property-villa" name="property_type" value="ویلا" required>
             <label class="btn btn-outline-secondary fw-normal" for="property-villa">ویلا</label>
         </div>
     </div>
@@ -77,9 +77,9 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="parking">پارکینگ *</label></br/>
             <div class="btn-group btn-group-sm" role="group" aria-label="پارکینگ">
-                <input class="btn-check" type="radio" id="parking-yes" name="parking" value="yes" required>
+                <input class="btn-check" type="radio" id="parking-yes" name="parking" value="دارد" required>
                 <label class="btn btn-outline-secondary fw-normal" for="parking-yes">دارد</label>
-                <input class="btn-check" type="radio" id="parking-no" name="parking" value="no" required>
+                <input class="btn-check" type="radio" id="parking-no" name="parking" value="ندارد" required>
                 <label class="btn btn-outline-secondary fw-normal" for="parking-no">ندارد</label>
             </div>
     </div>
@@ -88,9 +88,9 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="storage">انباری *</label></br/>
             <div class="btn-group btn-group-sm" role="group" aria-label="انباری">
-                <input class="btn-check" type="radio" id="storage-yes" name="storage" value="yes" required>
+                <input class="btn-check" type="radio" id="storage-yes" name="storage" value="دارد" required>
                 <label class="btn btn-outline-secondary fw-normal" for="storage-yes">دارد</label>
-                <input class="btn-check" type="radio" id="storage-no" name="storage" value="no" required>
+                <input class="btn-check" type="radio" id="storage-no" name="storage" value="ندارد" required>
                 <label class="btn btn-outline-secondary fw-normal" for="storage-no">ندارد</label>
             </div>
     </div>
@@ -99,9 +99,9 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="elevator">آسانسور *</label></br/>
         <div class="btn-group btn-group-sm" role="group" aria-label="آسانسور">
-            <input class="btn-check" type="radio" id="elevator-yes" name="elevator" value="yes" required>
+            <input class="btn-check" type="radio" id="elevator-yes" name="elevator" value="دارد" required>
             <label class="btn btn-outline-secondary fw-normal" for="elevator-yes">دارد</label>
-            <input class="btn-check" type="radio" id="elevator-no" name="elevator" value="no" required>
+            <input class="btn-check" type="radio" id="elevator-no" name="elevator" value="ندارد" required>
             <label class="btn btn-outline-secondary fw-normal" for="elevator-no">ندارد</label>
         </div>
     </div>
@@ -174,13 +174,13 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="building_direction">جهت ساختمان</label></br/>
         <div class="btn-group btn-group-sm" role="group" aria-label="جهت ساختمان">
-            <input class="btn-check" type="radio" id="direction-north" name="building_direction" value="north">
+            <input class="btn-check" type="radio" id="direction-north" name="building_direction" value="شمال">
             <label class="btn btn-outline-secondary fw-normal" for="direction-north">شمال</label>
-            <input class="btn-check" type="radio" id="direction-south" name="building_direction" value="south">
+            <input class="btn-check" type="radio" id="direction-south" name="building_direction" value="جنوب">
             <label class="btn btn-outline-secondary fw-normal" for="direction-south">جنوب</label>
-            <input class="btn-check" type="radio" id="direction-east" name="building_direction" value="east">
+            <input class="btn-check" type="radio" id="direction-east" name="building_direction" value="شرق">
             <label class="btn btn-outline-secondary fw-normal" for="direction-east">شرق</label>
-            <input class="btn-check" type="radio" id="direction-west" name="building_direction" value="west">
+            <input class="btn-check" type="radio" id="direction-west" name="building_direction" value="غرب">
             <label class="btn btn-outline-secondary fw-normal" for="direction-west">غرب</label>
         </div>
     </div>
@@ -189,13 +189,13 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="floor_type">جنس کف</label></br/>
         <div class="btn-group btn-group-sm" role="group" aria-label="جنس کف">
-            <input class="btn-check" type="radio" id="floor-ceramic" name="floor_type" value="ceramic">
+            <input class="btn-check" type="radio" id="floor-ceramic" name="floor_type" value="سرامیک">
             <label class="btn btn-outline-secondary fw-normal" for="floor-ceramic">سرامیک</label>
-            <input class="btn-check" type="radio" id="floor-parquet" name="floor_type" value="parquet">
+            <input class="btn-check" type="radio" id="floor-parquet" name="floor_type" value="پارکت">
             <label class="btn btn-outline-secondary fw-normal" for="floor-parquet">پارکت</label>
-            <input class="btn-check" type="radio" id="floor-stone" name="floor_type" value="stone">
+            <input class="btn-check" type="radio" id="floor-stone" name="floor_type" value="سنگ">
             <label class="btn btn-outline-secondary fw-normal" for="floor-stone">سنگ</label>
-            <input class="btn-check" type="radio" id="floor-concrete" name="floor_type" value="concrete">
+            <input class="btn-check" type="radio" id="floor-concrete" name="floor_type" value="بتن">
             <label class="btn btn-outline-secondary fw-normal" for="floor-concrete">بتن</label>
         </div>
     </div>
@@ -217,9 +217,9 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="balcony">بالکن</label></br/>
         <div class="btn-group btn-group-sm" role="group" aria-label="بالکن">
-            <input class="btn-check" type="radio" id="balcony-yes" name="balcony" value="yes">
+            <input class="btn-check" type="radio" id="balcony-yes" name="balcony" value="دارد">
             <label class="btn btn-outline-secondary fw-normal" for="balcony-yes">دارد</label>
-            <input class="btn-check" type="radio" id="balcony-no" name="balcony" value="no">
+            <input class="btn-check" type="radio" id="balcony-no" name="balcony" value="ندارد">
             <label class="btn btn-outline-secondary fw-normal" for="balcony-no">ندارد</label>
         </div>
     </div>
@@ -228,11 +228,11 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="cooling_system">سرمایش</label></br/>
         <div class="btn-group btn-group-sm" role="group" aria-label="سیستم سرمایش">
-            <input class="btn-check" type="radio" id="cooling-ac" name="cooling_system" value="ac">
+            <input class="btn-check" type="radio" id="cooling-ac" name="cooling_system" value="کولر گازی">
             <label class="btn btn-outline-secondary fw-normal" for="cooling-ac">کولر گازی</label>
-            <input class="btn-check" type="radio" id="cooling-gas_heater" name="cooling_system" value="gas_heater">
+            <input class="btn-check" type="radio" id="cooling-gas_heater" name="cooling_system" value="بخاری گازی">
             <label class="btn btn-outline-secondary fw-normal" for="cooling-gas_heater">بخاری گازی</label>
-            <input class="btn-check" type="radio" id="cooling-none" name="cooling_system" value="none">
+            <input class="btn-check" type="radio" id="cooling-none" name="cooling_system" value="ندارد">
             <label class="btn btn-outline-secondary fw-normal" for="cooling-none">ندارد</label>
         </div>
     </div>
@@ -241,11 +241,11 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="heating_system">گرمایش</label></br/>
         <div class="btn-group btn-group-sm" role="group" aria-label="سیستم گرمایش">
-            <input class="btn-check" type="radio" id="heating-radiator" name="heating_system" value="radiator">
+            <input class="btn-check" type="radio" id="heating-radiator" name="heating_system" value="رادیاتور">
             <label class="btn btn-outline-secondary fw-normal" for="heating-radiator">رادیاتور</label>
-            <input class="btn-check" type="radio" id="heating-floor" name="heating_system" value="floor">
+            <input class="btn-check" type="radio" id="heating-floor" name="heating_system" value="کف گرم">
             <label class="btn btn-outline-secondary fw-normal" for="heating-floor">کف گرم</label>
-            <input class="btn-check" type="radio" id="heating-none" name="heating_system" value="none">
+            <input class="btn-check" type="radio" id="heating-none" name="heating_system" value="ندارد">
             <label class="btn btn-outline-secondary fw-normal" for="heating-none">ندارد</label>
         </div>
     </div>
@@ -256,9 +256,9 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="pets_allowed">حیوان خانگی مجاز</label></br/>
         <div class="btn-group btn-group-sm" role="group" aria-label="حیوان خانگی مجاز">
-            <input class="btn-check" type="radio" id="pets-yes" name="pets_allowed" value="yes">
+            <input class="btn-check" type="radio" id="pets-yes" name="pets_allowed" value="مجاز است">
             <label class="btn btn-outline-secondary fw-normal" for="pets-yes">مجاز است</label>
-            <input class="btn-check" type="radio" id="pets-no" name="pets_allowed" value="no">
+            <input class="btn-check" type="radio" id="pets-no" name="pets_allowed" value="مجاز نیست">
             <label class="btn btn-outline-secondary fw-normal" for="pets-no">مجاز نیست</label>
         </div>
     </div>
@@ -267,11 +267,11 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="kitchen_type">نوع آشپزخانه</label></br/>
         <div class="btn-group btn-group-sm" role="group" aria-label="نوع آشپزخانه">
-            <input class="btn-check" type="radio" id="kitchen-closed" name="kitchen_type" value="closed">
+            <input class="btn-check" type="radio" id="kitchen-closed" name="kitchen_type" value="بسته">
             <label class="btn btn-outline-secondary fw-normal" for="kitchen-closed">بسته</label>
-            <input class="btn-check" type="radio" id="kitchen-open" name="kitchen_type" value="open">
+            <input class="btn-check" type="radio" id="kitchen-open" name="kitchen_type" value="باز">
             <label class="btn btn-outline-secondary fw-normal" for="kitchen-open">باز</label>
-            <input class="btn-check" type="radio" id="kitchen-semi_open" name="kitchen_type" value="semi_open">
+            <input class="btn-check" type="radio" id="kitchen-semi_open" name="kitchen_type" value="نیمه باز">
             <label class="btn btn-outline-secondary fw-normal" for="kitchen-semi_open">نیمه باز</label>
         </div>
     </div>
@@ -281,11 +281,11 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="cabinet_material">جنس کابینت</label></br/>
             <div class="btn-group btn-group-sm" role="group" aria-label="جنس کابینت">
-                <input class="btn-check" type="radio" id="cabinet-wood" name="cabinet_material" value="wood">
+                <input class="btn-check" type="radio" id="cabinet-wood" name="cabinet_material" value="چوب">
                 <label class="btn btn-outline-secondary fw-normal" for="cabinet-wood">چوب</label>
-                <input class="btn-check" type="radio" id="cabinet-mdf" name="cabinet_material" value="mdf">
+                <input class="btn-check" type="radio" id="cabinet-mdf" name="cabinet_material" value="MDF">
                 <label class="btn btn-outline-secondary fw-normal" for="cabinet-mdf">MDF</label>
-                <input class="btn-check" type="radio" id="cabinet-metal" name="cabinet_material" value="metal">
+                <input class="btn-check" type="radio" id="cabinet-metal" name="cabinet_material" value="فلز">
                 <label class="btn btn-outline-secondary fw-normal" for="cabinet-metal">فلز</label>
             </div>
     </div>

@@ -86,8 +86,8 @@
         <label for="elevator">آسانسور *</label>
         <select name="elevator" id="elevator" class="form-control" required>
             <option value="">انتخاب کنید</option>
-            <option value="yes">دارد</option>
-            <option value="no">ندارد</option>
+            <option  value="دارد">دارد</option>
+            <option  value="ندارد">ندارد</option>
         </select>
     </div>
 
@@ -96,8 +96,8 @@
         <label for="parking">پارکینگ *</label>
         <select name="parking" id="parking" class="form-control" required>
             <option value="">انتخاب کنید</option>
-            <option value="yes">دارد</option>
-            <option value="no">ندارد</option>
+            <option  value="دارد">دارد</option>
+            <option  value="ندارد">ندارد</option>
         </select>
     </div>
 
@@ -106,8 +106,8 @@
         <label for="storage">انباری *</label>
         <select name="storage" id="storage" class="form-control" required>
             <option value="">انتخاب کنید</option>
-            <option value="yes">دارد</option>
-            <option value="no">ندارد</option>
+            <option  value="دارد">دارد</option>
+            <option  value="ندارد">ندارد</option>
         </select>
     </div>
 
@@ -129,14 +129,14 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="usage_type">نوع کاربری *</label>
         <select name="usage_type" id="usage_type" class="form-control" required>
-            <option value="">انتخاب کنید</option>
-            <option value="industrial">صنعتی</option>
-            <option value="commercial">تجاری</option>
-            <option value="administrative">اداری</option>
-            <option value="agricultural">کشاورزی</option>
-            <option value="residential">مسکونی</option>
-            <option value="educational">آموزشی</option>
-            <option value="service">خدماتی</option>
+            <option disabled value="">انتخاب کنید</option>
+            <option value="صنعتی">صنعتی</option>
+            <option value="تجاری">تجاری</option>
+            <option value="اداری">اداری</option>
+            <option value="کشاورزی">کشاورزی</option>
+            <option value="مسکونی">مسکونی</option>
+            <option value="آموزشی">آموزشی</option>
+            <option value="خدماتی">خدماتی</option>
         </select>
     </div>
 
@@ -147,67 +147,67 @@
         <div class="row">
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="water" id="water">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="آب" id="water">
                 <label class="form-check-label" for="water">آب</label>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="electricity" id="electricity">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="برق" id="electricity">
                 <label class="form-check-label" for="electricity">برق</label>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="gas" id="gas">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="گاز" id="gas">
                 <label class="form-check-label" for="gas">گاز</label>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="phone" id="phone">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="تلفن" id="phone">
                 <label class="form-check-label" for="phone">تلفن</label>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="management_room" id="management_room">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="اتاق مدیریت" id="management_room">
                 <label class="form-check-label" for="management_room">اتاق مدیریت</label>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="conference_room" id="conference_room">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="اتاق کنفرانس" id="conference_room">
                 <label class="form-check-label" for="conference_room">اتاق کنفرانس</label>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="reception_area" id="reception_area">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="فضای پذیرش/منشی" id="reception_area">
                 <label class="form-check-label" for="reception_area">فضای پذیرش/منشی</label>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="pantry" id="pantry">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="آبدارخانه/آشپزخانه کوچک" id="pantry">
                 <label class="form-check-label" for="pantry">آبدارخانه/آشپزخانه کوچک</label>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="signage" id="signage">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="تابلوخور" id="signage">
                 <label class="form-check-label" for="signage">تابلوخور</label>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="separate_entry" id="separate_entry">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="ورودی مجزا" id="separate_entry">
                 <label class="form-check-label" for="separate_entry">ورودی مجزا</label>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="utilities[]" value="security" id="security">
+                <input class="form-check-input" type="checkbox" name="utilities[]" value="نگهبانی/لابی من" id="security">
                 <label class="form-check-label" for="security">نگهبانی/لابی من</label>
             </div>
             </div>

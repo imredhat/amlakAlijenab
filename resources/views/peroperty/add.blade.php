@@ -1,5 +1,5 @@
 @include('partials.header')
-@include('partials.menu')
+@include('partials.home.menu')
 
 
 
@@ -36,7 +36,7 @@
                 <option value="villa-sale">خرید و فروش ویلا</option>
                 <option value="apartment-rent">رهن و اجاره خانه و آپارتمان</option>
                 <option value="apartment-sale">خرید و فروش خانه و آپارتمان</option>
-                <option value="villa-short-rent">اجاره کوتاه مدت ویلا، سوئیت ، آپارتمان</option>
+                <option value="villa-short-rent">اجاره کوتاه مدت ویلا، سوئیت</option>
                 <option value="commercial-rent">رهن و اجاره اداری، تجاری و صنعتی</option>
                 <option value="commercial-sale">خرید و فروش اداری، تجاری و صنعتی</option>
                 <option value="land">زمین و باغ</option>
@@ -57,7 +57,7 @@
 
             <div class="pb-3 pe-3 pt-3 ps-3">
               <label class="form-label" for="description">توضیحات <span class="text-danger">*</span></label>
-              <textarea class="form-control" id="description" placeholder="توضیحات مناسبی برای آگهی تان وارد کنید." required name="description"></textarea>
+              <textarea style="min-height: 200px;" class="form-control" id="description" placeholder="توضیحات مناسبی برای آگهی تان وارد کنید." required name="description"></textarea>
             </div>
 
             <div class="row">
@@ -97,29 +97,29 @@
               <label class="form-label" for="province"> استان <span class="text-danger">*</span></label>
               <select class="form-select" id="province" required name="province">
                 <option value="" disabled>انتخاب استان</option>
-                <option value="tehran">تهران</option>
-                <option value="mashhad">مشهد</option>
-                <option value="esfahan">اصفهان</option>
-                <option value="khozestan">خوزستان</option>
-                <option value="gilan">گیلان</option>
-                <option value="fars">فارس</option>
-                <option value="lorestan">لرستان</option>
+                <option value="تهران">تهران</option>
+                <option value="مشهد">مشهد</option>
+                <option value="اصفهان">اصفهان</option>
+                <option value="خوزستان">خوزستان</option>
+                <option value="گیلان">گیلان</option>
+                <option value="فارس">فارس</option>
+                <option value="لرستان">لرستان</option>
 
-                <option value="MAZANDARAN" selected>مازندران</option>
+                <option value="مازندران" selected>مازندران</option>
               </select>
             </div>
             <div class="col-sm-6 mb-3">
               <label class="form-label" for="city">شهر <span class="text-danger">*</span></label>
               <select class="form-select" id="city" required name="city">
                 <option value="" disabled>انتخاب شهر</option>
-                <option value="babol">بابل</option>
-                <option value="amol">آمل</option>
-                <option value="sari">ساری</option>
-                <option value="mahmoud abad">محمود آباد</option>
-                <option value="behshahr">بهشهر</option>
-                <option value="joybar">جویبار</option>
-                <option value="babolsar">بابلسر</option>
-                <option value="chaloos">چالوس</option>
+                <option value="بابل">بابل</option>
+                <option value="آمل">آمل</option>
+                <option value="ساری">ساری</option>
+                <option value="محمود آباد">محمود آباد</option>
+                <option value="بهشهر">بهشهر</option>
+                <option value="جویبار">جویبار</option>
+                <option value="بابلسر">بابلسر</option>
+                <option value="چالوس">چالوس</option>
               </select>
             </div>
           </div>
@@ -167,7 +167,7 @@
             </div>
             <div class="col-sm-6 mb-3">
               <label class="form-label" for="phone">شماره تماس <span class="text-danger">*</span></label>
-              <input class="form-control" name="tel" type="tel" id="phone" data-format="custom" data-delimiter="-" data-blocks="4 3 4" value="" placeholder="0000-000-000">
+              <input class="form-control" name="tel" type="tel" id="phone"  placeholder="0000-000-000">
             </div>
           </div>
           <label class="form-label" for="company-name">نام شرکت</label>

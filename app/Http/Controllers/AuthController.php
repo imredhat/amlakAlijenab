@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+
 
 class AuthController extends Controller
 {
@@ -17,20 +17,16 @@ class AuthController extends Controller
 
     public function prosrsslogin(Request $request)
     {
-        // برای دیباگ
-        // dd($request->all()); // این خط را برای تست فعال کنید
-
-        // اعتبارسنجی داده‌ها
-        $request->validate([
-            'tel' => 'required|string|min:10|max:15'
-        ]);
 
         $tel = $request->input('tel');
 
         // بررسی وجود کاربر با این شماره موبایل
-        $user = User::where('tel', $tel)->first();
+        $user = User::where('tel', $tel)->count();
 
-        if ($user) {
+        // echo json_encode($user);die();
+
+        if ($user && $user > 0) {
+
             // اگر کاربر وجود داشت، کد تایید تولید و ارسال کن
             $verificationCode = rand(1000, 9999);
 
@@ -38,7 +34,7 @@ class AuthController extends Controller
             $request->session()->put('verification_code', $verificationCode);
             $request->session()->put('tel', $tel);
 
-            $user->update([
+            User::where('tel', $tel)->update([
                 'verificationCode' => $verificationCode
             ]);
 
@@ -84,10 +80,10 @@ class AuthController extends Controller
     public function signUp(Request $request)
     {
         // اعتبارسنجی داده‌ها
-        $request->validate([
-            'tel' => 'required|string|min:10|max:15',
-            'verification_code' => 'required|integer|digits:4'
-        ]);
+        // $request->validate([
+        //     'tel' => 'required|string|min:10|max:15',
+        //     'verification_code' => 'required|integer|digits:4'
+        // ]);
 
         $tel = $request->session()->get('tel');
         $code = $request->input('code');
@@ -105,7 +101,8 @@ class AuthController extends Controller
             }
             // ورود کاربر
             Auth::login($user);
-            
+            $request->session()->put('verification_code', $verificationCode);
+
 
             return redirect('/home')->with('success', 'شما با موفقیت ثبت نام و وارد شدید.');
         } else {

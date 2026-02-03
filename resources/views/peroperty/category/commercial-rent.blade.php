@@ -5,9 +5,9 @@
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="floor">طبقه ملک</label>
         <select name="floor" id="floor" class="form-control">
-            <option value="">انتخاب کنید</option>
-            <option value="basement">زیر همکف</option>
-            <option value="ground">همکف</option>
+            <option disabled value="">انتخاب کنید</option>
+            <option value="زیر همکف">زیر همکف</option>
+            <option value="همکف">همکف</option>
             @for($i = 1; $i <= 30; $i++)
                 <option value="{{ $i }}">{{ $i }}</option>
                 @endfor
@@ -20,10 +20,10 @@
         <label for="type">نوع ملک *</label>
         <select name="type" id="type" class="form-control" required>
             <option value="">انتخاب کنید</option>
-            <option value="administrative">اداری</option>
-            <option value="commercial">تجاری و مغازه</option>
-            <option value="industrial">صنعتی (سوله، انبار، کارگاه)</option>
-            <option value="agricultural">دامداری و کشاورزی</option>
+            <option value="اداری">اداری</option>
+            <option value="تجاری و مغازه">تجاری و مغازه</option>
+            <option value="صنعتی (سوله، انبار، کارگاه)">صنعتی (سوله، انبار، کارگاه)</option>
+            <option value="دامداری و کشاورزی">دامداری و کشاورزی</option>
         </select>
     </div>
 
@@ -33,13 +33,13 @@
     <!-- رهن -->
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="mortgage">رهن (تومان)</label>
-        <input type="number" name="mortgage" id="mortgage" class="form-control price-input">
+        <input type="text" name="mortgage" id="mortgage" class="form-control price-input">
     </div>
 
     <!-- اجاره -->
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="rent">اجاره (تومان) *</label>
-        <input type="number" name="rent" id="rent" class="form-control price-input" required>
+        <input type="text" name="rent" id="rent" class="form-control price-input" required>
     </div>
 
     <!-- قابلیت تبدیل -->
@@ -85,8 +85,8 @@
         <label for="elevator">آسانسور *</label>
         <select name="elevator" id="elevator" class="form-control" required>
             <option value="">انتخاب کنید</option>
-            <option value="yes">دارد</option>
-            <option value="no">ندارد</option>
+            <option  value="دارد">دارد</option>
+            <option  value="ندارد">ندارد</option>
         </select>
     </div>
 
@@ -95,8 +95,17 @@
         <label for="parking">پارکینگ *</label>
         <select name="parking" id="parking" class="form-control" required>
             <option value="">انتخاب کنید</option>
-            <option value="yes">دارد</option>
-            <option value="no">ندارد</option>
+            <option  value="دارد">دارد</option>
+            <option  value="ندارد">ندارد</option>
+        </select>
+    </div>
+
+     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
+        <label for="parking">سرویس بهداشتی *</label>
+        <select name="toilet" id="toilet" class="form-control" required>
+            <option value="">انتخاب کنید</option>
+            <option  value="دارد">دارد</option>
+            <option  value="ندارد">ندارد</option>
         </select>
     </div>
 
@@ -105,8 +114,8 @@
         <label for="storage">انباری *</label>
         <select name="storage" id="storage" class="form-control" required>
             <option value="">انتخاب کنید</option>
-            <option value="yes">دارد</option>
-            <option value="no">ندارد</option>
+            <option  value="دارد">دارد</option>
+            <option  value="ندارد">ندارد</option>
         </select>
     </div>
 
@@ -119,13 +128,13 @@
         <label for="usage_type">نوع کاربری *</label>
         <select name="usage_type" id="usage_type" class="form-control" required>
             <option value="">انتخاب کنید</option>
-            <option value="industrial">صنعتی</option>
-            <option value="commercial">تجاری</option>
-            <option value="administrative">اداری</option>
-            <option value="agricultural">کشاورزی</option>
-            <option value="residential">مسکونی</option>
-            <option value="educational">آموزشی</option>
-            <option value="service">خدماتی</option>
+            <option value="صنعتی">صنعتی</option>
+            <option value="تجاری">تجاری</option>
+            <option value="اداری">اداری</option>
+            <option value="کشاورزی">کشاورزی</option>
+            <option value="مسکونی">مسکونی</option>
+            <option value="آموزشی">آموزشی</option>
+            <option value="خدماتی">خدماتی</option>
         </select>
     </div>
 
@@ -134,19 +143,19 @@
         <label for="utilities">انشعابات *</label>
         <div>
             <label class="form-check">
-                <input type="checkbox" name="utilities[]" value="water" class="form-check-input">
+                <input type="checkbox" name="utilities[]" value="آب" class="form-check-input">
                 آب
             </label>
             <label class="form-check">
-                <input type="checkbox" name="utilities[]" value="electricity" class="form-check-input">
+                <input type="checkbox" name="utilities[]" value="برق" class="form-check-input">
                 برق
             </label>
             <label class="form-check">
-                <input type="checkbox" name="utilities[]" value="gas" class="form-check-input">
+                <input type="checkbox" name="utilities[]" value="گاز" class="form-check-input">
                 گاز
             </label>
             <label class="form-check">
-                <input type="checkbox" name="utilities[]" value="phone" class="form-check-input">
+                <input type="checkbox" name="utilities[]" value="تلفن" class="form-check-input">
                 تلفن
             </label>
         </div>

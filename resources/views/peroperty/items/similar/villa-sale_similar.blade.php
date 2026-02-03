@@ -1,0 +1,34 @@
+<div class="card-body position-relative pb-3">
+    <h4 class="mb-1 fs-xs fw-normal text-uppercase text-primary">
+        <?= getCat($s->category) ?>
+    </h4>
+    <h3 class="h6 mb-2 fs-base">
+        <a class="nav-link stretched-link" href="{{url('/')}}/p/{{$s->id}}/{{str_replace(' ','-',$s->title)}}">
+            {{$s->title}}
+        </a>
+    </h3>
+    <p class="mb-2 fs-sm text-muted">{{$s->city}}</p>
+    <div class="fw-bold">
+        <i class="fi-cash mt-n1 me-2 lead align-middle opacity-70"></i>
+        {{number_format($s->price)}} تومان
+    </div>
+</div>
+<div class="card-footer d-flex align-items-center justify-content-center mx-3 pt-3 text-nowrap">
+    <!-- تعداد طبقه -->
+    <span class="d-inline-block me-4 fs-sm">
+        <?= $s->floor_count ?? '' ?> <i class="fi-layers ms-1 mt-n1 fs-lg text-muted"></i>
+    </span>
+
+    <!-- تعداد اتاق -->
+    <span class="d-inline-block me-4 fs-sm">
+        <?= $s->rooms ?? '' ?> <i class="fi-bed ms-1 mt-n1 fs-lg text-muted"></i>
+    </span>
+
+    <!-- تعداد سرویس بهداشتی -->
+    <span class="d-inline-block me-4 fs-sm">
+        <?= $s->toilet ?? '' ?> <i class="fi-bath ms-1 mt-n1 fs-lg text-muted"></i>
+    </span>
+
+  
+
+</div>

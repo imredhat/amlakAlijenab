@@ -37,8 +37,11 @@ function getCat($type)
             break;
     }
 }
-
-$media = json_decode($property[0]->media);
+$media = url('/') . "/img/blank.png";
+$cat = $property[0]->category;
+if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
+    $media = json_decode($property[0]->media);
+} 
 
 ?>
 
@@ -66,18 +69,19 @@ $media = json_decode($property[0]->media);
                                 <span class="tns-current-slide fs-5 fw-bold"></span><span class="fs-5 fw-bold">/</span><span class="tns-total-slides fs-5 fw-bold"></span>
                             </div>
                         </div>
-                        <div class="tns-carousel-inner equal-height-cover"
-                            data-carousel-options='{"navAsThumbnails": true, "navContainer": "#thumbnails", "gutter": 12, "responsive": {"0":{"controls": false},"500":{"controls": true}}}'> 
-                            @foreach($media as $m);
-                            <div><img class="rounded-3" src="{{url('/')}}/upload/property/{{$id}}/{{$m}}" alt="Image"></div>
-                            @endforeach;
+                        <div class="tns-carousel-inner equal-height-cover"data-carousel-options='{"navAsThumbnails": true, "navContainer": "#thumbnails", "gutter": 12, "responsive": {"0":{"controls": false},"500":{"controls": true}}}'> 
+                        <?php if(is_array($media)): foreach($media as $m):?>
+                        <div><img class="rounded-3" src="{{url('/')}}/upload/property/{{$id}}/{{$m}}" alt="Image"></div>
+                        <?php endforeach; else:?>
+                        <div><img width="100%" class="rounded-3" src="{{$media}}" alt="Image"></div>
+                        <?php endif;?>
                         </div>
                     </div>
                     <!-- Thumbnails nav-->
                     <ul class="tns-thumbnails mb-4" id="thumbnails">
-                        @foreach($media as $m);
+                        <?php if(is_array($media)): foreach($media as $m):?>
                         <li class="tns-thumbnail"><img src="{{url('/')}}/upload/property/{{$id}}/{{$m}}" alt="Thumbnail"></li>
-                        @endforeach;
+                        <?php endforeach; endif;?>
                     </ul>
                 </div>
                 <!-- Page title + Features-->

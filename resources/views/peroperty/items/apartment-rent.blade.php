@@ -42,9 +42,14 @@ function getCat($type)
     }
 }
 
-$media = json_decode($property[0]->media);
+$media = url('/') . "/img/blank.png";
+$cat = $property[0]->category;
+if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
+    $media = json_decode($property[0]->media);
+} 
 
 ?>
+
 
 
 
@@ -70,28 +75,20 @@ $media = json_decode($property[0]->media);
                                 <span class="tns-current-slide fs-5 fw-bold"></span><span class="fs-5 fw-bold">/</span><span class="tns-total-slides fs-5 fw-bold"></span>
                             </div>
                         </div>
-                        <div class="tns-carousel-inner equal-height-cover"
-                            data-carousel-options='{"navAsThumbnails": true, "navContainer": "#thumbnails", "gutter": 12, "responsive": {"0":{"controls": false},"500":{"controls": true}}}'> 
-                            @foreach($media as $m);
-                            <div><img class="rounded-3" src="{{url('/')}}/upload/property/{{$id}}/{{$m}}" alt="Image"></div>
-                            @endforeach;
-
-
-                            <!--                         
-                            <div>
-                                <div class="ratio ratio-16x9">
-                                    <iframe class="rounded-3" src="../../../www.aparat.com/video/video/embed/videohash/T0Imo/vt/frame.htm" title="فروش واحد 85متری" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div> -->
-
+                        <div class="tns-carousel-inner equal-height-cover"data-carousel-options='{"navAsThumbnails": true, "navContainer": "#thumbnails", "gutter": 12, "responsive": {"0":{"controls": false},"500":{"controls": true}}}'> 
+                        <?php if(is_array($media)): foreach($media as $m):?>
+                        <div><img class="rounded-3" src="{{url('/')}}/upload/property/{{$id}}/{{$m}}" alt="Image"></div>
+                        <?php endforeach; else:?>
+                        <div><img width="100%" class="rounded-3" src="{{$media}}" alt="Image"></div>
+                        <?php endif;?>
                         </div>
                     </div>
                     <!-- Thumbnails nav-->
                     <ul class="tns-thumbnails mb-4" id="thumbnails">
 
-                        @foreach($media as $m);
+                        <?php if(is_array($media)): foreach($media as $m):?>
                         <li class="tns-thumbnail"><img src="{{url('/')}}/upload/property/{{$id}}/{{$m}}" alt="Thumbnail"></li>
-                        @endforeach;
+                        <?php endforeach; endif;?>
 
                         <!-- <li class="tns-thumbnail">
                             <div class="d-flex flex-column align-items-center justify-content-center h-100"><i class="fi-play-circle fs-4 mb-1"></i><span>مشاهده</span></div>

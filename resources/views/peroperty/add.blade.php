@@ -167,7 +167,8 @@
             </div>
             <div class="col-sm-6 mb-3">
               <label class="form-label" for="phone">شماره تماس <span class="text-danger">*</span></label>
-              <input class="form-control" name="tel" type="tel" id="phone"  placeholder="0000-000-000">
+              <input class="form-control" type="text" id="tel" name="tel" value="" placeholder="شماره موبایل">
+
             </div>
           </div>
           <label class="form-label" for="company-name">نام شرکت</label>
@@ -188,7 +189,7 @@
 
 <script>
   // Ensure FilePond keeps original files for standard form submission
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function() {
     if (window.FilePond) {
       FilePond.setOptions({
         storeAsFile: true // let PHP receive files via $_FILES

@@ -1,6 +1,14 @@
+ <?php
+    $img = url('/') . "/img/blank.png";
+    if (isset($media[0]) && !empty($media[0])) {
+        $img = url('/') . "/upload/property/" . $p->id . "/" . $media[0];
+    }
+    ?>
+
  <!-- Item-->
+
  <div class="card card-hover card-horizontal border-0 shadow-sm mb-4">
-     <a class="card-img-top" href="{{url('/')}}/p/{{$p->id}}/{{str_replace(' ','-',$p->title)}}" style="background-image: url({{url('/')}}/upload/property/{{$p->id}}/{{$media[0]}});">
+     <a class="card-img-top" href="{{url('/')}}/p/{{$p->id}}/{{str_replace(' ','-',$p->title)}}" style="background-image: url({{ $img }})">
          <div class="position-absolute start-0 top-0 pt-3 ps-3">
              <span class="d-table badge bg-info">{{$p -> status}}</span>
          </div>
@@ -24,7 +32,7 @@
              </ul>
          </div>
          <h4 class="mb-1 fs-sm fw-normal text-uppercase text-primary">{{getCat($p -> category)}} </h4>
-        <h3 class="h6 mb-2 fs-base"><a class="nav-link stretched-link" href="{{url('/')}}/p/{{$p->id}}/{{str_replace(' ','-',$p->title)}}">{{$p -> title}} | {{$p -> area}} متری</a></h3>
+         <h3 class="h6 mb-2 fs-base"><a class="nav-link stretched-link" href="{{url('/')}}/p/{{$p->id}}/{{str_replace(' ','-',$p->title)}}">{{$p -> title}} | {{$p -> area}} متری</a></h3>
          <p class="mb-2 fs-sm text-muted">{{$p -> address}}</p>
          <div><i class="fi-cash mt-n1 me-2 lead align-middle opacity-70"></i>{{number_format($p -> mortgage)}} تومان</div>
          <div><i class="fi-rent mt-n1 me-2 lead align-middle opacity-70"></i>{{number_format($p -> rent)}} تومان</div>

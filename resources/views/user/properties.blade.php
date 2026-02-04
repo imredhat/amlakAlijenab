@@ -83,9 +83,6 @@
          @if(isset($properties))
          @foreach($properties as $p)
 
-<<<<<<< HEAD
-          <?php $media = json_decode($p->media); $cat = $p->category ?>
-=======
          <?php
           $media = [""];
           $cat = $p->category;
@@ -94,7 +91,6 @@
           }
 
           ?>
->>>>>>> 8c567890bce8ec0bb0bcfb499ebb6004d2290232
 
          @include("peroperty.view.".$cat)
 

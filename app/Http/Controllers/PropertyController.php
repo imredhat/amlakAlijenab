@@ -11,12 +11,9 @@ use App\Models\User;
 use App\Models\Property;
 use MongoDB\Client;
 
-<<<<<<< HEAD
-=======
 use Hekmatinasser\Verta\Verta;
 
 
->>>>>>> 8c567890bce8ec0bb0bcfb499ebb6004d2290232
 
 
 class PropertyController extends Controller
@@ -70,13 +67,10 @@ class PropertyController extends Controller
         }
         $allData['status'] = "ثبت شده";
         $allData['_status'] = "addedd";
-<<<<<<< HEAD
-=======
         
         // ذخیره تاریخ شمسی
         $allData['date_created'] = (string) Verta::now();
         $allData['date_updated'] = (string) Verta::now();
->>>>>>> 8c567890bce8ec0bb0bcfb499ebb6004d2290232
 
 
         // آیدی کاربری که لاگین است
@@ -122,10 +116,7 @@ class PropertyController extends Controller
     {
         $data = [];
         $visit_count = 1;
-<<<<<<< HEAD
-=======
         
->>>>>>> 8c567890bce8ec0bb0bcfb499ebb6004d2290232
 
 
         if (Auth::check()) {

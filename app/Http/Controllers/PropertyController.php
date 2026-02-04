@@ -67,6 +67,10 @@ class PropertyController extends Controller
         }
         $allData['status'] = "ثبت شده";
         $allData['_status'] = "addedd";
+        
+        // ذخیره تاریخ شمسی
+        $allData['date_created'] = (string) Verta::now();
+        $allData['date_updated'] = (string) Verta::now();
 
 
         // آیدی کاربری که لاگین است

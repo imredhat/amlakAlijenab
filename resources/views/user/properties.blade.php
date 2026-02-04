@@ -83,7 +83,14 @@
          @if(isset($properties))
          @foreach($properties as $p)
 
-          <?php $media = json_decode($p->media); $cat = $p->category ?>
+         <?php
+          $media = [""];
+          $cat = $p->category;
+          if (isset($p->media) && count(json_decode($p->media)) > 0) {
+            $media = json_decode($p->media);
+          }
+
+          ?>
 
          @include("peroperty.view.".$cat)
 

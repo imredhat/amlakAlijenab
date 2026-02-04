@@ -24,12 +24,20 @@
     <li class="d-inline-block mx-1 px-2 fs-sm">
         <b class="me-1"></b>
         <i class="fi-home ms-1 mt-n1 fs-lg text-muted"></i>
+<<<<<<< HEAD
         <?= $property[0]->area ?>
+=======
+        <?= $s->area ?>
+>>>>>>> 8c567890bce8ec0bb0bcfb499ebb6004d2290232
     </li>
 
     <li class="d-inline-block mx-1 px-2 fs-sm">
         <b class="me-1"></b>
         <i class="fi-house-chosen ms-1 mt-n1 fs-lg text-muted"></i>
+<<<<<<< HEAD
         <?= $property[0]->city ?>
+=======
+        <?= $s->city ?>
+>>>>>>> 8c567890bce8ec0bb0bcfb499ebb6004d2290232
     </li>
 </div>

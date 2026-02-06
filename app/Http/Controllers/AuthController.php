@@ -43,7 +43,7 @@ class AuthController extends Controller
 
             $data = [
                 'success' => 'حساب کاربری شما ایجاد شد. کد تایید به شماره موبایل شما ارسال شد.',
-                'code' => $verificationCode // برای تست - در تولید حذف کنید
+                'code' => $verificationCode
             ];
             return view('auth.verify', $data);
         } else {
@@ -53,7 +53,8 @@ class AuthController extends Controller
             // اگر کاربر وجود نداشت، ایجاد کن
             $user = User::create([
                 'tel' => $tel,
-                'verificationCode' =>  $verificationCode
+                'verificationCode' =>  $verificationCode,
+                'type' => "user"
             ]);
 
 

@@ -21,3 +21,5 @@ Route::get('/auth/logout', [AuthController::class,'logout']);
 
 require __DIR__.'/user.php';
 require __DIR__.'/property.php';
+
+require __DIR__.'/admin.php';

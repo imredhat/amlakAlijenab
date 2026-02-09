@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AdAuth;
 use App\Http\Controllers\Admin\Index;
 
 Route::get('/admin', [AdAuth::class,'formLogin'])->name('login');
+Route::get('/admin/login', [AdAuth::class,'formLogin'])->name('login');
 Route::get('/admin/forget', [AdAuth::class,'forget'])->name('login');
 Route::get('/admin/two_step', [AdAuth::class,'two_step']);
 

@@ -13,136 +13,12 @@
                     </div>
                 </div>
 
-                <div class="tab-pane fade show active" id="preview-tab-pane" role="tabpanel" aria-labelledby="preview-tab" tabindex="0"> <div class="default-table-area members-list">
-
-                <div class="table-responsive">
-                    <table class="table align-middle" id="myTable">
-                        <thead>
-                            <tr>
-                                @php
-                                    // گرفتن ستون‌های جدول از اولین دسته (همه یکسان هستند)
-                                    $sampleHandler = App\Services\Categories\CategoryFactory::create('other');
-                                    $sampleHandler = App\Services\Categories\CategoryFactory::create('villa-sale');
-                                    $columns = $sampleHandler->getTableColumns();
-                                @endphp
-
-                                @foreach($columns as $column)
-                                <th scope="col">{{ $column['label'] }}</th>
-                                @endforeach
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($groupedProperties as $item)
-                            @php
-                                $property = $item['property'];
-                                $handler = $item['handler'];
-                                $media = json_decode($property->media ?? '[]');
-                                $firstImage = !empty($media) ? $media[0] : 'default.jpg';
-                            @endphp
-
-                            <tr>
-                                <!-- ستون عنوان -->
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="form-check pe-2">
-                                            <input class="form-check-input row-checkbox" type="checkbox" value="{{ $property->id ?? $property->id }}">
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="flex-shrink-0 lh-1">
-                                                <img src="{{ url('/') }}/upload/property/{{ $property->id ?? $property->id }}/{{ $firstImage }}"
-                                                     class="wh-44 rounded-circle" alt="{{ $property->title }}"
-                                                     onerror="this.src='https://envytheme.ir/farol/rtl/assets/images/user-1.jpg'">
-                                            </div>
-                                            <div class="flex-grow-1 ms-10">
-                                                <h4 class="fw-semibold fs-16 mb-0">{{ $property->title }}</h4>
-                                                <span class="text-gray-light">
-                                                    @foreach($handler->getFooterItems($property) as $key => $value)
-                                                        {{ $value }}@if(!$loop->last) • @endif
-                                                    @endforeach
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-
-                                <!-- ستون دسته‌بندی -->
-                                <td>
-                                    <span class="badge bg-primary bg-opacity-10 text-primary">
-                                        {{ $handler->getCategoryName() }}
-                                    </span>
-                                </td>
-
-                                <!-- ستون قیمت (متفاوت بر اساس دسته) -->
-                                <td>
-                                    {!! $handler->getPriceDisplay($property) !!}
-                                </td>
-
-                                <!-- ستون شهر -->
-                                <td>{{ $property->city }}</td>
-
-                                <!-- ستون وضعیت -->
-                                <td>
-                                    {!! $handler->getStatusBadge($property->status ?? 'ثبت شده') !!}
-                                </td>
-
-                                <!-- ستون عملیات -->
-                                <td>
-                                    <div class="dropdown action-opt">
-                                        <button class="btn bg p-0" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i data-feather="more-horizontal"></i>
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-end bg-white border box-shadow">
-                                            <li>
-                                                <a class="dropdown-item" href="{{ url('/') }}/p/{{ $property->id ?? $property->id }}/{{ str_replace(' ', '-', $property->title) }}" target="_blank">
-                                                    <i data-feather="eye"></i> مشاهده
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="{{ url('properties.edit', $property->id ?? $property->id) }}">
-                                                    <i data-feather="edit-3"></i> ویرایش
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="javascript:void(0)" onclick="shareProperty('{{ $property->id }}')">
-                                                    <i data-feather="share-2"></i> اشتراک گذاری
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="javascript:void(0)" onclick="copyLink('{{ url('/p/' . $property->id) }}')">
-                                                    <i data-feather="link-2"></i> دریافت لینک
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <form action="{{ url('properties.destroy', $property->id ?? $property->id) }}" method="POST" class="d-inline">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="dropdown-item text-danger" onclick="return confirm('آیا مطمئن هستید؟')">
-                                                        <i data-feather="trash-2"></i> حذف
-                                                    </button>
-                                                </form>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                            @endforeach
-
-                            @if(count($groupedProperties) == 0)
-                            <tr>
-                                <td colspan="{{ count($columns) }}" class="text-center py-4">
-                                    <div class="text-muted">
-                                        <i data-feather="inbox" class="feather-48 mb-3"></i>
-                                        <p>هیچ آگهی‌ای یافت نشد.</p>
-                                        <a href="{{ url('properties.create') }}" class="btn btn-primary btn-sm">
-                                            ایجاد اولین آگهی
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            @endif
-                        </tbody>
-                    </table>
+                <div class="tab-pane fade show active" id="preview-tab-pane" role="tabpanel" aria-labelledby="preview-tab" tabindex="0">
+                    <div class="default-table-area members-list">
+                        <div id="property-table-wrapper" data-list-url="{{ route('admin.property.list') }}">
+                            {{-- جدول آگهی‌ها به صورت Ajax اینجا لود می‌شود --}}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,14 +27,71 @@
     </div>
 </div>
 
+{{-- Modal جزئیات آگهی --}}
+<div class="modal fade" id="propertyModal" tabindex="-1" aria-labelledby="propertyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fs-16" id="propertyModalLabel">جزئیات آگهی</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+            </div>
+            <div class="modal-body pt-2" id="propertyModalBody">
+                <div class="d-flex justify-content-center align-items-center py-5 text-muted">
+                    <div class="spinner-border text-primary ms-2" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    در حال بارگذاری جزئیات آگهی...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
-// Select All Checkbox
-document.getElementById('selectAll').addEventListener('change', function(e) {
-    const checkboxes = document.querySelectorAll('.row-checkbox');
-    checkboxes.forEach(checkbox => {
-        checkbox.checked = e.target.checked;
-    });
-});
+// لود جدول آگهی‌ها با Ajax
+function loadPropertyTable(url) {
+    const wrapper = document.getElementById('property-table-wrapper');
+    if (!wrapper) return;
+
+    const defaultUrl = wrapper.getAttribute('data-list-url') || '/admin/property/list';
+
+    wrapper.innerHTML = `
+        <div class="d-flex justify-content-center align-items-center py-5 text-muted">
+            <div class="spinner-border text-primary ms-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            در حال بارگذاری لیست آگهی‌ها...
+        </div>
+    `;
+
+    fetch(url || defaultUrl, {
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(html => {
+            wrapper.innerHTML = html;
+
+            // اگر از feather icons استفاده می‌کنید، بعد از لود دوباره اجرا شود
+            if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
+        })
+        .catch(error => {
+            wrapper.innerHTML = `
+                <div class="alert alert-danger mb-0">
+                    خطا در بارگذاری لیست آگهی‌ها. لطفاً دوباره تلاش کنید.
+                </div>
+            `;
+            console.error('Error loading property table:', error);
+        });
+}
 
 // Share Property
 function shareProperty(id) {
@@ -180,6 +113,108 @@ function copyLink(url) {
     navigator.clipboard.writeText(url).then(() => {
         alert('لینک در کلیپ‌بورد کپی شد!');
     });
+}
+
+// به‌روزرسانی وضعیت آگهی با Ajax
+function updatePropertyStatus(id, status) {
+    const tokenMeta = document.querySelector('meta[name="csrf-token"]');
+    const csrfToken = tokenMeta ? tokenMeta.getAttribute('content') : '';
+
+    fetch('/admin/property/status/' + id, {
+        method: 'POST',
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRF-TOKEN': csrfToken,
+        },
+        body: new URLSearchParams({ status: status }).toString(),
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json().catch(() => ({}));
+        })
+        .then(data => {
+            // بعد از تغییر وضعیت، جدول دوباره لود می‌شود
+            loadPropertyTable();
+        })
+        .catch(error => {
+            alert('خطا در به‌روزرسانی وضعیت آگهی. لطفاً دوباره تلاش کنید.');
+            console.error('Error updating property status:', error);
+        });
+}
+
+// لود اولیه جدول بعد از آماده شدن صفحه
+document.addEventListener('DOMContentLoaded', function () {
+    loadPropertyTable();
+});
+
+// هندل کلیک روی لینک‌های صفحه‌بندی داخل جدول (Ajax)
+document.addEventListener('click', function (e) {
+    const wrapper = document.getElementById('property-table-wrapper');
+    if (!wrapper) return;
+
+    const link = e.target.closest('.pagination a');
+    if (link && wrapper.contains(link)) {
+        e.preventDefault();
+
+        const wrapperEl = document.getElementById('property-table-wrapper');
+        const defaultUrl = wrapperEl ? (wrapperEl.getAttribute('data-list-url') || '/admin/property/list') : '/admin/property/list';
+
+        const page = link.getAttribute('data-page');
+        if (page) {
+            const separator = defaultUrl.includes('?') ? '&' : '?';
+            const url = `${defaultUrl}${separator}page=${encodeURIComponent(page)}`;
+            loadPropertyTable(url);
+        }
+    }
+});
+
+// باز کردن مودال و لود جزئیات آگهی
+function openPropertyModal(event, id) {
+    event.preventDefault();
+
+    const modalEl = document.getElementById('propertyModal');
+    const modalBody = document.getElementById('propertyModalBody');
+
+    // متن لودینگ
+    modalBody.innerHTML = `
+        <div class="d-flex justify-content-center align-items-center py-5 text-muted">
+            <div class="spinner-border text-primary ms-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            در حال بارگذاری جزئیات آگهی...
+        </div>
+    `;
+
+    // نمایش مودال
+    const bsModal = new bootstrap.Modal(modalEl);
+    bsModal.show();
+
+    // درخواست Ajax برای گرفتن HTML جزئیات آگهی
+    fetch('/admin/property/view/' + id, {
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(html => {
+            modalBody.innerHTML = html;
+        })
+        .catch(error => {
+            modalBody.innerHTML = `
+                <div class="alert alert-danger mb-0">
+                    خطا در بارگذاری جزئیات آگهی. لطفاً دوباره تلاش کنید.
+                </div>
+            `;
+            console.error('Error loading property view:', error);
+        });
 }
 </script>
 

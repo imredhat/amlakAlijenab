@@ -1,18 +1,16 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Services\Categories\CategoryFactory;
 use App\Models\Admin;
+use App\Services\Categories\CategoryFactory;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
 
 class AdminProperty extends Controller
 {
 
-
-    public function pList()
+    public function pList(Request $request)
     {
         $data = [];
 
@@ -24,33 +22,67 @@ class AdminProperty extends Controller
             return redirect('/admin/login');
         }
 
-        // دریافت لیست آگهی‌ها از مونگو (مرتب بر اساس _id)
-        $properties = DB::table('property')-> orderBy('id' , "DESC")->get();
+        // دریافت لیست آگهی‌ها از دیتابیس (مرتب بر اساس id) به‌صورت صفحه‌بندی
+        $properties = DB::table('property')
+            ->orderBy('id', 'DESC')
+            ->paginate(10);
 
-        // گروه‌بندی آگهی‌ها بر اساس category و اتصال هندلر هر دسته
-        $groupedProperties = [];
-
-        foreach ($properties as $property) {
-            $categoryHandler     = CategoryFactory::create($property->category);
-            $groupedProperties[] = [
-                'property' => $property,
-                'handler'  => $categoryHandler,
-            ];
+        // اگر درخواست Ajax باشد فقط جدول را برمی‌گردانیم
+        if ($request->ajax()) {
+            return view('admin.property._table', [
+                'properties' => $properties,
+            ]);
         }
 
-        $data['groupedProperties'] = $groupedProperties;
+        return view('admin.property.list', [
+            'admin'      => $data['admin'],
+            'properties' => $properties,
+        ]);
+    }
+
+    public function pView($id)
+    {
+
+        if (session()->has('admin_id')) {
+            $adminId       = session('admin_id');
+            $data['admin'] = Admin::find($adminId);
+        } else {
+            return redirect('/admin/login');
+        }
+
+        $data['property'] = DB::table('property')->where('id', $id)->get();
+
+        $data['categoryHandler'] = CategoryFactory::create($data['property'][0]->category);
 
         // echo json_encode($data);die();
 
-        return view('admin.property.list', $data);
+        return view('admin.property.view', $data);
     }
 
-    public function show($id)
+    public function updateStatus(Request $request, $id)
     {
-        $property        = PropertyModel::findOrFail($id);
-        $categoryHandler = CategoryFactory::create($property->category);
+        if (! session()->has('admin_id')) {
+            return redirect('/admin/login');
+        }
 
-        return view('properties.show', compact('property', 'categoryHandler'));
+        $status = $request->input('status');
+
+        if (! in_array($status, ['ثبت شده', 'تایید شده', 'رد شده'])) {
+            return redirect()->back()->with('error', 'وضعیت نامعتبر است.');
+        }
+
+        DB::table('property')
+            ->where('id', $id)
+            ->update([
+                'status'       => $status,
+                'date_updated' => now()->format('Y-m-d H:i:s'),
+            ]);
+
+        if ($request->ajax()) {
+            return response()->json(['success' => true]);
+        }
+
+        return redirect()->back()->with('success', 'وضعیت آگهی با موفقیت به‌روزرسانی شد.');
     }
 
 }

@@ -13,7 +13,7 @@
 				<li class="menu-item">
 					<a href="javascript:void(0);" class="menu-link menu-toggle active"> <i data-feather="folder-minus" class="menu-icon tf-icons"></i> <span class="title">آگهی ها</span> </a>
 					<ul class="menu-sub">
-						<li class="menu-item"> <a href="{{ url('/admin/property?q=all') }}" class="menu-link"> همه </a> </li>
+						<li class="menu-item"> <a href="{{ url('/admin/property/list') }}" class="menu-link"> همه </a> </li>
 						<li class="menu-item"> <a href="{{ url('/admin/property?q=accepted') }}" class="menu-link"> تایید نشده </a> </li>
 						<li class="menu-item"> <a href="{{ url('/admin/property?q=notaccepted') }}" class="menu-link"> تایید شده </a> </li>
 						<li class="menu-item"> <a href="{{ url('/admin/property?q=expired') }}" class="menu-link"> منقضی </a> </li>

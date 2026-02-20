@@ -48,9 +48,26 @@ class ApartmentRentCategory implements CategoryInterface
         ];
     }
 
-    public function getStatusBadge($status): string
+    public function getStatusBadge($property): string
     {
         // می‌توانید وضعیت‌های خاص هر دسته را تعریف کنید
-        return (new OtherCategory())->getStatusBadge($status);
+        return (new OtherCategory())->getStatusBadge($property);
+    }
+
+    /**
+     * مشخصات آگهی رهن و اجاره آپارتمان (بر پایه مشخصات عمومی)
+     */
+    public function getPropertyDetails($property): array
+    {
+        // از منطق عمومی OtherCategory استفاده می‌کنیم و در صورت نیاز بعداً می‌توان توسعه داد
+        return (new OtherCategory())->getPropertyDetails($property);
+    }
+
+    /**
+     * ویژگی‌های آگهی رهن و اجاره آپارتمان (بر پایه ویژگی‌های عمومی)
+     */
+    public function getFeatures($property): array
+    {
+        return (new OtherCategory())->getFeatures($property);
     }
 }

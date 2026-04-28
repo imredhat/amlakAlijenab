@@ -80,7 +80,6 @@
     <script src="{{ url('') }}/vendor/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.min.js"></script>
     <script src="{{ url('') }}/vendor/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"></script>
     <script src="{{ url('') }}/vendor/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
-    <script src="{{ url('') }}/vendor/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.min.js"></script>
     <script src="{{ url('') }}/vendor/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.min.js"></script>
     <script src="{{ url('') }}/vendor/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.min.js"></script>
     <script src="{{ url('') }}/vendor/filepond/dist/filepond.min.js"></script>

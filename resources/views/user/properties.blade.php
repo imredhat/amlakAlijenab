@@ -98,7 +98,7 @@
 
          @else
 
-         salam
+         <!-- salam -->
          @endif
 
 

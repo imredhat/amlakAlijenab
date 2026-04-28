@@ -19,6 +19,9 @@
 						<div class="right-header-content mt-2 mt-sm-0">
 							<ul class="d-flex align-items-center justify-content-center justify-content-sm-end ps-0 mb-0 list-unstyled">
 
+							<li class="header-right-item d-none d-md-block">
+									<div class="today-date"> <span id="digitalDate"></span> <i data-feather="calendar"></i> </div>
+								</li>
 								<li class="header-right-item">
 									<div class="dropdown notifications noti">
 										<button class="btn btn-secondary border-0 p-0 position-relative badge" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <i data-feather="bell"></i> </button>
@@ -49,9 +52,7 @@
                                                 مشاهده همه <i data-feather="chevron-left"></i> </a> </div>
 									</div>
 								</li>
-								<li class="header-right-item d-none d-md-block">
-									<div class="today-date"> <span id="digitalDate"></span> <i data-feather="calendar"></i> </div>
-								</li>
+								
 								<li class="header-right-item">
 									<div class="dropdown admin-profile">
 										<div class="d-xxl-flex align-items-center bg-transparent border-0 text-start p-0 cursor" data-bs-toggle="dropdown">
@@ -80,6 +81,8 @@
 										</ul>
 									</div>
 								</li>
+
+								
 							</ul>
 						</div>
 					</div>

@@ -4,23 +4,29 @@ namespace App\Models;
 
 use MongoDB\Laravel\Eloquent\Model;
 
-class Property extends Model
+class Pages extends Model
 {
     protected $connection = 'mongodb';
-    protected $collection = 'property';
+    protected $collection = 'pages';
     public $timestamps = false;
     
 
     protected $fillable = [
-        'category',
         'title',
+        'tag',
+        'slug',
         'description',
-        'area',
-        'price',
-        'type',
+        'content',
+        'image',
         'date_created',
         'date_updated',
-        'visit_count'
+        
+        'item1_title',
+        'item2_title',
+        'item3_title',
+        'value1',
+        'value2',
+        'value3',
     ];
 
 

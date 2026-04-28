@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PropertyController;
 
-Route::get('/property/add', [PropertyController::class,'show'])->middleware('auth');
+Route::get('/property/add', [PropertyController::class,'show'])->middleware('check.auth');
 Route::get('/property/getCategory/{any}', [PropertyController::class,'category']);
 Route::post('/property/save', [PropertyController::class,'savetoDB'])->middleware('auth');
 

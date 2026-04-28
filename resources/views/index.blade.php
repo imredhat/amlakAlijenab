@@ -50,81 +50,17 @@
 
 
 
-  <!-- Page content-->
-  <!-- Property cost calculator modal-->
-  <div class="modal fade" id="cost-calculator" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header d-block position-relative border-0 px-sm-5 px-4">
-          <h3 class="h4 modal-title mt-4 text-center">به دنبال خانه هستید؟</h3>
-          <button class="btn-close position-absolute top-0 end-0 mt-3 me-3" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body px-sm-5 px-4">
-          <form class="needs-validation" novalidate>
-            <div class="mb-3">
-              <label class="form-label fw-bold mb-2" for="property-city">انتخاب موقعیت</label>
-              <select class="form-control form-select" id="property-city" required>
-                <option value="" selected disabled hidden>انتخاب شهر</option>
-                <option value="Chicago">شیکاگو</option>
-                <option value="Dallas">پاریس</option>
-                <option value="Los Angeles">فرانسه</option>
-                <option value="New York">نیویورک</option>
-                <option value="San Diego">سن فراسیسکو</option>
-              </select>
-              <div class="invalid-feedback">لطفا شهر را انتخاب کنید.</div>
-            </div>
-            <div class="mb-3">
-              <select class="form-control form-select" id="property-district" required>
-                <option value="" selected disabled hidden>انتخاب منطقه</option>
-                <option value="Brooklyn">سوییس</option>
-                <option value="Manhattan">پاریس</option>
-                <option value="Staten Island">آمستردام</option>
-                <option value="The Bronx">سوئد</option>
-                <option value="Queens">برزیل</option>
-              </select>
-              <div class="invalid-feedback">لطفا منطقه را انتخاب کنید.</div>
-            </div>
-            <div class="pt-2 mb-3">
-              <label class="form-label fw-bold mb-2" for="property-address">آدرس</label>
-              <input class="form-control" type="text" id="property-address" placeholder="آدرس را وارد کنید" required>
-              <div class="invalid-feedback">آدرس ملک را انتخاب کنید0</div>
-            </div>
-            <div class="pt-2 mb-3">
-              <label class="form-label fw-bold mb-2">تعداد اتاق</label>
-              <div class="btn-group" role="group" aria-label="Choose number of rooms">
-                <input class="btn-check" type="radio" id="rooms-1" name="rooms">
-                <label class="btn btn-outline-secondary" for="rooms-1">1</label>
-                <input class="btn-check" type="radio" id="roome-2" name="rooms">
-                <label class="btn btn-outline-secondary" for="roome-2">2</label>
-                <input class="btn-check" type="radio" id="roome-3" name="rooms">
-                <label class="btn btn-outline-secondary" for="roome-3">3</label>
-                <input class="btn-check" type="radio" id="rooms-4" name="rooms">
-                <label class="btn btn-outline-secondary" for="rooms-4">4</label>
-                <input class="btn-check" type="radio" id="rooms-5" name="rooms">
-                <label class="btn btn-outline-secondary" for="rooms-5">5+</label>
-              </div>
-            </div>
-            <div class="pt-2 mb-4">
-              <label class="form-label fw-bold mb-2" for="property-area">متراژ (متر مربع)</label>
-              <input class="form-control" type="text" id="property-area" placeholder="متراژ را وارد کنید" required>
-              <div class="invalid-feedback">متراژ را وارد کنید</div>
-            </div>
-            <button class="btn btn-primary d-block w-100 mb-4" type="submit"><i class="fi-calculator me-2"></i>محاسبه</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <!-- Hero-->
   <section class="container pt-5 my-5 pb-lg-4">
     <div class="row pt-0 pt-md-2 pt-lg-0">
-      <div class="col-xl-7 col-lg-6 col-md-5 order-md-2 mb-4 mb-lg-3"><img src="img/real-estate/hero-image.jpg" alt="Hero image"></div>
+      <div class="col-xl-7 col-lg-6 col-md-5 order-md-2 mb-4 mb-lg-3"><img src="{{url('/')}}{{$header[0]['pic']}}" alt="{{$header[0]['title']}}"></div>
       <div class="col-xl-5 col-lg-6 col-md-7 order-md-1 pt-xl-5 pe-lg-0 mb-3 text-md-start text-center">
-        <h1 class="display-4 mt-lg-5 mb-md-4 mb-3 pt-md-4 pb-lg-2">نرخ ارزان خانه <br> در مکان دلخواه شما</h1>
-        <p class="position-relative lead ms-lg-n5 fs-6">لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است. لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است.</p>
+        <h1 class="display-4 mt-lg-5 mb-md-4 mb-3 pt-md-4 pb-lg-2">{{$header[0]['title']}}</h1>
+        <p class="position-relative lead ms-lg-n5 fs-6">{{$header[0]['desc']}}</p>
       </div>
       <!-- Search property form group-->
-      <div class="col-xl-8 col-lg-10 order-3 mt-lg-n5">
+      <div class="col-xl-8 col-lg-10 order-3 mt-lg-n5" style="z-index: 9">
         <form class="form-group d-block panel-search">
           <div class="row g-0 ms-sm-n2">
             <div class="col-md-8 d-sm-flex align-items-center">
@@ -132,8 +68,8 @@
                 <button class="btn btn-link dropdown-toggle ps-2 ps-sm-3" type="button" data-bs-toggle="dropdown"><i class="fi-home me-2"></i><span class="dropdown-toggle-label">اجاره</span></button>
                 <input type="hidden">
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">اجاره</span></a></li>
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">فروش</span></a></li>
+                  <li><a class="dropdown-item" data-type="rent"><span class="dropdown-item-label">اجاره</span></a></li>
+                  <li><a class="dropdown-item" data-type="sale"><span class="dropdown-item-label">فروش</span></a></li>
                 </ul>
               </div>
               <hr class="d-sm-none my-2">
@@ -141,10 +77,9 @@
                 <button class="btn btn-link dropdown-toggle ps-2 ps-sm-3" type="button" data-bs-toggle="dropdown"><i class="fi-map-pin me-2"></i><span class="dropdown-toggle-label">موقعیت</span></button>
                 <input type="hidden">
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">نیویورک</span></a></li>
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">شیکاگو</span></a></li>
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">لوس آنجلس</span></a></li>
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">سن فرانسیسکو</span></a></li>
+                  @foreach ($city as $c)
+                  <li><a class="dropdown-item"><span class="dropdown-item-label">{{ $c -> name }}</span></a></li>
+                  @endforeach
                 </ul>
               </div>
               <hr class="d-sm-none my-2">
@@ -152,11 +87,15 @@
                 <button class="btn btn-link dropdown-toggle ps-2 ps-sm-3" type="button" data-bs-toggle="dropdown"><i class="fi-list me-2"></i><span class="dropdown-toggle-label">نوع ملک</span></button>
                 <input type="hidden">
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">خانه</span></a></li>
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">آپارتمان</span></a></li>
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">تجاری و اداری</span></a></li>
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">سوئیت</span></a></li>
-                  <li><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">زمین</span></a></li>
+                  <li><a data-type="apartment" class="dropdown-item"><span class="dropdown-item-label">آپارتمان</span></a></li>
+                  <li><a data-type="commercial" class="dropdown-item"><span class="dropdown-item-label">تجاری و اداری</span></a></li>
+                  <li><a data-type="villa" class="dropdown-item"><span class="dropdown-item-label">ویلا و سوئیت</span></a></li>
+                  <li><a data-type="land" class="dropdown-item"><span class="dropdown-item-label">زمین</span></a></li>
+                  <li><a data-type="pre-sale" class="dropdown-item"><span class="dropdown-item-label">پیش فروش</span></a></li>
+                  <li><a data-type="other" class="dropdown-item"><span class="dropdown-item-label">سایر</span></a></li>
+
+
+
                 </ul>
               </div>
             </div>
@@ -178,26 +117,32 @@
   <!-- Property categories-->
   <section class="container mb-5">
     <div class="row row-cols-lg-6 row-cols-sm-3 row-cols-2 g-3 g-xl-4">
-      <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="real-estate-catalog-rent.html">
-          <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-real-estate-house"></i></div>
-          <h3 class="icon-box-title fs-base mb-0">خانه</h3>
-        </a></div>
-      <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="real-estate-catalog-sale.html">
+
+      <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="{{ url('/') }}/browse/apartment">
           <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-apartment"></i></div>
           <h3 class="icon-box-title fs-base mb-0">آپارتمان</h3>
         </a></div>
-      <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="real-estate-catalog-rent.html">
+      <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="{{ url('/') }}/browse/commercial">
           <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-shop"></i></div>
           <h3 class="icon-box-title fs-base mb-0">تجاری و اداری</h3>
         </a></div>
-      <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="real-estate-catalog-sale.html">
-          <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-rent"></i></div>
-          <h3 class="icon-box-title fs-base mb-0">سوئیت</h3>
+
+      <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="{{ url('/') }}/browse/villa">
+          <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-real-estate-house"></i></div>
+          <h3 class="icon-box-title fs-base mb-0">ویلا</h3>
         </a></div>
-      <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="real-estate-catalog-rent.html">
-          <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-house-chosen"></i></div>
+
+      <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="{{ url('/') }}/browse/land">
+          <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-map"></i></div>
           <h3 class="icon-box-title fs-base mb-0">زمین</h3>
         </a></div>
+
+        <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="{{ url('/') }}/browse/pre-sale">
+          <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-pre-sale"></i></div>
+          <h3 class="icon-box-title fs-base mb-0">پیش فروش</h3>
+        </a></div>
+
+
       <div class="col">
         <div class="dropdown h-100"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover text-center" href="real-estate-home-v1.html#" data-bs-toggle="dropdown">
             <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-dots-horisontal"></i></div>
@@ -212,138 +157,42 @@
   <section class="container mb-5 mt-n3 mt-lg-0">
     <div class="tns-carousel-wrapper tns-nav-outside tns-nav-outside-flush mx-n2" dir="ltr">
       <div class="tns-carousel-inner row gx-4 mx-0 py-3" data-carousel-options="{&quot;items&quot;: 3, &quot;controls&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2},&quot;768&quot;:{&quot;items&quot;:3}}}">
+
+        @if(isset($catalog))
+        @foreach($catalog as $c)
         <div class="col">
-          <div class="card card-hover border-0 h-100 pb-2 pb-sm-3 px-sm-3 text-center"><img class="d-block mx-auto my-3" src="img/real-estate/illustrations/buy.svg" width="256" alt="Illustration">
+          <div class="card card-hover border-0 h-100 pb-2 pb-sm-3 px-sm-3 text-center"><img class="d-block mx-auto my-3" src="{{url('/')}}{{$c -> pic}}" width="256" alt="Illustration">
             <div class="card-body">
-              <h2 class="h5 card-title">خرید یک ملک</h2>
-              <p class="card-text fs-sm">لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است. لورم ایپسوم ساختار چاپ و متن را در بر می گیرد.</p>
+              <h2 class="h5 card-title">{{$c -> title}}</h2>
+              <p class="card-text fs-sm">{{$c -> desc}}</p>
             </div>
-            <div class="card-footer pt-0 border-0"><a class="btn btn-outline-primary stretched-link" href="real-estate-catalog-sale.html">جستجوی خانه</a></div>
+            <div class="card-footer pt-0 border-0"><a class="btn btn-outline-primary stretched-link" href="{{$c -> link}}">{{$c -> link_title}}</a></div>
           </div>
+
         </div>
-        <div class="col">
-          <div class="card card-hover border-0 h-100 pb-2 pb-sm-3 px-sm-3 text-center"><img class="d-block mx-auto my-3" src="img/real-estate/illustrations/sell.svg" width="256" alt="Illustration">
-            <div class="card-body">
-              <h2 class="h5 card-title">فروش یک ملک</h2>
-              <p class="card-text fs-sm">لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است. لورم ایپسوم ساختار چاپ و متن را در بر می گیرد.</p>
-            </div>
-            <div class="card-footer pt-0 border-0"><a class="btn btn-outline-primary stretched-link" href="real-estate-home-v1.html#">مکان کسب و کار</a></div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card card-hover border-0 h-100 pb-2 pb-sm-3 px-sm-3 text-center"><img class="d-block mx-auto my-3" src="img/real-estate/illustrations/rent.svg" width="256" alt="Illustration">
-            <div class="card-body">
-              <h2 class="h5 card-title">اجاره یک ملک</h2>
-              <p class="card-text fs-sm">لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است. لورم ایپسوم ساختار چاپ و متن را در بر می گیرد.</p>
-            </div>
-            <div class="card-footer pt-0 border-0"><a class="btn btn-outline-primary stretched-link" href="real-estate-catalog-rent.html">یافتن اجاره خانه</a></div>
-          </div>
-        </div>
+        @endforeach;
+        @endif;
+
+
+
       </div>
     </div>
   </section>
   <hr class="mt-n1 mb-5 d-md-none">
   <!-- Top offers (carousel)-->
-  <section class="container mb-5 pb-md-4">
-    <div class="d-flex align-items-center justify-content-between mb-3">
-      <h2 class="h3 mb-0 ">خانه های ویژه ما</h2><a class="btn btn-link fw-normal p-0" href="real-estate-catalog-rent.html">مشاهده همه <i class="fi-arrow-long-left ms-2"></i></a>
-    </div>
-    <div class="tns-carousel-wrapper tns-controls-outside-xxl tns-nav-outside tns-nav-outside-flush mx-n2" dir="ltr">
-      <div class="tns-carousel-inner row gx-4 mx-0 pt-3 pb-4" data-carousel-options="{&quot;items&quot;: 4, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2},&quot;768&quot;:{&quot;items&quot;:3},&quot;992&quot;:{&quot;items&quot;:4}}}">
-        <!-- Item-->
-        <div class="col">
-          <div class="card shadow-sm card-hover border-0 h-100">
-            <div class="card-img-top card-img-hover"><a class="img-overlay" href="real-estate-single-v1.html"></a>
-              <div class="position-absolute start-0 top-0 pt-3 ps-3"><span class="d-table badge bg-success mb-1">تایید</span><span class="d-table badge bg-info">جدید</span></div>
-              <div class="content-overlay end-0 top-0 pt-3 pe-3">
-                <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="افزودن به علاقه مندی"><i class="fi-heart"></i></button>
-              </div><img src="img/real-estate/catalog/01.jpg" alt="Image">
-            </div>
-            <div class="card-body position-relative pb-3">
-              <h4 class="mb-1 fs-sm fw-normal text-uppercase text-primary">اجاره</h4>
-              <h3 class="h6 mb-2 fs-base"><a class="nav-link stretched-link" href="real-estate-single-v1.html">آپارتمان 3خوابه | 85 مترمربع</a></h3>
-              <p class="mb-2 fs-sm text-muted">آپارتمان مدرن استخردار</p>
-              <div><i class="fi-cash mt-n1 me-2 lead align-middle opacity-70"></i>250000 ت</div>
-            </div>
-            <div class="card-footer d-flex align-items-center justify-content-center mx-3 pt-3 text-nowrap"><span class="d-inline-block mx-1 px-2 fs-sm">3<i class="fi-bed ms-1 mt-n1 fs-lg text-muted"></i></span><span class="d-inline-block mx-1 px-2 fs-sm">2<i class="fi-bath ms-1 mt-n1 fs-lg text-muted"></i></span><span class="d-inline-block mx-1 px-2 fs-sm">2<i class="fi-car ms-1 mt-n1 fs-lg text-muted"></i></span></div>
-          </div>
-        </div>
-        <!-- Item-->
-        <div class="col">
-          <div class="card shadow-sm card-hover border-0 h-100">
-            <div class="card-img-top card-img-hover"><a class="img-overlay" href="real-estate-single-v1.html"></a>
-              <div class="position-absolute start-0 top-0 pt-3 ps-3"><span class="d-table badge bg-success mb-1">تایید</span><span class="d-table badge bg-danger">ویژه</span></div>
-              <div class="content-overlay end-0 top-0 pt-3 pe-3">
-                <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="افزودن به علاقه مندی"><i class="fi-heart"></i></button>
-              </div><img src="img/real-estate/catalog/02.jpg" alt="Image">
-            </div>
-            <div class="card-body position-relative pb-3">
-              <h4 class="mb-1 fs-sm fw-normal text-uppercase text-primary">فروش</h4>
-              <h3 class="h6 mb-2 fs-base"><a class="nav-link stretched-link" href="real-estate-single-v1.html">ویلا 2 طبقه | 150 متر مربع</a></h3>
-              <p class="mb-2 fs-sm text-muted">ویلا لوکس در لوس آنجلس</p>
-              <div><i class="fi-cash mt-n1 me-2 lead align-middle opacity-70"></i>840000 ت</div>
-            </div>
-            <div class="card-footer d-flex align-items-center justify-content-center mx-3 pt-3 text-nowrap"><span class="d-inline-block mx-1 px-2 fs-sm">4<i class="fi-bed ms-1 mt-n1 fs-lg text-muted"></i></span><span class="d-inline-block mx-1 px-2 fs-sm">2<i class="fi-bath ms-1 mt-n1 fs-lg text-muted"></i></span><span class="d-inline-block mx-1 px-2 fs-sm">2<i class="fi-car ms-1 mt-n1 fs-lg text-muted"></i></span></div>
-          </div>
-        </div>
-        <!-- Item-->
-        <div class="col">
-          <div class="card shadow-sm card-hover border-0 h-100">
-            <div class="card-img-top card-img-hover"><a class="img-overlay" href="real-estate-single-v1.html"></a>
-              <div class="position-absolute start-0 top-0 pt-3 ps-3"><span class="d-table badge bg-success mb-1">تایید</span></div>
-              <div class="content-overlay end-0 top-0 pt-3 pe-3">
-                <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="افزودن به علاقه مندی"><i class="fi-heart"></i></button>
-              </div><img src="img/real-estate/catalog/03.jpg" alt="Image">
-            </div>
-            <div class="card-body position-relative pb-3">
-              <h4 class="mb-1 fs-sm fw-normal text-uppercase text-primary">اجاره</h4>
-              <h3 class="h6 mb-2 fs-base"><a class="nav-link stretched-link" href="real-estate-single-v1.html">آپارتمان 2 خوابه | 110 متر</a></h3>
-              <p class="mb-2 fs-sm text-muted">خصوصیات تپه دریایی آبی</p>
-              <div><i class="fi-cash mt-n1 me-2 lead align-middle opacity-70"></i>750000 ت</div>
-            </div>
-            <div class="card-footer d-flex align-items-center justify-content-center mx-3 pt-3 text-nowrap"><span class="d-inline-block mx-1 px-2 fs-sm">3<i class="fi-bed ms-1 mt-n1 fs-lg text-muted"></i></span><span class="d-inline-block mx-1 px-2 fs-sm">2<i class="fi-bath ms-1 mt-n1 fs-lg text-muted"></i></span><span class="d-inline-block mx-1 px-2 fs-sm">2<i class="fi-car ms-1 mt-n1 fs-lg text-muted"></i></span></div>
-          </div>
-        </div>
-        <!-- Item-->
-        <div class="col">
-          <div class="card shadow-sm card-hover border-0 h-100">
-            <div class="card-img-top card-img-hover"><a class="img-overlay" href="real-estate-single-v1.html"></a>
-              <div class="position-absolute start-0 top-0 pt-3 ps-3"><span class="d-table badge bg-success mb-1">تایید</span><span class="d-table badge bg-info">جدید</span></div>
-              <div class="content-overlay end-0 top-0 pt-3 pe-3">
-                <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="افزودن به علاقه مندی"><i class="fi-heart"></i></button>
-              </div><img src="img/real-estate/catalog/04.jpg" alt="Image">
-            </div>
-            <div class="card-body position-relative pb-3">
-              <h4 class="mb-1 fs-sm fw-normal text-uppercase text-primary">فروش</h4>
-              <h3 class="h6 mb-2 fs-base"><a class="nav-link stretched-link" href="real-estate-single-v1.html">ویلا 2 طبقه | 150 متر مربع</a></h3>
-              <p class="mb-2 fs-sm text-muted">خصوصیات تپه دریایی آبی</p>
-              <div><i class="fi-cash mt-n1 me-2 lead align-middle opacity-70"></i>1040000 ت</div>
-            </div>
-            <div class="card-footer d-flex align-items-center justify-content-center mx-3 pt-3 text-nowrap"><span class="d-inline-block mx-1 px-2 fs-sm">4<i class="fi-bed ms-1 mt-n1 fs-lg text-muted"></i></span><span class="d-inline-block mx-1 px-2 fs-sm">2<i class="fi-bath ms-1 mt-n1 fs-lg text-muted"></i></span><span class="d-inline-block mx-1 px-2 fs-sm">2<i class="fi-car ms-1 mt-n1 fs-lg text-muted"></i></span></div>
-          </div>
-        </div>
-        <!-- Item-->
-        <div class="col">
-          <div class="card shadow-sm card-hover border-0 h-100">
-            <div class="card-img-top card-img-hover"><a class="img-overlay" href="real-estate-single-v1.html"></a>
-              <div class="position-absolute start-0 top-0 pt-3 ps-3"><span class="d-table badge bg-success mb-1">تایید</span></div>
-              <div class="content-overlay end-0 top-0 pt-3 pe-3">
-                <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="افزودن به علاقه مندی"><i class="fi-heart"></i></button>
-              </div><img src="img/real-estate/catalog/05.jpg" alt="Image">
-            </div>
-            <div class="card-body position-relative pb-3">
-              <h4 class="mb-1 fs-sm fw-normal text-uppercase text-primary">فروش</h4>
-              <h3 class="h6 mb-2 fs-base"><a class="nav-link stretched-link" href="real-estate-single-v1.html">ویلا 2 طبقه | 150 متر مربع</a></h3>
-              <p class="mb-2 fs-sm text-muted">ویلا لوکس در لوس آنجلس</p>
-              <div><i class="fi-cash mt-n1 me-2 lead align-middle opacity-70"></i>180000 ت</div>
-            </div>
-            <div class="card-footer d-flex align-items-center justify-content-center mx-3 pt-3 text-nowrap"><span class="d-inline-block mx-1 px-2 fs-sm">4<i class="fi-bed ms-1 mt-n1 fs-lg text-muted"></i></span><span class="d-inline-block mx-1 px-2 fs-sm">2<i class="fi-bath ms-1 mt-n1 fs-lg text-muted"></i></span><span class="d-inline-block mx-1 px-2 fs-sm">2<i class="fi-car ms-1 mt-n1 fs-lg text-muted"></i></span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
+
+  @include('partials.home.recent')
+
+
+
   <!-- Recently added-->
+
+
+
+
+
+  @if(isset($special))
   <section class="container pb-4 pt-1 mb-5">
     <div class="d-flex align-items-end align-items-lg-center justify-content-between mb-4 pb-md-2">
       <div class="d-flex w-100 align-items-center justify-content-between justify-content-lg-start">
@@ -353,75 +202,136 @@
           <input type="hidden">
           <div class="dropdown-menu"><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">آپارتمان</span></a><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">خانه</span></a><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">سوئیت</span></a><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">دفتر تجاری</span></a></div>
         </div>
-        <ul class="nav nav-tabs d-none d-md-flex ps-lg-2 mb-0">
+        <!-- <ul class="nav nav-tabs d-none d-md-flex ps-lg-2 mb-0">
           <li class="nav-item"><a class="nav-link fs-sm mb-2 mb-md-0" href="real-estate-home-v1.html#">آپارتمان</a></li>
           <li class="nav-item"><a class="nav-link fs-sm active mb-2 mb-md-0" href="real-estate-home-v1.html#">خانه</a></li>
           <li class="nav-item"><a class="nav-link fs-sm mb-2 mb-md-0" href="real-estate-home-v1.html#">سوئیت</a></li>
           <li class="nav-item"><a class="nav-link fs-sm mb-2 mb-md-0" href="real-estate-home-v1.html#">دفتر تجاری</a></li>
-        </ul>
+        </ul> -->
       </div><a class="btn btn-link fw-normal d-none d-lg-block p-0" href="real-estate-catalog-rent.html">مشاهده همه <i class="fi-arrow-long-left me-2"></i></a>
     </div>
+
+
     <div class="row g-4">
       <div class="col-md-6">
-        <div class="card bg-size-cover bg-position-center border-0 overflow-hidden mb-4" style="background-image: url(img/real-estate/recent/02.jpg);"><span class="img-gradient-overlay"></span>
+
+
+        @for($i=0;$i < 2; $i++)
+          <?php
+
+          $padd = '';
+          $s = $special[$i];
+          $img = url('/') . "/img/blank.png";
+          $image = json_decode($s->media);
+
+          $media = [""];
+          if (isset($s->media) && count(json_decode($s->media)) > 0) {
+            $media = json_decode($s->media);
+
+            $img = url('/') . "/img/blank.png";
+            if (isset($media[0]) && !empty($media[0])) {
+              $img = url('/') . "/upload/property/" . $s->id . "/" . $media[0];
+            }
+          }
+
+          $padd = $i ? 0 : 'mb-4';
+
+
+          ?>
+
+          <div class="card bg-size-cover bg-position-center border-0 overflow-hidden {{ $padd }}" style="background-image: url('{{ $img }}');"><span class="img-gradient-overlay"></span>
           <div class="card-body content-overlay pb-0"><span class="badge bg-info fs-sm">جدید</span></div>
           <div class="card-footer content-overlay border-0 pt-0 pb-4">
-            <div class="d-sm-flex justify-content-between align-items-end pt-5 mt-2 mt-sm-5"><a class="text-decoration-none text-light pe-2" href="real-estate-single-v1.html">
-                <div class="fs-sm text-uppercase pt-2 mb-1">فروشی</div>
-                <h3 class="h5 text-light mb-1">خانه دوبلکس</h3>
-                <div class="fs-sm opacity-70"><i class="fi-map-pin me-1"></i> ایران، استان تهران ، میدان آزادی</div>
-              </a>
-              <div class="btn-group ms-n2 ms-sm-0 mt-3"><a class="btn btn-primary px-3" href="real-estate-single-v1.html" style="height: 2.75rem;">شروع قیمت از 58.000.000 ت</a>
-                <button class="btn btn-primary btn-icon border-end-0 border-top-0 border-bottom-0 border-light fs-sm" type="button"><i class="fi-heart"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card bg-size-cover bg-position-center border-0 overflow-hidden" style="background-image: url(img/real-estate/recent/03.jpg);"><span class="img-gradient-overlay"></span>
-          <div class="card-body content-overlay pb-0"><span class="badge bg-info fs-sm">جدید</span></div>
-          <div class="card-footer content-overlay border-0 pt-0 pb-4">
-            <div class="d-sm-flex justify-content-between align-items-end pt-5 mt-2 mt-sm-5"><a class="text-decoration-none text-light pe-2" href="real-estate-single-v1.html">
-                <div class="fs-sm text-uppercase pt-2 mb-1">فروشی</div>
-                <h3 class="h5 text-light mb-1">واحد تجاری و اداری</h3>
-                <div class="fs-sm opacity-70"><i class="fi-map-pin me-1"></i> ایران، استان تهران ، میدان آزادی</div>
-              </a>
-              <div class="btn-group ms-n2 ms-sm-0 mt-3"><a class="btn btn-primary px-3" href="real-estate-single-v1.html" style="height: 2.75rem;">شروع قیمت از 58.000.000 ت</a>
-                <button class="btn btn-primary btn-icon border-end-0 border-top-0 border-bottom-0 border-light fs-sm" type="button"><i class="fi-heart"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card bg-size-cover bg-position-center border-0 overflow-hidden h-100" style="background-image: url(img/real-estate/recent/01.jpg);"><span class="img-gradient-overlay"></span>
-          <div class="card-body content-overlay pb-0">
-            <div class="d-flex"><span class="badge bg-success fs-sm me-2">تایید</span><span class="badge bg-info fs-sm">جدید</span></div>
-          </div>
-          <div class="card-footer content-overlay border-0 pt-0 pb-4">
-            <div class="d-sm-flex justify-content-between align-items-end pt-5 mt-2 mt-sm-5"><a class="text-decoration-none text-light pe-2" href="real-estate-single-v1.html">
+            <div class="d-sm-flex justify-content-between align-items-end pt-5 mt-2 mt-sm-5"><a class="text-decoration-none text-light pe-2" href="{{url('/')}}/p/{{$s->id}}/{{str_replace(' ','-',$s->title)}}">
                 <div class="fs-sm text-uppercase pt-2 mb-1">اجاره ای</div>
-                <h3 class="h5 text-light mb-1">ویلا اجاره ای لاکچری</h3>
-                <div class="fs-sm opacity-70"><i class="fi-map-pin me-1"></i> ایران، استان تهران ، میدان آزادی</div>
+                <h3 class="h5 text-light mb-1">{{ $s -> title }}</h3>
+                <div class="fs-sm opacity-70"><i class="fi-map-pin me-1"></i> {{ $s -> address }}</div>
               </a>
-              <div class="btn-group ms-n2 ms-sm-0 mt-3"><a class="btn btn-primary px-3" href="real-estate-single-v1.html" style="height: 2.75rem;">شروع قیمت از 58.000.000 ت</a>
-                <button class="btn btn-primary btn-icon border-end-0 border-top-0 border-bottom-0 border-light fs-sm" type="button"><i class="fi-heart"></i></button>
+              <div class="btn-group ms-n2 ms-sm-0 mt-3"><a class="btn btn-primary px-3" href="{{url('/')}}/p/{{$s->id}}/{{str_replace(' ','-',$s->title)}}" style="height: 2.75rem;"> {{ number_format($s -> price) }} تومان</a>
               </div>
+            </div>
+          </div>
+      </div>
+      @endfor
+
+
+
+
+    </div>
+
+
+
+    @for($i=2;$i < 3; $i++)
+      <?php
+
+      $s = $special[$i];
+      $img = url('/') . "/img/blank.png";
+      $image = json_decode($s->media);
+
+      $media = [""];
+      if (isset($s->media) && count(json_decode($s->media)) > 0) {
+        $media = json_decode($s->media);
+
+        $img = url('/') . "/img/blank.png";
+        if (isset($media[0]) && !empty($media[0])) {
+          $img = url('/') . "/upload/property/" . $s->id . "/" . $media[0];
+        }
+      }
+
+
+      ?>
+      <div class="col-md-6">
+      <div class="card bg-size-cover bg-position-center border-0 overflow-hidden h-100" style="background-image: url('{{ $img }}');"><span class="img-gradient-overlay"></span>
+        <div class="card-body content-overlay pb-0">
+          <div class="d-flex"><span class="badge bg-success fs-sm me-2">تایید</span><span class="badge bg-info fs-sm">جدید</span></div>
+        </div>
+        <div class="card-footer content-overlay border-0 pt-0 pb-4">
+          <div class="d-sm-flex justify-content-between align-items-end pt-5 mt-2 mt-sm-5"><a class="text-decoration-none text-light pe-2" href="{{url('/')}}/p/{{$s->id}}/{{str_replace(' ','-',$s->title)}}">
+              <h3 class="h5 text-light mb-1">{{ $s -> title }}</h3>
+              <div class="fs-sm opacity-70"><i class="fi-map-pin me-1"></i> {{ $s -> address }}</div>
+            </a>
+            <div class="btn-group ms-n2 ms-sm-0 mt-3"><a class="btn btn-primary px-3" href="{{url('/')}}/p/{{$s->id}}/{{str_replace(' ','-',$s->title)}}" style="height: 2.75rem;"> {{ number_format($s -> price) }} تومان</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      </div>
+
+      @endfor
+
+
+      </div>
   </section>
+
+  @endif
   <!-- Property cost calculator-->
+
+  @if(isset($banner))
+  @foreach($banner as $b)
   <section class="container mb-5 pb-2 pb-lg-4">
     <div class="row align-items-center">
       <div class="col-md-5"><img class="d-block mx-md-0 mx-auto mb-md-0 mb-4 rotate-img" src="img/real-estate/illustrations/calculator.svg" width="416" alt="Illustration"></div>
       <div class="col-xxl-6 col-md-7 text-md-start text-center">
-        <h2 class="">محاسبه آنلاین و سریع هزینه ملک دلخواه شما</h2>
-        <p class="pb-3 fs-base"> ما املاک خوب زیادی داریم و یکی از آنها این املاک است و برای آن کاتالوگ شما را ترتیب داده ایم. لطفا بر روی زیر کلیک کنید! <br> فضای داخلی از حجم ، فضا ، هوا ، نسبت ، با نور و روحیه خاص. این فضای داخلی برای همیشه ماندگار است. این واقعا موثر است و ما می توانیم به راحتی این کار را برای مشتریان خود مدیریت کنیم. </p><a class="btn btn-lg btn-primary" href="real-estate-home-v1.html#cost-calculator" data-bs-toggle="modal"><i class="fi-calculator me-2"></i>شروع کن</a>
+        <h2 class="">{{ $b -> title }}</h2>
+        <p class="pb-3 fs-base"> {{ $b -> desc }}</p><a class="btn btn-lg btn-primary" href="{{ $b -> link }}" data-bs-toggle="modal"><i class="fi-calculator me-2"></i>{{ $b -> link_title }}</a>
       </div>
     </div>
   </section>
+
+  @endforeach
+  @endif
+
+
+
+  <style>
+    .card-img-top img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+
   <!-- Cities (carousel)-->
   <section class="container mb-5 pb-2">
     <div class="d-flex align-items-center justify-content-between mb-3">
@@ -431,37 +341,13 @@
       <div class="tns-carousel-inner row gx-4 mx-0 py-md-4 py-3" data-carousel-options="{&quot;items&quot;: 4, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2},&quot;768&quot;:{&quot;items&quot;:3},&quot;992&quot;:{&quot;items&quot;:4}}}">
 
         <!-- Item-->
-        <div class="col"><a class="card shadow-sm card-hover border-0" href="real-estate-catalog-rent.html">
-            <div class="card-img-top card-img-hover"><span class="img-overlay opacity-65"></span><img src="img/real-estate/city/babolsar.jpg" alt="Chicago">
-              <div class="content-overlay start-0 top-0 d-flex align-items-center justify-content-center w-100 h-100 p-3">
-                <div class="w-100 p-1">
-                  <div class="mb-2">
-                    <h4 class="mb-2 fs-xs fw-normal text-light"><i class="fi-wallet mt-n1 me-2 fs-sm align-middle"></i>ملک برای فروش</h4>
-                    <div class="d-flex align-items-center">
-                      <div class="progress progress-light w-100">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div><span class="text-light fs-sm ps-1 ms-2">268</span>
-                    </div>
-                  </div>
-                  <div class="pt-1">
-                    <h4 class="mb-2 fs-xs fw-normal text-light"><i class="fi-home mt-n1 me-2 fs-sm align-middle"></i>ملک برای اجاره</h4>
-                    <div class="d-flex align-items-center">
-                      <div class="progress progress-light w-100">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div><span class="text-light fs-sm ps-1 ms-2">1540</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h3 class="mb-0 fs-base text-nav">بابلسر</h3>
-            </div>
-          </a></div>
+        @foreach ($city as $c)
 
-        <!-- Item-->
-        <div class="col"><a class="card shadow-sm card-hover border-0" href="real-estate-catalog-rent.html">
-            <div class="card-img-top card-img-hover"><span class="img-overlay opacity-65"></span><img src="img/real-estate/city/babol.jpg" alt="Chicago">
+
+        <div class="col">
+          <a class="card shadow-sm card-hover border-0" href="{{ url('/') }}/city/{{ $c -> tag }}">
+            <div class="card-img-top card-img-hover"><span class="img-overlay opacity-65"></span>
+              <img src="{{ url('/') }}{{ $c -> image }}" alt="{{ $c -> name }}">
               <div class="content-overlay start-0 top-0 d-flex align-items-center justify-content-center w-100 h-100 p-3">
                 <div class="w-100 p-1">
                   <div class="mb-2">
@@ -484,93 +370,14 @@
               </div>
             </div>
             <div class="card-body text-center">
-              <h3 class="mb-0 fs-base text-nav">بابل</h3>
+              <h3 class="mb-0 fs-base text-nav">{{ $c -> name }}</h3>
             </div>
-          </a></div>
-        <!-- Item-->
-        <div class="col"><a class="card shadow-sm card-hover border-0" href="real-estate-catalog-sale.html">
-            <div class="card-img-top card-img-hover"><span class="img-overlay opacity-65"></span><img src="img/real-estate/city/amol.jpg" alt="Los Angeles">
-              <div class="content-overlay start-0 top-0 d-flex align-items-center justify-content-center w-100 h-100 p-3">
-                <div class="w-100 p-1">
-                  <div class="mb-2">
-                    <h4 class="mb-2 fs-xs fw-normal text-light"><i class="fi-wallet mt-n1 me-2 fs-sm align-middle"></i>ملک برای فروش</h4>
-                    <div class="d-flex align-items-center">
-                      <div class="progress progress-light w-100">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div><span class="text-light fs-sm ps-1 ms-2">2750</span>
-                    </div>
-                  </div>
-                  <div class="pt-1">
-                    <h4 class="mb-2 fs-xs fw-normal text-light"><i class="fi-home mt-n1 me-2 fs-sm align-middle"></i>ملک برای اجاره</h4>
-                    <div class="d-flex align-items-center">
-                      <div class="progress progress-light w-100">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div><span class="text-light fs-sm ps-1 ms-2">692</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h3 class="mb-0 fs-base text-nav">آمل</h3>
-            </div>
-          </a></div>
-        <!-- Item-->
-        <div class="col"><a class="card shadow-sm card-hover border-0" href="real-estate-catalog-rent.html">
-            <div class="card-img-top card-img-hover"><span class="img-overlay opacity-65"></span><img src="img/real-estate/city/chalos.jpg" alt="آمل">
-              <div class="content-overlay start-0 top-0 d-flex align-items-center justify-content-center w-100 h-100 p-3">
-                <div class="w-100 p-1">
-                  <div class="mb-2">
-                    <h4 class="mb-2 fs-xs fw-normal text-light"><i class="fi-wallet mt-n1 me-2 fs-sm align-middle"></i>ملک برای فروش</h4>
-                    <div class="d-flex align-items-center">
-                      <div class="progress progress-light w-100">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div><span class="text-light fs-sm ps-1 ms-2">1739</span>
-                    </div>
-                  </div>
-                  <div class="pt-1">
-                    <h4 class="mb-2 fs-xs fw-normal text-light"><i class="fi-home mt-n1 me-2 fs-sm align-middle"></i>ملک برای اجاره</h4>
-                    <div class="d-flex align-items-center">
-                      <div class="progress progress-light w-100">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div><span class="text-light fs-sm ps-1 ms-2">1854</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h3 class="mb-0 fs-base text-nav">چالوس</h3>
-            </div>
-          </a></div>
-        <!-- Item-->
-        <div class="col"><a class="card shadow-sm card-hover border-0" href="real-estate-catalog-sale.html">
-            <div class="card-img-top card-img-hover"><span class="img-overlay opacity-65"></span><img src="img/real-estate/city/sari.jpg" alt="Dallas">
-              <div class="content-overlay start-0 top-0 d-flex align-items-center justify-content-center w-100 h-100 p-3">
-                <div class="w-100 p-1">
-                  <div class="mb-2">
-                    <h4 class="mb-2 fs-xs fw-normal text-light"><i class="fi-wallet mt-n1 me-2 fs-sm align-middle"></i>ملک برای فروش</h4>
-                    <div class="d-flex align-items-center">
-                      <div class="progress progress-light w-100">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div><span class="text-light fs-sm ps-1 ms-2">2567</span>
-                    </div>
-                  </div>
-                  <div class="pt-1">
-                    <h4 class="mb-2 fs-xs fw-normal text-light"><i class="fi-home mt-n1 me-2 fs-sm align-middle"></i>ملک برای اجاره</h4>
-                    <div class="d-flex align-items-center">
-                      <div class="progress progress-light w-100">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div><span class="text-light fs-sm ps-1 ms-2">1204</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <h3 class="mb-0 fs-base text-nav">ساری</h3>
-            </div>
-          </a></div>
+          </a>
+        </div>
+
+        @endforeach
+
+
       </div>
     </div>
   </section>

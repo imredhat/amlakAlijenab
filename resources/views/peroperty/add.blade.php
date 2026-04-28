@@ -33,9 +33,9 @@
               <select class="form-select" id="category" required name="category">
 
                 <option value="">انتخاب کنید</option>
-                <option value="villa-sale">خرید و فروش ویلا</option>
                 <option value="apartment-rent">رهن و اجاره خانه و آپارتمان</option>
                 <option value="apartment-sale">خرید و فروش خانه و آپارتمان</option>
+                <option value="villa-sale">خرید و فروش ویلا</option>
                 <option value="villa-short-rent">اجاره کوتاه مدت ویلا، سوئیت</option>
                 <option value="commercial-rent">رهن و اجاره اداری، تجاری و صنعتی</option>
                 <option value="commercial-sale">خرید و فروش اداری، تجاری و صنعتی</option>

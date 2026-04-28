@@ -5,7 +5,14 @@
                 @php
                     // گرفتن ستون‌های جدول از اولین دسته (همه یکسان هستند)
                     $sampleHandler = App\Services\Categories\CategoryFactory::create('other');
+                    $sampleHandler = App\Services\Categories\CategoryFactory::create('apartment-rent');
+                    $sampleHandler = App\Services\Categories\CategoryFactory::create('apartment-sale');
                     $sampleHandler = App\Services\Categories\CategoryFactory::create('villa-sale');
+                    $sampleHandler = App\Services\Categories\CategoryFactory::create('villa-short-rent');
+                    $sampleHandler = App\Services\Categories\CategoryFactory::create('commercial-rent');
+                    $sampleHandler = App\Services\Categories\CategoryFactory::create('commercial-sale');
+                    $sampleHandler = App\Services\Categories\CategoryFactory::create('land');
+                    $sampleHandler = App\Services\Categories\CategoryFactory::create('pre-sale');
                     $columns = $sampleHandler->getTableColumns();
                 @endphp
 

@@ -4,23 +4,19 @@ namespace App\Models;
 
 use MongoDB\Laravel\Eloquent\Model;
 
-class Property extends Model
+class ContactsForm extends Model
 {
     protected $connection = 'mongodb';
-    protected $collection = 'property';
+    protected $collection = 'contacts_forms';
     public $timestamps = false;
     
 
     protected $fillable = [
-        'category',
-        'title',
-        'description',
-        'area',
-        'price',
-        'type',
+        'name',
+        'tel',
+        'message',
         'date_created',
         'date_updated',
-        'visit_count'
     ];
 
 

@@ -22,7 +22,7 @@ class PropertyController extends Controller
     {
         $data = [];
 
-
+        
         if (Auth::check()) {
             $tel = $request->session()->get('tel');
             $data['user'] = User::where('tel', $tel)->get();
@@ -47,7 +47,6 @@ class PropertyController extends Controller
             $allData[$key] = is_string($value) ? trim($value) : $value;
         }
 
-        // پاک کردن اعشار و کاراکترهای غیر عددی برای فیلدهای قیمت
         $priceKeys = [
             'mortgage',
             'rent',
@@ -65,6 +64,7 @@ class PropertyController extends Controller
                 $allData[$priceKey] = preg_replace('/\D+/', '', (string) $allData[$priceKey]);
             }
         }
+        
         $allData['status'] = "ثبت شده";
         $allData['_status'] = "addedd";
         
@@ -102,6 +102,10 @@ class PropertyController extends Controller
             DB::table('property')
                 ->where('id', $propertyId)
                 ->update(['media' => json_encode($savedFiles)]);
+        }else{
+            DB::table('property')
+                ->where('id', $propertyId)
+                ->update(['media' => '[]']);
         }
 
         return redirect('/user/myADS');

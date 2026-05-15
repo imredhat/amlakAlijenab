@@ -67,4 +67,6 @@ class Page extends Controller
             return back()->with('success', 'اطلاعات با موفقیت ذخیره شد.');
         }
     }
+
+    
 }

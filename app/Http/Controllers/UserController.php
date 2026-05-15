@@ -10,61 +10,30 @@ use App\Models\User;
 
 class UserController extends Controller
 {
-    public function myADS()
+    public function myADS(Request $request)
     {
-        $data = [];
+        $data = $this -> initialize($request);
 
         $data['properties'] = DB::table('property')->where('user_id', Auth::id()) -> orderBy('id' , "DESC")->get();
-
-        if (Auth::check()) {
-            $id = Auth::id();
-            $data['user'] = User::where('id', $id)->get();
-        }
-
-        // echo json_encode($data);
-        // die();
-
         return view('/user/properties', $data);
     }
 
 
-    public function Profile()
+    public function Profile(Request $request)
     {
-        $data = [];
-
-        if (Auth::check()) {
-            $id = Auth::id();
-            $data['user'] = User::where('id', $id)->get();
-        }
-
+        $data = $this -> initialize($request);
         return view('/user/profile', $data);
     }
 
       public function updateProfile(Request $request)
     {
-        $data = [];
-
-        if (Auth::check()) {
-            $id = Auth::id();
-            $user = $data['user'] = User::where('id', $id)->get();
-        }
-
-
-
+       $data = $this -> initialize($request);
 
         $allData = [];
         foreach ($request->except(['_token', 'media']) as $key => $value) {
             $allData[$key] = is_string($value) ? trim($value) : $value;
         }
 
-
-        // echo json_encode($allData);
-        // die();
-
-
-
-
-        // // درج رکورد و گرفتن آیدی
         $upd = DB::table('users')->update($allData);
 
         // // 2) آپلود فایل‌ها در مسیر /upload/property/$ID
@@ -105,13 +74,11 @@ class UserController extends Controller
 
     public function savetoDB(Request $request)
     {
-        // 1) ذخیره داده‌های متنی در کالکشن / جدول property
         $allData = [];
         foreach ($request->except(['_token', 'media']) as $key => $value) {
             $allData[$key] = is_string($value) ? trim($value) : $value;
         }
 
-        // پاک کردن اعشار و کاراکترهای غیر عددی برای فیلدهای قیمت
         $priceKeys = [
             'mortgage',
             'rent',
@@ -167,4 +134,19 @@ class UserController extends Controller
             'files' => $savedFiles,
         ]);
     }
+
+
+    public function initialize(Request $request)
+    {
+        $data = [];
+        if (Auth::check()) {
+            $tel = $request->session()->get('tel');
+            $data['user'] = User::where('tel', $tel)->get();
+        }
+
+        $data['locations'] = DB::table('neighborhoods')->get();
+
+        return $data;
+    }
+
 }

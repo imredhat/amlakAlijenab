@@ -49,6 +49,9 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
 
 
 
+
+
+
 <!-- Page content-->
 <section class="container mt-5 mb-lg-5 mb-4 pt-5 pb-lg-5">
     <!-- Breadcrumb-->
@@ -232,7 +235,8 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                         <div class="content-overlay end-0 top-0 pt-3 pe-3">
                             <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="نشان کردن"><i class="fi-heart"></i></button>
                         </div>
-                        <img src="{{url('/')}}/upload/property/{{$s->id}}/{{$Smedia[0]}}" alt="Image">
+                        <img src="{{ getPropertyImage($s) }}" alt="{{ $s -> title }}">
+
                     </div>
                     <?php $cat = $s->category ;?>
                     @include("peroperty.items.similar.".$cat."_similar")

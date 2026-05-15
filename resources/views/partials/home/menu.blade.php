@@ -69,16 +69,9 @@
 
         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">بر اساس مکان</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{ url('property/location/west-babol/') }}">آپارتمان محدوده کمربندی غربی</a></li>
-            <li><a class="dropdown-item" href="{{ url('property/location/east-babol/') }}">آپارتمان محدوده کمربندی شرقی</a></li>
-            <li><a class="dropdown-item" href="{{ url('property/location/shariati/') }}">آپارتمان محدوده شریعتی</a></li>
-            <li><a class="dropdown-item" href="{{ url('property/location/modares/') }}">آپارتمان محدوده مدرس</a></li>
-            <li><a class="dropdown-item" href="{{ url('property/location/helal-ahmar/') }}">آپارتمان محدوده میدان هلال احمر</a></li>
-            <li><a class="dropdown-item" href="{{ url('property/location/istgah-amol/') }}">آپارتمان محدوده ایستگاه آمل</a></li>
-            <li><a class="dropdown-item" href="{{ url('property/location/park-noshirvani/') }}">آپارتمان محدوده پارک نوشیروانی</a></li>
-            <li><a class="dropdown-item" href="{{ url('property/location/jadde-ghaemshahr/') }}">آپارتمان محدوده جاده قائمشهر</a></li>
-            <li><a class="dropdown-item" href="{{ url('property/location/hamze-kola/') }}">آپارتمان محدوده حمزه کلا</a></li>
-
+            @foreach($locations as $loc)
+              <li><a class="dropdown-item" href="{{ url('property/location/'.$loc -> tag.'/') }}">آپارتمان محدوده {{ $loc -> name }}</a></li>
+            @endforeach
           </ul>
         </li>
 

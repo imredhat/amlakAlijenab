@@ -46,7 +46,7 @@ $media = url('/') . "/img/blank.png";
 $cat = $property[0]->category;
 if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
     $media = json_decode($property[0]->media);
-} 
+}
 
 ?>
 
@@ -72,14 +72,15 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                                 <span class="tns-current-slide fs-5 fw-bold"></span><span class="fs-5 fw-bold">/</span><span class="tns-total-slides fs-5 fw-bold"></span>
                             </div>
                         </div>
-                        <div class="tns-carousel-inner equal-height-cover" data-carousel-options='{"navAsThumbnails": true, "navContainer": "#thumbnails", "gutter": 12, "responsive": {"0":{"controls": false},"500":{"controls": true}}}'> 
-                            
-                   
-                        <?php if(is_array($media)): foreach($media as $m):?>
-                        <div><img class="rounded-3" src="{{url('/')}}/upload/property/{{$id}}/{{$m}}" alt="Image"></div>
-                        <?php endforeach; else:?>
-                        <div><img width="100%" class="rounded-3" src="{{$media}}" alt="Image"></div>
-                        <?php endif;?>
+                        <div class="tns-carousel-inner equal-height-cover" data-carousel-options='{"navAsThumbnails": true, "navContainer": "#thumbnails", "gutter": 12, "responsive": {"0":{"controls": false},"500":{"controls": true}}}'>
+
+
+                            <?php if (is_array($media)): foreach ($media as $m): ?>
+                                    <div><img class="rounded-3" src="{{url('/')}}/upload/property/{{$id}}/{{$m}}" alt="Image"></div>
+                                <?php endforeach;
+                            else: ?>
+                                <div><img width="100%" class="rounded-3" src="{{$media}}" alt="Image"></div>
+                            <?php endif; ?>
 
 
                             <!--                         
@@ -94,10 +95,11 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                     <!-- Thumbnails nav-->
                     <ul class="tns-thumbnails mb-4" id="thumbnails">
 
-                      
-                        <?php if(is_array($media)): foreach($media as $m):?>
-                        <li class="tns-thumbnail"><img src="{{url('/')}}/upload/property/{{$id}}/{{$m}}" alt="Thumbnail"></li>
-                        <?php endforeach; endif;?>
+
+                        <?php if (is_array($media)): foreach ($media as $m): ?>
+                                <li class="tns-thumbnail"><img src="{{url('/')}}/upload/property/{{$id}}/{{$m}}" alt="Thumbnail"></li>
+                        <?php endforeach;
+                        endif; ?>
 
                         <!-- <li class="tns-thumbnail">
                             <div class="d-flex flex-column align-items-center justify-content-center h-100"><i class="fi-play-circle fs-4 mb-1"></i><span>مشاهده</span></div>
@@ -211,6 +213,11 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
 
 @if(isset($similar) && count($similar)>0)
 <!-- Recently viewed-->
+
+
+
+
+
 <section class="container mb-5 pb-2 pb-lg-4">
     <div class="d-flex align-items-center justify-content-between mb-3">
         <h2 class="h3 mb-0">آگهی های مشابه</h2>
@@ -220,8 +227,8 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
         <div class="tns-carousel-inner row gx-4 mx-0 pt-3 pb-4"
             data-carousel-options='{"items": 4, "rtl": true, "controlsText": ["<i class=\"fi-chevron-left\"></i>", "<i class=\"fi-chevron-right\"></i>"], "responsive": {"0":{"items":1},"500":{"items":2},"768":{"items":3},"992":{"items":4}}}'>
             @foreach($similar as $s)
-            <?php $Smedia = json_decode($s->media); ?>
 
+         
             <!-- Item-->
             <div class="col">
                 <div class="card shadow-sm card-hover border-0 h-100">
@@ -231,7 +238,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                         <div class="content-overlay end-0 top-0 pt-3 pe-3">
                             <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="نشان کردن"><i class="fi-heart"></i></button>
                         </div>
-                        <img src="{{url('/')}}/upload/property/{{$s->id}}/{{$Smedia[0]}}" alt="Image">
+                        <img src="{{ getPropertyImage($s) }}" alt="{{ $s -> title }}">
                     </div>
                     <?php $cat = $s->category; ?>
 

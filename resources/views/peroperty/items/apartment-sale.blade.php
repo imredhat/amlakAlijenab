@@ -242,7 +242,6 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
             data-carousel-options='{"items": 4, "rtl": true, "controlsText": ["<i class=\"fi-chevron-left\"></i>", "<i class=\"fi-chevron-right\"></i>"], "responsive": {"0":{"items":1},"500":{"items":2},"768":{"items":3},"992":{"items":4}}}'> 
             
             @foreach($similar as $s)
-            <?php $Smedia = json_decode($s->media); ?>
 
             <!-- Item-->
             <div class="col">
@@ -252,7 +251,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                         <div class="content-overlay end-0 top-0 pt-3 pe-3">
                             <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="نشان کردن"><i class="fi-heart"></i></button>
                         </div>
-                        <img src="{{url('/')}}/upload/property/{{$s->id}}/{{$Smedia[0]}}" alt="Image">
+                        <img src="{{ getPropertyImage($s) }}" alt="{{ $s -> title }}">
                     </div>
                     <?php $cat = $s->category ;?>
                     @include("peroperty.items.similar.".$cat."_similar")

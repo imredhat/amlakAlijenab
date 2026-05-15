@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="{{ url ('/') }}/assets/css/sweetalert.min.css">
 	<link rel="stylesheet" href="{{ url ('/') }}/assets/css/quill.snow.css">
 	<link rel="stylesheet" href="{{ url ('/') }}/assets/css/style.css">
+	
 	<link rel="icon" type="image/png" href="{{ url ('/') }}/assets/images/favicon.png">
 	<title> مدیریت سایت | املاک عالیجناب</title>
 	<meta http-equiv="imagetoolbar" content="no" /> </head>

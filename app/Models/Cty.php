@@ -25,4 +25,9 @@ class Cty extends Model
         'date_created',
         'date_updated'
     ];
+
+    public function neighborhoods()
+{
+    return $this->hasMany(Neighborhood::class);
+}
 }

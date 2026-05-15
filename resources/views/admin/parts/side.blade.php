@@ -30,6 +30,7 @@
 					<ul class="menu-sub">
 						<li class="menu-item"> <a href="{{ url('/admin/sections') }}" class="menu-link"> صفحه نخست </a> </li>
 						<li class="menu-item"> <a href="{{ url('/admin/city') }}" class="menu-link"> شهر ها </a> </li>
+						<li class="menu-item"> <a href="{{ url('/admin/neighborhood') }}" class="menu-link"> محله ها </a> </li>
 					</ul>
 				</li>
 				<li class="menu-item">

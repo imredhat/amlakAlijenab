@@ -1,14 +1,8 @@
- <?php
-    $img = url('/') . "/img/blank.png";
-    if (isset($media[0]) && !empty($media[0])) {
-        $img = url('/') . "/upload/property/" . $p->id . "/" . $media[0];
-    }
-    ?>
 
  <!-- Item-->
 
  <div class="card card-hover card-horizontal border-0 shadow-sm mb-4">
-     <a class="card-img-top" href="{{url('/')}}/p/{{$p->id}}/{{str_replace(' ','-',$p->title)}}" style="background-image: url({{ $img }})">
+     <a class="card-img-top" href="{{url('/')}}/p/{{$p->id}}/{{str_replace(' ','-',$p->title)}}" style="background-image: url({{ getPropertyImage($p) }})">
          <div class="position-absolute start-0 top-0 pt-3 ps-3">
              <span class="d-table badge bg-info">{{$p -> status}}</span>
          </div>

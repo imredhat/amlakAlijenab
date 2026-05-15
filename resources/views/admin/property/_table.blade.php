@@ -103,7 +103,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="{{ url('properties.edit', $property->id ?? $property->id) }}">
+                                        <a class="dropdown-item" href="{{ url('/admin/property/edit', $property->id ?? $property->id) }}">
                                             <i data-feather="edit-3"></i> ویرایش
                                         </a>
                                     </li>
@@ -144,9 +144,7 @@
                         <div class="text-muted">
                             <i data-feather="inbox" class="feather-48 mb-3"></i>
                             <p>هیچ آگهی‌ای یافت نشد.</p>
-                            <a href="{{ url('properties.create') }}" class="btn btn-primary btn-sm">
-                                ایجاد اولین آگهی
-                            </a>
+                            
                         </div>
                     </td>
                 </tr>

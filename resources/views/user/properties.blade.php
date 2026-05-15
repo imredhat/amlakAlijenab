@@ -37,6 +37,7 @@
            <li class="nav-item mb-3"><a class="nav-link" href="real-estate-account-properties.html#" role="tab" aria-selected="false"><i class="fi-file-clean fs-base me-2"></i>پیش نویس</a></li>
            <li class="nav-item mb-3"><a class="nav-link" href="real-estate-account-properties.html#" role="tab" aria-selected="false"><i class="fi-archive fs-base me-2"></i>آرشیو</a></li>
          </ul> -->
+<script src="{{ url('/') }}/assets/js/jquery-3.6.0.min.js"></script>
 
          <?php
           function getCat($type)
@@ -92,7 +93,7 @@
 
           ?>
 
-         @include("peroperty.view.".$cat)
+         @include("peroperty.profile-property-list.".$cat)
 
          @endforeach
 

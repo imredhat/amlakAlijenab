@@ -93,7 +93,7 @@
         <section class="card card-body border-0 shadow-sm p-4 mb-4" id="location">
           <h2 class="h5 mb-4"><i class="fi-mpin text-primary fs-5 mt-n1 me-2"></i>موقعیت مکانی</h2>
           <div class="row">
-            <div class="col-sm-6 mb-3">
+            <div class="col-sm-4 mb-3">
               <label class="form-label" for="province"> استان <span class="text-danger">*</span></label>
               <select class="form-select" id="province" required name="province">
                 <option value="" disabled>انتخاب استان</option>
@@ -108,20 +108,26 @@
                 <option value="مازندران" selected>مازندران</option>
               </select>
             </div>
-            <div class="col-sm-6 mb-3">
+            <div class="col-sm-4 mb-3">
               <label class="form-label" for="city">شهر <span class="text-danger">*</span></label>
               <select class="form-select" id="city" required name="city">
-                <option value="" disabled>انتخاب شهر</option>
-                <option value="بابل">بابل</option>
-                <option value="آمل">آمل</option>
-                <option value="ساری">ساری</option>
-                <option value="محمود آباد">محمود آباد</option>
-                <option value="بهشهر">بهشهر</option>
-                <option value="جویبار">جویبار</option>
-                <option value="بابلسر">بابلسر</option>
-                <option value="چالوس">چالوس</option>
+                <option value="" disabled selected>انتخاب شهر</option>
+                @foreach($cities as $city)
+                <option value="{{ $city->name }}" data-city-name="{{ $city->name }}">
+                  {{ $city->name }}
+                </option>
+                @endforeach
               </select>
             </div>
+
+            <div class="col-sm-4 mb-3">
+              <label class="form-label" for="neighborhood">محله <span class="text-danger">*</span></label>
+              <select class="form-select" id="neighborhood" required name="neighborhood">
+                <option value="" disabled selected>ابتدا شهر را انتخاب کنید</option>
+              </select>
+            </div>
+
+
           </div>
 
           <div class="mb-3">
@@ -186,6 +192,7 @@
   </div>
 </div>
 
+<script src="{{ url('/') }}/assets/js/jquery-3.6.0.min.js"></script>
 
 <script>
   // Ensure FilePond keeps original files for standard form submission
@@ -209,6 +216,58 @@
       }
     });
   });
+
+
+$(document).ready(function() {
+    // وقتی شهر تغییر می‌کند
+    $('#city').on('change', function() {
+        var cityId = $(this).val();
+        var cityName = $(this).find('option:selected').data('city-name');
+        var neighborhoodSelect = $('#neighborhood');
+        
+        // غیرفعال کردن سلکت محله تا زمان بارگذاری
+        neighborhoodSelect.prop('disabled', true);
+        neighborhoodSelect.html('<option value="" disabled selected>در حال بارگذاری...</option>');
+        
+        // اگر شهری انتخاب شده
+        if (cityId) {
+            // ارسال درخواست AJAX
+            $.ajax({
+                url: '{{ route("get.neighborhoods") }}',
+                type: 'GET',
+                data: {
+                    city_id: cityId,
+                    city_name: cityName
+                },
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success && response.neighborhoods.length > 0) {
+                        // پر کردن سلکت محله
+                        var options = '<option value="" disabled selected>انتخاب محله</option>';
+                        $.each(response.neighborhoods, function(key, neighborhood) {
+                            options += '<option value="' + neighborhood.name + '">' + neighborhood.name + '</option>';
+                        });
+                        neighborhoodSelect.html(options);
+                        neighborhoodSelect.prop('disabled', false);
+                    } else {
+                        // اگر محله‌ای وجود نداشت
+                        neighborhoodSelect.html('<option value="" disabled selected>هیچ محله‌ای یافت نشد</option>');
+                        neighborhoodSelect.prop('disabled', true);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error('خطا در دریافت محله‌ها:', error);
+                    neighborhoodSelect.html('<option value="" disabled selected>خطا در بارگذاری</option>');
+                    neighborhoodSelect.prop('disabled', true);
+                }
+            });
+        } else {
+            // اگر شهری انتخاب نشده
+            neighborhoodSelect.html('<option value="" disabled selected>ابتدا شهر را انتخاب کنید</option>');
+            neighborhoodSelect.prop('disabled', true);
+        }
+    });
+});
 </script>
 
 

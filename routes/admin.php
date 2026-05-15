@@ -6,6 +6,9 @@ use App\Http\Controllers\Admin\Index;
 use App\Http\Controllers\Admin\Sections;
 use App\Http\Controllers\Admin\City;
 use App\Http\Controllers\Admin\Page;
+use App\Http\Controllers\Admin\AboutPage;
+use App\Http\Controllers\Admin\FAQController;
+use App\Http\Controllers\Admin\NeighborhoodController;
 
 Route::get('/admin', [AdAuth::class, 'formLogin'])->name('login');
 Route::get('/admin/login', [AdAuth::class, 'formLogin'])->name('login');
@@ -51,3 +54,30 @@ Route::post('/admin/page/about', [Page::class, 'UpdAbout'])->name('page.form');
 Route::get('/admin/page/contact', [Page::class, 'contact']);
 Route::post('/admin/page/contact', [Page::class, 'UpdContact']);
 Route::post('/admin/page/contact_form', [Page::class, 'saveContactForm'])->name('contact.form');
+
+
+
+Route::get('/admin/page/about', [AboutPage::class, 'edit'])->name('admin.about.edit');
+Route::post('/admin/page/about', [AboutPage::class, 'update'])->name('admin.about.update');
+
+
+// FAQs admin
+// Route::get('/admin/faqs', [Faqs::class, 'index'])->name('faqs.index');
+// Route::get('/admin/faqs/create', [Faqs::class, 'create'])->name('faqs.create');
+// Route::post('/admin/faqs/store', [Faqs::class, 'store'])->name('faqs.store');
+// Route::get('/admin/faqs/{id}/edit', [Faqs::class, 'edit'])->name('faqs.edit');
+// Route::post('/admin/faqs/{id}/update', [Faqs::class, 'update'])->name('faqs.update');
+// Route::delete('/admin/faqs/{id}', [Faqs::class, 'destroy'])->name('faqs.destroy');
+
+
+Route::get('/admin/page/faqs', [FAQController::class, 'index'])->name('admin.faq');
+Route::put('/admin/page/faqs', [FAQController::class, 'update'])->name('admin.faq');
+
+// Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
+// });
+
+
+
+Route::prefix('admin')->group(function () {
+    Route::resource('neighborhood', NeighborhoodController::class);
+});

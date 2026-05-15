@@ -27,6 +27,7 @@ class IndexController extends Controller
         $data['recent'] = DB::table('property') -> orderBy('visit_count', 'DESC')->paginate(10);
         $data['special'] = DB::table('property') -> where ('category' , 'land')-> orderBy('visit_count', 'DESC')->get();
         $data['city'] = DB::table('cties') -> get();
+        $data['locations'] = DB::table('neighborhoods') -> get();
         // $data['special'] = DB::table('property') -> limit(3) -> where ('category' , 'land')-> orderBy('date_created', 'DESC');
         // $data['special'] = Property::where('category' , 'land') -> get();
         

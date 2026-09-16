@@ -1,0 +1,529 @@
+{
+  "nodes": [
+    {
+      "id": "avatar_27",
+      "label": "Avatar 27",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\27.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_28",
+      "label": "Avatar 28",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\28.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_29",
+      "label": "Avatar 29",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\29.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_30",
+      "label": "Avatar 30",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\30.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_31",
+      "label": "Avatar 31",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\31.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_32",
+      "label": "Avatar 32",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\32.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_33",
+      "label": "Avatar 33",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\33.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_34",
+      "label": "Avatar 34",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\34.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_35",
+      "label": "Avatar 35",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\35.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_36",
+      "label": "Avatar 36",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\36.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_37",
+      "label": "Avatar 37",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\37.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_38",
+      "label": "Avatar 38",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\38.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_39",
+      "label": "Avatar 39",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\39.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_40",
+      "label": "Avatar 40",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\40.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_41",
+      "label": "Avatar 41",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\41.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_42",
+      "label": "Avatar 42",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\42.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_43",
+      "label": "Avatar 43",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\43.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_44",
+      "label": "Avatar 44",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\44.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_45",
+      "label": "Avatar 45",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\45.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatar_46",
+      "label": "Avatar 46",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\46.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "avatars_directory",
+      "label": "Avatars Directory",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\:1-20",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "image_format_png",
+      "label": "PNG Format",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\:1-20",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "image_format_jpg",
+      "label": "JPG Format",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\:1-20",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "user_profile",
+      "label": "User Profile",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\:1-20",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "avatar_27",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\27.png:1"
+    },
+    {
+      "source": "avatar_28",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\28.png:1"
+    },
+    {
+      "source": "avatar_29",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\29.png:1"
+    },
+    {
+      "source": "avatar_30",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\30.jpg:1"
+    },
+    {
+      "source": "avatar_31",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\31.jpg:1"
+    },
+    {
+      "source": "avatar_32",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\32.jpg:1"
+    },
+    {
+      "source": "avatar_33",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\33.jpg:1"
+    },
+    {
+      "source": "avatar_34",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\34.jpg:1"
+    },
+    {
+      "source": "avatar_35",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\35.png:1"
+    },
+    {
+      "source": "avatar_36",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\36.png:1"
+    },
+    {
+      "source": "avatar_37",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\37.png:1"
+    },
+    {
+      "source": "avatar_38",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\38.png:1"
+    },
+    {
+      "source": "avatar_39",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\39.jpg:1"
+    },
+    {
+      "source": "avatar_40",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\40.jpg:1"
+    },
+    {
+      "source": "avatar_41",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\41.jpg:1"
+    },
+    {
+      "source": "avatar_42",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\42.jpg:1"
+    },
+    {
+      "source": "avatar_43",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\43.jpg:1"
+    },
+    {
+      "source": "avatar_44",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\44.jpg:1"
+    },
+    {
+      "source": "avatar_45",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\45.jpg:1"
+    },
+    {
+      "source": "avatar_46",
+      "target": "avatars_directory",
+      "label": "LOCATED_IN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\46.jpg:1"
+    },
+    {
+      "source": "avatar_27",
+      "target": "image_format_png",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\27.png:1"
+    },
+    {
+      "source": "avatar_28",
+      "target": "image_format_png",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\28.png:1"
+    },
+    {
+      "source": "avatar_29",
+      "target": "image_format_png",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\29.png:1"
+    },
+    {
+      "source": "avatar_35",
+      "target": "image_format_png",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\35.png:1"
+    },
+    {
+      "source": "avatar_36",
+      "target": "image_format_png",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\36.png:1"
+    },
+    {
+      "source": "avatar_37",
+      "target": "image_format_png",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\37.png:1"
+    },
+    {
+      "source": "avatar_38",
+      "target": "image_format_png",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\38.png:1"
+    },
+    {
+      "source": "avatar_30",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\30.jpg:1"
+    },
+    {
+      "source": "avatar_31",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\31.jpg:1"
+    },
+    {
+      "source": "avatar_32",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\32.jpg:1"
+    },
+    {
+      "source": "avatar_33",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\33.jpg:1"
+    },
+    {
+      "source": "avatar_34",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\34.jpg:1"
+    },
+    {
+      "source": "avatar_39",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\39.jpg:1"
+    },
+    {
+      "source": "avatar_40",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\40.jpg:1"
+    },
+    {
+      "source": "avatar_41",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\41.jpg:1"
+    },
+    {
+      "source": "avatar_42",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\42.jpg:1"
+    },
+    {
+      "source": "avatar_43",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\43.jpg:1"
+    },
+    {
+      "source": "avatar_44",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\44.jpg:1"
+    },
+    {
+      "source": "avatar_45",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\45.jpg:1"
+    },
+    {
+      "source": "avatar_46",
+      "target": "image_format_jpg",
+      "label": "USES_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\46.jpg:1"
+    },
+    {
+      "source": "avatars_directory",
+      "target": "user_profile",
+      "label": "USED_FOR",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\:1-20"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

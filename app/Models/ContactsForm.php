@@ -2,14 +2,11 @@
 
 namespace App\Models;
 
-use MongoDB\Laravel\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
 class ContactsForm extends Model
 {
-    protected $connection = 'mongodb';
-    protected $collection = 'contacts_forms';
     public $timestamps = false;
-    
 
     protected $fillable = [
         'name',
@@ -18,6 +15,4 @@ class ContactsForm extends Model
         'date_created',
         'date_updated',
     ];
-
-
 }

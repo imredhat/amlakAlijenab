@@ -1,0 +1,169 @@
+{
+  "nodes": [
+    {
+      "id": "node_1",
+      "label": "Google Fonts",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\intro\\features\\google-fonts.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_2",
+      "label": "Typography",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\intro\\features\\google-fonts.png:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_3",
+      "label": "HTML5",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\intro\\features\\html.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_4",
+      "label": "Web Development",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\intro\\features\\html.png:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_5",
+      "label": "Mobile Responsiveness",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\intro\\features\\mobile.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_6",
+      "label": "Touch Support",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\intro\\features\\touch.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_7",
+      "label": "Vector Graphics",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\intro\\features\\vector.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_8",
+      "label": "SVG Footer",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\job-board\\footer-mobile.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "node_9",
+      "label": "Mobile UI",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\job-board\\footer-mobile.svg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_10",
+      "label": "Job Board Homepage",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\job-board\\home-mobile.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_11",
+      "label": "FAQ Section",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\job-board\\about\\faq.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_12",
+      "label": "Blog Post Image 1",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\job-board\\blog\\01.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_13",
+      "label": "Blog Post Image 2",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\job-board\\blog\\02.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_14",
+      "label": "Blog Post Image 3",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\job-board\\blog\\03.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_1",
+      "target": "node_2",
+      "label": "RELATED_TO",
+      "type": "INFERRED",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\intro\\features\\google-fonts.png:1"
+    },
+    {
+      "source": "node_3",
+      "target": "node_4",
+      "label": "RELATED_TO",
+      "type": "INFERRED",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\intro\\features\\html.png:1"
+    },
+    {
+      "source": "node_5",
+      "target": "node_6",
+      "label": "SUPPORTS",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\intro\\features\\mobile.png:1"
+    },
+    {
+      "source": "node_7",
+      "target": "node_8",
+      "label": "USES",
+      "type": "INFERRED",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\job-board\\footer-mobile.svg:1"
+    },
+    {
+      "source": "node_8",
+      "target": "node_9",
+      "label": "PART_OF",
+      "type": "INFERRED",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\job-board\\footer-mobile.svg:1"
+    },
+    {
+      "source": "node_10",
+      "target": "node_9",
+      "label": "PART_OF",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\job-board\\home-mobile.png:1"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

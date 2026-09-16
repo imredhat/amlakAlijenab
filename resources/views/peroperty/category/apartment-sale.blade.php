@@ -81,8 +81,8 @@
 
 
             <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
-                <label for="cabinet_type">جنس کابینت</label>
-                <select name="cabinet_type" id="cabinet_type" class="form-control">
+                <label for="cabinet_material">جنس کابینت</label>
+                <select name="cabinet_material" id="cabinet_material" class="form-control">
                     <option value="">انتخاب</option>
                     <option value="MDF">MDF</option>
                     <option value="های گلاس">های گلاس</option>
@@ -143,8 +143,8 @@
             </div>
 
             <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
-                <label for="number_of_toilets">تعداد سرویس بهداشتی</label>
-                <input type="number" name="number_of_toilets" id="number_of_toilets" class="form-control">
+                <label for="toilet">تعداد سرویس بهداشتی</label>
+                <input type="number" name="toilet" id="toilet" class="form-control">
             </div>
 
             <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
@@ -191,6 +191,32 @@
             </div>
 
             <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
+    <label for="property_view">ویو</label><br/>
+    <div class="btn-group btn-group-sm" role="group" aria-label="ویو">
+        <input class="btn-check" type="radio" id="view-sea" name="property_view" value="دریا" {{ (old('property_view', $property->property_view ?? '') == 'دریا') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-sea">دریا</label>
+
+        <input class="btn-check" type="radio" id="view-forest" name="property_view" value="جنگل" {{ (old('property_view', $property->property_view ?? '') == 'جنگل') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-forest">جنگل</label>
+
+        <input class="btn-check" type="radio" id="view-city" name="property_view" value="شهر" {{ (old('property_view', $property->property_view ?? '') == 'شهر') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-city">شهر</label>
+
+        <input class="btn-check" type="radio" id="view-garden" name="property_view" value="باغ" {{ (old('property_view', $property->property_view ?? '') == 'باغ') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-garden">باغ</label>
+
+        <input class="btn-check" type="radio" id="view-plain" name="property_view" value="دشت" {{ (old('property_view', $property->property_view ?? '') == 'دشت') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-plain">دشت</label>
+
+        <input class="btn-check" type="radio" id="view-none" name="property_view" value="ندارد" {{ (old('property_view', $property->property_view ?? '') == 'ندارد') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-none">ندارد</label>
+    </div>
+</div>
+
+</div>
+<hr/>
+
+            <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
                 <label>
                     <input type="checkbox" name="rebuilt" value="1"> بازسازی شده است
                 </label>
@@ -207,5 +233,7 @@
                     <input type="checkbox" name="exchangeable" value="1"> قابل معاوضه
                 </label>
             </div>
+
+
 
         </div>

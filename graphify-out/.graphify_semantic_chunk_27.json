@@ -1,0 +1,233 @@
+{
+  "nodes": [
+    {
+      "id": "node_1",
+      "label": "Tool",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\icons\\tools.svg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "node_2",
+      "label": "Car Maintenance",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\icons\\tools.svg",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_3",
+      "label": "Wagon",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\icons\\wagon.svg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "node_4",
+      "label": "Car Type",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\icons\\wagon.svg",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_5",
+      "label": "Car",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "node_6",
+      "label": "Sedan",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_7",
+      "label": "SUV",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\02.jpg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_8",
+      "label": "Wheel",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "node_9",
+      "label": "Headlight",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "node_10",
+      "label": "Grille",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "node_11",
+      "label": "Showroom",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_12",
+      "label": "Thumbnail",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\th01.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "node_13",
+      "label": "City",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\about\\01.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_14",
+      "label": "Landmark",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\about\\01.jpg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "node_15",
+      "label": "Map",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\about\\map.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "node_16",
+      "label": "Region",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\about\\map.jpg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_1",
+      "target": "node_2",
+      "label": "USED_FOR",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\icons\\tools.svg"
+    },
+    {
+      "source": "node_3",
+      "target": "node_4",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\icons\\wagon.svg"
+    },
+    {
+      "source": "node_5",
+      "target": "node_8",
+      "label": "HAS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg"
+    },
+    {
+      "source": "node_5",
+      "target": "node_9",
+      "label": "HAS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg"
+    },
+    {
+      "source": "node_5",
+      "target": "node_10",
+      "label": "HAS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg"
+    },
+    {
+      "source": "node_5",
+      "target": "node_11",
+      "label": "DISPLAYED_IN",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg"
+    },
+    {
+      "source": "node_6",
+      "target": "node_5",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\01.jpg"
+    },
+    {
+      "source": "node_7",
+      "target": "node_5",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\02.jpg"
+    },
+    {
+      "source": "node_12",
+      "target": "node_5",
+      "label": "IS_PREVIEW_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\single\\gallery\\th01.jpg"
+    },
+    {
+      "source": "node_13",
+      "target": "node_14",
+      "label": "HAS",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\about\\01.jpg"
+    },
+    {
+      "source": "node_15",
+      "target": "node_13",
+      "label": "REPRESENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\about\\map.jpg"
+    },
+    {
+      "source": "node_15",
+      "target": "node_16",
+      "label": "REPRESENTS",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\about\\map.jpg"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

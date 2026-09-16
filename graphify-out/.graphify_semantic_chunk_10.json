@@ -1,0 +1,825 @@
+{
+  "nodes": [
+    {
+      "id": "nette-utils",
+      "label": "Nette Utils",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-arrays",
+      "label": "Arrays",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-callback",
+      "label": "Callback",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:16",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-filesystem",
+      "label": "Filesystem",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:17",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-finder",
+      "label": "Finder",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:18",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-floats",
+      "label": "Floats",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:19",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-helpers",
+      "label": "Helper Functions",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:20",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-html-elements",
+      "label": "HTML Elements",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:21",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-images",
+      "label": "Images",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:22",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-iterables",
+      "label": "Iterables",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:23",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-json",
+      "label": "JSON",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:24",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-random",
+      "label": "Random Strings",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:25",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-paginator",
+      "label": "Paginator",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:26",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-reflection",
+      "label": "PHP Reflection",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:27",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-strings",
+      "label": "Strings",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:28",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-smartobject",
+      "label": "SmartObject",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:29",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-type",
+      "label": "Type",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:30",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-validation",
+      "label": "Validation",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:31",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-utils-composer",
+      "label": "Composer",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:41",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-parser",
+      "label": "PHP Parser",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-parser-ast",
+      "label": "Abstract Syntax Tree (AST)",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:18",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-parser-dumping",
+      "label": "AST Dumping",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:21",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-parser-code-generation",
+      "label": "Code Generation",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:22",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-parser-traversal",
+      "label": "AST Traversal",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:24",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-parser-name-resolution",
+      "label": "Name Resolution",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:25",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-parser-constant-evaluation",
+      "label": "Constant Expression Evaluation",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:26",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-parser-builders",
+      "label": "AST Builders",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:27",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-parser-json",
+      "label": "JSON Conversion",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:28",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "collision",
+      "label": "Collision",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:16",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "collision-error-reporting",
+      "label": "Error Reporting",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:16",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "collision-whoops",
+      "label": "Whoops",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:19",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "collision-laravel",
+      "label": "Laravel",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:18",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "collision-symfony",
+      "label": "Symfony",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:20",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "collision-phpunit",
+      "label": "PHPUnit",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:20",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "termwind",
+      "label": "Termwind",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/termwind/LICENSE.md:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "phar-io-manifest",
+      "label": "Phar Manifest",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phar-io/manifest/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phar-io-manifest-usage",
+      "label": "Manifest Usage",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phar-io/manifest/README.md:17",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phar-io-version",
+      "label": "Version",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phar-io/version/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phar-io-semantic-versioning",
+      "label": "Semantic Versioning",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phar-io/version/README.md:19",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phar-io-version-constraints",
+      "label": "Version Constraints",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phar-io/version/README.md:17",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-code-coverage",
+      "label": "PHP Code Coverage",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-code-coverage/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-code-coverage-collection",
+      "label": "Code Coverage Collection",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-code-coverage/README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-code-coverage-processing",
+      "label": "Code Coverage Processing",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-code-coverage/README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-code-coverage-rendering",
+      "label": "Code Coverage Rendering",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-code-coverage/README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-file-iterator",
+      "label": "PHP File Iterator",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-file-iterator/README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-invoker",
+      "label": "PHP Invoker",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-invoker/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-invoker-timeout",
+      "label": "Timeout Handling",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-invoker/README.md:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "php-text-template",
+      "label": "PHP Text Template",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-text-template/ChangeLog.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mit-license",
+      "label": "MIT License",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/LICENSE.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nuno-maduro",
+      "label": "Nuno Maduro",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/LICENSE.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian-bergmann",
+      "label": "Sebastian Bergmann",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phar-io/manifest/tools/php-cs-fixer.d/header.txt:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phpunit",
+      "label": "PHPUnit",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-code-coverage/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-arrays",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:15"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-callback",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:16"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-filesystem",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:17"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-finder",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:18"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-floats",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:19"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-helpers",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:20"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-html-elements",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:21"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-images",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:22"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-iterables",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:23"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-json",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:24"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-random",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:25"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-paginator",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:26"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-reflection",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:27"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-strings",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:28"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-smartobject",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:29"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-type",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:30"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-validation",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:31"
+    },
+    {
+      "source": "nette-utils",
+      "target": "nette-utils-composer",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nette/utils/readme.md:41"
+    },
+    {
+      "source": "php-parser",
+      "target": "php-parser-ast",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:18"
+    },
+    {
+      "source": "php-parser",
+      "target": "php-parser-dumping",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:21"
+    },
+    {
+      "source": "php-parser",
+      "target": "php-parser-code-generation",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:22"
+    },
+    {
+      "source": "php-parser",
+      "target": "php-parser-traversal",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:24"
+    },
+    {
+      "source": "php-parser",
+      "target": "php-parser-name-resolution",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:25"
+    },
+    {
+      "source": "php-parser",
+      "target": "php-parser-constant-evaluation",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:26"
+    },
+    {
+      "source": "php-parser",
+      "target": "php-parser-builders",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:27"
+    },
+    {
+      "source": "php-parser",
+      "target": "php-parser-json",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nikic/php-parser/README.md:28"
+    },
+    {
+      "source": "collision",
+      "target": "collision-error-reporting",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:16"
+    },
+    {
+      "source": "collision",
+      "target": "collision-whoops",
+      "label": "BUILT_ON",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:19"
+    },
+    {
+      "source": "collision",
+      "target": "collision-laravel",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:18"
+    },
+    {
+      "source": "collision",
+      "target": "collision-symfony",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:20"
+    },
+    {
+      "source": "collision",
+      "target": "collision-phpunit",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/README.md:20"
+    },
+    {
+      "source": "phar-io-manifest",
+      "target": "phar-io-manifest-usage",
+      "label": "DESCRIBES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phar-io/manifest/README.md:17"
+    },
+    {
+      "source": "phar-io-version",
+      "target": "phar-io-semantic-versioning",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phar-io/version/README.md:19"
+    },
+    {
+      "source": "phar-io-version",
+      "target": "phar-io-version-constraints",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phar-io/version/README.md:17"
+    },
+    {
+      "source": "php-code-coverage",
+      "target": "php-code-coverage-collection",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-code-coverage/README.md:7"
+    },
+    {
+      "source": "php-code-coverage",
+      "target": "php-code-coverage-processing",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-code-coverage/README.md:7"
+    },
+    {
+      "source": "php-code-coverage",
+      "target": "php-code-coverage-rendering",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-code-coverage/README.md:7"
+    },
+    {
+      "source": "php-invoker",
+      "target": "php-invoker-timeout",
+      "label": "HANDLES",
+      "type": "DIRECT",
+      "confidence": "MEDIUM",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-invoker/README.md:1"
+    },
+    {
+      "source": "collision",
+      "target": "mit-license",
+      "label": "LICENSED_UNDER",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/LICENSE.md:1"
+    },
+    {
+      "source": "termwind",
+      "target": "mit-license",
+      "label": "LICENSED_UNDER",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/termwind/LICENSE.md:1"
+    },
+    {
+      "source": "nuno-maduro",
+      "target": "collision",
+      "label": "AUTHOR_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/collision/LICENSE.md:3"
+    },
+    {
+      "source": "nuno-maduro",
+      "target": "termwind",
+      "label": "AUTHOR_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/nunomaduro/termwind/LICENSE.md:3"
+    },
+    {
+      "source": "sebastian-bergmann",
+      "target": "php-code-coverage",
+      "label": "MAINTAINER_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-code-coverage/README.md:1"
+    },
+    {
+      "source": "sebastian-bergmann",
+      "target": "php-file-iterator",
+      "label": "MAINTAINER_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-file-iterator/README.md:6"
+    },
+    {
+      "source": "sebastian-bergmann",
+      "target": "php-invoker",
+      "label": "MAINTAINER_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-invoker/README.md:1"
+    },
+    {
+      "source": "sebastian-bergmann",
+      "target": "php-text-template",
+      "label": "MAINTAINER_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-text-template/ChangeLog.md:1"
+    },
+    {
+      "source": "phpunit",
+      "target": "php-code-coverage",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-code-coverage/README.md:1"
+    },
+    {
+      "source": "phpunit",
+      "target": "php-file-iterator",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-file-iterator/README.md:6"
+    },
+    {
+      "source": "phpunit",
+      "target": "php-invoker",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-invoker/README.md:1"
+    },
+    {
+      "source": "phpunit",
+      "target": "php-text-template",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/phpunit/php-text-template/ChangeLog.md:1"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

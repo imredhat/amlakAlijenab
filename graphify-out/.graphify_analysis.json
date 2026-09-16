@@ -1,0 +1,1049 @@
+{
+  "communities": {
+    "0": [
+      "activerecord_orm",
+      "artisan_commands",
+      "beanstalkd",
+      "capsule",
+      "capsule_manager",
+      "chris_fidao",
+      "cli_forms",
+      "docker",
+      "eloquent_orm",
+      "event_dispatcher",
+      "illuminate_conditionable",
+      "illuminate_config",
+      "illuminate_console",
+      "illuminate_container",
+      "illuminate_contracts",
+      "illuminate_cookie",
+      "illuminate_database",
+      "illuminate_encryption",
+      "illuminate_events",
+      "illuminate_filesystem",
+      "illuminate_hashing",
+      "illuminate_http",
+      "illuminate_jsonschema",
+      "illuminate_log",
+      "illuminate_macroable",
+      "illuminate_mail",
+      "illuminate_notifications",
+      "illuminate_pagination",
+      "illuminate_pipeline",
+      "laravel",
+      "laravel_prompts",
+      "laravel_sail",
+      "mit_license",
+      "mysql",
+      "opis_closure",
+      "php_ffi",
+      "php_serialization",
+      "postgres",
+      "query_builder",
+      "queue_component",
+      "schema_builder",
+      "serializable_closure",
+      "sql_server",
+      "sqlite",
+      "taylor_otwell",
+      "vessel"
+    ],
+    "1": [
+      "blog_image_th01",
+      "blog_image_th02",
+      "blog_image_th03",
+      "brand_audi",
+      "brand_build",
+      "brand_cargil",
+      "brand_chase",
+      "brand_honda",
+      "brand_hyundai",
+      "brand_infiniti",
+      "brand_lexus",
+      "brand_mazda",
+      "brand_mercedes",
+      "brand_mitsubishi",
+      "brand_nissan",
+      "brand_opel",
+      "brand_pentel",
+      "brand_provert",
+      "brand_real_seguros",
+      "brand_renault",
+      "car_finder",
+      "car_finder_about_01",
+      "car_finder_about_02",
+      "car_finder_about_03",
+      "car_finder_about_directory",
+      "car_finder_about_hero",
+      "car_finder_blog_01",
+      "car_finder_blog_02",
+      "car_finder_blog_03",
+      "car_finder_blog_04",
+      "car_finder_blog_05",
+      "car_finder_blog_06",
+      "car_finder_blog_07",
+      "car_finder_blog_08",
+      "car_finder_blog_09",
+      "car_finder_blog_10",
+      "car_finder_blog_11",
+      "car_finder_blog_directory",
+      "logo_design"
+    ],
+    "2": [
+      "argument_expectation",
+      "big-parent-class",
+      "call_count_expectation",
+      "class-constants",
+      "constants-map",
+      "demeter_chains",
+      "exception_throwing",
+      "expectation",
+      "final_methods_classes",
+      "fluent_interfaces",
+      "generated_partial_test_doubles",
+      "instance_mocking",
+      "magic_methods",
+      "method-call-expectations",
+      "method-stubs",
+      "method_call_expectation",
+      "method_chaining",
+      "mock-object-framework",
+      "mock_object",
+      "mockery",
+      "named-mocks",
+      "partial_mocks",
+      "pass_by_reference_behaviours",
+      "phpspec",
+      "phpunit_integration",
+      "protected_methods_mocking",
+      "proxied_partial_mock",
+      "proxy_mocks",
+      "public_properties_mocking",
+      "public_property_mocking",
+      "public_static_properties_mocking",
+      "return_value_expectation",
+      "runtime_partial_test_doubles",
+      "spies",
+      "test-doubles",
+      "test-spies"
+    ],
+    "3": [
+      "Build_Agent",
+      "Compose_Agent",
+      "Compose_Mode",
+      "Dream_Distill",
+      "Free_For_Limited_Time",
+      "Goal_Stop_Condition",
+      "Install_MiMoCode",
+      "Intelligent_Context_Management",
+      "MIT_License",
+      "Mainstream_LLM_Provider_API",
+      "MiMoCode",
+      "MiMoCode_Blog",
+      "MiMoCode_GitHub",
+      "MiMoCode_Website",
+      "MiMo_ASR",
+      "MiMo_Auto",
+      "MiMo_Code_Slogan",
+      "MiMo_Terms_of_Service",
+      "MiMo_Trademark_Policy",
+      "Multiple_Agents",
+      "Persistent_Memory_System",
+      "Plan_Agent",
+      "Quick_Start",
+      "SQLite_FTS5",
+      "Subagent_System",
+      "Tab_Switch",
+      "Task_Tracking",
+      "TenVAD",
+      "Terminal_Native_AI_Coding_Assistant",
+      "Use_Restrictions",
+      "Voice_Input"
+    ],
+    "4": [
+      "agent",
+      "avatar_27",
+      "avatar_28",
+      "avatar_29",
+      "avatar_30",
+      "avatar_31",
+      "avatar_32",
+      "avatar_33",
+      "avatar_34",
+      "avatar_35",
+      "avatar_36",
+      "avatar_37",
+      "avatar_38",
+      "avatar_39",
+      "avatar_40",
+      "avatar_41",
+      "avatar_42",
+      "avatar_43",
+      "avatar_44",
+      "avatar_45",
+      "avatar_46",
+      "avatar_47",
+      "avatar_48",
+      "avatar_49",
+      "avatars_directory",
+      "default_agent_avatar",
+      "default_user_avatar",
+      "image_format_jpg",
+      "image_format_png",
+      "user"
+    ],
+    "5": [
+      "array_first",
+      "array_last",
+      "fdiv",
+      "filter_validate_bool",
+      "get_debug_type",
+      "get_error_handler",
+      "get_exception_handler",
+      "get_resource_id",
+      "idn_to_ascii",
+      "idn_to_utf8",
+      "intl_extension",
+      "json_validate",
+      "mb_str_pad",
+      "mbstring",
+      "nodiscard_attribute",
+      "normalizer",
+      "override_attribute",
+      "php80_features",
+      "php83_features",
+      "php85_features",
+      "phptoken_class",
+      "preg_last_error_msg",
+      "str_contains",
+      "str_ends_with",
+      "str_starts_with",
+      "stringable_interface",
+      "symfony-polyfill",
+      "unhandledmatcherror_class",
+      "uuid_functions",
+      "valueerror_class"
+    ],
+    "6": [
+      "array_all",
+      "array_any",
+      "array_find",
+      "array_find_key",
+      "bcdivmod",
+      "curl_http_version_3",
+      "curl_http_version_3only",
+      "deprecated_attribute",
+      "fpow",
+      "grapheme_extract",
+      "grapheme_functions",
+      "grapheme_str_split",
+      "grapheme_stripos",
+      "grapheme_stristr",
+      "grapheme_strlen",
+      "grapheme_strpos",
+      "grapheme_strripos",
+      "grapheme_strrpos",
+      "grapheme_strstr",
+      "grapheme_substr",
+      "mb_lcfirst",
+      "mb_ltrim",
+      "mb_rtrim",
+      "mb_trim",
+      "mb_ucfirst",
+      "php84_features",
+      "reflectionconstant",
+      "symfony_polyfill_intl_grapheme"
+    ],
+    "7": [
+      "avatar_07",
+      "avatar_08",
+      "avatar_09",
+      "avatar_10",
+      "avatar_11",
+      "avatar_12",
+      "avatar_13",
+      "avatar_14",
+      "avatar_15",
+      "avatar_16",
+      "avatar_17",
+      "avatar_18",
+      "avatar_19",
+      "avatar_20",
+      "avatar_21",
+      "avatar_22",
+      "avatar_23",
+      "avatar_24",
+      "avatar_25",
+      "avatar_26",
+      "avatars_collection",
+      "user_profile",
+      "visual_identity"
+    ],
+    "8": [
+      "business_category",
+      "business_image_01",
+      "business_image_02",
+      "business_image_03",
+      "business_image_04",
+      "business_image_05",
+      "catalog_category",
+      "catalog_image_01",
+      "catalog_image_02",
+      "catalog_image_03",
+      "catalog_image_04",
+      "catalog_image_05",
+      "catalog_image_06",
+      "catalog_image_07",
+      "catalog_image_08",
+      "catalog_image_09",
+      "catalog_image_10",
+      "catalog_image_11",
+      "catalog_image_12",
+      "catalog_image_13",
+      "catalog_image_14",
+      "catalog_image_15",
+      "city_guide"
+    ],
+    "9": [
+      "nette-utils",
+      "nette-utils-arrays",
+      "nette-utils-callback",
+      "nette-utils-composer",
+      "nette-utils-filesystem",
+      "nette-utils-finder",
+      "nette-utils-floats",
+      "nette-utils-helpers",
+      "nette-utils-html-elements",
+      "nette-utils-images",
+      "nette-utils-iterables",
+      "nette-utils-json",
+      "nette-utils-paginator",
+      "nette-utils-random",
+      "nette-utils-reflection",
+      "nette-utils-smartobject",
+      "nette-utils-strings",
+      "nette-utils-type",
+      "nette-utils-validation"
+    ],
+    "10": [
+      "PRNG",
+      "congruential32",
+      "generateN",
+      "mersenne_twister",
+      "pure-rand",
+      "pure-rand_usage_independent_simulations",
+      "pure-rand_usage_non_uniform",
+      "pure-rand_usage_pure",
+      "pure-rand_usage_simple",
+      "purify",
+      "skipN",
+      "uniform_bigint_distribution",
+      "uniform_float32_distribution",
+      "uniform_float64_distribution",
+      "uniform_int_distribution",
+      "xoroshiro128plus",
+      "xorshift128plus"
+    ],
+    "11": [
+      "composer",
+      "duration",
+      "php-code-coverage",
+      "php-code-coverage-collection",
+      "php-code-coverage-processing",
+      "php-code-coverage-rendering",
+      "php-file-iterator",
+      "php-invoker",
+      "php-invoker-timeout",
+      "php-text-template",
+      "php-timer",
+      "phpunit",
+      "resource-usage-formatter",
+      "sebastian-bergmann",
+      "security-policy",
+      "timer"
+    ],
+    "12": [
+      "guzzle-http-client",
+      "guzzle-middleware",
+      "guzzle-promises",
+      "http-client",
+      "message-interface",
+      "promise-implementation",
+      "psr-18",
+      "psr-7",
+      "psr-7-implementation",
+      "request-interface",
+      "response-interface",
+      "server-request-interface",
+      "stream-interface",
+      "uploaded-file-interface",
+      "uri-interface"
+    ],
+    "13": [
+      "background-job-processing",
+      "cache-storage",
+      "cron-expression-php-library",
+      "crunz",
+      "dependency-injection",
+      "event-broadcasting",
+      "laravel-framework",
+      "orisai-cron-expression-explainer",
+      "orisai-scheduler",
+      "php-web-framework",
+      "routing-engine",
+      "schema-migrations",
+      "session-storage",
+      "symfony-bundle-cron-expression"
+    ],
+    "14": [
+      "rfc9562",
+      "uuid",
+      "uuid_max",
+      "uuid_nil",
+      "uuid_parse",
+      "uuid_stringify",
+      "uuid_v1",
+      "uuid_v3",
+      "uuid_v4",
+      "uuid_v5",
+      "uuid_v6",
+      "uuid_v7",
+      "uuid_validate",
+      "uuid_version"
+    ],
+    "15": [
+      "array-matchers",
+      "assertion-library",
+      "collection-matchers",
+      "global-proxy-functions",
+      "hamcrest-matchers",
+      "hamcrest-php",
+      "matcher-library",
+      "number-matchers",
+      "object-matchers",
+      "php-port",
+      "string-matchers",
+      "type-checking-matchers",
+      "xml-matchers"
+    ],
+    "16": [
+      "collision",
+      "collision-error-reporting",
+      "collision-laravel",
+      "collision-phpunit",
+      "collision-symfony",
+      "collision-whoops",
+      "laravel-tinker",
+      "mit-license",
+      "nuno-maduro",
+      "repl",
+      "taylor-otwell",
+      "termwind"
+    ],
+    "17": [
+      "carbon-compatibility",
+      "currency-conversion",
+      "datetime-manipulation",
+      "gregorian-calendar",
+      "jalali-calendar",
+      "localization",
+      "nasser-hekmati",
+      "notowo",
+      "number-to-word",
+      "solar-calendar",
+      "verta"
+    ],
+    "18": [
+      "font_format_eot",
+      "font_format_ttf",
+      "font_format_woff",
+      "font_format_woff2",
+      "font_sahel",
+      "font_vazir",
+      "font_vazir_bold",
+      "font_vazir_medium",
+      "image_avatar",
+      "image_blank",
+      "theme_ui_assets"
+    ],
+    "19": [
+      "Context_Module",
+      "Effect_Core_Package",
+      "Effect_Module",
+      "Fiber_Module",
+      "Functional_Programming",
+      "Layer_Module",
+      "Schedule_Module",
+      "Schema_Module",
+      "Scope_Module",
+      "Stream_Module"
+    ],
+    "20": [
+      "attributes-extension",
+      "autolink-extension",
+      "commonmark-library",
+      "commonmark-spec",
+      "denial-of-service",
+      "embed-extension",
+      "github-flavored-markdown",
+      "highlight-extension",
+      "markdown-parser",
+      "xss-vulnerability"
+    ],
+    "21": [
+      "php-parser",
+      "php-parser-ast",
+      "php-parser-builders",
+      "php-parser-code-generation",
+      "php-parser-constant-evaluation",
+      "php-parser-dumping",
+      "php-parser-json",
+      "php-parser-name-resolution",
+      "php-parser-traversal"
+    ],
+    "22": [
+      "brand_toyota",
+      "category_car_categories",
+      "category_catalog",
+      "concept_road",
+      "entity_car",
+      "entity_mobile_app",
+      "icon_accident",
+      "page_home"
+    ],
+    "23": [
+      "node_10",
+      "node_11",
+      "node_12",
+      "node_5",
+      "node_6",
+      "node_7",
+      "node_8",
+      "node_9"
+    ],
+    "24": [
+      "email_class",
+      "email_sending",
+      "mailer_class",
+      "symfony_mailer",
+      "templated_email_class",
+      "transport_class",
+      "twig_integration"
+    ],
+    "25": [
+      "INI_Format_Parser",
+      "Interoperable_TypeScript",
+      "Standard_JSON_Schema_V1",
+      "Standard_Schema",
+      "Standard_Schema_V1",
+      "Standard_Typed"
+    ],
+    "26": [
+      "cron-expression-last-day",
+      "cron-expression-macros",
+      "cron-expression-nearest-weekday",
+      "cron-expression-nth-day",
+      "cron-expression-parser",
+      "cron-expression-syntax"
+    ],
+    "27": [
+      "formatters",
+      "handlers",
+      "logging",
+      "monolog",
+      "processors",
+      "psr3"
+    ],
+    "28": [
+      "http_request_mapping",
+      "route",
+      "routecollection",
+      "routing_component",
+      "urlgenerator",
+      "urlmatcher"
+    ],
+    "29": [
+      "bytes_handling",
+      "grapheme_clusters_handling",
+      "object_oriented_api",
+      "string_component",
+      "utf8_handling"
+    ],
+    "30": [
+      "ippanel-sms-api",
+      "laravel-sdk",
+      "send-pattern-message",
+      "send-sms",
+      "send-voice-otp"
+    ],
+    "31": [
+      "Cross_Spawn",
+      "Node_Spawn_Sync",
+      "PATHEXT_Issue",
+      "Shebangs_Support"
+    ],
+    "32": [
+      "Find_My_Way_TS",
+      "HTTP_Router",
+      "Prefix_Tree",
+      "Radix_Tree"
+    ],
+    "33": [
+      "assertions",
+      "deprecations",
+      "phpunit-11.5",
+      "test-double-api"
+    ],
+    "34": [
+      "aws-s3",
+      "file-storage-library",
+      "flysystem",
+      "google-cloud-storage"
+    ],
+    "35": [
+      "bigdecimal",
+      "biginteger",
+      "bigrational",
+      "brick_math"
+    ],
+    "36": [
+      "data_normalization",
+      "data_validation",
+      "nette_schema",
+      "schema_definition"
+    ],
+    "37": [
+      "debug_class",
+      "debug_class_loader",
+      "error_handler_class",
+      "symfony_error_handler"
+    ],
+    "38": [
+      "event_dispatching",
+      "request_response_conversion",
+      "symfony_event_dispatcher",
+      "symfony_http_kernel"
+    ],
+    "39": [
+      "node_13",
+      "node_14",
+      "node_15",
+      "node_16"
+    ],
+    "40": [
+      "Detect_Libc",
+      "GNU_Glibc",
+      "MUSL_Libc"
+    ],
+    "41": [
+      "MessagePack",
+      "MsgPackr",
+      "Structured_Record_Extension"
+    ],
+    "42": [
+      "brand_logo_02",
+      "brand_logo_02_color_red",
+      "brand_logo_02_color_white"
+    ],
+    "43": [
+      "brand_logo_04",
+      "brand_logo_04_color_dark",
+      "brand_logo_04_color_red"
+    ],
+    "44": [
+      "code-of-conduct",
+      "email-validator",
+      "email-validator-contributing"
+    ],
+    "45": [
+      "configuration-schema",
+      "league-config",
+      "nette-schema"
+    ],
+    "46": [
+      "cors-implementation",
+      "cors-middleware",
+      "w3c-cors-recommendation"
+    ],
+    "47": [
+      "deep_copy",
+      "graph_cycles",
+      "object_cloning"
+    ],
+    "48": [
+      "deprecation_notice",
+      "symfony_deprecation_contracts",
+      "trigger_deprecation_function"
+    ],
+    "49": [
+      "fake-data-generation",
+      "faker-locales",
+      "fakerphp-faker"
+    ],
+    "50": [
+      "hotel_building",
+      "hotel_icon",
+      "hotel_icon_color_blue"
+    ],
+    "51": [
+      "http_specification",
+      "object_oriented_layer",
+      "symfony_http_foundation"
+    ],
+    "52": [
+      "internationalization",
+      "translation_component",
+      "translator"
+    ],
+    "53": [
+      "phar-io-semantic-versioning",
+      "phar-io-version",
+      "phar-io-version-constraints"
+    ],
+    "54": [
+      "service_contracts",
+      "symfony_contracts",
+      "translation_contracts"
+    ],
+    "55": [
+      "shebang",
+      "shebang-command",
+      "shebang-regex"
+    ],
+    "56": [
+      "yaml",
+      "yaml_1_1",
+      "yaml_1_2"
+    ],
+    "57": [
+      "Executable_Check",
+      "IsExe"
+    ],
+    "58": [
+      "Fast_Check",
+      "Property_Based_Testing"
+    ],
+    "59": [
+      "Kubernetes_API_Types",
+      "Kubernetes_Types"
+    ],
+    "60": [
+      "Multipart_Parser",
+      "Multipasta"
+    ],
+    "61": [
+      "Node_Gyp_Build",
+      "Prebuilds"
+    ],
+    "62": [
+      "PATH_Environment_Variable",
+      "Path_Key"
+    ],
+    "63": [
+      "abstractions",
+      "symfony_event_dispatcher_contracts"
+    ],
+    "64": [
+      "brand_logo_03",
+      "brand_logo_03_color_red"
+    ],
+    "65": [
+      "carbon",
+      "datetime_management"
+    ],
+    "66": [
+      "clock-interface",
+      "psr-20"
+    ],
+    "67": [
+      "command_execution",
+      "process_component"
+    ],
+    "68": [
+      "container-interface",
+      "psr-11"
+    ],
+    "69": [
+      "ctype_functions",
+      "symfony_polyfill_ctype"
+    ],
+    "70": [
+      "doctrine_inflector",
+      "string_inflection"
+    ],
+    "71": [
+      "event-dispatcher",
+      "psr-14"
+    ],
+    "72": [
+      "file_directory_finding",
+      "symfony_finder"
+    ],
+    "73": [
+      "http-factory",
+      "psr-17"
+    ],
+    "74": [
+      "mime-type-detection",
+      "reverse-lookup"
+    ],
+    "75": [
+      "mime_message_manipulation",
+      "symfony_mime"
+    ],
+    "76": [
+      "node_1",
+      "node_2"
+    ],
+    "77": [
+      "node_3",
+      "node_4"
+    ],
+    "78": [
+      "peggy_parser",
+      "toml_parser"
+    ],
+    "79": [
+      "phar-io-manifest",
+      "phar-io-manifest-usage"
+    ],
+    "80": [
+      "php-error-handling",
+      "whoops-error-handler"
+    ],
+    "81": [
+      "rfc-6570",
+      "uri-template"
+    ],
+    "82": [
+      "toml",
+      "toml_spec"
+    ],
+    "83": [
+      "typescript_schema_validation",
+      "zod"
+    ],
+    "84": [
+      "unix_which_utility",
+      "which"
+    ],
+    "85": [
+      "brand_logo_01"
+    ],
+    "86": [
+      "brand_logo_05"
+    ],
+    "87": [
+      "carbon_doctrine_types"
+    ],
+    "88": [
+      "cron_expression"
+    ],
+    "89": [
+      "doctrine_lexer"
+    ],
+    "90": [
+      "dot_access_data"
+    ],
+    "91": [
+      "php"
+    ],
+    "92": [
+      "robots_txt"
+    ],
+    "93": [
+      "yaml_parser"
+    ]
+  },
+  "cohesion": {
+    "0": 0.06280193236714976,
+    "1": 0.05128205128205128,
+    "2": 0.05555555555555555,
+    "3": 0.06451612903225806,
+    "4": 0.10804597701149425,
+    "5": 0.06666666666666667,
+    "6": 0.07142857142857142,
+    "7": 0.08695652173913043,
+    "8": 0.09090909090909091,
+    "9": 0.10526315789473684,
+    "10": 0.11764705882352941,
+    "11": 0.15833333333333333,
+    "12": 0.1619047619047619,
+    "13": 0.14285714285714285,
+    "14": 0.14285714285714285,
+    "15": 0.15384615384615385,
+    "16": 0.18181818181818182,
+    "17": 0.18181818181818182,
+    "18": 0.23636363636363636,
+    "19": 0.2,
+    "20": 0.2,
+    "21": 0.2222222222222222,
+    "22": 0.25,
+    "23": 0.25,
+    "24": 0.2857142857142857,
+    "25": 0.3333333333333333,
+    "26": 0.3333333333333333,
+    "27": 0.3333333333333333,
+    "28": 0.3333333333333333,
+    "29": 0.4,
+    "30": 0.4,
+    "31": 0.5,
+    "32": 0.5,
+    "33": 0.5,
+    "34": 0.5,
+    "35": 0.5,
+    "36": 0.5,
+    "37": 0.5,
+    "38": 0.5,
+    "39": 0.5,
+    "40": 0.6666666666666666,
+    "41": 0.6666666666666666,
+    "42": 0.6666666666666666,
+    "43": 0.6666666666666666,
+    "44": 0.6666666666666666,
+    "45": 0.6666666666666666,
+    "46": 0.6666666666666666,
+    "47": 0.6666666666666666,
+    "48": 0.6666666666666666,
+    "49": 0.6666666666666666,
+    "50": 0.6666666666666666,
+    "51": 0.6666666666666666,
+    "52": 0.6666666666666666,
+    "53": 0.6666666666666666,
+    "54": 0.6666666666666666,
+    "55": 0.6666666666666666,
+    "56": 0.6666666666666666,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0
+  },
+  "gods": [],
+  "surprises": [
+    {
+      "source": "Mockery",
+      "target": "PHPUnit",
+      "source_files": [
+        "",
+        ""
+      ],
+      "confidence": "HIGH",
+      "relation": "",
+      "note": "Bridges community 11 → community 2"
+    },
+    {
+      "source": "Symfony Polyfill",
+      "target": "MIT License",
+      "source_files": [
+        "",
+        ""
+      ],
+      "confidence": "HIGH",
+      "relation": "",
+      "note": "Bridges community 5 → community 0"
+    },
+    {
+      "source": "Symfony Polyfill",
+      "target": "PHP 8.4 Features",
+      "source_files": [
+        "",
+        ""
+      ],
+      "confidence": "HIGH",
+      "relation": "",
+      "note": "Bridges community 5 → community 6"
+    },
+    {
+      "source": "Avatars Directory",
+      "target": "User Profile",
+      "source_files": [
+        "",
+        ""
+      ],
+      "confidence": "MEDIUM",
+      "relation": "",
+      "note": "Bridges community 7 → community 4"
+    },
+    {
+      "source": "Avatars Directory",
+      "target": "Car Finder",
+      "source_files": [
+        "",
+        ""
+      ],
+      "confidence": "MEDIUM",
+      "relation": "",
+      "note": "Bridges community 4 → community 1"
+    }
+  ],
+  "questions": [
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06280193236714976 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05128205128205128 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05555555555555555 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 3` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 4` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10804597701149425 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 5` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 6` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

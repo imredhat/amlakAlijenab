@@ -139,8 +139,8 @@
     </div>
 
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
-        <label for="number_of_toilets">تعداد سرویس بهداشتی</label>
-        <input type="number" name="number_of_toilets" id="number_of_toilets" class="form-control" value="{{ old('number_of_toilets', $property->number_of_toilets ?? '') }}">
+        <label for="toilet">تعداد سرویس بهداشتی</label>
+        <input type="number" name="toilet" id="toilet" class="form-control" value="{{ old('toilet', $property->toilet ?? '') }}">
     </div>
 
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">

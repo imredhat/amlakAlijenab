@@ -4,7 +4,7 @@
         <div class="row mb-5 pb-md-3 pb-lg-4">
           <div class="col-lg-6 mb-lg-0 mb-4">
             <div class="d-flex flex-sm-row flex-column justify-content-between mx-n2">
-              <div class="mb-sm-0 mb-4 px-2"><a class="d-inline-block mb-4" href="real-estate-home-v1.html"><img src="{{ url('') }}/img/logo/logo-dark.svg" width="116" alt="logo"></a>
+              <div class="mb-sm-0 mb-4 px-2"><a class="d-inline-block mb-4" href="{{ url('/') }}"><img src="{{ url('/') }}{{ $siteLogo }}" width="116" alt="logo"></a>
                 <ul class="nav flex-column mb-sm-4 mb-2">
                   <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal" href="mailto:example@email.com"><i class="fi-mail mt-n1 me-2 align-middle opacity-70"></i>example@email.com</a></li>
                   <li class="nav-item"><a class="nav-link p-0 fw-normal" href="tel:4065550120"><i class="fi-device-mobile mt-n1 me-2 align-middle opacity-70"></i>(406) 555-0120</a></li>
@@ -86,6 +86,25 @@
     <script src="{{ url('') }}/vendor/cleave.js/dist/cleave.min.js"></script>
     <!-- Main theme script-->
     <script src="{{ url('') }}/js/theme.min.js"></script>
+    <!-- Dark Mode Toggle Script (fallback if head script didn't load) -->
+    <script>
+      // if (typeof toggleTheme !== 'function') {
+      //   window.toggleTheme = function() {
+      //     var html = document.documentElement;
+      //     var current = html.getAttribute('data-bs-theme');
+      //     var next = (current === 'dark') ? 'light' : 'dark';
+      //     html.classList.add('theme-transition');
+      //     html.setAttribute('data-bs-theme', next);
+      //     localStorage.setItem('theme', next);
+      //     setTimeout(function() { html.classList.remove('theme-transition'); }, 350);
+      //   };
+      // }
+    </script>
+    <style>
+      ul.pagination {
+      direction: ltr !important;
+    }
+    </style>
   </body>
 
 </html>

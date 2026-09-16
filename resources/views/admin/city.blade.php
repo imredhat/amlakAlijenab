@@ -94,36 +94,4 @@
     </div>
 </div>
 
-{{-- اگر بخواهی از Modal استفاده کنی، کد Modal را اینجا یا در admin.parts.footer قرار بده --}}
-{{-- مثال Modal حذف --}}
-
-<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="deleteModalLabel">تأیید حذف</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                آیا مطمئن هستید که می‌خواهید این شهر را حذف کنید؟ این عملیات غیرقابل بازگشت است.
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
-                <form id="deleteForm" method="POST" style="display: inline;">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger">حذف</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<script>
-    // اگر از Modal استفاده می‌کنی، این اسکریپت را هم فعال کن
-    function confirmDelete(cityId) {
-        const deleteForm = document.getElementById('deleteForm');
-        deleteForm.action = `/city/${cityId}`;
-        const deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
-        deleteModal.show();
-    }
-</script>
+@include('admin.parts.footer')

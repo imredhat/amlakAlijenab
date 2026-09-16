@@ -1,0 +1,209 @@
+{
+  "nodes": [
+    {
+      "id": "city_guide",
+      "label": "City Guide",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "contacts",
+      "label": "Contacts",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\contacts",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "home",
+      "label": "Home",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\home",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illustrations",
+      "label": "Illustrations",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\illustrations",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "single",
+      "label": "Single Location",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\single",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "app_mobile",
+      "label": "Mobile App",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\illustrations\\app-m.png",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "app_desktop",
+      "label": "Desktop App",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\illustrations\\app.png",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "support",
+      "label": "Customer Support",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\illustrations\\support.svg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "taxi",
+      "label": "Taxi Service",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\illustrations\\taxi.svg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "map",
+      "label": "Map",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\single\\map-sm.jpg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "hero_image",
+      "label": "Hero Image",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\home\\hero-img.jpg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "new_location_1",
+      "label": "New Location 1",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\home\\new-1.jpg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "new_location_2",
+      "label": "New Location 2",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\home\\new-2.jpg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "city_guide",
+      "target": "contacts",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\contacts"
+    },
+    {
+      "source": "city_guide",
+      "target": "home",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\home"
+    },
+    {
+      "source": "city_guide",
+      "target": "illustrations",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\illustrations"
+    },
+    {
+      "source": "city_guide",
+      "target": "single",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\single"
+    },
+    {
+      "source": "illustrations",
+      "target": "app_mobile",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\illustrations\\app-m.png"
+    },
+    {
+      "source": "illustrations",
+      "target": "app_desktop",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\illustrations\\app.png"
+    },
+    {
+      "source": "illustrations",
+      "target": "support",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\illustrations\\support.svg"
+    },
+    {
+      "source": "illustrations",
+      "target": "taxi",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\illustrations\\taxi.svg"
+    },
+    {
+      "source": "single",
+      "target": "map",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\single\\map-sm.jpg"
+    },
+    {
+      "source": "home",
+      "target": "hero_image",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\home\\hero-img.jpg"
+    },
+    {
+      "source": "home",
+      "target": "new_location_1",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\home\\new-1.jpg"
+    },
+    {
+      "source": "home",
+      "target": "new_location_2",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\home\\new-2.jpg"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

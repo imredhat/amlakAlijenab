@@ -11,7 +11,7 @@
             <input type="number" class="form-control" id="capacity" name="capacity" placeholder="ظرفیت را وارد کنید">
         </div>
 
-        
+
         <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
             <label for="rooms">تعداد اتاق <span class="text-danger">*</span></label>
             <select class="form-control" id="rooms" name="rooms" required>
@@ -35,7 +35,7 @@
             <input type="number" class="form-control" id="extra_capacity" name="extra_capacity" placeholder="ظرفیت اضافه را وارد کنید" required>
         </div>
 
-     
+
 
         <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
             <label for="daily_rent">اجاره روزانه (تومان)</label>
@@ -115,15 +115,15 @@
         </div>
 
         <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
-            <label for="heating_cooling_system">سیستم گرمایش/سرمایش</label>
-            <select class="form-control" id="heating_cooling_system" name="heating_cooling_system">
+            <label for="cooling_system">سیستم گرمایش/سرمایش</label>
+            <select class="form-control" id="cooling_system" name="cooling_system">
             <option disabled value="">انتخاب کنید</option>
             <option  value="دارد">بله</option>
             <option  value="ندارد">خیر</option>
             </select>
         </div>
 
-   
+
 
         <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
             <label for="check_in_time">ساعت ورود</label>
@@ -142,13 +142,37 @@
 
 
         <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
-            <label for="fully_furnished">مبله است</label>
-            <select class="form-control" id="fully_furnished" name="fully_furnished">
+            <label for="furnished">مبله است</label>
+            <select class="form-control" id="furnished" name="furnished">
             <option disabled value="">انتخاب کنید</option>
             <option  value="دارد">بله</option>
             <option  value="ندارد">خیر</option>
             </select>
         </div>
+
+
+        <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
+    <label for="property_view">ویو</label><br/>
+    <div class="btn-group btn-group-sm" role="group" aria-label="ویو">
+        <input class="btn-check" type="radio" id="view-sea" name="property_view" value="دریا" {{ (old('property_view', $property->property_view ?? '') == 'دریا') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-sea">دریا</label>
+
+        <input class="btn-check" type="radio" id="view-forest" name="property_view" value="جنگل" {{ (old('property_view', $property->property_view ?? '') == 'جنگل') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-forest">جنگل</label>
+
+        <input class="btn-check" type="radio" id="view-city" name="property_view" value="شهر" {{ (old('property_view', $property->property_view ?? '') == 'شهر') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-city">شهر</label>
+
+        <input class="btn-check" type="radio" id="view-garden" name="property_view" value="باغ" {{ (old('property_view', $property->property_view ?? '') == 'باغ') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-garden">باغ</label>
+
+        <input class="btn-check" type="radio" id="view-plain" name="property_view" value="دشت" {{ (old('property_view', $property->property_view ?? '') == 'دشت') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-plain">دشت</label>
+
+        <input class="btn-check" type="radio" id="view-none" name="property_view" value="ندارد" {{ (old('property_view', $property->property_view ?? '') == 'ندارد') ? 'checked' : '' }}>
+        <label class="btn btn-outline-secondary fw-normal" for="view-none">ندارد</label>
+    </div>
+</div>
 
         <hr/>
 
@@ -236,5 +260,7 @@
                 </div>
             </div>
         </div>
+
+
 
     </div>

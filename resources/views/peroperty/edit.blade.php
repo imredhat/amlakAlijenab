@@ -2,48 +2,7 @@
 @include('partials.home.menu')
 
 
-<?php
 
-function getCat($type)
-{
-    switch ($type) {
-        case 'other':
-            return "سایر";
-            break;
-        case 'pre-sale':
-            return "پیش فروش";
-            break;
-        case 'villa-sale':
-            return "خرید و فروش ویلا";
-            break;
-        case 'apartment-rent':
-            return "رهن و اجاره خانه و آپارتمان";
-            break;
-        case 'apartment-sale':
-            return "خرید و فروش خانه و آپارتمان";
-            break;
-        case 'villa-short-rent':
-            return "اجاره کوتاه مدت ویلا، سوئیت";
-            break;
-        case 'commercial-rent':
-            return "رهن و اجاره اداری، تجاری و صنعتی";
-            break;
-        case 'commercial-sale':
-            return "خرید و فروش اداری، تجاری و صنعتی";
-            break;
-        case 'land':
-            return "زمین و باغ";
-            break;
-        case 'pre-sale':
-            return "پیش فروش و مشارکت در ساخت";
-            break;
-
-        default:
-            break;
-    }
-}
-
-?>
 
 <!-- Page container-->
 <div class="container mt-5 mb-md-4 py-5">
@@ -217,8 +176,6 @@ function getCat($type)
         </div>
     </div>
 </div>
-
-<script src="{{ url('/') }}/assets/js/jquery-3.6.0.min.js"></script>
 
 <script>
     let deletedImages = [];

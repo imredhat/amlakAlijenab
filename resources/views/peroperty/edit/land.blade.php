@@ -81,6 +81,9 @@
         </select>
     </div>
 
+
+
+<hr/>
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="has_old_building">دارای بنای کلنگی:</label>
         <div>
@@ -125,5 +128,6 @@
             </label>
         </div>
     </div>
+
 
 </div>

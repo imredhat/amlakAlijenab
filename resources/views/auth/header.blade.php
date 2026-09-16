@@ -12,11 +12,11 @@
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('') }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('') }}/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('') }}/favicon-16x16.png">
+    <link rel="manifest" href="{{ url('') }}/site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="{{ url('') }}/safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#766df4">
     <meta name="theme-color" content="#ffffff">
 	<!-- Page loading styles-->
@@ -92,20 +92,50 @@
       (function () {
         window.onload = function () {
           var preloader = document.querySelector('.page-loading');
-          preloader.classList.remove('active');
-          setTimeout(function () {
-            preloader.remove();
-          }, 2000);
+          if (preloader) {
+            preloader.classList.remove('active');
+            setTimeout(function () {
+              preloader.remove();
+            }, 2000);
+          }
         };
       })();
 
     </script>
     <!-- Vendor Styles-->
+    <script src="{{ url('') }}/assets/js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" media="screen" href="{{ url('') }}/vendor/simplebar/dist/simplebar.min.css"/>
     <link rel="stylesheet" media="screen" href="{{ url('') }}/vendor/nouislider/dist/nouislider.min.css"/>
     <link rel="stylesheet" media="screen" href="{{ url('') }}/vendor/tiny-slider/dist/tiny-slider.css"/>
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="{{ url('') }}/css/theme.min.css">
+    <!-- Dark Mode Styles-->
+    <link rel="stylesheet" media="screen" href="{{ url('') }}/css/dark-mode.css">
+    <!-- Apply saved theme + toggle function (must be in head) -->
+    <script>
+      // (function() {
+      //   var saved = localStorage.getItem('theme');
+      //   if (saved === 'dark') {
+      //     document.documentElement.setAttribute('data-bs-theme', 'dark');
+      //   } else if (saved === 'light') {
+      //     document.documentElement.setAttribute('data-bs-theme', 'light');
+      //   } else {
+      //     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      //       document.documentElement.setAttribute('data-bs-theme', 'dark');
+      //     }
+      //   }
+      // })();
+
+      // function toggleTheme() {
+      //   var html = document.documentElement;
+      //   var current = html.getAttribute('data-bs-theme');
+      //   var next = (current === 'dark') ? 'light' : 'dark';
+      //   html.classList.add('theme-transition');
+      //   html.setAttribute('data-bs-theme', next);
+      //   localStorage.setItem('theme', next);
+      //   setTimeout(function() { html.classList.remove('theme-transition'); }, 350);
+      // }
+    </script>
   </head>
   <!-- Body-->
   <body class="bg-secondary" dir="rtl">

@@ -1,0 +1,665 @@
+{
+  "nodes": [
+    {
+      "id": "laravel",
+      "label": "Laravel",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_database",
+      "label": "Illuminate Database",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php",
+      "label": "PHP",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "query_builder",
+      "label": "Query Builder",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "activerecord_orm",
+      "label": "ActiveRecord ORM",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "eloquent_orm",
+      "label": "Eloquent ORM",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "schema_builder",
+      "label": "Schema Builder",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mysql",
+      "label": "MySQL",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "postgres",
+      "label": "Postgres",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sql_server",
+      "label": "SQL Server",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sqlite",
+      "label": "SQLite",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "capsule",
+      "label": "Capsule",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "event_dispatcher",
+      "label": "Event Dispatcher",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:25",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mit_license",
+      "label": "MIT License",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Conditionable/LICENSE.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "taylor_otwell",
+      "label": "Taylor Otwell",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Conditionable/LICENSE.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_conditionable",
+      "label": "Illuminate Conditionable",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Conditionable/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_config",
+      "label": "Illuminate Config",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Config/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_console",
+      "label": "Illuminate Console",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Console/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_container",
+      "label": "Illuminate Container",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Container/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_contracts",
+      "label": "Illuminate Contracts",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Contracts/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_cookie",
+      "label": "Illuminate Cookie",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Cookie/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_encryption",
+      "label": "Illuminate Encryption",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Encryption/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_events",
+      "label": "Illuminate Events",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Events/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_filesystem",
+      "label": "Illuminate Filesystem",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Filesystem/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_hashing",
+      "label": "Illuminate Hashing",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Hashing/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_http",
+      "label": "Illuminate HTTP",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Http/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_jsonschema",
+      "label": "Illuminate JsonSchema",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/JsonSchema/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_log",
+      "label": "Illuminate Log",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Log/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_macroable",
+      "label": "Illuminate Macroable",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Macroable/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_mail",
+      "label": "Illuminate Mail",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Mail/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_notifications",
+      "label": "Illuminate Notifications",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Notifications/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_pagination",
+      "label": "Illuminate Pagination",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Pagination/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "illuminate_pipeline",
+      "label": "Illuminate Pipeline",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Pipeline/LICENSE.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "laravel",
+      "target": "illuminate_database",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3"
+    },
+    {
+      "source": "illuminate_database",
+      "target": "query_builder",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3"
+    },
+    {
+      "source": "illuminate_database",
+      "target": "activerecord_orm",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3"
+    },
+    {
+      "source": "activerecord_orm",
+      "target": "eloquent_orm",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3"
+    },
+    {
+      "source": "illuminate_database",
+      "target": "schema_builder",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3"
+    },
+    {
+      "source": "illuminate_database",
+      "target": "mysql",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3"
+    },
+    {
+      "source": "illuminate_database",
+      "target": "postgres",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3"
+    },
+    {
+      "source": "illuminate_database",
+      "target": "sql_server",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3"
+    },
+    {
+      "source": "illuminate_database",
+      "target": "sqlite",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:3"
+    },
+    {
+      "source": "illuminate_database",
+      "target": "capsule",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:7"
+    },
+    {
+      "source": "capsule",
+      "target": "event_dispatcher",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/README.md:25"
+    },
+    {
+      "source": "taylor_otwell",
+      "target": "mit_license",
+      "label": "AUTHORS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Conditionable/LICENSE.md:3"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_conditionable",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Conditionable/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_config",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Config/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_console",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Console/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_container",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Container/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_contracts",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Contracts/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_cookie",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Cookie/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_database",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Database/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_encryption",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Encryption/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_events",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Events/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_filesystem",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Filesystem/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_hashing",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Hashing/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_http",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Http/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_jsonschema",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/JsonSchema/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_log",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Log/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_macroable",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Macroable/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_mail",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Mail/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_notifications",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Notifications/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_pagination",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Pagination/LICENSE.md:1"
+    },
+    {
+      "source": "mit_license",
+      "target": "illuminate_pipeline",
+      "label": "APPLIES_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Pipeline/LICENSE.md:1"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_conditionable",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Conditionable/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_config",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Config/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_console",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Console/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_container",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Container/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_contracts",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Contracts/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_cookie",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Cookie/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_encryption",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Encryption/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_events",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Events/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_filesystem",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Filesystem/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_hashing",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Hashing/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_http",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Http/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_jsonschema",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/JsonSchema/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_log",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Log/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_macroable",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Macroable/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_mail",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Mail/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_notifications",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Notifications/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_pagination",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Pagination/LICENSE.md"
+    },
+    {
+      "source": "laravel",
+      "target": "illuminate_pipeline",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/laravel/framework/src/Illuminate/Pipeline/LICENSE.md"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

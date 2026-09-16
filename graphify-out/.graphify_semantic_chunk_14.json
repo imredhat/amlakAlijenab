@@ -1,0 +1,450 @@
+{
+  "nodes": [
+    {
+      "id": "sebastian_object_enumerator",
+      "label": "sebastian/object-enumerator",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-enumerator\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "security_policy",
+      "label": "Security Policy",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-enumerator\\SECURITY.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phpunit",
+      "label": "PHPUnit",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-enumerator\\SECURITY.md:23",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "development_environment",
+      "label": "Development Environment",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-enumerator\\SECURITY.md:25",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian_object_reflector",
+      "label": "sebastian/object-reflector",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "object_reflection",
+      "label": "Object Reflection",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "composer",
+      "label": "Composer",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php_8_support",
+      "label": "PHP 8 Support",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\ChangeLog.md:43",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phpstan",
+      "label": "PHPStan",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\ChangeLog.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psalm",
+      "label": "Psalm",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\ChangeLog.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian_recursion_context",
+      "label": "sebastian/recursion-context",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\recursion-context\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "splobjectstorage",
+      "label": "SplObjectStorage",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\recursion-context\\ChangeLog.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php_8_5_deprecation",
+      "label": "PHP 8.5 Deprecation",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\recursion-context\\ChangeLog.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian_type",
+      "label": "sebastian/type",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\type\\README.md:5",
+      "type_system",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php_type_system",
+      "label": "PHP Type System",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\type\\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "union_types",
+      "label": "Union Types",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\type\\ChangeLog.md:145",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "intersection_types",
+      "label": "Intersection Types",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\type\\ChangeLog.md:72",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "disjunctive_normal_form",
+      "label": "Disjunctive Normal Form Types",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\type\\ChangeLog.md:57",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian_version",
+      "label": "sebastian/version",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\version\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "git_version_management",
+      "label": "Git Version Management",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\version\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "side_effects_detector",
+      "label": "Side Effects Detector",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\staabm\\side-effects-detector\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php_code_analysis",
+      "label": "PHP Code Analysis",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\staabm\\side-effects-detector\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "symfony_clock",
+      "label": "Symfony Clock Component",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\clock\\README.md:2",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "datepoint",
+      "label": "DatePoint",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\clock\\CHANGELOG.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "immutable_datetime",
+      "label": "Immutable DateTime",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\clock\\CHANGELOG.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "symfony_console",
+      "label": "Symfony Console Component",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\console\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "command_line_interface",
+      "label": "Command Line Interface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\console\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "invokable_commands",
+      "label": "Invokable Commands",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\console\\CHANGELOG.md:24",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "symfony_css_selector",
+      "label": "Symfony CSS Selector Component",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\css-selector\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "xpath_conversion",
+      "label": "XPath Conversion",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\css-selector\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "css_is_selector",
+      "label": ":is() Selector",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\css-selector\\CHANGELOG.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "css_where_selector",
+      "label": ":where() Selector",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\css-selector\\CHANGELOG.md:8",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "sebastian_object_enumerator",
+      "target": "security_policy",
+      "label": "HAS_SECURITY_POLICY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-enumerator\\SECURITY.md:1"
+    },
+    {
+      "source": "sebastian_object_enumerator",
+      "target": "phpunit",
+      "label": "EXTRACTED_FROM",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-enumerator\\SECURITY.md:23"
+    },
+    {
+      "source": "sebastian_object_enumerator",
+      "target": "development_environment",
+      "label": "FOCUSED_ON",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-enumerator\\SECURITY.md:25"
+    },
+    {
+      "source": "sebastian_object_reflector",
+      "target": "object_reflection",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\README.md:7"
+    },
+    {
+      "source": "sebastian_object_reflector",
+      "target": "composer",
+      "label": "INSTALLED_VIA",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\README.md:11"
+    },
+    {
+      "source": "sebastian_object_reflector",
+      "target": "php_8_support",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\ChangeLog.md:43"
+    },
+    {
+      "source": "sebastian_object_reflector",
+      "target": "phpstan",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\ChangeLog.md:9"
+    },
+    {
+      "source": "phpstan",
+      "target": "psalm",
+      "label": "REPLACES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\object-reflector\\ChangeLog.md:9"
+    },
+    {
+      "source": "sebastian_recursion_context",
+      "target": "splobjectstorage",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\recursion-context\\ChangeLog.md:9"
+    },
+    {
+      "source": "sebastian_recursion_context",
+      "target": "php_8_5_deprecation",
+      "label": "AFFECTED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\recursion-context\\ChangeLog.md:9"
+    },
+    {
+      "source": "sebastian_type",
+      "target": "php_type_system",
+      "label": "REPRESENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\type\\README.md:7"
+    },
+    {
+      "source": "sebastian_type",
+      "target": "union_types",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\type\\ChangeLog.md:145"
+    },
+    {
+      "source": "sebastian_type",
+      "target": "intersection_types",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\type\\ChangeLog.md:72"
+    },
+    {
+      "source": "sebastian_type",
+      "target": "disjunctive_normal_form",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\type\\ChangeLog.md:57"
+    },
+    {
+      "source": "sebastian_version",
+      "target": "git_version_management",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\sebastian\\version\\README.md:5"
+    },
+    {
+      "source": "side_effects_detector",
+      "target": "php_code_analysis",
+      "label": "PERFORMS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\staabm\\side-effects-detector\\README.md:3"
+    },
+    {
+      "source": "symfony_clock",
+      "target": "datepoint",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\clock\\CHANGELOG.md:12"
+    },
+    {
+      "source": "datepoint",
+      "target": "immutable_datetime",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\clock\\CHANGELOG.md:12"
+    },
+    {
+      "source": "symfony_console",
+      "target": "command_line_interface",
+      "label": "EASES_CREATION_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\console\\README.md:4"
+    },
+    {
+      "source": "symfony_console",
+      "target": "invokable_commands",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\console\\CHANGELOG.md:24"
+    },
+    {
+      "source": "symfony_css_selector",
+      "target": "xpath_conversion",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\css-selector\\README.md:4"
+    },
+    {
+      "source": "symfony_css_selector",
+      "target": "css_is_selector",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\css-selector\\CHANGELOG.md:7"
+    },
+    {
+      "source": "symfony_css_selector",
+      "target": "css_where_selector",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\css-selector\\CHANGELOG.md:8"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

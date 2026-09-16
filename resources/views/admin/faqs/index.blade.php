@@ -27,8 +27,8 @@
                 <td>{{ $faq->category ?? '-' }}</td>
                 <td>{{ $faq->order ?? '-' }}</td>
                 <td>
-                    <a href="/admin/faqs/{{ $faq->_id }}/edit" class="btn btn-sm btn-secondary">ویرایش</a>
-                    <form method="POST" action="/admin/faqs/{{ $faq->_id }}" style="display:inline-block">
+                    <a href="/admin/faqs/{{ $faq->id }}/edit" class="btn btn-sm btn-secondary">ویرایش</a>
+                    <form method="POST" action="/admin/faqs/{{ $faq->id }}" style="display:inline-block">
                         @csrf
                         @method('DELETE')
                         <button class="btn btn-sm btn-danger" type="submit">حذف</button>

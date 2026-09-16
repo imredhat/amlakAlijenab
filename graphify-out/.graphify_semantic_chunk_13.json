@@ -1,0 +1,665 @@
+{
+  "nodes": [
+    {
+      "id": "sebastian/complexity",
+      "label": "sebastian/complexity",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "PHP_Code_Complexity_Calculation",
+      "label": "PHP Code Complexity Calculation",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Composer",
+      "label": "Composer",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "ComplexityCollection",
+      "label": "ComplexityCollection",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:22",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sortByDescendingCyclomaticComplexity",
+      "label": "sortByDescendingCyclomaticComplexity",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:22",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "match_arms_support",
+      "label": "Support for match arms",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:23",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nikic/php-parser_5.0_compatibility",
+      "label": "Compatibility with nikic/php-parser 5.0",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:27",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Complexity_isFunction_isMethod",
+      "label": "Complexity::isFunction() and Complexity::isMethod()",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:33",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "ComplexityCollection_isFunction_isMethod",
+      "label": "ComplexityCollection::isFunction() and ComplexityCollection::isMethod()",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:34",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "ComplexityCollection_mergeWith",
+      "label": "ComplexityCollection::mergeWith()",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:35",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Anonymous_Classes_Processing",
+      "label": "Anonymous classes processing fix",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:39",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian/diff",
+      "label": "sebastian/diff",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Diff_Implementation_PHP",
+      "label": "Diff Implementation for PHP",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Differ",
+      "label": "Differ",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:27",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "UnifiedDiffOutputBuilder",
+      "label": "UnifiedDiffOutputBuilder",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:48",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "StrictUnifiedDiffOutputBuilder",
+      "label": "StrictUnifiedDiffOutputBuilder",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:67",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "DiffOnlyOutputBuilder",
+      "label": "DiffOnlyOutputBuilder",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:92",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "DiffOutputBuilderInterface",
+      "label": "DiffOutputBuilderInterface",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:112",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Parser",
+      "label": "Parser",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:116",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Chunk",
+      "label": "Chunk",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\ChangeLog.md:21",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Diff",
+      "label": "Diff",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\ChangeLog.md:22",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Line",
+      "label": "Line",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\ChangeLog.md:23",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "IteratorAggregate_Chunk",
+      "label": "Chunk implements IteratorAggregate",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\ChangeLog.md:44",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "IteratorAggregate_Diff",
+      "label": "Diff implements IteratorAggregate",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\ChangeLog.md:43",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian/environment",
+      "label": "sebastian/environment",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "PHP_Runtime_Environment_Handling",
+      "label": "PHP Runtime Environment Handling",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Console_Color_Support",
+      "label": "Console Color Support",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\ChangeLog.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Runtime_getCurrentSettings",
+      "label": "Runtime::getCurrentSettings()",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\ChangeLog.md:143",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Runtime_getNameWithVersionAndCodeCoverageDriver",
+      "label": "Runtime::getNameWithVersionAndCodeCoverageDriver()",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\ChangeLog.md:149",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "PCOV_Support",
+      "label": "PCOV Support",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\ChangeLog.md:150",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian/exporter",
+      "label": "sebastian/exporter",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\exporter\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "PHP_Variable_Export",
+      "label": "PHP Variable Export",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\exporter\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Exporter",
+      "label": "Exporter",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\exporter\README.md:29",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "shortenedExport",
+      "label": "shortenedExport",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\exporter\README.md:142",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian/global-state",
+      "label": "sebastian/global-state",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Global_State_Snapshotting",
+      "label": "Global State Snapshotting",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "ExcludeList",
+      "label": "ExcludeList",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\ChangeLog.md:39",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "addStaticProperty",
+      "label": "ExcludeList::addStaticProperty()",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\ChangeLog.md:39",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "isStaticPropertyExcluded",
+      "label": "ExcludeList::isStaticPropertyExcluded()",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\ChangeLog.md:40",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Restorer_restoreStaticProperties",
+      "label": "Restorer::restoreStaticProperties()",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\ChangeLog.md:41",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Snapshot_staticProperties",
+      "label": "Snapshot::staticProperties()",
+      "type": "ACTION",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\ChangeLog.md:42",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian/lines-of-code",
+      "label": "sebastian/lines-of-code",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\lines-of-code\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "PHP_Lines_of_Code_Counting",
+      "label": "PHP Lines of Code Counting",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\lines-of-code\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian/object-enumerator",
+      "label": "sebastian/object-enumerator",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\object-enumerator\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Object_Graph_Traversal",
+      "label": "Object Graph Traversal",
+      "type": "CONCEPT",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\object-enumerator\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "PHPStan",
+      "label": "PHPStan",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Psalm",
+      "label": "Psalm",
+      "type": "ENTITY",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "sebastian/complexity",
+      "target": "PHP_Code_Complexity_Calculation",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\README.md:7"
+    },
+    {
+      "source": "sebastian/complexity",
+      "target": "Composer",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\README.md:11"
+    },
+    {
+      "source": "ComplexityCollection",
+      "target": "sortByDescendingCyclomaticComplexity",
+      "label": "HAS_METHOD",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:22"
+    },
+    {
+      "source": "sebastian/complexity",
+      "target": "match_arms_support",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:23"
+    },
+    {
+      "source": "sebastian/complexity",
+      "target": "nikic/php-parser_5.0_compatibility",
+      "label": "COMPATIBLE_WITH",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:27"
+    },
+    {
+      "source": "ComplexityCollection",
+      "target": "ComplexityCollection_isFunction_isMethod",
+      "label": "HAS_METHOD",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:34"
+    },
+    {
+      "source": "ComplexityCollection",
+      "target": "ComplexityCollection_mergeWith",
+      "label": "HAS_METHOD",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:35"
+    },
+    {
+      "source": "sebastian/complexity",
+      "target": "Anonymous_Classes_Processing",
+      "label": "FIXES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:39"
+    },
+    {
+      "source": "sebastian/diff",
+      "target": "Diff_Implementation_PHP",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:7"
+    },
+    {
+      "source": "sebastian/diff",
+      "target": "Differ",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:27"
+    },
+    {
+      "source": "Differ",
+      "target": "UnifiedDiffOutputBuilder",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:48"
+    },
+    {
+      "source": "Differ",
+      "target": "StrictUnifiedDiffOutputBuilder",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:67"
+    },
+    {
+      "source": "Differ",
+      "target": "DiffOnlyOutputBuilder",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:92"
+    },
+    {
+      "source": "Differ",
+      "target": "DiffOutputBuilderInterface",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:112"
+    },
+    {
+      "source": "sebastian/diff",
+      "target": "Parser",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\README.md:116"
+    },
+    {
+      "source": "Diff",
+      "target": "IteratorAggregate_Diff",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\ChangeLog.md:43"
+    },
+    {
+      "source": "Chunk",
+      "target": "IteratorAggregate_Chunk",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\diff\ChangeLog.md:44"
+    },
+    {
+      "source": "sebastian/environment",
+      "target": "PHP_Runtime_Environment_Handling",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\README.md:7"
+    },
+    {
+      "source": "sebastian/environment",
+      "target": "Console_Color_Support",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\ChangeLog.md:15"
+    },
+    {
+      "source": "sebastian/environment",
+      "target": "Runtime_getCurrentSettings",
+      "label": "HAS_METHOD",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\ChangeLog.md:143"
+    },
+    {
+      "source": "sebastian/environment",
+      "target": "Runtime_getNameWithVersionAndCodeCoverageDriver",
+      "label": "HAS_METHOD",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\ChangeLog.md:149"
+    },
+    {
+      "source": "sebastian/environment",
+      "target": "PCOV_Support",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\environment\ChangeLog.md:150"
+    },
+    {
+      "source": "sebastian/exporter",
+      "target": "PHP_Variable_Export",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\exporter\README.md:7"
+    },
+    {
+      "source": "sebastian/exporter",
+      "target": "Exporter",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\exporter\README.md:29"
+    },
+    {
+      "source": "Exporter",
+      "target": "shortenedExport",
+      "label": "HAS_METHOD",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\exporter\README.md:142"
+    },
+    {
+      "source": "sebastian/global-state",
+      "target": "Global_State_Snapshotting",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\README.md:7"
+    },
+    {
+      "source": "sebastian/global-state",
+      "target": "ExcludeList",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\ChangeLog.md:39"
+    },
+    {
+      "source": "ExcludeList",
+      "target": "addStaticProperty",
+      "label": "HAS_METHOD",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\ChangeLog.md:39"
+    },
+    {
+      "source": "ExcludeList",
+      "target": "isStaticPropertyExcluded",
+      "label": "HAS_METHOD",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\ChangeLog.md:40"
+    },
+    {
+      "source": "sebastian/global-state",
+      "target": "Restorer_restoreStaticProperties",
+      "label": "HAS_METHOD",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\ChangeLog.md:41"
+    },
+    {
+      "source": "sebastian/global-state",
+      "target": "Snapshot_staticProperties",
+      "label": "HAS_METHOD",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\global-state\ChangeLog.md:42"
+    },
+    {
+      "source": "sebastian/lines-of-code",
+      "target": "PHP_Lines_of_Code_Counting",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\lines-of-code\README.md:7"
+    },
+    {
+      "source": "sebastian/object-enumerator",
+      "target": "Object_Graph_Traversal",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\object-enumerator\README.md:7"
+    },
+    {
+      "source": "sebastian/complexity",
+      "target": "PHPStan",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:9"
+    },
+    {
+      "source": "sebastian/complexity",
+      "target": "Psalm",
+      "label": "REPLACED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\Jobs\Alijenaab\vendor\sebastian\complexity\ChangeLog.md:9"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

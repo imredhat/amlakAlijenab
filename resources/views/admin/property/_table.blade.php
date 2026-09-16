@@ -118,7 +118,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <form action="{{ url('properties.destroy', $property->id ?? $property->id) }}" method="POST" class="d-inline">
+                                        <form action="{{ route('property.destroy', $property->id ?? $property->id) }}" method="POST" class="d-inline">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="dropdown-item text-danger" onclick="return confirm('آیا مطمئن هستید؟')">
@@ -163,11 +163,8 @@
                 {{-- Previous --}}
                 <li class="page-item {{ $properties->onFirstPage() ? 'disabled' : '' }}">
                     <a class="page-link icon"
-                       href="#"
+                       href="{{ $properties->previousPageUrl() }}"
                        aria-label="Previous"
-                       @if(! $properties->onFirstPage())
-                           data-page="{{ $properties->currentPage() - 1 }}"
-                       @endif
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                              viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -181,10 +178,9 @@
 
                 {{-- Page numbers --}}
                 @for($page = 1; $page <= $properties->lastPage(); $page++)
-                    <li class="page-item">
-                        <a class="page-link {{ $page === $properties->currentPage() ? 'active' : '' }}"
-                           href="#"
-                           data-page="{{ $page }}">
+                    <li class="page-item {{ $page === $properties->currentPage() ? 'active' : '' }}">
+                        <a class="page-link"
+                           href="{{ $properties->url($page) }}">
                             {{ $page }}
                         </a>
                     </li>
@@ -193,11 +189,8 @@
                 {{-- Next --}}
                 <li class="page-item {{ $properties->currentPage() === $properties->lastPage() ? 'disabled' : '' }}">
                     <a class="page-link icon"
-                       href="#"
+                       href="{{ $properties->nextPageUrl() }}"
                        aria-label="Next"
-                       @if($properties->currentPage() < $properties->lastPage())
-                           data-page="{{ $properties->currentPage() + 1 }}"
-                       @endif
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                              viewBox="0 0 24 24" fill="none" stroke="currentColor"

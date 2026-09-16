@@ -22,6 +22,9 @@
   <meta name="theme-color" content="#ffffff">
   <!-- Page loading styles-->
   <style>
+    ul.pagination {
+      direction: ltr !important;
+    }
     .page-loading {
       position: fixed;
       top: 0;
@@ -111,12 +114,44 @@
   <!-- Vendor Styles-->
 
 
+  <!-- jQuery (must load before other scripts) -->
+  <script src="{{ url('') }}/assets/js/jquery-3.6.0.min.js"></script>
+
   <link rel="stylesheet" media="screen" href="{{ url('') }}/vendor/simplebar/dist/simplebar.min.css" />
   <link rel="stylesheet" media="screen" href="{{ url('') }}/vendor/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" media="screen" href="{{ url('') }}/vendor/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css" />
   <link rel="stylesheet" media="screen" href="{{ url('') }}/vendor/filepond/dist/filepond.min.css" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="{{ url('') }}/assets/css/remixicon.css">
   <!-- Main Theme Styles + Bootstrap-->
   <link rel="stylesheet" media="screen" href="{{ url('') }}/css/theme.min.css">
+  <!-- Dark Mode Styles-->
+  <!-- <link rel="stylesheet" media="screen" href="{{ url('') }}/css/dark-mode.css"> -->
+  <!-- Apply saved theme + toggle function (must be in head) -->
+  <script>
+    // (function() {
+    //   var saved = localStorage.getItem('theme');
+    //   if (saved === 'dark') {
+    //     document.documentElement.setAttribute('data-bs-theme', 'dark');
+    //   } else if (saved === 'light') {
+    //     document.documentElement.setAttribute('data-bs-theme', 'light');
+    //   } else {
+    //     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //       document.documentElement.setAttribute('data-bs-theme', 'dark');
+    //     }
+    //   }
+    // })();
+
+    // function toggleTheme() {
+    //   var html = document.documentElement;
+    //   var current = html.getAttribute('data-bs-theme');
+    //   var next = (current === 'dark') ? 'light' : 'dark';
+    //   html.classList.add('theme-transition');
+    //   html.setAttribute('data-bs-theme', next);
+    //   localStorage.setItem('theme', next);
+    //   setTimeout(function() { html.classList.remove('theme-transition'); }, 350);
+    // }
+  </script>
 </head>
 <!-- Body-->
 

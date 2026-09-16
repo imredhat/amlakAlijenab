@@ -9,4 +9,6 @@
         <label for="price">قیمت (تومان)</label>
         <input type="text" inputmode="numeric" class="form-control price-input" id="price" name="price">
     </div>
+
+
 </div>

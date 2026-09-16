@@ -25,6 +25,19 @@
 	<script src="{{ url ('/') }}/assets/js/apexcharts.min.js"></script>
 	<script src="{{ url ('/') }}/assets/js/custom/lms-courses.js"></script>
 	<script src="{{ url ('/') }}/assets/js/custom/custom.js"></script>
+	<!-- Dark Mode Toggle Script -->
+	<script>
+	//   window.toggleTheme = function() {
+	//     var html = document.documentElement;
+	//     var current = html.getAttribute('data-bs-theme');
+	//     var next = (current === 'dark') ? 'light' : 'dark';
+	//     html.classList.add('theme-transition');
+	//     html.setAttribute('data-bs-theme', next);
+	//     html.setAttribute('data-theme', next);
+	//     localStorage.setItem('theme', next);
+	//     setTimeout(function() { html.classList.remove('theme-transition'); }, 350);
+	//   };
+	</script>
 
 </body>
 

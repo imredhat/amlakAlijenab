@@ -78,21 +78,24 @@
           <div class="col-md-6 offset-lg-1">
             <div class="card border-0 bg-secondary p-sm-3 p-2">
               <div class="card-body m-1">
-                <form class="needs-validation" method="post" action="{{ url('/admin/page/contact_form') }}" novalidate>
+                <form class="needs-validation" method="post" action="{{ url('/contact/submit') }}" novalidate>
                   @csrf
+                  @if(session('contact_success'))
+                    <div class="alert alert-success">{{ session('contact_success') }}</div>
+                  @endif
                   <div class="mb-4">
                     <label class="form-label" for="c-name">نام خانوادگی</label>
-                    <input class="form-control form-control-lg" id="c-name" type="text" required="">
+                    <input class="form-control form-control-lg" id="c-name" type="text" name="name" required>
                     <div class="invalid-tooltip mt-1">لطفا نام و نام خانوادگی خود را وارد کنید</div>
                   </div>
                   <div class="mb-4">
                     <label class="form-label" for="c-tel">تلفن همراه</label>
-                    <input class="form-control form-control-lg" id="c-tel" type="tel" required="">
+                    <input class="form-control form-control-lg" id="c-tel" type="tel" name="tel" required>
                     <div class="invalid-tooltip mt-1">لطفا شماره تلفن همراه خود را وارد کنید</div>
                   </div>
                   <div class="mb-4">
                     <label class="form-label" for="c-message">متن درخواست</label>
-                    <textarea class="form-control form-control-lg" id="c-message" rows="4" placeholder="متن مورد نظر خود را بنویسید ..." required=""></textarea>
+                    <textarea class="form-control form-control-lg" id="c-message" rows="4" name="message" placeholder="متن مورد نظر خود را بنویسید ..." required></textarea>
                     <div class="invalid-tooltip mt-1">لطفا پیام خود را وارد کنید</div>
                   </div>
                   <div class="pt-sm-2 pt-1">

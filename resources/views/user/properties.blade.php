@@ -1,5 +1,10 @@
  @include('partials.home.header')
 
+ <style>
+      ul.pagination {
+      direction: ltr !important;
+    }
+    </style>
  <main class="page-wrapper">
 
    @include('partials.home.menu')
@@ -37,48 +42,7 @@
            <li class="nav-item mb-3"><a class="nav-link" href="real-estate-account-properties.html#" role="tab" aria-selected="false"><i class="fi-file-clean fs-base me-2"></i>پیش نویس</a></li>
            <li class="nav-item mb-3"><a class="nav-link" href="real-estate-account-properties.html#" role="tab" aria-selected="false"><i class="fi-archive fs-base me-2"></i>آرشیو</a></li>
          </ul> -->
-<script src="{{ url('/') }}/assets/js/jquery-3.6.0.min.js"></script>
 
-         <?php
-          function getCat($type)
-          {
-            switch ($type) {
-              case 'other':
-                return "سایر";
-                break;
-              case 'pre-sale':
-                return "پیش فروش";
-                break;
-              case 'villa-sale':
-                return "خرید و فروش ویلا";
-                break;
-              case 'apartment-rent':
-                return "رهن و اجاره خانه و آپارتمان";
-                break;
-              case 'apartment-sale':
-                return "خرید و فروش خانه و آپارتمان";
-                break;
-              case 'villa-short-rent':
-                return "اجاره کوتاه مدت ویلا، سوئیت";
-                break;
-              case 'commercial-rent':
-                return "رهن و اجاره اداری، تجاری و صنعتی";
-                break;
-              case 'commercial-sale':
-                return "خرید و فروش اداری، تجاری و صنعتی";
-                break;
-              case 'land':
-                return "زمین و باغ";
-                break;
-              case 'pre-sale':
-                return "پیش فروش و مشارکت در ساخت";
-                break;
-
-              default:
-                break;
-            }
-          }
-          ?>
 
 
          @if(isset($properties))
@@ -87,8 +51,9 @@
          <?php
           $media = [""];
           $cat = $p->category;
-          if (isset($p->media) && count(json_decode($p->media)) > 0) {
-            $media = json_decode($p->media);
+          $decodedMedia = isset($p->media) ? json_decode($p->media) : null;
+          if (is_array($decodedMedia) && count($decodedMedia) > 0) {
+            $media = $decodedMedia;
           }
 
           ?>
@@ -96,6 +61,19 @@
          @include("peroperty.profile-property-list.".$cat)
 
          @endforeach
+
+         @if($properties->hasPages())
+         <div class="border-top pt-4 mt-3">
+             <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                 <div class="text-muted small">
+                     نمایش {{ $properties->firstItem() }} تا {{ $properties->lastItem() }} از {{ $properties->total() }} نتیجه
+                 </div>
+                 <div>
+                     {{ $properties->appends(request()->query())->links('pagination::persian') }}
+                 </div>
+             </div>
+         </div>
+         @endif
 
          @else
 

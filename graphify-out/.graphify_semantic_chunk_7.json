@@ -1,0 +1,521 @@
+{
+  "nodes": [
+    {
+      "id": "laravel-tinker",
+      "label": "Laravel Tinker",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\tinker\\README.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "repl",
+      "label": "REPL",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\tinker\\README.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mit-license",
+      "label": "MIT License",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\tinker\\LICENSE.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "taylor-otwell",
+      "label": "Taylor Otwell",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\tinker\\LICENSE.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "commonmark-library",
+      "label": "CommonMark Library",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "markdown-parser",
+      "label": "Markdown Parser",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "github-flavored-markdown",
+      "label": "GitHub-Flavored Markdown",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "commonmark-spec",
+      "label": "CommonMark Spec",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\README.md:211",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "highlight-extension",
+      "label": "HighlightExtension",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "autolink-extension",
+      "label": "AutolinkExtension",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "attributes-extension",
+      "label": "AttributesExtension",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:31",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "xss-vulnerability",
+      "label": "XSS Vulnerability",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:28",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "denial-of-service",
+      "label": "Denial of Service",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:51",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "embed-extension",
+      "label": "EmbedExtension",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:285",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "league-config",
+      "label": "League Config",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\config\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "configuration-schema",
+      "label": "Configuration Schema",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\config\\README.md:23",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette-schema",
+      "label": "Nette Schema",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\config\\README.md:27",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "flysystem",
+      "label": "Flysystem",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\flysystem\\readme.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "file-storage-library",
+      "label": "File Storage Library",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\flysystem\\readme.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "aws-s3",
+      "label": "AWS S3",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\flysystem\\readme.md:31",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "google-cloud-storage",
+      "label": "Google Cloud Storage",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\flysystem\\readme.md:33",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mime-type-detection",
+      "label": "Mime Type Detection",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\mime-type-detection\\CHANGELOG.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "reverse-lookup",
+      "label": "Reverse Lookup",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\mime-type-detection\\CHANGELOG.md:22",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mockery",
+      "label": "Mockery",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mock-object-framework",
+      "label": "Mock Object Framework",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phpunit",
+      "label": "PHPUnit",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phpspec",
+      "label": "PHPSpec",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "test-doubles",
+      "label": "Test Doubles",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:49",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "method-stubs",
+      "label": "Method Stubs",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:84",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "method-call-expectations",
+      "label": "Method Call Expectations",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:134",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "test-spies",
+      "label": "Test Spies",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:196",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "big-parent-class",
+      "label": "Big Parent Class",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\cookbook\\big_parent_class.rst:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "class-constants",
+      "label": "Class Constants",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\cookbook\\class_constants.rst:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "named-mocks",
+      "label": "Named Mocks",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\cookbook\\class_constants.rst:20",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "constants-map",
+      "label": "Constants Map",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\cookbook\\class_constants.rst:152",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "laravel-tinker",
+      "target": "repl",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\tinker\\README.md:12"
+    },
+    {
+      "source": "laravel-tinker",
+      "target": "mit-license",
+      "label": "LICENSED_UNDER",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\tinker\\README.md:32"
+    },
+    {
+      "source": "mit-license",
+      "target": "taylor-otwell",
+      "label": "AUTHORED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\tinker\\LICENSE.md:3"
+    },
+    {
+      "source": "commonmark-library",
+      "target": "markdown-parser",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\README.md:15"
+    },
+    {
+      "source": "commonmark-library",
+      "target": "github-flavored-markdown",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\README.md:70"
+    },
+    {
+      "source": "commonmark-library",
+      "target": "commonmark-spec",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\README.md:211"
+    },
+    {
+      "source": "highlight-extension",
+      "target": "commonmark-library",
+      "label": "PART_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:12"
+    },
+    {
+      "source": "autolink-extension",
+      "target": "commonmark-library",
+      "label": "PART_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:15"
+    },
+    {
+      "source": "attributes-extension",
+      "target": "commonmark-library",
+      "label": "PART_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:31"
+    },
+    {
+      "source": "attributes-extension",
+      "target": "xss-vulnerability",
+      "label": "ADDRESSES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:28"
+    },
+    {
+      "source": "commonmark-library",
+      "target": "denial-of-service",
+      "label": "ADDRESSES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:51"
+    },
+    {
+      "source": "embed-extension",
+      "target": "commonmark-library",
+      "label": "PART_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\commonmark\\CHANGELOG.md:285"
+    },
+    {
+      "source": "league-config",
+      "target": "configuration-schema",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\config\\README.md:23"
+    },
+    {
+      "source": "league-config",
+      "target": "nette-schema",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\config\\README.md:27"
+    },
+    {
+      "source": "flysystem",
+      "target": "file-storage-library",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\flysystem\\readme.md:13"
+    },
+    {
+      "source": "flysystem",
+      "target": "aws-s3",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\flysystem\\readme.md:31"
+    },
+    {
+      "source": "flysystem",
+      "target": "google-cloud-storage",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\flysystem\\readme.md:33"
+    },
+    {
+      "source": "mime-type-detection",
+      "target": "reverse-lookup",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\league\\mime-type-detection\\CHANGELOG.md:22"
+    },
+    {
+      "source": "mockery",
+      "target": "mock-object-framework",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:11"
+    },
+    {
+      "source": "mockery",
+      "target": "phpunit",
+      "label": "INTEGRATES_WITH",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:11"
+    },
+    {
+      "source": "mockery",
+      "target": "phpspec",
+      "label": "INTEGRATES_WITH",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:11"
+    },
+    {
+      "source": "mockery",
+      "target": "test-doubles",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:49"
+    },
+    {
+      "source": "mockery",
+      "target": "method-stubs",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:84"
+    },
+    {
+      "source": "mockery",
+      "target": "method-call-expectations",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:134"
+    },
+    {
+      "source": "mockery",
+      "target": "test-spies",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\README.md:196"
+    },
+    {
+      "source": "big-parent-class",
+      "target": "mockery",
+      "label": "HANDLED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\cookbook\\big_parent_class.rst:5"
+    },
+    {
+      "source": "class-constants",
+      "target": "mockery",
+      "label": "HANDLED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\cookbook\\class_constants.rst:5"
+    },
+    {
+      "source": "named-mocks",
+      "target": "mockery",
+      "label": "PROVIDED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\cookbook\\class_constants.rst:20"
+    },
+    {
+      "source": "constants-map",
+      "target": "mockery",
+      "label": "PROVIDED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\cookbook\\class_constants.rst:152"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -15,6 +15,32 @@
         object-fit: cover;
         display: none;
     }
+
+    .logo-upload-area {
+        border: 2px dashed #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        background: #f8f9fa;
+    }
+
+    .logo-upload-area:hover {
+        border-color: #7a6dff;
+        background: #f0f0ff;
+    }
+
+    .logo-upload-area .upload-icon {
+        font-size: 48px;
+        color: #999;
+        margin-bottom: 10px;
+    }
+
+    .logo-upload-area .upload-text {
+        color: #666;
+        font-size: 14px;
+    }
 </style>
 
 <div class="container mt-5 mb-5">
@@ -34,10 +60,33 @@
             <div class="alert alert-warning">{{ session('error') }}</div>
             @endif
 
-            <form action="{{ url('/admin/page/contact') }}" method="POST">
+            <form action="{{ url('/admin/page/contact') }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label fw-bold">لوگوی سایت</label>
+                        <label class="logo-upload-area d-block" for="logo-input" id="logo-upload-label">
+                            <div class="upload-icon"><i class="ri-image-add-line"></i></div>
+                            <div class="upload-text" id="upload-text">کلیک کنید یا فایل را بکشید</div>
+                            <div class="text-muted small">PNG, JPG, SVG</div>
+                        </label>
+                        <input type="file" name="logo" id="logo-input" accept="image/*" class="d-none">
+                        @if(isset($contact->logo) && $contact->logo)
+                            <small class="text-muted mt-2 d-block">تصویر فعلی</small>
+                        @endif
+                    </div>
+
+                    <div class="col-md-4 mt-2">
+                        <img id="preview-logo" class="image-preview rounded" alt="Preview"
+                             src="{{ (isset($contact->logo) && $contact->logo) ? url('/') . $contact->logo : '' }}"
+                             style="{{ (isset($contact->logo) && $contact->logo) ? 'display:block;' : 'display:none;' }}">
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <hr>
+                    </div>
 
                     <div class="col-md-6 mb-3">
                         <label class="form-label">عنوان اول</label>
@@ -90,16 +139,24 @@
 </div>
 
 <script>
-    document.getElementById('pic-input').addEventListener('change', function(event) {
-        const preview = document.getElementById('preview-image');
+    document.getElementById('logo-input').addEventListener('change', function(event) {
+        const preview = document.getElementById('preview-logo');
+        const uploadText = document.getElementById('upload-text');
+        const uploadLabel = document.getElementById('logo-upload-label');
         const file = event.target.files[0];
 
         if (file) {
             preview.style.display = "block";
             preview.src = URL.createObjectURL(file);
+            uploadText.textContent = file.name;
+            uploadLabel.style.borderColor = '#28a745';
+            uploadLabel.style.background = '#f0fff4';
         } else {
             preview.style.display = "none";
             preview.src = "";
+            uploadText.textContent = 'کلیک کنید یا فایل را بکشید';
+            uploadLabel.style.borderColor = '#ccc';
+            uploadLabel.style.background = '#f8f9fa';
         }
     });
 </script>

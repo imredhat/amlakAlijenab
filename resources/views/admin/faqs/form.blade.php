@@ -4,7 +4,7 @@
 <div class="container">
     <h3>{{ isset($faq) ? 'ویرایش سوال' : 'افزودن سوال' }}</h3>
 
-    <form method="POST" action="{{ isset($faq) ? '/admin/faqs/'.$faq->_id.'/update' : '/admin/faqs/store' }}">
+    <form method="POST" action="{{ isset($faq) ? '/admin/faqs/'.$faq->id.'/update' : '/admin/faqs/store' }}">
         @csrf
         <div class="mb-3">
             <label class="form-label">سوال</label>

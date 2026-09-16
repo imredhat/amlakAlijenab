@@ -1,0 +1,129 @@
+{
+  "nodes": [
+    {
+      "id": "brand_toyota",
+      "label": "Toyota",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\brands\\toyota.svg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "entity_car",
+      "label": "Car",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\home\\car.svg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "entity_mobile_app",
+      "label": "Mobile App",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\home\\mobile-app.png",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "icon_accident",
+      "label": "Accident",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\icons\\accident.svg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "category_catalog",
+      "label": "Car Catalog",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\catalog\\01.jpg",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "category_car_categories",
+      "label": "Car Categories",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\categories\\01.png",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "page_home",
+      "label": "Homepage",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\home\\hero-img.png",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "concept_road",
+      "label": "Road",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\home\\road-line.svg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "brand_toyota",
+      "target": "entity_car",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\brands\\toyota.svg"
+    },
+    {
+      "source": "entity_mobile_app",
+      "target": "page_home",
+      "label": "DISPLAYED_ON",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\home\\mobile-app.png"
+    },
+    {
+      "source": "entity_car",
+      "target": "page_home",
+      "label": "APPEARS_ON",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\home\\car.svg"
+    },
+    {
+      "source": "icon_accident",
+      "target": "entity_car",
+      "label": "RELATED_TO",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\icons\\accident.svg"
+    },
+    {
+      "source": "category_catalog",
+      "target": "entity_car",
+      "label": "CONTAINS",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\catalog\\01.jpg"
+    },
+    {
+      "source": "category_car_categories",
+      "target": "entity_car",
+      "label": "CLASSIFIES",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\categories\\01.png"
+    },
+    {
+      "source": "concept_road",
+      "target": "page_home",
+      "label": "PART_OF",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\home\\road-line.svg"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

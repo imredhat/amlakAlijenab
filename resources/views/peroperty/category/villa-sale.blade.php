@@ -5,16 +5,16 @@
 
           <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
               <label class="form-label" for="land-area">متراژ زمین <span class="text-danger">*</span></label>
-              <input class="form-control" type="number" id="land-area" placeholder="متراژ زمین" required>
+              <input class="form-control" type="number" id="land-area" name="land_area" placeholder="متراژ زمین" required>
           </div>
           <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
               <label class="form-label" for="building-area">متراژ بنا <span class="text-danger">*</span></label>
-              <input class="form-control" type="number" id="building-area" placeholder="متراژ بنا" required>
+              <input class="form-control" type="number" id="building-area" name="building_area" placeholder="متراژ بنا" required>
           </div>
 
           <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
               <label class="form-label" for="ap-year-built">سال ساخت بنا <span class="text-danger">*</span></label>
-              <input class="form-control" type="number" id="ap-year-built" placeholder="سال ساخت" required>
+              <input class="form-control" type="number" id="ap-year-built" name="build_year" placeholder="سال ساخت" required>
           </div>
 
 
@@ -179,6 +179,19 @@
                   <input class="btn-check" type="radio" id="pool-covered" name="pool_type" value="سرپوشیده" required>
                   <label class="btn btn-outline-secondary fw-normal" for="pool-covered">سرپوشیده</label>
               </div>
+          </div>
+
+          <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
+              <label for="property_view">ویو</label>
+              <select name="property_view" id="property_view" class="form-control">
+                  <option value="">انتخاب کنید</option>
+                  <option value="دریا">دریا</option>
+                  <option value="جنگل">جنگل</option>
+                  <option value="شهر">شهر</option>
+                  <option value="باغ">باغ</option>
+                  <option value="دشت">دشت</option>
+                  <option value="ندارد">ندارد</option>
+              </select>
           </div>
 
       </div>

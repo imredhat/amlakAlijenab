@@ -11,4 +11,5 @@
         <input type="text" inputmode="numeric" class="form-control price-input" id="price" name="price" value="{{ old('price', number_format($property->price ?? 0)) }}">
     </div>
 
+
 </div>

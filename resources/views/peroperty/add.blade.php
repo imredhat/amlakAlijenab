@@ -192,8 +192,6 @@
   </div>
 </div>
 
-<script src="{{ url('/') }}/assets/js/jquery-3.6.0.min.js"></script>
-
 <script>
   // Ensure FilePond keeps original files for standard form submission
   document.addEventListener('DOMContentLoaded', function() {

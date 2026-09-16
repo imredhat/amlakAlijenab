@@ -29,7 +29,7 @@
                 <div class="alert alert-success">{{ session('success') }}</div>
             @endif
 
-            <form action="{{ route('sections.update', $section->_id) }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('sections.update', $section->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 <div class="row">

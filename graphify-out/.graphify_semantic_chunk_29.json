@@ -1,0 +1,377 @@
+{
+  "nodes": [
+    {
+      "id": "city_guide",
+      "label": "City Guide",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "business_category",
+      "label": "Business",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_category",
+      "label": "Catalog",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "business_image_01",
+      "label": "Business Image 01",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/01.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "business_image_02",
+      "label": "Business Image 02",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/02.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "business_image_03",
+      "label": "Business Image 03",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/03.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "business_image_04",
+      "label": "Business Image 04",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/04.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "business_image_05",
+      "label": "Business Image 05",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/05.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_01",
+      "label": "Catalog Image 01",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/01.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_02",
+      "label": "Catalog Image 02",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/02.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_03",
+      "label": "Catalog Image 03",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/03.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_04",
+      "label": "Catalog Image 04",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/04.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_05",
+      "label": "Catalog Image 05",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/05.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_06",
+      "label": "Catalog Image 06",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/06.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_07",
+      "label": "Catalog Image 07",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/07.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_08",
+      "label": "Catalog Image 08",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/08.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_09",
+      "label": "Catalog Image 09",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/09.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_10",
+      "label": "Catalog Image 10",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/10.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_11",
+      "label": "Catalog Image 11",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/11.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_12",
+      "label": "Catalog Image 12",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/12.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_13",
+      "label": "Catalog Image 13",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/13.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_14",
+      "label": "Catalog Image 14",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/14.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "catalog_image_15",
+      "label": "Catalog Image 15",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/15.jpg",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "city_guide",
+      "target": "business_category",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/"
+    },
+    {
+      "source": "city_guide",
+      "target": "catalog_category",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/"
+    },
+    {
+      "source": "business_category",
+      "target": "business_image_01",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/"
+    },
+    {
+      "source": "business_category",
+      "target": "business_image_02",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/"
+    },
+    {
+      "source": "business_category",
+      "target": "business_image_03",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/"
+    },
+    {
+      "source": "business_category",
+      "target": "business_image_04",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/"
+    },
+    {
+      "source": "business_category",
+      "target": "business_image_05",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/business/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_01",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_02",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_03",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_04",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_05",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_06",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_07",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_08",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_09",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_10",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_11",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_12",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_13",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_14",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "catalog_category",
+      "target": "catalog_image_15",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/catalog/"
+    },
+    {
+      "source": "business_category",
+      "target": "catalog_category",
+      "label": "RELATED_TO",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:/Jobs/Alijenaab/public/img/city-guide/"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

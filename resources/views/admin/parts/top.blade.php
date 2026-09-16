@@ -6,12 +6,7 @@
 								<li>
 									<button class="header-burger-menu bg-transparent p-0 border-0" id="header-burger-menu"> <i data-feather="menu"></i> </button>
 								</li>
-								<li>
-									<form class="src-form position-relative">
-										<input type="text" class="form-control" placeholder="جستجو...">
-										<button type="submit" class="src-btn position-absolute top-50 end-0 translate-middle-y bg-transparent p-0 border-0"> <i data-feather="search"></i> </button>
-									</form>
-								</li>
+							
 							</ul>
 						</div>
 					</div>
@@ -19,10 +14,16 @@
 						<div class="right-header-content mt-2 mt-sm-0">
 							<ul class="d-flex align-items-center justify-content-center justify-content-sm-end ps-0 mb-0 list-unstyled">
 
+							<li class="header-right-item">
+								<button class="theme-toggle bg-transparent border-0" onclick="toggleTheme()" title="تغییر تم" aria-label="Toggle dark mode">
+									<span class="icon-moon"><i class="ri-moon-line"></i></span>
+									<span class="icon-sun"><i class="ri-sun-line"></i></span>
+								</button>
+							</li>
 							<li class="header-right-item d-none d-md-block">
 									<div class="today-date"> <span id="digitalDate"></span> <i data-feather="calendar"></i> </div>
 								</li>
-								<li class="header-right-item">
+								<!-- <li class="header-right-item">
 									<div class="dropdown notifications noti">
 										<button class="btn btn-secondary border-0 p-0 position-relative badge" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <i data-feather="bell"></i> </button>
 										<div class="dropdown-menu dropdown-lg p-0 border-0 p-4">
@@ -51,7 +52,7 @@
 											</div> <a href="notification.html" class="dropdown-item text-center text-primary d-block view-all pt-3 pb-0 fw-semibold">
                                                 مشاهده همه <i data-feather="chevron-left"></i> </a> </div>
 									</div>
-								</li>
+								</li> -->
 								
 								<li class="header-right-item">
 									<div class="dropdown admin-profile">

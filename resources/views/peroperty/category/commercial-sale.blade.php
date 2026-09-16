@@ -27,8 +27,8 @@
         </select>
     </div>
 
-    
-  
+
+
 
 
 
@@ -112,7 +112,7 @@
     </div>
 
     <!-- انشعابات -->
-    
+
     <!-- وضعیت فعلی -->
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="current_status">وضعیت فعلی *</label>
@@ -122,6 +122,19 @@
             <option value="active">فعال</option>
             <option value="under_renovation">در حال بازسازی</option>
             <option value="other">سایر</option>
+        </select>
+    </div>
+
+    <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
+        <label for="property_view">ویو</label>
+        <select name="property_view" id="property_view" class="form-control">
+            <option value="">انتخاب کنید</option>
+            <option value="دریا">دریا</option>
+            <option value="جنگل">جنگل</option>
+            <option value="شهر">شهر</option>
+            <option value="باغ">باغ</option>
+            <option value="دشت">دشت</option>
+            <option value="ندارد">ندارد</option>
         </select>
     </div>
 
@@ -139,6 +152,9 @@
             <option value="خدماتی">خدماتی</option>
         </select>
     </div>
+
+
+
 
     <hr/>
 
@@ -213,6 +229,8 @@
             </div>
         </div>
     </div>
+
+
 
 
 </div>

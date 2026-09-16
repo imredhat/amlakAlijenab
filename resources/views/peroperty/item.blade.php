@@ -3,44 +3,6 @@
 
 
 <?php
-function getCat($type)
-{
-    switch ($type) {
-        case 'other':
-            return "سایر";
-            break;
-        case 'pre-sale':
-            return "پیش فروش";
-            break;
-        case 'villa-sale':
-            return "خرید و فروش ویلا";
-            break;
-        case 'apartment-rent':
-            return "رهن و اجاره خانه و آپارتمان";
-            break;
-        case 'apartment-sale':
-            return "خرید و فروش خانه و آپارتمان";
-            break;
-        case 'villa-short-rent':
-            return "اجاره کوتاه مدت ویلا، سوئیت";
-            break;
-        case 'commercial-rent':
-            return "رهن و اجاره اداری، تجاری و صنعتی";
-            break;
-        case 'commercial-sale':
-            return "خرید و فروش اداری، تجاری و صنعتی";
-            break;
-        case 'land':
-            return "زمین و باغ";
-            break;
-        case 'pre-sale':
-            return "پیش فروش و مشارکت در ساخت";
-            break;
-
-        default:
-            break;
-    }
-}
 
 $media = json_decode($property[0]->media);
 
@@ -136,7 +98,7 @@ $media = json_decode($property[0]->media);
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <div><span class="badge bg-success me-2 mb-2">{{$property[0] -> status}}</span><span class="badge bg-info me-2 mb-2">جدید</span></div>
                     <div class="text-nowrap">
-                        <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2" type="button" data-bs-toggle="tooltip" title="نشان کردن"><i class="fi-heart"></i></button>
+                        <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2 favorite-btn" type="button" data-bs-toggle="tooltip" title="نشان کردن" data-property-id="{{ $property[0]->id }}"><i class="fi-heart"></i></button>
                         <div class="dropdown d-inline-block" data-bs-toggle="tooltip" title="اشتراک گذاری">
                             <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2" type="button" data-bs-toggle="dropdown"><i class="fi-share"></i></button>
                             <div class="dropdown-menu dropdown-menu-end my-1">
@@ -215,7 +177,7 @@ $media = json_decode($property[0]->media);
                         <a class="img-overlay" href="{{url('/')}}/p/{{$p->id}}/{{str_replace(' ','-',$p->title)}}" >
 
                             <div class="content-overlay end-0 top-0 pt-3 pe-3">
-                                <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="نشان کردن"><i class="fi-heart"></i></button>
+                                <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle favorite-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="نشان کردن" data-property-id="{{ $p->id }}"><i class="fi-heart"></i></button>
                             </div>
                             <img src="{{url('/')}}/upload/property/{{$p->id}}/{{$media[0]}}" alt="Image">
                     </div>

@@ -63,10 +63,10 @@
                 <aside class="col-lg-3 col-md-4 mb-5">
                     <div class="pe-lg-3 text-center text-md-start">
                         <img class="d-block rounded-circle mx-auto mx-md-0 mb-3 shadow-sm"
-                            src="{{ $agent->avatar ?? asset('img/avatars/default-agent.jpg') }}"
-                            width="130" height="130" alt="{{ $agent->name }}">
+                            src="{{ !empty($agent->avatar) ? asset('upload/user/' . $agent->id . '/' . $agent->avatar) : asset('img/avatars/default-agent.jpg') }}"
+                            width="130" height="130" style="height: 120px !important;" alt="{{ $agent->name }}">
 
-                        <h2 class="h4 mb-1 font-vazir">{{ $agent->name }} {{ $agent->lname ?? '' }}</h2>
+                        <h2 class="h4 mb-1 font-IRANSans">{{ $agent->name }} {{ $agent->lname ?? '' }}</h2>
                         <p class="text-muted mb-3">{{ $agent->agency_name ?? 'مشاور املاک' }}</p>
 
                         <div class="d-flex justify-content-center justify-content-md-start border-bottom pb-4 mb-4">
@@ -99,7 +99,7 @@
 
                 <!-- محتوای اصلی -->
                 <div class="col-lg-9 col-md-8">
-                    <h1 class="h2 mb-4 font-vazir">
+                    <h1 class="h2 mb-4 font-IRANSans">
                         املاک {{ $agent->name }}
                         <small class="fs-5 text-muted">({{ $properties->total() }} آگهی)</small>
                     </h1>
@@ -123,46 +123,6 @@
                     <div class="row g-4">
 
 
-                        <?php
-                        function getCat($type)
-                        {
-                            switch ($type) {
-                                case 'other':
-                                    return "سایر";
-                                    break;
-                                case 'pre-sale':
-                                    return "پیش فروش";
-                                    break;
-                                case 'villa-sale':
-                                    return "خرید و فروش ویلا";
-                                    break;
-                                case 'apartment-rent':
-                                    return "رهن و اجاره خانه و آپارتمان";
-                                    break;
-                                case 'apartment-sale':
-                                    return "خرید و فروش خانه و آپارتمان";
-                                    break;
-                                case 'villa-short-rent':
-                                    return "اجاره کوتاه مدت ویلا، سوئیت";
-                                    break;
-                                case 'commercial-rent':
-                                    return "رهن و اجاره اداری، تجاری و صنعتی";
-                                    break;
-                                case 'commercial-sale':
-                                    return "خرید و فروش اداری، تجاری و صنعتی";
-                                    break;
-                                case 'land':
-                                    return "زمین و باغ";
-                                    break;
-                                case 'pre-sale':
-                                    return "پیش فروش و مشارکت در ساخت";
-                                    break;
-
-                                default:
-                                    break;
-                            }
-                        }
-                        ?>
 
 
                         @if(isset($properties))
@@ -199,7 +159,7 @@
 
                     <!-- Pagination -->
                     <div class="mt-5">
-                        {{ $properties->appends(request()->query())->links() }}
+                        {{ $properties->appends(request()->query())->links('vendor.pagination.persian') }}
                     </div>
                 </div>
             </div>
@@ -230,9 +190,14 @@
 
         @include('partials.home.footer')
 
+        <style>
+      ul.pagination {
+      direction: ltr !important;
+    }
+    </style>
 
 
-        <script src="{{ url('/') }}/vendor/jquery-3.6.0.js"></script>
+        <script src="{{ url('/') }}/assets/js/jquery-3.6.0.min.js"></script>
 
         <script>
             $(document).ready(function() {

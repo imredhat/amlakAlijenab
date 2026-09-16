@@ -2,7 +2,18 @@
 <div class="card card-hover card-horizontal border-0 shadow-sm mb-4">
     <a class="card-img-top" href="{{url('/')}}/p/{{$p->id}}/{{str_replace(' ','-',$p->title)}}" style="background-image: url({{ getPropertyImage($p) }})">
         <div class="position-absolute start-0 top-0 pt-3 ps-3">
-            <span class="d-table badge bg-info">{{$p -> status}}</span>
+            @if($p->status == 'فعال')
+                <span class="d-table badge bg-success">{{$p->status}}</span>
+            @elseif($p->status == 'غیرفعال')
+                <span class="d-table badge bg-warning">{{$p->status}}</span>
+            @elseif($p->status == 'حذف شده')
+                <span class="d-table badge bg-danger">{{$p->status}}</span>
+            @elseif($p->status == 'منقضی')
+                <span class="d-table badge bg-secondary">{{$p->status}}</span>
+            @else
+                <span class="d-table badge bg-info">{{$p->status}}</span>
+            @endif
+            @include('peroperty.profile-property-list._expiry-badge')
         </div>
     </a>
     <div class="card-body position-relative pb-3">
@@ -11,7 +22,11 @@
             <ul class="dropdown-menu my-1" aria-labelledby="contextMenu{{$p->id}}">
                 <li><a class="dropdown-item" href="{{ url('/property/edit/' . $p->id) }}"><i class="fi-edit opacity-60 me-2"></i>ویرایش</a></li>
                 <li><button class="dropdown-item" type="button" onclick="toggleFeature('{{$p->id}}')"><i class="fi-flame opacity-60 me-2"></i>نردبان</button></li>
-                <li><button class="dropdown-item" type="button" onclick="toggleStatus('{{$p->id}}')"><i class="fi-power opacity-60 me-2"></i>غیرفعال</button></li>
+                @if(in_array($p->status, ['فعال', 'ثبت شده', 'تایید شده']))
+                    <li><button class="dropdown-item" type="button" onclick="toggleStatus('{{$p->id}}')"><i class="fi-power opacity-60 me-2"></i>غیرفعال</button></li>
+                @else
+                    <li><button class="dropdown-item text-success" type="button" onclick="toggleStatus('{{$p->id}}')"><i class="fi-power opacity-60 me-2"></i>فعال</button></li>
+                @endif
                 <li><button class="dropdown-item text-danger" type="button" onclick="confirmDelete('{{$p->id}}')"><i class="fi-trash opacity-60 me-2"></i>حذف</button></li>
             </ul>
         </div>
@@ -38,5 +53,9 @@ function confirmDelete(id) {
     if(confirm('آیا از حذف این آگهی مطمئن هستید؟')) {
         document.getElementById('delete-form-' + id).submit();
     }
+}
+
+function toggleFeature(id) {
+    window.location.href = '{{ url("/user/nardban") }}/' + id;
 }
 </script>

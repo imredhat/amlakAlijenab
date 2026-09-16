@@ -2,12 +2,10 @@
 
 namespace App\Models;
 
-use MongoDB\Laravel\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
 class Faq extends Model
 {
-    protected $connection = 'mongodb';
-    protected $collection = 'faqs';
     public $timestamps = false;
 
     protected $fillable = [
@@ -17,6 +15,11 @@ class Faq extends Model
         'slug',
         'order',
         'date_created',
-        'date_updated'
+        'date_updated',
+        'is_active',
+    ];
+
+    protected $casts = [
+        'is_active' => 'boolean',
     ];
 }

@@ -1,0 +1,417 @@
+{
+  "nodes": [
+    {
+      "id": "avatar_47",
+      "label": "Avatar 47",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\47.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "avatar_48",
+      "label": "Avatar 48",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\48.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "avatar_49",
+      "label": "Avatar 49",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\49.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "default_agent_avatar",
+      "label": "Default Agent Avatar",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\default-agent.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "default_user_avatar",
+      "label": "Default User Avatar",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\default-user.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "car_finder_about_01",
+      "label": "Car Finder About Image 01",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\about\\01.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_about_02",
+      "label": "Car Finder About Image 02",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\about\\02.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_about_03",
+      "label": "Car Finder About Image 03",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\about\\03.png:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_about_hero",
+      "label": "Car Finder About Hero Image",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\about\\hero-img.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "car_finder_blog_01",
+      "label": "Car Finder Blog Image 01",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\01.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_blog_02",
+      "label": "Car Finder Blog Image 02",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\02.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_blog_03",
+      "label": "Car Finder Blog Image 03",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\03.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_blog_04",
+      "label": "Car Finder Blog Image 04",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\04.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_blog_05",
+      "label": "Car Finder Blog Image 05",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\05.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_blog_06",
+      "label": "Car Finder Blog Image 06",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\06.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_blog_07",
+      "label": "Car Finder Blog Image 07",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\07.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_blog_08",
+      "label": "Car Finder Blog Image 08",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\08.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_blog_09",
+      "label": "Car Finder Blog Image 09",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\09.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_blog_10",
+      "label": "Car Finder Blog Image 10",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\10.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder_blog_11",
+      "label": "Car Finder Blog Image 11",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\11.jpg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "avatars_directory",
+      "label": "Avatars Directory",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "car_finder_about_directory",
+      "label": "Car Finder About Directory",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\about\\:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "car_finder_blog_directory",
+      "label": "Car Finder Blog Directory",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "car_finder",
+      "label": "Car Finder",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "user",
+      "label": "User",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "agent",
+      "label": "Agent",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "avatar_47",
+      "target": "avatars_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\47.jpg:1"
+    },
+    {
+      "source": "avatar_48",
+      "target": "avatars_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\48.jpg:1"
+    },
+    {
+      "source": "avatar_49",
+      "target": "avatars_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\49.jpg:1"
+    },
+    {
+      "source": "default_agent_avatar",
+      "target": "avatars_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\default-agent.svg:1"
+    },
+    {
+      "source": "default_user_avatar",
+      "target": "avatars_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\default-user.svg:1"
+    },
+    {
+      "source": "default_agent_avatar",
+      "target": "agent",
+      "label": "REPRESENTS",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\default-agent.svg:1"
+    },
+    {
+      "source": "default_user_avatar",
+      "target": "user",
+      "label": "REPRESENTS",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\default-user.svg:1"
+    },
+    {
+      "source": "car_finder_about_01",
+      "target": "car_finder_about_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\about\\01.jpg:1"
+    },
+    {
+      "source": "car_finder_about_02",
+      "target": "car_finder_about_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\about\\02.jpg:1"
+    },
+    {
+      "source": "car_finder_about_03",
+      "target": "car_finder_about_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\about\\03.png:1"
+    },
+    {
+      "source": "car_finder_about_hero",
+      "target": "car_finder_about_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\about\\hero-img.jpg:1"
+    },
+    {
+      "source": "car_finder_about_directory",
+      "target": "car_finder",
+      "label": "PART_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\about\\:1"
+    },
+    {
+      "source": "car_finder_blog_01",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\01.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_02",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\02.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_03",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\03.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_04",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\04.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_05",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\05.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_06",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\06.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_07",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\07.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_08",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\08.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_09",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\09.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_10",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\10.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_11",
+      "target": "car_finder_blog_directory",
+      "label": "BELONGS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\11.jpg:1"
+    },
+    {
+      "source": "car_finder_blog_directory",
+      "target": "car_finder",
+      "label": "PART_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\car-finder\\blog\\:1"
+    },
+    {
+      "source": "avatars_directory",
+      "target": "car_finder",
+      "label": "USED_BY",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\avatars\\:1"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,0 +1,465 @@
+{
+  "nodes": [
+    {
+      "id": "php-text-template",
+      "label": "PHP Text Template",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-text-template\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "composer",
+      "label": "Composer",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-text-template\\README.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phpunit",
+      "label": "PHPUnit",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-text-template\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "security-policy",
+      "label": "Security Policy",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-text-template\\SECURITY.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "sebastian-bergmann",
+      "label": "Sebastian Bergmann",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-text-template\\SECURITY.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-timer",
+      "label": "PHP Timer",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-timer\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "timer",
+      "label": "Timer",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-timer\\README.md:27",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "duration",
+      "label": "Duration",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-timer\\README.md:57",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "resource-usage-formatter",
+      "label": "ResourceUsageFormatter",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-timer\\README.md:68",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phpunit-11.5",
+      "label": "PHPUnit 11.5",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\phpunit\\ChangeLog-11.5.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "deprecations",
+      "label": "Deprecations",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\phpunit\\DEPRECATIONS.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "assertions",
+      "label": "Assertions",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\phpunit\\DEPRECATIONS.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "test-double-api",
+      "label": "Test Double API",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\phpunit\\DEPRECATIONS.md:16",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psr-20",
+      "label": "PSR-20",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\clock\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "clock-interface",
+      "label": "ClockInterface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\clock\\README.md:21",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psr-11",
+      "label": "PSR-11",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\container\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "container-interface",
+      "label": "Container Interface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\container\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psr-14",
+      "label": "PSR-14",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\event-dispatcher\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "event-dispatcher",
+      "label": "Event Dispatcher",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\event-dispatcher\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psr-18",
+      "label": "PSR-18",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-client\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "http-client",
+      "label": "HTTP Client",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-client\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psr-17",
+      "label": "PSR-17",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-factory\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "http-factory",
+      "label": "HTTP Factory",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-factory\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psr-7",
+      "label": "PSR-7",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "message-interface",
+      "label": "MessageInterface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "request-interface",
+      "label": "RequestInterface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:10",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "server-request-interface",
+      "label": "ServerRequestInterface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "response-interface",
+      "label": "ResponseInterface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "stream-interface",
+      "label": "StreamInterface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uri-interface",
+      "label": "UriInterface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:14",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uploaded-file-interface",
+      "label": "UploadedFileInterface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "php-text-template",
+      "target": "composer",
+      "label": "INSTALLED_VIA",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-text-template\\README.md:9"
+    },
+    {
+      "source": "php-text-template",
+      "target": "phpunit",
+      "label": "USED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-text-template\\README.md:15"
+    },
+    {
+      "source": "php-text-template",
+      "target": "security-policy",
+      "label": "HAS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-text-template\\SECURITY.md:1"
+    },
+    {
+      "source": "security-policy",
+      "target": "sebastian-bergmann",
+      "label": "REPORT_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-text-template\\SECURITY.md:7"
+    },
+    {
+      "source": "php-timer",
+      "target": "composer",
+      "label": "INSTALLED_VIA",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-timer\\README.md:13"
+    },
+    {
+      "source": "php-timer",
+      "target": "timer",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-timer\\README.md:27"
+    },
+    {
+      "source": "timer",
+      "target": "duration",
+      "label": "RETURNS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-timer\\README.md:40"
+    },
+    {
+      "source": "timer",
+      "target": "resource-usage-formatter",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\php-timer\\README.md:68"
+    },
+    {
+      "source": "phpunit-11.5",
+      "target": "deprecations",
+      "label": "DOCUMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\phpunit\\DEPRECATIONS.md:1"
+    },
+    {
+      "source": "deprecations",
+      "target": "assertions",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\phpunit\\DEPRECATIONS.md:9"
+    },
+    {
+      "source": "deprecations",
+      "target": "test-double-api",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\phpunit\\phpunit\\DEPRECATIONS.md:16"
+    },
+    {
+      "source": "psr-20",
+      "target": "clock-interface",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\clock\\README.md:21"
+    },
+    {
+      "source": "psr-11",
+      "target": "container-interface",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\container\\README.md:6"
+    },
+    {
+      "source": "psr-14",
+      "target": "event-dispatcher",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\event-dispatcher\\README.md:4"
+    },
+    {
+      "source": "psr-18",
+      "target": "http-client",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-client\\README.md:4"
+    },
+    {
+      "source": "psr-17",
+      "target": "http-factory",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-factory\\README.md:4"
+    },
+    {
+      "source": "psr-7",
+      "target": "message-interface",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:9"
+    },
+    {
+      "source": "psr-7",
+      "target": "request-interface",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:10"
+    },
+    {
+      "source": "psr-7",
+      "target": "server-request-interface",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:11"
+    },
+    {
+      "source": "psr-7",
+      "target": "response-interface",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:12"
+    },
+    {
+      "source": "psr-7",
+      "target": "stream-interface",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:13"
+    },
+    {
+      "source": "psr-7",
+      "target": "uri-interface",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:14"
+    },
+    {
+      "source": "psr-7",
+      "target": "uploaded-file-interface",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:15"
+    },
+    {
+      "source": "request-interface",
+      "target": "message-interface",
+      "label": "EXTENDS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:128"
+    },
+    {
+      "source": "server-request-interface",
+      "target": "request-interface",
+      "label": "EXTENDS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:129"
+    },
+    {
+      "source": "response-interface",
+      "target": "message-interface",
+      "label": "EXTENDS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\psr\\http-message\\docs\\PSR7-Interfaces.md:128"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

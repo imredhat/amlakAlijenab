@@ -1,0 +1,569 @@
+{
+  "nodes": [
+    {
+      "id": "hamcrest-php",
+      "label": "Hamcrest PHP",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "hamcrest-matchers",
+      "label": "Hamcrest Matchers",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-port",
+      "label": "PHP Port of Hamcrest",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "assertion-library",
+      "label": "Assertion Library",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:47",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "array-matchers",
+      "label": "Array Matchers",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:94",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "collection-matchers",
+      "label": "Collection Matchers",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:156",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "object-matchers",
+      "label": "Object Matchers",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:230",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "number-matchers",
+      "label": "Number Matchers",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:296",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "string-matchers",
+      "label": "String Matchers",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:337",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "type-checking-matchers",
+      "label": "Type Checking Matchers",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:403",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "xml-matchers",
+      "label": "XML Matchers",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:471",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "global-proxy-functions",
+      "label": "Global Proxy Functions",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:53",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "jalali-calendar",
+      "label": "Jalali Calendar",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\jalali\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "gregorian-calendar",
+      "label": "Gregorian Calendar",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\jalali\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nasser-hekmati",
+      "label": "Nasser Hekmati",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\jalali\\README.md:17",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "number-to-word",
+      "label": "Number to Word Conversion",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\notowo\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "notowo",
+      "label": "Notowo",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\notowo\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "currency-conversion",
+      "label": "Currency Conversion",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\notowo\\README.md:58",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "verta",
+      "label": "Verta",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\verta\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "solar-calendar",
+      "label": "Solar Calendar",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\verta\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "carbon-compatibility",
+      "label": "Carbon Compatibility",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\verta\\README.md:16",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "datetime-manipulation",
+      "label": "Datetime Manipulation",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\verta\\README.md:173",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "localization",
+      "label": "Localization",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\verta\\README.md:216",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "ippanel-sms-api",
+      "label": "IPPanel SMS API",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\ippanelcom\\laravel-sdk\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "laravel-sdk",
+      "label": "Laravel SDK",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\ippanelcom\\laravel-sdk\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "send-sms",
+      "label": "Send SMS",
+      "type": "ACTION",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\ippanelcom\\laravel-sdk\\README.md:55",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "send-pattern-message",
+      "label": "Send Pattern Message",
+      "type": "ACTION",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\ippanelcom\\laravel-sdk\\README.md:80",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "send-voice-otp",
+      "label": "Send Voice OTP",
+      "type": "ACTION",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\ippanelcom\\laravel-sdk\\README.md:103",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "laravel-framework",
+      "label": "Laravel Framework",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-web-framework",
+      "label": "PHP Web Framework",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "routing-engine",
+      "label": "Routing Engine",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:17",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "dependency-injection",
+      "label": "Dependency Injection",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:18",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "session-storage",
+      "label": "Session Storage",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:19",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "cache-storage",
+      "label": "Cache Storage",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:19",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "schema-migrations",
+      "label": "Schema Migrations",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:20",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "background-job-processing",
+      "label": "Background Job Processing",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:21",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "event-broadcasting",
+      "label": "Event Broadcasting",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:22",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "hamcrest-php",
+      "target": "hamcrest-matchers",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:6"
+    },
+    {
+      "source": "hamcrest-php",
+      "target": "php-port",
+      "label": "IS_PORT_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:7"
+    },
+    {
+      "source": "hamcrest-php",
+      "target": "assertion-library",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:47"
+    },
+    {
+      "source": "hamcrest-matchers",
+      "target": "array-matchers",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:94"
+    },
+    {
+      "source": "hamcrest-matchers",
+      "target": "collection-matchers",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:156"
+    },
+    {
+      "source": "hamcrest-matchers",
+      "target": "object-matchers",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:230"
+    },
+    {
+      "source": "hamcrest-matchers",
+      "target": "number-matchers",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:296"
+    },
+    {
+      "source": "hamcrest-matchers",
+      "target": "string-matchers",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:337"
+    },
+    {
+      "source": "hamcrest-matchers",
+      "target": "type-checking-matchers",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:403"
+    },
+    {
+      "source": "hamcrest-matchers",
+      "target": "xml-matchers",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:471"
+    },
+    {
+      "source": "hamcrest-php",
+      "target": "global-proxy-functions",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hamcrest\\hamcrest-php\\README.md:53"
+    },
+    {
+      "source": "jalali-calendar",
+      "target": "gregorian-calendar",
+      "label": "CONVERTS_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\jalali\\README.md:15"
+    },
+    {
+      "source": "jalali-calendar",
+      "target": "nasser-hekmati",
+      "label": "CREATED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\jalali\\README.md:17"
+    },
+    {
+      "source": "notowo",
+      "target": "number-to-word",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\notowo\\README.md:5"
+    },
+    {
+      "source": "notowo",
+      "target": "currency-conversion",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\notowo\\README.md:58"
+    },
+    {
+      "source": "notowo",
+      "target": "nasser-hekmati",
+      "label": "CREATED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\notowo\\README.md:70"
+    },
+    {
+      "source": "verta",
+      "target": "solar-calendar",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\verta\\README.md:15"
+    },
+    {
+      "source": "verta",
+      "target": "carbon-compatibility",
+      "label": "COMPATIBLE_WITH",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\verta\\README.md:16"
+    },
+    {
+      "source": "verta",
+      "target": "datetime-manipulation",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\verta\\README.md:173"
+    },
+    {
+      "source": "verta",
+      "target": "localization",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\verta\\README.md:216"
+    },
+    {
+      "source": "verta",
+      "target": "nasser-hekmati",
+      "label": "CREATED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\hekmatinasser\\verta\\README.md:236"
+    },
+    {
+      "source": "ippanel-sms-api",
+      "target": "laravel-sdk",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\ippanelcom\\laravel-sdk\\README.md:1"
+    },
+    {
+      "source": "laravel-sdk",
+      "target": "send-sms",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\ippanelcom\\laravel-sdk\\README.md:55"
+    },
+    {
+      "source": "laravel-sdk",
+      "target": "send-pattern-message",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\ippanelcom\\laravel-sdk\\README.md:80"
+    },
+    {
+      "source": "laravel-sdk",
+      "target": "send-voice-otp",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\ippanelcom\\laravel-sdk\\README.md:103"
+    },
+    {
+      "source": "laravel-framework",
+      "target": "php-web-framework",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:15"
+    },
+    {
+      "source": "laravel-framework",
+      "target": "routing-engine",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:17"
+    },
+    {
+      "source": "laravel-framework",
+      "target": "dependency-injection",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:18"
+    },
+    {
+      "source": "laravel-framework",
+      "target": "session-storage",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:19"
+    },
+    {
+      "source": "laravel-framework",
+      "target": "cache-storage",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:19"
+    },
+    {
+      "source": "laravel-framework",
+      "target": "schema-migrations",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:20"
+    },
+    {
+      "source": "laravel-framework",
+      "target": "background-job-processing",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:21"
+    },
+    {
+      "source": "laravel-framework",
+      "target": "event-broadcasting",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\README.md:22"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

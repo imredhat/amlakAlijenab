@@ -1,222 +1,341 @@
-@include('partials.header')
-@include('partials.home.menu')
+@include('partials.home.header')
 
-<!-- Page container -->
+
+<!-- Demo switcher (offcanvas)-->
+
+<!-- Page loading spinner-->
+<div class="page-loading active">
+  <div class="page-loading-inner">
+    <div class="page-spinner"></div><span>لطفا منتظر باشید</span>
+  </div>
+</div>
+<main class="page-wrapper">
+  <!-- Sign In Modal-->
+  <div class="modal fade" id="signin-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered p-2 my-0 mx-auto" style="max-width: 950px;">
+      <div class="modal-content">
+        <div class="row mx-0 align-items-center">
+          <div class="col-md-6 border-end-md p-4 p-sm-5">
+            <h2 class="h3 mb-4 mb-sm-5">سلام!<br>به سایت ما خوش آمدید.</h2><img class="d-block mx-auto rotate-img" src="{{ url('') }}/img/signin-modal/signin.svg" width="344" alt="Illustartion">
+            <!-- <div class="mt-4 mt-sm-5">هنوز ثبت نام نکرده اید؟ <a href="signup-light.html">ثبت نام</a></div> -->
+          </div>
+          <div class="col-md-6 px-4 pt-2 pb-4 px-sm-5 pb-sm-5 pt-md-5">
+            <!-- <a class="btn btn-outline-info w-100 mb-3" href="signin-light.html#"><i class="fi-google fs-lg me-1"></i>ورود با اکانت گوگل</a><a class="btn btn-outline-info w-100 mb-3" href="signin-light.html#"><i class="fi-facebook fs-lg me-1"></i>ورود با اکانت فیسبوک</a>
+                  <div class="d-flex align-items-center py-3 mb-3">
+                    <hr class="w-100">
+                    <div class="px-3">یـا</div>
+                    <hr class="w-100">
+                  </div> -->
+            <form class="needs-validation" novalidate action="{{ url('auth/check') }}" method="post" autocomplete="on">
+              @csrf
+              <div class="mb-4">
+                <label class="form-label mb-2" for="signin-email">شماره موبایل</label>
+                <input class="form-control" type="tel" id="signin-email" name="tel" placeholder="09123456789" required pattern="[0-9]{11}">
+              </div>
+
+              <button class="btn btn-primary btn-lg w-100" type="submit">ارسال کد</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar-->
+
+
+
+  @include('partials.home.menu')
+
+
 <main class="page-wrapper">
 
-    <div class="container mt-5 mb-md-4 py-5">
-        <div class="row">
+    <div class="container-fluid mt-5 pt-5 p-0">
+        <div class="row g-0 mt-n3">
 
-            <!-- Breadcrumb -->
-            <nav class="mb-3 pt-md-2" aria-label="Breadcrumb">
-                <ol class="breadcrumb">
-
-                </ol>
-            </nav>
-
-            <aside class="col-lg-4 col-xl-4 pe-xl-4 mb-5">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h2 class="h4 mb-0">جستجوی پیشرفته</h2>
-                    <button class="btn btn-sm btn-outline-secondary d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#filters-collapse">
-                        <i class="fi-filter"></i> فیلترها
-                    </button>
-                </div>
-
-                <div class="collapse d-lg-block" id="filters-collapse">
-
-
-                    <div class="card border-0 shadow-sm p-4 mb-4">
-                        <h3 class="h6 mb-3"><i class="fi-cash"></i> محدوده قیمت</h3>
-                        <div class="mb-3">
-                            <label class="form-label">حداقل قیمت</label>
-                            <input type="text" class="form-control price-input" id="min-price" placeholder="0 تومان">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">حداکثر قیمت</label>
-                            <input type="text" class="form-control price-input" id="max-price" placeholder="نامحدود">
-                        </div>
+            <!-- Sidebar فیلترها -->
+            <aside class="col-lg-4 col-xl-3 border-top-lg border-end-lg shadow-sm px-3 px-xl-4 px-xxl-5 pt-lg-2">
+                <div class="offcanvas-lg offcanvas-end" id="filters-sidebar">
+                    <div class="offcanvas-header d-flex d-lg-none align-items-center">
+                        <h2 class="h5 mb-0">فیلتر جستجو</h2>
+                        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" data-bs-target="#filters-sidebar"></button>
                     </div>
 
-                    <div class="card border-0 shadow-sm p-4 mb-4">
-                        <h3 class="h6 mb-3"><i class="fi-home"></i> مشخصات ملک</h3>
-                        <div class="mb-3">
-                            <label class="form-label">حداقل متراژ</label>
-                            <input type="number" class="form-control" id="min-area" placeholder="متر مربع">
+                    <div class="offcanvas-body py-lg-4">
+
+                        <!-- تب اجاره / فروش -->
+                        <div class="pb-4 mb-2 border-bottom">
+                            <ul class="nav nav-tabs mb-0">
+                                <li class="nav-item">
+                                    <a class="nav-link {{ $type === 'rent' ? 'active' : '' }}"
+                                       href="{{ route('property.location', ['slug' => $neighborhood->tag ?? '', 'type' => 'rent']) }}">
+                                        <i class="fi-rent fs-base me-2"></i>اجاره
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{ $type === 'sale' ? 'active' : '' }}"
+                                       href="{{ route('property.location', ['slug' => $neighborhood->tag ?? '', 'type' => 'sale']) }}">
+                                        <i class="fi-home fs-base me-2"></i>فروش
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">تعداد اتاق</label>
-                            <select class="form-select" id="rooms">
-                                <option value="">هر تعداد</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4+</option>
+
+                        <!-- قیمت -->
+                        <div class="pb-4 mb-2 border-bottom">
+                            <h3 class="h6">قیمت</h3>
+                            <div class="d-flex align-items-center mb-2">
+                                <input type="text" class="form-control price-input" name="price_min" id="price_min"
+                                       placeholder="حداقل" value="{{ request('min_price') }}">
+                                <div class="mx-2">—</div>
+                                <input type="text" class="form-control price-input" name="price_max" id="price_max"
+                                       placeholder="حداکثر" value="{{ request('max_price') }}">
+                            </div>
+                        </div>
+
+                        <!-- متراژ -->
+                        <div class="pb-4 mb-2 border-bottom">
+                            <h3 class="h6">متراژ (مترمربع)</h3>
+                            <div class="d-flex align-items-center">
+                                <input type="number" class="form-control" name="area_min" id="area_min"
+                                       placeholder="حداقل" value="{{ request('min_area') }}">
+                                <div class="mx-2">—</div>
+                                <input type="number" class="form-control" name="area_max" id="area_max"
+                                       placeholder="حداکثر" value="{{ request('max_area') }}">
+                            </div>
+                        </div>
+
+                        <!-- تعداد اتاق -->
+                        <div class="pb-4 mb-2 border-bottom">
+                            <h3 class="h6">تعداد اتاق</h3>
+                            <select class="form-select" id="rooms" name="rooms">
+                                <option selected value="">هر تعداد</option>
+                                @for($i = 0; $i <= 10; $i++)
+                                <option value="{{ $i }}" {{ request('rooms') > 0 && request('rooms') == $i ? 'selected' : '' }}>{{ $i }}</option>
+                                @endfor
                             </select>
                         </div>
-                    </div>
 
-                    <button class="btn btn-primary w-100" id="apply-filters">
-                        <i class="fi-filter"></i> اعمال فیلترها
-                    </button>
+                        <!-- طبقه -->
+                        <div class="pb-4 mb-2 border-bottom">
+                            <h3 class="h6">طبقه</h3>
+                            <select class="form-select" id="floor" name="floor">
+                                <option selected value="">هر طبقه</option>
+                                @for($i = -2; $i <= 30; $i++)
+                                <option value="{{ $i }}" {{ request('floor') > 0 && request('floor') == $i ? 'selected' : '' }}>{{ $i }}</option>
+                                @endfor
+                            </select>
+                        </div>
+
+                        <!-- امکانات -->
+                        <div class="pb-4 mb-2 border-bottom">
+                            <h3 class="h6">امکانات</h3>
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="parking" id="parking" value="1" {{ request('parking') ? 'checked' : '' }}>
+                                        <label class="form-check-label fs-sm" for="parking">پارکینگ</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="storage" id="storage" value="1" {{ request('storage') ? 'checked' : '' }}>
+                                        <label class="form-check-label fs-sm" for="storage">انباری</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="elevator" id="elevator" value="1" {{ request('elevator') ? 'checked' : '' }}>
+                                        <label class="form-check-label fs-sm" for="elevator">آسانسور</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="balcony" id="balcony" value="1" {{ request('balcony') ? 'checked' : '' }}>
+                                        <label class="form-check-label fs-sm" for="balcony">بالکن</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="pool" id="pool" value="1" {{ request('pool') ? 'checked' : '' }}>
+                                        <label class="form-check-label fs-sm" for="pool">استخر</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="furnished" id="furnished" value="1" {{ request('furnished') ? 'checked' : '' }}>
+                                        <label class="form-check-label fs-sm" for="furnished">مبله</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- مرتب‌سازی -->
+                        <div class="pb-4 mb-2 border-bottom">
+                            <h3 class="h6">مرتب‌سازی</h3>
+                            <select class="form-select" id="sortby" name="sortby">
+                                <option value="newest" {{ (request('sort') ?? 'newest') === 'newest' ? 'selected' : '' }}>جدیدترین</option>
+                                <option value="price_asc" {{ request('sort') === 'price_asc' ? 'selected' : '' }}>ارزان‌ترین</option>
+                                <option value="price_desc" {{ request('sort') === 'price_desc' ? 'selected' : '' }}>گران‌ترین</option>
+                                <option value="area_desc" {{ request('sort') === 'area_desc' ? 'selected' : '' }}>بزرگ‌ترین متراژ</option>
+                            </select>
+                        </div>
+
+                        <!-- دکمه پاک کردن -->
+                        <div class="border-top py-4">
+                            <button type="button" class="btn btn-outline-secondary w-100" id="reset-filters">
+                                <i class="fi-rotate-right me-2"></i>پاک کردن فیلترها
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </aside>
 
-            <!-- Main content -->
-            <div class="col-lg-8 col-xl-8">
+            <!-- محتوای اصلی -->
+            <div class="col-lg-8 col-xl-9 position-relative overflow-hidden pb-5 pt-4 px-3 px-xl-4 px-xxl-5">
 
-                <!-- Header -->
-                <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                <!-- Breadcrumb -->
+                <nav class="mb-3 pt-md-2" aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ url('/') }}">خانه</a></li>
+                        <li class="breadcrumb-item"><a href="{{ url('browse/apartment') }}">آپارتمان</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ $neighborhood->name ?? '' }}</li>
+                    </ol>
+                </nav>
+
+                <!-- عنوان -->
+                <div class="d-flex align-items-center justify-content-between pb-3 pb-sm-4">
                     <div>
-                        <h1 class="h3 mb-2">
-                            آگهی‌های محله {{ $neighborhood->name ?? '' }}
-                        </h1>
-                        <p class="text-muted mb-0">
-                            <i class="fi-map-pin"></i>
+                        <h1 class="h4 mb-0">{{ $neighborhood->name ?? '' }}</h1>
+                        <p class="text-muted fs-sm mb-0 mt-1">
+                            <i class="fi-map-pin me-1"></i>
                             {{ $properties->total() }} آگهی در این محله
                         </p>
                     </div>
+                    <button class="btn btn-primary d-lg-none" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#filters-sidebar">
+                        <i class="fi-filter me-1"></i> فیلترها
+                    </button>
+                </div>
 
-                    <div class="d-flex gap-2 mt-3 mt-sm-0">
-                        <div class="btn-group" role="group">
-                            <a href="{{ route('property.location', ['slug' => $neighborhood->tag ?? '', 'type' => 'sale']) }}"
-                                class="btn btn-sm {{ $type == 'sale' ? 'btn-primary' : 'btn-outline-primary' }}">
-                                <i class="fi-cash"></i> فروش
-                            </a>
-                            <a href="{{ route('property.location', ['slug' => $neighborhood->tag ?? '', 'type' => 'rent']) }}"
-                                class="btn btn-sm {{ $type == 'rent' ? 'btn-primary' : 'btn-outline-primary' }}">
-                                <i class="fi-rent"></i> اجاره
-                            </a>
-                        </div>
-
-                        <select class="form-select form-select-sm w-auto" id="sort-by">
-                            <option value="newest">جدیدترین</option>
-                            <option value="price_asc">ارزان‌ترین</option>
-                            <option value="price_desc">گران‌ترین</option>
-                            <option value="area_asc">کوچک‌ترین متراژ</option>
-                            <option value="area_desc">بزرگ‌ترین متراژ</option>
+                <!-- مرتب‌سازی + تعداد نتایج -->
+                <div class="d-flex flex-sm-row flex-column align-items-sm-center align-items-stretch my-2">
+                    <div class="d-flex align-items-center flex-shrink-0">
+                        <label class="fs-sm me-2 pe-1 text-nowrap" for="sortby-top">
+                            <i class="fi-arrows-sort text-muted mt-n1 me-2"></i>مرتب سازی:
+                        </label>
+                        <select class="form-select form-select-sm" id="sortby-top">
+                            <option value="newest" {{ (request('sort') ?? 'newest') === 'newest' ? 'selected' : '' }}>جدیدترین</option>
+                            <option value="price_asc" {{ request('sort') === 'price_asc' ? 'selected' : '' }}>ارزان‌ترین</option>
+                            <option value="price_desc" {{ request('sort') === 'price_desc' ? 'selected' : '' }}>گران‌ترین</option>
+                            <option value="area_desc" {{ request('sort') === 'area_desc' ? 'selected' : '' }}>بزرگ‌ترین متراژ</option>
                         </select>
                     </div>
-                </div>
-
-                <!-- Properties list -->
-                <div id="properties-container">
-                    <!-- لیست املاک -->
-                    <div id="properties-container" class="row g-4 py-4">
-                        <?php
-                        function getCat($type)
-                        {
-                            switch ($type) {
-                                case 'other':
-                                    return "سایر";
-                                    break;
-                                case 'pre-sale':
-                                    return "پیش فروش";
-                                    break;
-                                case 'villa-sale':
-                                    return "خرید و فروش ویلا";
-                                    break;
-                                case 'apartment-rent':
-                                    return "رهن و اجاره خانه و آپارتمان";
-                                    break;
-                                case 'apartment-sale':
-                                    return "خرید و فروش خانه و آپارتمان";
-                                    break;
-                                case 'villa-short-rent':
-                                    return "اجاره کوتاه مدت ویلا، سوئیت";
-                                    break;
-                                case 'commercial-rent':
-                                    return "رهن و اجاره اداری، تجاری و صنعتی";
-                                    break;
-                                case 'commercial-sale':
-                                    return "خرید و فروش اداری، تجاری و صنعتی";
-                                    break;
-                                case 'land':
-                                    return "زمین و باغ";
-                                    break;
-                                case 'pre-sale':
-                                    return "پیش فروش و مشارکت در ساخت";
-                                    break;
-
-                                default:
-                                    break;
-                            }
-                        }
-                        ?>
-
-
-                        @if(isset($properties))
-                        @foreach($properties as $p)
-
-
-
-                        <?php
-                        $media = [""];
-                        $cat = $properties[0]->category;
-                        if (isset($p->media) && count(json_decode($p->media)) > 0) {
-                            $media = json_decode($p->media);
-                        }
-
-                        ?>
-
-                        @include("peroperty.vendor.".$cat)
-
-                        @endforeach
-
-                        @else
-
-                        <div class="col-12 text-center py-5">
-                            <p class="text-muted fs-5">هنوز هیچ آگهی ثبت نشده است.</p>
-                        </div>
-                        @endif
-
+                    <hr class="d-none d-sm-block w-100 mx-4">
+                    <div class="d-none d-sm-flex align-items-center flex-shrink-0 text-muted">
+                        <i class="fi-check-circle me-2"></i>
+                        <span class="fs-sm mt-n1" id="results-count">{{ $properties->total() }} نتیجه یافت شد</span>
                     </div>
-
                 </div>
 
-                <!-- Pagination -->
-                <div class="d-flex justify-content-center mt-4" id="pagination-container">
-                    {{ $properties->appends(request()->query())->links() }}
+                <!-- لیست املاک -->
+                <div id="properties-container" class="row g-4 py-4">
+                    @if(isset($properties) && $properties->count() > 0)
+                        @foreach($properties as $p)
+                            <?php
+                            $media = [""];
+                            $cat = $p->category;
+                            if (isset($p->media) && count(json_decode($p->media)) > 0) {
+                                $media = json_decode($p->media);
+                            }
+                            ?>
+                            @include("peroperty.vendor.".$cat)
+                        @endforeach
+                    @else
+                        <div class="col-12 text-center py-5">
+                            <i class="fi-folder-open fs-1 text-muted"></i>
+                            <p class="text-muted fs-5 mt-3">هنوز هیچ آگهی ثبت نشده است.</p>
+                        </div>
+                    @endif
                 </div>
+
+                <!-- صفحه‌بندی -->
+                <div id="pagination-container">
+                @if($properties->hasPages())
+                <nav class="border-top pb-md-4 pt-4 mt-2" aria-label="Pagination">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                        <div class="text-muted small">
+                            نمایش {{ $properties->firstItem() }} تا {{ $properties->lastItem() }} از {{ $properties->total() }} نتیجه
+                        </div>
+                        <div>
+                            {{ $properties->appends(request()->query())->links('pagination::persian') }}
+                        </div>
+                    </div>
+                </nav>
+                @endif
+                </div>
+
             </div>
         </div>
     </div>
-    </div>
 
-    <script src="{{ url('/') }}/assets/js/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
+
+            let searchTimer = null;
+            let lastUrl = '';
             let currentSlug = '{{ $neighborhood->tag ?? "" }}';
             let currentType = '{{ $type }}';
 
-            function loadProperties() {
-                let minPrice = $('#min-price').val().replace(/,/g, '');
-                let maxPrice = $('#max-price').val().replace(/,/g, '');
-                let minArea = $('#min-area').val();
+            function collectFilters() {
+                let params = {};
+                params.type = currentType;
+
+                let priceMin = $('#price_min').val().replace(/,/g, '');
+                if (priceMin) params.min_price = priceMin;
+
+                let priceMax = $('#price_max').val().replace(/,/g, '');
+                if (priceMax) params.max_price = priceMax;
+
+                let areaMin = $('#area_min').val();
+                if (areaMin) params.min_area = areaMin;
+
+                let areaMax = $('#area_max').val();
+                if (areaMax) params.max_area = areaMax;
+
                 let rooms = $('#rooms').val();
-                let city = $('#city-filter').val();
-                let province = $('#province-filter').val();
-                let neighborhood = $('#neighborhood-filter').val();
-                let sort = $('#sort-by').val();
+                if (rooms && rooms !== '0') params.rooms = rooms;
 
-                let url = `/property/location/${currentSlug}?type=${currentType}`;
+                let floor = $('#floor').val();
+                if (floor !== '' && floor !== '0') params.floor = floor;
 
-                if (minPrice) url += `&min_price=${minPrice}`;
-                if (maxPrice) url += `&max_price=${maxPrice}`;
-                if (minArea) url += `&min_area=${minArea}`;
-                if (rooms) url += `&rooms=${rooms}`;
-                if (city) url += `&city=${city}`;
-                if (province) url += `&province=${province}`;
-                if (neighborhood) url += `&neighborhood=${neighborhood}`;
-                if (sort) url += `&sort=${sort}`;
+                if ($('#parking').is(':checked')) params.parking = 1;
+                if ($('#storage').is(':checked')) params.storage = 1;
+                if ($('#elevator').is(':checked')) params.elevator = 1;
+                if ($('#balcony').is(':checked')) params.balcony = 1;
+                if ($('#pool').is(':checked')) params.pool = 1;
+                if ($('#furnished').is(':checked')) params.furnished = 1;
+
+                let sort = $('#sortby').val() || $('#sortby-top').val();
+                if (sort) params.sort = sort;
+
+                return params;
+            }
+
+            function doSearch() {
+                let params = collectFilters();
+                let queryString = $.param(params);
+                let url = '/property/location/' + currentSlug + '?' + queryString;
+
+                if (url === lastUrl) return;
+                lastUrl = url;
 
                 $('#properties-container').html(`
-            <div class="text-center py-5">
-                <div class="spinner-border text-primary" role="status">
-                    <span class="visually-hidden">در حال بارگذاری...</span>
-                </div>
-                <p class="mt-3 text-muted">در حال بارگذاری آگهی‌ها...</p>
-            </div>
-        `);
+                    <div class="col-12 text-center py-5">
+                        <div class="spinner-border text-primary" role="status"></div>
+                        <p class="mt-3 text-muted">در حال بارگذاری...</p>
+                    </div>
+                `);
 
                 $.ajax({
                     url: url,
@@ -224,96 +343,103 @@
                     dataType: 'json',
                     success: function(response) {
                         $('#properties-container').html(response.html);
-                        if (response.total > 0) {
-                            // صفحه‌بندی را دوباره راه‌اندازی کنید
-                            attachPaginationEvents();
-                        } else {
-                            $('#properties-container').html(`
-                        <div class="text-center py-5">
-                            <i class="fi-folder-open fs-1 text-muted"></i>
-                            <p class="mt-3 text-muted">هیچ آگهی‌ای یافت نشد</p>
-                        </div>
-                    `);
-                            $('#pagination-container').empty();
-                        }
+                        $('#pagination-container').html(response.pagination);
+                        $('#results-count').text(response.total + ' نتیجه یافت شد');
+                        window.history.pushState({}, '', url);
                     },
                     error: function() {
                         $('#properties-container').html(`
-                    <div class="alert alert-danger text-center">
-                        خطا در بارگذاری آگهی‌ها. لطفاً دوباره تلاش کنید.
-                    </div>
-                `);
+                            <div class="col-12 alert alert-danger text-center">
+                                خطا در بارگذاری آگهی‌ها.
+                            </div>
+                        `);
                     }
                 });
             }
 
-            function attachPaginationEvents() {
-                $('.pagination a').off('click').on('click', function(e) {
-                    e.preventDefault();
-                    let url = $(this).attr('href');
-                    if (url) {
-                        $('#properties-container').html(`
-                    <div class="text-center py-5">
+            function debouncedSearch() {
+                clearTimeout(searchTimer);
+                searchTimer = setTimeout(doSearch, 400);
+            }
+
+            // ── Text inputs: debounce ──
+            $('#q, #neighborhood').on('keyup', debouncedSearch);
+
+            // ── Price inputs: format + debounce ──
+            $('.price-input').on('input', function() {
+                let value = $(this).val().replace(/\D/g, '');
+                $(this).val(value.replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+                debouncedSearch();
+            });
+
+            // ── Number inputs: debounce ──
+            $('#area_min, #area_max').on('keyup', debouncedSearch);
+
+            // ── Selects: immediate ──
+            $('#rooms, #floor, #sortby').on('change', function() {
+                lastUrl = '';
+                doSearch();
+            });
+
+            // ── Sort top bar sync ──
+            $('#sortby-top').on('change', function() {
+                $('#sortby').val($(this).val());
+                lastUrl = '';
+                doSearch();
+            });
+
+            $('#sortby').on('change', function() {
+                $('#sortby-top').val($(this).val());
+            });
+
+            // ── Checkboxes: immediate ──
+            $('input[type="checkbox"]').on('change', function() {
+                lastUrl = '';
+                doSearch();
+            });
+
+            // ── Reset ──
+            $('#reset-filters').on('click', function() {
+                window.location.href = '/property/location/' + currentSlug + '?type=' + currentType;
+            });
+
+            // ── Pagination AJAX ──
+            $(document).on('click', '.pagination a', function(e) {
+                e.preventDefault();
+                let url = $(this).attr('href');
+                if (!url) return;
+
+                $('#properties-container').html(`
+                    <div class="col-12 text-center py-5">
                         <div class="spinner-border text-primary" role="status"></div>
                     </div>
                 `);
 
-                        $.ajax({
-                            url: url,
-                            type: 'GET',
-                            dataType: 'json',
-                            success: function(response) {
-                                $('#properties-container').html(response.html);
-                                attachPaginationEvents();
-                                $('html, body').animate({
-                                    scrollTop: 0
-                                }, 300);
-                            }
-                        });
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function(response) {
+                        $('#properties-container').html(response.html);
+                        $('#pagination-container').html(response.pagination);
+                        window.history.pushState({}, '', url);
+                        $('html, body').animate({ scrollTop: 0 }, 300);
                     }
                 });
-            }
-
-            // رویدادها
-            $('#apply-filters').on('click', loadProperties);
-            $('#sort-by').on('change', loadProperties);
-
-            // فرمت قیمت
-            $('.price-input').on('input', function() {
-                let value = $(this).val().replace(/\D/g, '');
-                $(this).val(value.replace(/\B(?=(\d{3})+(?!\d))/g, ','));
             });
 
-            // بارگذاری اولیه
-            attachPaginationEvents();
+            // ── Browser back/forward ──
+            $(window).on('popstate', function() {
+                lastUrl = '';
+                doSearch();
+            });
         });
     </script>
 
     <style>
-        .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
-        }
-
-        .pagination {
-            gap: 5px;
-        }
-
-        .page-link {
-            border-radius: 8px;
-            padding: 8px 14px;
-        }
-
-        @media (max-width: 768px) {
-            .page-link {
-                padding: 6px 10px;
-                font-size: 12px;
-            }
-        }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; }
     </style>
 
-    @include('partials.footer')
+@include('partials.home.footer')
+</main>

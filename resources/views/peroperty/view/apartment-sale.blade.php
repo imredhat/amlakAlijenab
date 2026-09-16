@@ -30,7 +30,7 @@
          <div><i class="fi-cash mt-n1 me-2 lead align-middle opacity-70"></i>{{number_format($p -> price)}} تومان</div>
          <div class="d-flex align-items-center justify-content-center justify-content-sm-start border-top pt-3 pb-2 mt-3 text-nowrap">
              <span class="d-inline-block me-4 fs-sm">{{$p->area}}<i class="fi-home ms-1 mt-n1 fs-lg text-muted"></i></span>
-             <span class="d-inline-block me-4 fs-sm">{{$p->number_of_toilets}}<i class="fi-bath ms-1 mt-n1 fs-lg text-muted"></i></span>
+             <span class="d-inline-block me-4 fs-sm">{{$p->toilet}}<i class="fi-bath ms-1 mt-n1 fs-lg text-muted"></i></span>
              <span class="d-inline-block me-4 fs-sm">{{$p->rooms}}<i class="fi-bed ms-1 mt-n1 fs-lg text-muted"></i></span>
 
              <span class="d-inline-block fs-sm">{{$p->floor}}<i class="fi-layers ms-1 mt-n1 fs-lg text-muted"></i></span>

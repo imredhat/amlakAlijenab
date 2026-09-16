@@ -59,59 +59,7 @@
         <h1 class="display-4 mt-lg-5 mb-md-4 mb-3 pt-md-4 pb-lg-2">{{$header[0]['title']}}</h1>
         <p class="position-relative lead ms-lg-n5 fs-6">{{$header[0]['desc']}}</p>
       </div>
-      <!-- Search property form group-->
-      <div class="col-xl-8 col-lg-10 order-3 mt-lg-n5" style="z-index: 9">
-        <form class="form-group d-block panel-search">
-          <div class="row g-0 ms-sm-n2">
-            <div class="col-md-8 d-sm-flex align-items-center">
-              <div class="dropdown w-sm-50 border-end-sm" data-bs-toggle="select">
-                <button class="btn btn-link dropdown-toggle ps-2 ps-sm-3" type="button" data-bs-toggle="dropdown"><i class="fi-home me-2"></i><span class="dropdown-toggle-label">اجاره</span></button>
-                <input type="hidden">
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" data-type="rent"><span class="dropdown-item-label">اجاره</span></a></li>
-                  <li><a class="dropdown-item" data-type="sale"><span class="dropdown-item-label">فروش</span></a></li>
-                </ul>
-              </div>
-              <hr class="d-sm-none my-2">
-              <div class="dropdown w-sm-50 border-end-sm" data-bs-toggle="select">
-                <button class="btn btn-link dropdown-toggle ps-2 ps-sm-3" type="button" data-bs-toggle="dropdown"><i class="fi-map-pin me-2"></i><span class="dropdown-toggle-label">موقعیت</span></button>
-                <input type="hidden">
-                <ul class="dropdown-menu">
-                  @foreach ($city as $c)
-                  <li><a class="dropdown-item"><span class="dropdown-item-label">{{ $c -> name }}</span></a></li>
-                  @endforeach
-                </ul>
-              </div>
-              <hr class="d-sm-none my-2">
-              <div class="dropdown w-sm-50 border-end-md" data-bs-toggle="select">
-                <button class="btn btn-link dropdown-toggle ps-2 ps-sm-3" type="button" data-bs-toggle="dropdown"><i class="fi-list me-2"></i><span class="dropdown-toggle-label">نوع ملک</span></button>
-                <input type="hidden">
-                <ul class="dropdown-menu">
-                  <li><a data-type="apartment" class="dropdown-item"><span class="dropdown-item-label">آپارتمان</span></a></li>
-                  <li><a data-type="commercial" class="dropdown-item"><span class="dropdown-item-label">تجاری و اداری</span></a></li>
-                  <li><a data-type="villa" class="dropdown-item"><span class="dropdown-item-label">ویلا و سوئیت</span></a></li>
-                  <li><a data-type="land" class="dropdown-item"><span class="dropdown-item-label">زمین</span></a></li>
-                  <li><a data-type="pre-sale" class="dropdown-item"><span class="dropdown-item-label">پیش فروش</span></a></li>
-                  <li><a data-type="other" class="dropdown-item"><span class="dropdown-item-label">سایر</span></a></li>
-
-
-
-                </ul>
-              </div>
-            </div>
-            <hr class="d-md-none mt-2">
-            <div class="col-md-4 d-sm-flex align-items-center pt-4 pt-md-0">
-              <div class="d-flex align-items-center w-100 pt-2 pb-4 py-sm-0 ps-2 ps-sm-3"><i class="fi-cash fs-lg text-muted me-2"></i><span class="text-muted me-2">قیمت</span>
-                <div class="range-slider ps-0" data-start-min="450" data-min="0" data-max="1000" data-dirction="rtl" data-step="1">
-                  <div class="range-slider-ui"></div>
-                  <input class="form-control range-slider-value-min" type="hidden">
-                </div>
-              </div>
-              <button class="btn btn-icon btn-primary px-3 w-100 w-sm-auto flex-shrink-0" type="button"><i class="fi-search"></i><span class="d-sm-none d-inline-block ms-2"> جستجو</span></button>
-            </div>
-          </div>
-        </form>
-      </div>
+     
     </div>
   </section>
   <!-- Property categories-->
@@ -138,19 +86,18 @@
         </a></div>
 
         <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="{{ url('/') }}/browse/pre-sale">
-          <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-pre-sale"></i></div>
+          <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-lock"></i></div>
           <h3 class="icon-box-title fs-base mb-0">پیش فروش</h3>
         </a></div>
 
 
-      <div class="col">
-        <div class="dropdown h-100"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover text-center" href="real-estate-home-v1.html#" data-bs-toggle="dropdown">
-            <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-dots-horisontal"></i></div>
-            <h3 class="icon-box-title fs-base mb-0">سایر</h3>
-          </a>
-          <div class="dropdown-menu dropdown-menu-end my-1"><a class="dropdown-item" href="real-estate-catalog-sale.html"><i class="fi-single-bed fs-base opacity-60 me-2"></i>سوئیت</a><a class="dropdown-item" href="real-estate-catalog-rent.html"><i class="fi-computer fs-base opacity-60 me-2"></i>دفتر کار</a><a class="dropdown-item" href="real-estate-catalog-sale.html"><i class="fi-real-estate-buy fs-base opacity-60 me-2"></i>زمین</a><a class="dropdown-item" href="real-estate-catalog-rent.html"><i class="fi-parking fs-base opacity-60 me-2"></i>خانه حیاط دار</a></div>
-        </div>
-      </div>
+        
+        <div class="col"><a class="icon-box card card-body h-100 border-0 shadow-sm card-hover h-100 text-center" href="{{ url('/') }}/browse/other">
+          <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3 mx-auto"><i class="fi-dots-horisontal"></i></i></div>
+          <h3 class="icon-box-title fs-base mb-0">سایر</h3>
+        </a></div>
+
+
     </div>
   </section>
   <!-- Services-->
@@ -192,15 +139,15 @@
 
 
 
-  @if(isset($special))
+  @if(isset($special) && count($special) > 0)
   <section class="container pb-4 pt-1 mb-5">
     <div class="d-flex align-items-end align-items-lg-center justify-content-between mb-4 pb-md-2">
       <div class="d-flex w-100 align-items-center justify-content-between justify-content-lg-start">
-        <h2 class="h3 mb-0 me-md-4 ">ملک های جدید اضافه شده</h2>
+        <h2 class="h3 mb-0 me-md-4 "> ویژه ها</h2>
         <div class="dropdown d-md-none" data-bs-toggle="select">
           <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"><span class="dropdown-toggle-label">خانه</span></button>
           <input type="hidden">
-          <div class="dropdown-menu"><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">آپارتمان</span></a><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">خانه</span></a><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">سوئیت</span></a><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">دفتر تجاری</span></a></div>
+          <div class="dropdown-menu"><a class="dropdown-item" href="{{ url('/') }}special"><span class="dropdown-item-label">آپارتمان</span></a><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">خانه</span></a><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">سوئیت</span></a><a class="dropdown-item" href="real-estate-home-v1.html#"><span class="dropdown-item-label">دفتر تجاری</span></a></div>
         </div>
         <!-- <ul class="nav nav-tabs d-none d-md-flex ps-lg-2 mb-0">
           <li class="nav-item"><a class="nav-link fs-sm mb-2 mb-md-0" href="real-estate-home-v1.html#">آپارتمان</a></li>
@@ -208,7 +155,7 @@
           <li class="nav-item"><a class="nav-link fs-sm mb-2 mb-md-0" href="real-estate-home-v1.html#">سوئیت</a></li>
           <li class="nav-item"><a class="nav-link fs-sm mb-2 mb-md-0" href="real-estate-home-v1.html#">دفتر تجاری</a></li>
         </ul> -->
-      </div><a class="btn btn-link fw-normal d-none d-lg-block p-0" href="real-estate-catalog-rent.html">مشاهده همه <i class="fi-arrow-long-left me-2"></i></a>
+      </div><a class="btn btn-link fw-normal d-none d-lg-block p-0" href="{{ url('/') }}special">مشاهده همه <i class="fi-arrow-long-left me-2"></i></a>
     </div>
 
 
@@ -261,9 +208,9 @@
 
 
 
-    @for($i=2;$i < 3; $i++)
+    @if(isset($special) && count($special) > 2)
+    @for($i=2; $i < min(3, count($special)); $i++)
       <?php
-
       $s = $special[$i];
       $img = url('/') . "/img/blank.png";
       $image = json_decode($s->media);
@@ -277,9 +224,27 @@
           $img = url('/') . "/upload/property/" . $s->id . "/" . $media[0];
         }
       }
-
-
       ?>
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="product__item">
+          <div class="product__item__pic set-bg" data-setbg="{{ $img }}">
+            <ul class="product__hover">
+              <li><a href="#"><img src="{{ url('/') }}/img/icon/heart.png" alt=""></a></li>
+              <li><a href="#"><img src="{{ url('/') }}/img/icon/compare.png" alt=""></a></li>
+              <li><a href="{{ url('/property/') }}/{{ $s->id }}"><img src="{{ url('/') }}/img/icon/search.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="product__item__text">
+            <h6>{{ $s->title }}</h6>
+            <a href="{{ url('/property/') }}/{{ $s->id }}" class="add-cart">+ مشاهده جزئیات</a>
+            <div class="rating">
+            </div>
+            <h5>{{ number_format($s->price ?? $s->rent ?? $s->mortgage) }} تومان</h5>
+          </div>
+        </div>
+      </div>
+    @endfor
+    @endif
       <div class="col-md-6">
       <div class="card bg-size-cover bg-position-center border-0 overflow-hidden h-100" style="background-image: url('{{ $img }}');"><span class="img-gradient-overlay"></span>
         <div class="card-body content-overlay pb-0">
@@ -296,9 +261,6 @@
         </div>
       </div>
       </div>
-
-      @endfor
-
 
       </div>
   </section>
@@ -395,27 +357,50 @@
       </div>
     </div>
   </section>
-  <!-- Top agents (lnked carousel)-->
+  <!-- Top agents (dynamic) -->
+  @php
+    $topAgents = \App\Models\TopAgent::with('user')->orderBy('order')->get();
+  @endphp
+  @if($topAgents->count() > 0)
   <section class="container mb-5 pb-2 pb-lg-4">
     <h2 class="h3 mb-4 pb-3 text-right  text-md-start">برترین مشاوران املاک</h2>
     <div class="tns-carousel-wrapper">
       <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 1, &quot;mode&quot;: &quot;gallery&quot;, &quot;controlsContainer&quot;: &quot;#agents-carousel-controls&quot;, &quot;nav&quot;: false}">
+        @foreach($topAgents as $topAgent)
         <div>
           <div class="row align-items-center">
-            <div class="col-xl-4 d-none d-xl-block"><img class="rounded-3" src="img/real-estate/agents/01.jpg" alt="Agent picture"></div>
-            <div class="col-xl-4 col-md-5 col-sm-4"><img class="rounded-3" src="img/real-estate/agents/02.jpg" alt="Agent picture"></div>
+            <div class="col-xl-4 d-none d-xl-block">
+              <img class="rounded-3"
+                   src="{{ !empty($topAgent->user->avatar) ? asset('upload/user/' . $topAgent->user->id . '/' . $topAgent->user->avatar) : asset('img/avatars/default-agent.svg') }}"
+                   alt="Agent picture">
+            </div>
+            <div class="col-xl-4 col-md-5 col-sm-4">
+              <img class="rounded-3"
+                   src="{{ !empty($topAgent->user->avatar) ? asset('upload/user/' . $topAgent->user->id . '/' . $topAgent->user->avatar) : asset('img/avatars/default-agent.svg') }}"
+                   alt="Agent picture">
+            </div>
             <div class="col-xl-4 col-md-7 col-sm-8 px-4 px-sm-3 px-md-0 ms-md-n4 mt-n5 mt-sm-0 py-3">
               <div class="card border-0 shadow-sm ms-sm-n5">
                 <blockquote class="blockquote card-body">
-                  <h4 style="max-width: 22rem;font-family:vazir-bold">&quot;من بهترین اقامتگاه را برای شما انتخاب می کنم&quot;</h4>
-                  <p class="d-sm-none d-lg-block">لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است. لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است.</p>
+                  <h4 style="max-width: 22rem;font-family:vazir-bold">{{ $topAgent->custom_text ?? 'مشاور حرفه ای املاک' }}</h4>
+                  <p class="d-sm-none d-lg-block">{{ $topAgent->user->bio ?? 'مشاور با تجربه در زمینه خرید، فروش و اجاره املاک مسکونی و تجاری.' }}</p>
                   <footer class="d-flex justify-content-between">
-                    <div class="pe-3"><a class="text-decoration-none" href="real-estate-vendor-properties.html">
-                        <h6 class="mb-0">فلوید مایلز</h6>
-                        <div class="text-muted fw-normal fs-sm mb-3">نماینده گروه امپراتوری املاک</div>
-                      </a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="real-estate-home-v1.html#"><i class="fi-facebook"></i></a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="real-estate-home-v1.html#"><i class="fi-twitter"></i></a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="real-estate-home-v1.html#"><i class="fi-linkedin"></i></a></div>
-                    <div><span class="star-rating"><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i></span>
-                      <div class="text-muted fs-sm mt-1">45 نظر</div>
+                    <div class="pe-3">
+                      <a class="text-decoration-none" href="{{ url('/agent/' . $topAgent->user->tel) }}">
+                        <h6 class="mb-0">{{ $topAgent->user->name }} {{ $topAgent->user->lname ?? '' }}</h6>
+                        <div class="text-muted fw-normal fs-sm mb-3">{{ $topAgent->user->agency_name ?? 'مشاور املاک' }}</div>
+                      </a>
+                      <a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="#"><i class="fi-facebook"></i></a>
+                      <a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="#"><i class="fi-twitter"></i></a>
+                      <a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="#"><i class="fi-linkedin"></i></a>
+                    </div>
+                    <div>
+                      <span class="star-rating">
+                        @for($i = 1; $i <= 5; $i++)
+                          <i class="star-rating-icon fi-star-filled active"></i>
+                        @endfor
+                      </span>
+                      <div class="text-muted fs-sm mt-1">{{ rand(10, 50) }} نظر</div>
                     </div>
                   </footer>
                 </blockquote>
@@ -423,52 +408,7 @@
             </div>
           </div>
         </div>
-        <div>
-          <div class="row align-items-center">
-            <div class="col-xl-4 d-none d-xl-block"><img class="rounded-3" src="img/real-estate/agents/02.jpg" alt="Agent picture"></div>
-            <div class="col-xl-4 col-md-5 col-sm-4"><img class="rounded-3" src="img/real-estate/agents/03.jpg" alt="Agent picture"></div>
-            <div class="col-xl-4 col-md-7 col-sm-8 px-4 px-sm-3 px-md-0 ms-md-n4 mt-n5 mt-sm-0 py-3">
-              <div class="card border-0 shadow-sm ms-sm-n5">
-                <blockquote class="blockquote card-body">
-                  <h4 style="max-width: 22rem;font-family:vazir-bold">&quot;بیش از 10 سال تجربه به عنوان مشاور املاک&quot;</h4>
-                  <p class="d-sm-none d-lg-block">لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است. لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است.</p>
-                  <footer class="d-flex justify-content-between">
-                    <div class="pe-3"><a class="text-decoration-none" href="real-estate-vendor-properties.html">
-                        <h6 class="mb-0">کریستین واتسون</h6>
-                        <div class="text-muted fw-normal fs-sm mb-3">نماینده گروه امپراتوری املاک</div>
-                      </a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="real-estate-home-v1.html#"><i class="fi-facebook"></i></a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="real-estate-home-v1.html#"><i class="fi-twitter"></i></a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="real-estate-home-v1.html#"><i class="fi-linkedin"></i></a></div>
-                    <div><span class="star-rating"><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i></span>
-                      <div class="text-muted fs-sm mt-1">24 نظر</div>
-                    </div>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="row align-items-center">
-            <div class="col-xl-4 d-none d-xl-block"><img class="rounded-3" src="img/real-estate/agents/03.jpg" alt="Agent picture"></div>
-            <div class="col-xl-4 col-md-5 col-sm-4"><img class="rounded-3" src="img/real-estate/agents/01.jpg" alt="Agent picture"></div>
-            <div class="col-xl-4 col-md-7 col-sm-8 px-4 px-sm-3 px-md-0 ms-md-n4 mt-n5 mt-sm-0 py-3">
-              <div class="card border-0 shadow-sm ms-sm-n5">
-                <blockquote class="blockquote card-body">
-                  <h4 style="max-width: 22rem;font-family:vazir-bold">&quot;من نه نمی گویم ، من فقط راهی برای کار کردن پیدا کردم&quot;</h4>
-                  <p class="d-sm-none d-lg-block">لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است. لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است.</p>
-                  <footer class="d-flex justify-content-between">
-                    <div class="pe-3"><a class="text-decoration-none" href="real-estate-vendor-properties.html">
-                        <h6 class="mb-0">گای هاوکینز</h6>
-                        <div class="text-muted fw-normal fs-sm mb-3">نماینده گروه امپراتوری املاک</div>
-                      </a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="real-estate-home-v1.html#"><i class="fi-facebook"></i></a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="real-estate-home-v1.html#"><i class="fi-twitter"></i></a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2 mb-2" href="real-estate-home-v1.html#"><i class="fi-linkedin"></i></a></div>
-                    <div><span class="star-rating"><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i></span>
-                      <div class="text-muted fs-sm mt-1">16 نظر</div>
-                    </div>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
     <div class="tns-carousel-controls justify-content-center justify-content-md-start my-2 mt-md-4" id="agents-carousel-controls">
@@ -476,6 +416,7 @@
       <button class="mx-2" type="button"><i class="fi-chevron-right"></i></button>
     </div>
   </section>
+  @endif
 </main>
 <!-- Footer-->
 @include('partials.home.footer')

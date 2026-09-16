@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Admin;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class AdAuth extends Controller
@@ -24,6 +23,15 @@ class AdAuth extends Controller
 
     public function prosrsslogin(Request $request)
     {
+        // $request->validate([
+        //     'user' => 'required|string',
+        //     'pass' => 'required|string|min:6',
+        // ], [
+        //     'user.required' => 'نام کاربری الزامی است.',
+        //     'pass.required' => 'رمز عبور الزامی است.',
+        //     'pass.min' => 'رمز عبور باید حداقل 6 کاراکتر باشد.',
+        // ]);
+
         $user = $request->input('user');
         $pass = $request->input('pass');
 
@@ -116,7 +124,6 @@ class AdAuth extends Controller
 
     public function logout(Request $request)
     {
-        Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 

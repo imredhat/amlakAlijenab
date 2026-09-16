@@ -1,0 +1,1041 @@
+{
+  "nodes": [
+    {
+      "id": "symfony-polyfill",
+      "label": "Symfony Polyfill",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-idn\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "idn_to_ascii",
+      "label": "idn_to_ascii",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-idn\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "idn_to_utf8",
+      "label": "idn_to_utf8",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-idn\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "intl_extension",
+      "label": "Intl Extension",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-idn\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "normalizer",
+      "label": "Normalizer",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-normalizer\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mbstring",
+      "label": "Mbstring",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-mbstring\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php80_features",
+      "label": "PHP 8.0 Features",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "stringable_interface",
+      "label": "Stringable Interface",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "fdiv",
+      "label": "fdiv",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "valueerror_class",
+      "label": "ValueError Class",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:8",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "unhandledmatcherror_class",
+      "label": "UnhandledMatchError Class",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "filter_validate_bool",
+      "label": "FILTER_VALIDATE_BOOL",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:10",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "get_debug_type",
+      "label": "get_debug_type",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phptoken_class",
+      "label": "PhpToken Class",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "preg_last_error_msg",
+      "label": "preg_last_error_msg",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "str_contains",
+      "label": "str_contains",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:14",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "str_starts_with",
+      "label": "str_starts_with",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "str_ends_with",
+      "label": "str_ends_with",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:16",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "get_resource_id",
+      "label": "get_resource_id",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:17",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php83_features",
+      "label": "PHP 8.3 Features",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php83\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "json_validate",
+      "label": "json_validate",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php83\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "override_attribute",
+      "label": "Override Attribute",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php83\\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mb_str_pad",
+      "label": "mb_str_pad",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php83\\README.md:8",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php84_features",
+      "label": "PHP 8.4 Features",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "array_find",
+      "label": "array_find",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "array_find_key",
+      "label": "array_find_key",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "array_any",
+      "label": "array_any",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "array_all",
+      "label": "array_all",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "bcdivmod",
+      "label": "bcdivmod",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "deprecated_attribute",
+      "label": "Deprecated Attribute",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:8",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "curl_http_version_3",
+      "label": "CURL_HTTP_VERSION_3",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "curl_http_version_3only",
+      "label": "CURL_HTTP_VERSION_3ONLY",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "fpow",
+      "label": "fpow",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:10",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "grapheme_str_split",
+      "label": "grapheme_str_split",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mb_trim",
+      "label": "mb_trim",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mb_ltrim",
+      "label": "mb_ltrim",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mb_rtrim",
+      "label": "mb_rtrim",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mb_ucfirst",
+      "label": "mb_ucfirst",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mb_lcfirst",
+      "label": "mb_lcfirst",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "reflectionconstant",
+      "label": "ReflectionConstant",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:14",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php85_features",
+      "label": "PHP 8.5 Features",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "get_error_handler",
+      "label": "get_error_handler",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "get_exception_handler",
+      "label": "get_exception_handler",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nodiscard_attribute",
+      "label": "NoDiscard Attribute",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "array_first",
+      "label": "array_first",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:8",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "array_last",
+      "label": "array_last",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:8",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_functions",
+      "label": "UUID Functions",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-uuid\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "process_component",
+      "label": "Process Component",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\process\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "command_execution",
+      "label": "Command Execution",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\process\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "routing_component",
+      "label": "Routing Component",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "http_request_mapping",
+      "label": "HTTP Request Mapping",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "route",
+      "label": "Route",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:21",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "routecollection",
+      "label": "RouteCollection",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:22",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "urlmatcher",
+      "label": "UrlMatcher",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:28",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "urlgenerator",
+      "label": "UrlGenerator",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:37",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "service_contracts",
+      "label": "Service Contracts",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\service-contracts\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "symfony_contracts",
+      "label": "Symfony Contracts",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\service-contracts\\README.md:9",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "string_component",
+      "label": "String Component",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\string\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "object_oriented_api",
+      "label": "Object-Oriented API",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\string\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "bytes_handling",
+      "label": "Bytes Handling",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\string\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "utf8_handling",
+      "label": "UTF-8 Handling",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\string\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "grapheme_clusters_handling",
+      "label": "Grapheme Clusters Handling",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\string\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "translation_component",
+      "label": "Translation Component",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\translation\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "internationalization",
+      "label": "Internationalization",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\translation\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "translator",
+      "label": "Translator",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\translation\\README.md:17",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "translation_contracts",
+      "label": "Translation Contracts",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\translation-contracts\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mit_license",
+      "label": "MIT License",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-idn\\README.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "symfony-polyfill",
+      "target": "idn_to_ascii",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-idn\\README.md:4"
+    },
+    {
+      "source": "symfony-polyfill",
+      "target": "idn_to_utf8",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-idn\\README.md:4"
+    },
+    {
+      "source": "symfony-polyfill",
+      "target": "normalizer",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-normalizer\\README.md:5"
+    },
+    {
+      "source": "symfony-polyfill",
+      "target": "mbstring",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-mbstring\\README.md:5"
+    },
+    {
+      "source": "symfony-polyfill",
+      "target": "php80_features",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:4"
+    },
+    {
+      "source": "php80_features",
+      "target": "stringable_interface",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:6"
+    },
+    {
+      "source": "php80_features",
+      "target": "fdiv",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:7"
+    },
+    {
+      "source": "php80_features",
+      "target": "valueerror_class",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:8"
+    },
+    {
+      "source": "php80_features",
+      "target": "unhandledmatcherror_class",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:9"
+    },
+    {
+      "source": "php80_features",
+      "target": "filter_validate_bool",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:10"
+    },
+    {
+      "source": "php80_features",
+      "target": "get_debug_type",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:11"
+    },
+    {
+      "source": "php80_features",
+      "target": "phptoken_class",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:12"
+    },
+    {
+      "source": "php80_features",
+      "target": "preg_last_error_msg",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:13"
+    },
+    {
+      "source": "php80_features",
+      "target": "str_contains",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:14"
+    },
+    {
+      "source": "php80_features",
+      "target": "str_starts_with",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:15"
+    },
+    {
+      "source": "php80_features",
+      "target": "str_ends_with",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:16"
+    },
+    {
+      "source": "php80_features",
+      "target": "get_resource_id",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php80\\README.md:17"
+    },
+    {
+      "source": "symfony-polyfill",
+      "target": "php83_features",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php83\\README.md:4"
+    },
+    {
+      "source": "php83_features",
+      "target": "json_validate",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php83\\README.md:6"
+    },
+    {
+      "source": "php83_features",
+      "target": "override_attribute",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php83\\README.md:7"
+    },
+    {
+      "source": "php83_features",
+      "target": "mb_str_pad",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php83\\README.md:8"
+    },
+    {
+      "source": "symfony-polyfill",
+      "target": "php84_features",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:4"
+    },
+    {
+      "source": "php84_features",
+      "target": "array_find",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:6"
+    },
+    {
+      "source": "php84_features",
+      "target": "array_find_key",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:6"
+    },
+    {
+      "source": "php84_features",
+      "target": "array_any",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:6"
+    },
+    {
+      "source": "php84_features",
+      "target": "array_all",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:6"
+    },
+    {
+      "source": "php84_features",
+      "target": "bcdivmod",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:7"
+    },
+    {
+      "source": "php84_features",
+      "target": "deprecated_attribute",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:8"
+    },
+    {
+      "source": "php84_features",
+      "target": "curl_http_version_3",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:9"
+    },
+    {
+      "source": "php84_features",
+      "target": "curl_http_version_3only",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:9"
+    },
+    {
+      "source": "php84_features",
+      "target": "fpow",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:10"
+    },
+    {
+      "source": "php84_features",
+      "target": "grapheme_str_split",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:11"
+    },
+    {
+      "source": "php84_features",
+      "target": "mb_trim",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:12"
+    },
+    {
+      "source": "php84_features",
+      "target": "mb_ltrim",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:12"
+    },
+    {
+      "source": "php84_features",
+      "target": "mb_rtrim",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:12"
+    },
+    {
+      "source": "php84_features",
+      "target": "mb_ucfirst",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:13"
+    },
+    {
+      "source": "php84_features",
+      "target": "mb_lcfirst",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:13"
+    },
+    {
+      "source": "php84_features",
+      "target": "reflectionconstant",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php84\\README.md:14"
+    },
+    {
+      "source": "symfony-polyfill",
+      "target": "php85_features",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:4"
+    },
+    {
+      "source": "php85_features",
+      "target": "get_error_handler",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:6"
+    },
+    {
+      "source": "php85_features",
+      "target": "get_exception_handler",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:6"
+    },
+    {
+      "source": "php85_features",
+      "target": "nodiscard_attribute",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:7"
+    },
+    {
+      "source": "php85_features",
+      "target": "array_first",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:8"
+    },
+    {
+      "source": "php85_features",
+      "target": "array_last",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-php85\\README.md:8"
+    },
+    {
+      "source": "symfony-polyfill",
+      "target": "uuid_functions",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-uuid\\README.md:4"
+    },
+    {
+      "source": "process_component",
+      "target": "command_execution",
+      "label": "ENABLES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\process\\README.md:4"
+    },
+    {
+      "source": "routing_component",
+      "target": "http_request_mapping",
+      "label": "ENABLES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:4"
+    },
+    {
+      "source": "routing_component",
+      "target": "route",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:21"
+    },
+    {
+      "source": "routing_component",
+      "target": "routecollection",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:22"
+    },
+    {
+      "source": "routing_component",
+      "target": "urlmatcher",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:28"
+    },
+    {
+      "source": "routing_component",
+      "target": "urlgenerator",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\routing\\README.md:37"
+    },
+    {
+      "source": "service_contracts",
+      "target": "symfony_contracts",
+      "label": "RELATED_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\service-contracts\\README.md:9"
+    },
+    {
+      "source": "string_component",
+      "target": "object_oriented_api",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\string\\README.md:4"
+    },
+    {
+      "source": "string_component",
+      "target": "bytes_handling",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\string\\README.md:5"
+    },
+    {
+      "source": "string_component",
+      "target": "utf8_handling",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\string\\README.md:5"
+    },
+    {
+      "source": "string_component",
+      "target": "grapheme_clusters_handling",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\string\\README.md:5"
+    },
+    {
+      "source": "translation_component",
+      "target": "internationalization",
+      "label": "ENABLES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\translation\\README.md:4"
+    },
+    {
+      "source": "translation_component",
+      "target": "translator",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\translation\\README.md:17"
+    },
+    {
+      "source": "translation_contracts",
+      "target": "symfony_contracts",
+      "label": "RELATED_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\translation-contracts\\README.md:9"
+    },
+    {
+      "source": "symfony-polyfill",
+      "target": "mit_license",
+      "label": "LICENSED_UNDER",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-idn\\README.md:12"
+    },
+    {
+      "source": "normalizer",
+      "target": "intl_extension",
+      "label": "FALLBACK_FOR",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-intl-normalizer\\README.md:5"
+    },
+    {
+      "source": "mbstring",
+      "target": "mbstring_extension",
+      "label": "FALLBACK_FOR",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\symfony\\polyfill-mbstring\\README.md:5"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

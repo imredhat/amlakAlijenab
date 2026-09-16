@@ -1,0 +1,793 @@
+{
+  "nodes": [
+    {
+      "id": "pure-rand",
+      "label": "pure-rand",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "PRNG",
+      "label": "Pseudorandom Number Generator",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:111",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "pure-rand_usage_simple",
+      "label": "Simple Usage",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:27",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "pure-rand_usage_pure",
+      "label": "Pure Usage",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:40",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "pure-rand_usage_independent_simulations",
+      "label": "Independent Simulations",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:61",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "pure-rand_usage_non_uniform",
+      "label": "Non-Uniform Usage",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:83",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "xoroshiro128plus",
+      "label": "xoroshiro128plus",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:120",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mersenne_twister",
+      "label": "Mersenne Twister",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:118",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "xorshift128plus",
+      "label": "Xorshift 128+",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:119",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "congruential32",
+      "label": "Linear Congruential Generator",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:117",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uniform_int_distribution",
+      "label": "Uniform Integer Distribution",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:134",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uniform_bigint_distribution",
+      "label": "Uniform BigInt Distribution",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:135",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uniform_float32_distribution",
+      "label": "Uniform Float32 Distribution",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:136",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uniform_float64_distribution",
+      "label": "Uniform Float64 Distribution",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:137",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "generateN",
+      "label": "generateN",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:145",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "skipN",
+      "label": "skipN",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:146",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "purify",
+      "label": "purify",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:150",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "shebang-command",
+      "label": "shebang-command",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/shebang-command/readme.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "shebang-regex",
+      "label": "shebang-regex",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/shebang-regex/readme.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "shebang",
+      "label": "Shebang",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/shebang-regex/readme.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "toml",
+      "label": "TOML",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/toml/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "toml_parser",
+      "label": "TOML Parser",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/toml/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "toml_spec",
+      "label": "TOML v1.1.0",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/toml/README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "peggy_parser",
+      "label": "Peggy Parser Generator",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/toml/README.md:104",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid",
+      "label": "UUID",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "rfc9562",
+      "label": "RFC9562",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_v1",
+      "label": "UUID v1",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:50",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_v3",
+      "label": "UUID v3",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:52",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_v4",
+      "label": "UUID v4",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:53",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_v5",
+      "label": "UUID v5",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:54",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_v6",
+      "label": "UUID v6",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:55",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_v7",
+      "label": "UUID v7",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:57",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_nil",
+      "label": "UUID NIL",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:46",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_max",
+      "label": "UUID MAX",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:47",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_parse",
+      "label": "UUID Parse",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:48",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_stringify",
+      "label": "UUID Stringify",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:49",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_validate",
+      "label": "UUID Validate",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:59",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uuid_version",
+      "label": "UUID Version",
+      "type": "ACTION",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:60",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "which",
+      "label": "which",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/which/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "unix_which_utility",
+      "label": "Unix Which Utility",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/which/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "yaml",
+      "label": "YAML",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/yaml/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "yaml_parser",
+      "label": "YAML Parser",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/yaml/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "yaml_1_1",
+      "label": "YAML 1.1",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/yaml/README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "yaml_1_2",
+      "label": "YAML 1.2",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/yaml/README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "zod",
+      "label": "Zod",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/zod/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "typescript_schema_validation",
+      "label": "TypeScript Schema Validation",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/zod/README.md:58",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "robots_txt",
+      "label": "robots.txt",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/robots.txt:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brick_math",
+      "label": "Brick Math",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/brick/math/CHANGELOG.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "biginteger",
+      "label": "BigInteger",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/brick/math/CHANGELOG.md:209",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "bigdecimal",
+      "label": "BigDecimal",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/brick/math/CHANGELOG.md:20",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "bigrational",
+      "label": "BigRational",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/brick/math/CHANGELOG.md:414",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "carbon_doctrine_types",
+      "label": "Carbon Doctrine Types",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/carbonphp/carbon-doctrine-types/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "dot_access_data",
+      "label": "Dot Access Data",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dflydev/dot-access-data/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "doctrine_inflector",
+      "label": "Doctrine Inflector",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/doctrine/inflector/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "string_inflection",
+      "label": "String Inflection",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/doctrine/inflector/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "doctrine_lexer",
+      "label": "Doctrine Lexer",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/doctrine/lexer/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "cron_expression",
+      "label": "Cron Expression",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/CHANGELOG.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pure-rand",
+      "target": "PRNG",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:5"
+    },
+    {
+      "source": "pure-rand",
+      "target": "pure-rand_usage_simple",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:27"
+    },
+    {
+      "source": "pure-rand",
+      "target": "pure-rand_usage_pure",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:40"
+    },
+    {
+      "source": "pure-rand",
+      "target": "pure-rand_usage_independent_simulations",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:61"
+    },
+    {
+      "source": "pure-rand",
+      "target": "pure-rand_usage_non_uniform",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:83"
+    },
+    {
+      "source": "pure-rand",
+      "target": "xoroshiro128plus",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:120"
+    },
+    {
+      "source": "pure-rand",
+      "target": "mersenne_twister",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:118"
+    },
+    {
+      "source": "pure-rand",
+      "target": "xorshift128plus",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:119"
+    },
+    {
+      "source": "pure-rand",
+      "target": "congruential32",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:117"
+    },
+    {
+      "source": "pure-rand",
+      "target": "uniform_int_distribution",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:134"
+    },
+    {
+      "source": "pure-rand",
+      "target": "uniform_bigint_distribution",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:135"
+    },
+    {
+      "source": "pure-rand",
+      "target": "uniform_float32_distribution",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:136"
+    },
+    {
+      "source": "pure-rand",
+      "target": "uniform_float64_distribution",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:137"
+    },
+    {
+      "source": "pure-rand",
+      "target": "generateN",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:145"
+    },
+    {
+      "source": "pure-rand",
+      "target": "skipN",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:146"
+    },
+    {
+      "source": "pure-rand",
+      "target": "purify",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/pure-rand/README.md:150"
+    },
+    {
+      "source": "shebang-command",
+      "target": "shebang",
+      "label": "PARSES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/shebang-command/readme.md:3"
+    },
+    {
+      "source": "shebang-regex",
+      "target": "shebang",
+      "label": "MATCHES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/shebang-regex/readme.md:3"
+    },
+    {
+      "source": "toml",
+      "target": "toml_spec",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/toml/README.md:11"
+    },
+    {
+      "source": "toml_parser",
+      "target": "peggy_parser",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/toml/README.md:104"
+    },
+    {
+      "source": "uuid",
+      "target": "rfc9562",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:7"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_v1",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:50"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_v3",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:52"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_v4",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:53"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_v5",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:54"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_v6",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:55"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_v7",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:57"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_nil",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:46"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_max",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:47"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_parse",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:48"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_stringify",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:49"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_validate",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:59"
+    },
+    {
+      "source": "uuid",
+      "target": "uuid_version",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/uuid/README.md:60"
+    },
+    {
+      "source": "which",
+      "target": "unix_which_utility",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/which/README.md:3"
+    },
+    {
+      "source": "yaml",
+      "target": "yaml_1_1",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/yaml/README.md:6"
+    },
+    {
+      "source": "yaml",
+      "target": "yaml_1_2",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/yaml/README.md:6"
+    },
+    {
+      "source": "zod",
+      "target": "typescript_schema_validation",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/.mimocode/node_modules/zod/README.md:58"
+    },
+    {
+      "source": "brick_math",
+      "target": "biginteger",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/brick/math/CHANGELOG.md:209"
+    },
+    {
+      "source": "brick_math",
+      "target": "bigdecimal",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/brick/math/CHANGELOG.md:20"
+    },
+    {
+      "source": "brick_math",
+      "target": "bigrational",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/brick/math/CHANGELOG.md:414"
+    },
+    {
+      "source": "doctrine_inflector",
+      "target": "string_inflection",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/doctrine/inflector/README.md:3"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

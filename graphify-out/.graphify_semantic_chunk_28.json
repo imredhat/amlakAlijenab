@@ -1,0 +1,169 @@
+{
+  "nodes": [
+    {
+      "id": "brand_logo_01",
+      "label": "Brand Logo 01",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\01.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_logo_02",
+      "label": "Brand Logo 02",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\02.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_logo_02_color_red",
+      "label": "Red Color",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\02.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_logo_02_color_white",
+      "label": "White Color",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\02.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_logo_03",
+      "label": "Brand Logo 03",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\03.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_logo_03_color_red",
+      "label": "Red Color",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\03.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_logo_04",
+      "label": "Brand Logo 04",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\04.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_logo_04_color_red",
+      "label": "Red Color",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\04.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_logo_04_color_dark",
+      "label": "Dark Color",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\04.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_logo_05",
+      "label": "Brand Logo 05",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\05.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "hotel_icon",
+      "label": "Hotel Icon",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\hotel.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "hotel_icon_color_blue",
+      "label": "Blue Color",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\hotel.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "hotel_building",
+      "label": "Hotel Building",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\hotel.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "brand_logo_02",
+      "target": "brand_logo_02_color_red",
+      "label": "USES_COLOR",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\02.svg:1"
+    },
+    {
+      "source": "brand_logo_02",
+      "target": "brand_logo_02_color_white",
+      "label": "USES_COLOR",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\02.svg:1"
+    },
+    {
+      "source": "brand_logo_03",
+      "target": "brand_logo_03_color_red",
+      "label": "USES_COLOR",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\03.svg:1"
+    },
+    {
+      "source": "brand_logo_04",
+      "target": "brand_logo_04_color_red",
+      "label": "USES_COLOR",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\04.svg:1"
+    },
+    {
+      "source": "brand_logo_04",
+      "target": "brand_logo_04_color_dark",
+      "label": "USES_COLOR",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\04.svg:1"
+    },
+    {
+      "source": "hotel_icon",
+      "target": "hotel_icon_color_blue",
+      "label": "USES_COLOR",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\hotel.svg:1"
+    },
+    {
+      "source": "hotel_icon",
+      "target": "hotel_building",
+      "label": "REPRESENTS",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\public\\img\\city-guide\\brands\\hotel.svg:1"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

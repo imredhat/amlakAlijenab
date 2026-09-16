@@ -1,0 +1,625 @@
+{
+  "nodes": [
+    {
+      "id": "mockery",
+      "label": "Mockery",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\index.rst:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "demeter_chains",
+      "label": "Demeter Chains",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\demeter_chains.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "fluent_interfaces",
+      "label": "Fluent Interfaces",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\demeter_chains.rst:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "method_chaining",
+      "label": "Method Chaining",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\demeter_chains.rst:10",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "mock_object",
+      "label": "Mock Object",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\demeter_chains.rst:28",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "expectation",
+      "label": "Expectation",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "method_call_expectation",
+      "label": "Method Call Expectation",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:19",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "argument_expectation",
+      "label": "Argument Expectation",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:72",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "return_value_expectation",
+      "label": "Return Value Expectation",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:186",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "call_count_expectation",
+      "label": "Call Count Expectation",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:345",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "exception_throwing",
+      "label": "Exception Throwing",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:293",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "public_property_mocking",
+      "label": "Public Property Mocking",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:317",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "final_methods_classes",
+      "label": "Final Methods/Classes",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\final_methods_classes.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "proxy_mocks",
+      "label": "Proxy Mocks",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\final_methods_classes.rst:16",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "instance_mocking",
+      "label": "Instance Mocking",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\instance_mocking.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "magic_methods",
+      "label": "Magic Methods",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\magic_methods.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "partial_mocks",
+      "label": "Partial Mocks",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\partial_mocks.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "runtime_partial_test_doubles",
+      "label": "Runtime Partial Test Doubles",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\partial_mocks.rst:21",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "generated_partial_test_doubles",
+      "label": "Generated Partial Test Doubles",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\partial_mocks.rst:41",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "proxied_partial_mock",
+      "label": "Proxied Partial Mock",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\partial_mocks.rst:73",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "pass_by_reference_behaviours",
+      "label": "Pass-by-Reference Behaviours",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\pass_by_reference_behaviours.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "phpunit_integration",
+      "label": "PHPUnit Integration",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\phpunit_integration.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "protected_methods_mocking",
+      "label": "Protected Methods Mocking",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\protected_methods.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "public_properties_mocking",
+      "label": "Public Properties Mocking",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\public_properties.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "public_static_properties_mocking",
+      "label": "Public Static Properties Mocking",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\public_static_properties.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "spies",
+      "label": "Spies",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\spies.rst:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "monolog",
+      "label": "Monolog",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "logging",
+      "label": "Logging",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "handlers",
+      "label": "Handlers",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "formatters",
+      "label": "Formatters",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "processors",
+      "label": "Processors",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psr3",
+      "label": "PSR-3",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "deep_copy",
+      "label": "Deep Copy",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\myclabs\\deep-copy\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "object_cloning",
+      "label": "Object Cloning",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\myclabs\\deep-copy\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "graph_cycles",
+      "label": "Graph Cycles",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\myclabs\\deep-copy\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "carbon",
+      "label": "Carbon",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\nesbot\\carbon\\readme.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "datetime_management",
+      "label": "DateTime Management",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\nesbot\\carbon\\readme.md:8",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "nette_schema",
+      "label": "Nette Schema",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\nette\\schema\\readme.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "data_validation",
+      "label": "Data Validation",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\nette\\schema\\readme.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "data_normalization",
+      "label": "Data Normalization",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\nette\\schema\\readme.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "schema_definition",
+      "label": "Schema Definition",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\nette\\schema\\readme.md:56",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mockery",
+      "target": "demeter_chains",
+      "label": "SUPPORTS_MOCKING",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\demeter_chains.rst:21"
+    },
+    {
+      "source": "mockery",
+      "target": "fluent_interfaces",
+      "label": "SUPPORTS_MOCKING",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\demeter_chains.rst:7"
+    },
+    {
+      "source": "fluent_interfaces",
+      "target": "method_chaining",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\demeter_chains.rst:10"
+    },
+    {
+      "source": "mockery",
+      "target": "mock_object",
+      "label": "CREATES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\demeter_chains.rst:28"
+    },
+    {
+      "source": "mock_object",
+      "target": "expectation",
+      "label": "HAS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:15"
+    },
+    {
+      "source": "expectation",
+      "target": "method_call_expectation",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:19"
+    },
+    {
+      "source": "expectation",
+      "target": "argument_expectation",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:72"
+    },
+    {
+      "source": "expectation",
+      "target": "return_value_expectation",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:186"
+    },
+    {
+      "source": "expectation",
+      "target": "call_count_expectation",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:345"
+    },
+    {
+      "source": "expectation",
+      "target": "exception_throwing",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:293"
+    },
+    {
+      "source": "expectation",
+      "target": "public_property_mocking",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\expectations.rst:317"
+    },
+    {
+      "source": "mockery",
+      "target": "final_methods_classes",
+      "label": "HANDLES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\final_methods_classes.rst:7"
+    },
+    {
+      "source": "final_methods_classes",
+      "target": "proxy_mocks",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\final_methods_classes.rst:16"
+    },
+    {
+      "source": "mockery",
+      "target": "instance_mocking",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\instance_mocking.rst:7"
+    },
+    {
+      "source": "mockery",
+      "target": "magic_methods",
+      "label": "HANDLES",
+      "type": "DIRECT",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\magic_methods.rst:9"
+    },
+    {
+      "source": "mockery",
+      "target": "partial_mocks",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\partial_mocks.rst:7"
+    },
+    {
+      "source": "partial_mocks",
+      "target": "runtime_partial_test_doubles",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\partial_mocks.rst:21"
+    },
+    {
+      "source": "partial_mocks",
+      "target": "generated_partial_test_doubles",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\partial_mocks.rst:41"
+    },
+    {
+      "source": "partial_mocks",
+      "target": "proxied_partial_mock",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\partial_mocks.rst:73"
+    },
+    {
+      "source": "mockery",
+      "target": "pass_by_reference_behaviours",
+      "label": "HANDLES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\pass_by_reference_behaviours.rst:7"
+    },
+    {
+      "source": "mockery",
+      "target": "phpunit_integration",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\phpunit_integration.rst:7"
+    },
+    {
+      "source": "mockery",
+      "target": "protected_methods_mocking",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\protected_methods.rst:7"
+    },
+    {
+      "source": "mockery",
+      "target": "public_properties_mocking",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\public_properties.rst:7"
+    },
+    {
+      "source": "mockery",
+      "target": "public_static_properties_mocking",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\public_static_properties.rst:7"
+    },
+    {
+      "source": "mockery",
+      "target": "spies",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\mockery\\mockery\\docs\\reference\\spies.rst:7"
+    },
+    {
+      "source": "monolog",
+      "target": "logging",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:11"
+    },
+    {
+      "source": "monolog",
+      "target": "handlers",
+      "label": "HAS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:11"
+    },
+    {
+      "source": "monolog",
+      "target": "formatters",
+      "label": "HAS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:11"
+    },
+    {
+      "source": "monolog",
+      "target": "processors",
+      "label": "HAS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:11"
+    },
+    {
+      "source": "monolog",
+      "target": "psr3",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\monolog\\monolog\\README.md:15"
+    },
+    {
+      "source": "deep_copy",
+      "target": "object_cloning",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\myclabs\\deep-copy\\README.md:3"
+    },
+    {
+      "source": "deep_copy",
+      "target": "graph_cycles",
+      "label": "HANDLES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\myclabs\\deep-copy\\README.md:3"
+    },
+    {
+      "source": "carbon",
+      "target": "datetime_management",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\nesbot\\carbon\\readme.md:8"
+    },
+    {
+      "source": "nette_schema",
+      "target": "data_validation",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\nette\\schema\\readme.md:13"
+    },
+    {
+      "source": "nette_schema",
+      "target": "data_normalization",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\nette\\schema\\readme.md:13"
+    },
+    {
+      "source": "nette_schema",
+      "target": "schema_definition",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\nette\\schema\\readme.md:56"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

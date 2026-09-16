@@ -1,0 +1,20 @@
+﻿E:\Jobs\Alijenaab\public\img\signin-modal\signin.svg
+E:\Jobs\Alijenaab\public\img\signin-modal\signup-dark.svg
+E:\Jobs\Alijenaab\public\img\signin-modal\signup.svg
+E:\Jobs\Alijenaab\public\storage\basset\vendor\backpack\crud\src\resources\assets\img\spinner.svg
+E:\Jobs\Alijenaab\public\storage\blogs\1784283169_images (1).jpg
+E:\Jobs\Alijenaab\public\storage\blogs\1784283174_images (2).jpg
+E:\Jobs\Alijenaab\public\storage\blogs\1784283227_images (3).jpg
+E:\Jobs\Alijenaab\public\storage\blogs\1784283279_image01.webp
+E:\Jobs\Alijenaab\public\storage\blogs\1784283311_images (4).jpg
+E:\Jobs\Alijenaab\public\storage\cities\1775561946_babol[1].jpg
+E:\Jobs\Alijenaab\public\storage\cities\1775562793_babol[1].jpg
+E:\Jobs\Alijenaab\public\storage\cities\1775564665_chalos.jpg
+E:\Jobs\Alijenaab\public\storage\cities\1775564735_amol.jpg
+E:\Jobs\Alijenaab\public\storage\cities\1775564764_babolsar.jpg
+E:\Jobs\Alijenaab\public\storage\cities\1775564786_sari.jpg
+E:\Jobs\Alijenaab\public\storage\sections\1775555984_1774444940_hero-image.jpg
+E:\Jobs\Alijenaab\public\storage\sections\1775556008_1774424261_rent.svg
+E:\Jobs\Alijenaab\public\storage\sections\1775556019_1774424302_sell.svg
+E:\Jobs\Alijenaab\public\storage\sections\1775556029_1774424331_buy.svg
+E:\Jobs\Alijenaab\public\storage\sections\1775556039_1774444940_hero-image.jpg

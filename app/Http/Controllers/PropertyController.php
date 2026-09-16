@@ -5,21 +5,80 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Schema;
 use App\Models\User;
 use App\Models\Property;
+use App\Models\PropertyDetails;
 use App\Models\Cty;
 use App\Models\Neighborhood;
-use MongoDB\Client;
 
 use Hekmatinasser\Verta\Verta;
-
-
+use App\Models\Favorite;
 
 
 class PropertyController extends Controller
 {
+    // Fields that go to property_details table
+    private $detailFields = [
+        'price', 'mortgage', 'rent', 'daily_rent', 'regular_days', 'weekend',
+        'special_days', 'extra_person_cost', 'floor', 'unit_per_floor',
+        'floors_count', 'totalFloors', 'floor_count', 'build_year',
+        'construction_year', 'year_built', 'building_type', 'building_direction',
+        'floor_type', 'document_type', 'document_status', 'current_status',
+        'type', 'usage_type', 'building_facade', 'parking', 'storage', 'elevator', 'balcony',
+        'rebuilt', 'has_loan', 'pool', 'pool_type', 'sauna', 'jacuzzi', 'furnished',
+        'convertible', 'cooling_system', 'heating_system', 'pets_allowed',
+        'kitchen_type', 'cabinet_material', 'toilet', 'property_location',
+        'building_permit', 'has_old_building', 'exchangeable', 'utilities',
+        'propertyCondition', 'projectType', 'roomCount', 'participationPercent',
+        'initialPayment', 'deliveryPayment', 'projectStatus', 'deliveryYear',
+        'deliveryMonth', 'physicalProgress', 'unitsPerFloor', 'minUnitArea',
+        'builderName', 'constructionPermit', 'exchange',
+        'capacity', 'standard_capacity', 'extra_capacity', 'rental_period',
+        'check_in_time', 'check_out_time', 'minimum_stay',
+    ];
+
+    private function splitData(array $allData): array
+    {
+        $propertyData = [];
+        $detailsData = [];
+        foreach ($allData as $key => $value) {
+            if (in_array($key, $this->detailFields)) {
+                $detailsData[$key] = $value;
+            } else {
+                $propertyData[$key] = $value;
+            }
+        }
+        return [$propertyData, $detailsData];
+    }
+
+    /**
+     * Get property with all details merged (read query)
+     */
+    private function queryWithDetails($table = 'property')
+    {
+        $query = DB::table($table)->select($table.'.*');
+
+        if (! Schema::hasTable('property_details')) {
+            return $query;
+        }
+
+        $detailColumns = Schema::getColumnListing('property_details');
+        $selectColumns = [$table.'.*'];
+
+        foreach ($this->detailFields as $column) {
+            if (in_array($column, $detailColumns, true)) {
+                $alias = $column === 'type' ? 'detail_type' : $column;
+                $selectColumns[] = 'property_details.'.$column.' as '.$alias;
+            }
+        }
+
+        return $query
+            ->leftJoin('property_details', $table.'.id', '=', 'property_details.property_id')
+            ->select($selectColumns);
+    }
 
     public function show(Request $request)
     {
@@ -40,203 +99,197 @@ class PropertyController extends Controller
 
     public function savetoDB(Request $request)
     {
-
         $allData = [];
         foreach ($request->except(['_token', 'media']) as $key => $value) {
             $allData[$key] = is_string($value) ? trim($value) : $value;
         }
 
         $priceKeys = [
-            'mortgage',
-            'rent',
-            'price',
-            'daily_rent',
-            'regular_days',
-            'weekend',
-            'special_days',
-            'extra_person_cost',
+            'mortgage', 'rent', 'price', 'daily_rent', 'regular_days',
+            'weekend', 'special_days', 'extra_person_cost',
         ];
 
         foreach ($priceKeys as $priceKey) {
             if (isset($allData[$priceKey])) {
-                // فقط رقم نگه می‌داریم (اعشار و کاما حذف می‌شود)
                 $allData[$priceKey] = preg_replace('/\D+/', '', (string) $allData[$priceKey]);
             }
         }
 
-        $allData['status'] = "ثبت شده";
-        $allData['_status'] = "addedd";
-
-        // ذخیره تاریخ شمسی
-        $allData['date_created'] = (string) Verta::now();
-        $allData['date_updated'] = (string) Verta::now();
-
-
-        // آیدی کاربری که لاگین است
-        $allData['user_id'] = Auth::id();
-
-        // درج رکورد و گرفتن آیدی
-        $propertyId = DB::table('property')->insertGetId($allData);
-
-        // 2) آپلود فایل‌ها در مسیر /upload/property/$ID
-        $mediaFiles = $request->file('media', []);
-        $savedFiles = [];
-
-        $uploadDir = public_path('upload/property/' . $propertyId);
-        if (!is_dir($uploadDir)) {
-            mkdir($uploadDir, 0755, true);
-        }
-
-        foreach ($mediaFiles as $index => $file) {
-            if ($file && $file->isValid()) {
-                $extension = $file->getClientOriginalExtension();
-                $filename = time() . '_' . $index . '.' . $extension;
-                $file->move($uploadDir, $filename);
-                $savedFiles[] = $filename;
+        foreach ($allData as $key => $value) {
+            if (is_array($value)) {
+                $allData[$key] = json_encode(array_values($value), JSON_UNESCAPED_UNICODE);
             }
         }
 
-        // ذخیره نام فایل‌ها در فیلد media (به صورت JSON)
-        if (!empty($savedFiles)) {
+        $id = $request->session()->get('user_id');
+        $allData['status'] = 'فعال';
+        $allData['_status'] = 'active';
+        $allData['date_created'] = (string) Verta::now();
+        $allData['date_updated'] = (string) Verta::now();
+        $allData['user_id'] = $id;
+
+        [$propertyData, $detailsData] = $this->splitData($allData);
+
+        $propertyColumns = array_flip(Schema::getColumnListing('property'));
+        if (isset($propertyColumns['expires_at'])) {
+            $propertyData['expires_at'] = now()->addDays(30);
+        }
+
+        // Older installations kept category fields in the property table.
+        foreach ($detailsData as $key => $value) {
+            if (isset($propertyColumns[$key])) {
+                $propertyData[$key] = $value;
+            }
+        }
+
+        $propertyData = array_intersect_key($propertyData, $propertyColumns);
+        $hasDetailsTable = Schema::hasTable('property_details');
+        $detailsColumns = $hasDetailsTable
+            ? array_flip(Schema::getColumnListing('property_details'))
+            : [];
+        $detailsData = array_intersect_key($detailsData, $detailsColumns);
+
+        try {
+            $propertyId = DB::transaction(function () use ($propertyData, $detailsData, $hasDetailsTable) {
+                $propertyId = DB::table('property')->insertGetId($propertyData);
+
+                if ($hasDetailsTable && ! empty($detailsData)) {
+                    DB::table('property_details')->insert($detailsData + [
+                        'property_id' => $propertyId,
+                    ]);
+                }
+
+                return $propertyId;
+            });
+        } catch (\Throwable $exception) {
+            Log::error('Property creation failed', [
+                'user_id' => $id,
+                'category' => $request->input('category'),
+                'error' => $exception->getMessage(),
+            ]);
+
+            return back()->withInput()->withErrors([
+                'property' => 'ذخیره آگهی انجام نشد. لطفاً دوباره تلاش کنید.',
+            ]);
+        }
+
+        try {
+            $mediaFiles = $request->file('media', []);
+            $savedFiles = [];
+
+            $uploadDir = public_path('upload/property/' . $propertyId);
+            if (! is_dir($uploadDir) && ! mkdir($uploadDir, 0755, true) && ! is_dir($uploadDir)) {
+                throw new \RuntimeException('Unable to create property upload directory.');
+            }
+
+            foreach ($mediaFiles as $index => $file) {
+                if ($file && $file->isValid()) {
+                    $extension = $file->getClientOriginalExtension();
+                    $filename = time() . '_' . $index . '.' . $extension;
+                    $file->move($uploadDir, $filename);
+                    $savedFiles[] = $filename;
+                }
+            }
+
             DB::table('property')
                 ->where('id', $propertyId)
                 ->update(['media' => json_encode($savedFiles)]);
-        } else {
-            DB::table('property')
-                ->where('id', $propertyId)
-                ->update(['media' => '[]']);
+        } catch (\Throwable $exception) {
+            Log::error('Property media upload failed', [
+                'property_id' => $propertyId,
+                'error' => $exception->getMessage(),
+            ]);
         }
 
         return redirect('/user/myADS');
-        // پاسخ ساده برای تست
-        return response()->json([
-            'id'    => $propertyId,
-            'files' => $savedFiles,
-        ]);
     }
 
     public function viewProperty(Request $request)
     {
         $data = $this->initialize($request);
 
-        $visit_count = 1;
         $PID = $request->segment(2);
 
-        if (isset($property[0]->visit_count)) {
-            $visit_count = $property[0]->visit_count = $property[0]->visit_count + 1;
-        }
-        DB::table('property')->where('id', $PID)->update(['visit_count' => $visit_count]);
+        // Update visit count on property table
+        DB::table('property')->where('id', $PID)->increment('visit_count');
 
-        // $data['property'] = User::where('id', $PID)->get();
+        // Get property with details
+        $propertyResult = $this->queryWithDetails()
+            ->where('property.id', $PID)
+            ->whereNotIn('property.status', ['حذف شده', 'غیرفعال', 'منقضی'])
+            ->where('property._status', 'active')
+            ->get();
 
-        $data['property'] = $property = DB::table('property')->where('id', $PID)->get();
-        $data['similar'] = [];
-        $data['id'] = $PID;
-        $existingIds = [];
-        $categoryName = $property[0]->category;
-        $data['agent'] = DB::table('users')->where('id', $property[0]->user_id)->get();
-
-        if (isset($property)) {
-
-
-
-
-            $title = explode(' ', $property[0]->title);
-            foreach ($title as $t) {
-                $get = DB::table('property')
-                    ->where('title', 'like', '%' . $t . '%')
-                    ->whereNotIn('id', [$PID])
-                    ->get();
-
-                foreach ($get as $item) {
-                    $id = $item->id;
-
-                    if (!in_array($id, $existingIds)) {
-                        array_push($data['similar'], $item);
-                        array_push($existingIds, $id);
-                    }
-                }
-            }
-
-
-
-            // $data['similar'] = DB::table('properties')
-            // ->find(['$text' => ['$search' => 'villa']]);
-            // ->find('{$text:{$search:"ویلا"}}');
-            // ->whereLike('category', "other")
-            // ->get();
-
-
-            // $data['similar'] = DB::collection('property')
-            //     ->where('title', 'like', '%ویلا%') // جستجو بر اساس عنوان
-            //     ->get();
-
-
-
-            // $properties = Property::all();
-
-            // dd($properties);
-            // // $data['similar'] = Property::where('title', 'like', '%ویلا%')
-            // //     ->get();
-
-
-
-
-            // $client = new Client('mongodb://localhost:27017'); // آدرس دیتابیس خودتون رو اینجا قرار بدید
-            // $collection = $client->selectDatabase('amlak')->selectCollection('property'); // اسم دیتابیس و کالکشن رو اینجا قرار بدید
-
-            // $properties = $collection->find(['title' => ['$regex' => 'ویلا', '$options' => 'i']]); // جستجو با regex و case-insensitive
-
-            // foreach ($properties as $property) {
-            //     // پردازش هر رکورد
-            //     echo $property['_id'] . " - " . $property['title'] . "\n";
-            // }
-
-            // die();
-
-            // echo json_encode($data['similar']);
-            // die();
-            return view('/peroperty/items/' . $categoryName, $data);
-        } else {
+        if ($propertyResult->isEmpty()) {
             echo "<script>alert('آگهی مورد نظر یافت نشد / پاک شده است')</script>";
             return redirect("/");
         }
-    }
 
+        $property = $propertyResult;
+        $data['property'] = $property;
+        $data['similar'] = [];
+        $data['id'] = $PID;
+        $existingIds = [];
+
+        // Get the first property from the collection
+        $propertyItem = $property->first();
+        $categoryName = $propertyItem->category;
+        $data['agent'] = DB::table('users')->where('id', $propertyItem->user_id)->get();
+
+        $title = explode(' ', $propertyItem->title);
+        foreach ($title as $t) {
+            $get = $this->queryWithDetails()
+                ->where('property.title', 'like', '%' . $t . '%')
+                ->whereNotIn('property.id', [$PID])
+                ->get();
+
+            foreach ($get as $item) {
+                $id = $item->id;
+                if (!in_array($id, $existingIds)) {
+                    // Get the full property record to ensure media field is available
+                    $fullProperty = DB::table('property')->where('id', $id)->first();
+                    if ($fullProperty) {
+                        $item->media = $fullProperty->media;
+                    }
+                    array_push($data['similar'], $item);
+                    array_push($existingIds, $id);
+                }
+            }
+        }
+
+        return view('/peroperty/items/' . $categoryName, $data);
+    }
 
 
     public function catalog(Request $request)
     {
-
         $locations = DB::table('neighborhoods')->where('showInMenu', true)->get();
 
         $type = $request->get('type', 'sale');
-        $query = DB::table('property');
+        $query = $this->queryWithDetails();
 
         if (!empty($type) && $type === 'rent') {
             $query->where(function ($q) {
                 $q->where(function ($sub) {
-                    $sub->where('mortgage', '>', 0)
-                        ->orWhere('mortgage', '!=', null);
+                    $sub->where('property_details.mortgage', '>', 0)
+                        ->orWhere('property_details.mortgage', '!=', null);
                 })->orWhere(function ($sub) {
-                    $sub->where('rent', '>', 0)
-                        ->orWhere('rent', '!=', null);
+                    $sub->where('property_details.rent', '>', 0)
+                        ->orWhere('property_details.rent', '!=', null);
                 })->orWhere(function ($sub) {
-                    $sub->where('daily_rent', '>', 0)
-                        ->orWhere('daily_rent', '!=', null);
+                    $sub->where('property_details.daily_rent', '>', 0)
+                        ->orWhere('property_details.daily_rent', '!=', null);
                 });
             });
         } else {
             $query->where(function ($q) {
-                $q->where('price', '>', 0)
-                    ->orWhere('price', '!=', null);
+                $q->where('property_details.price', '>', 0)
+                    ->orWhere('property_details.price', '!=', null);
             });
         }
 
-
         $properties = $query->paginate(12);
 
-        // برای درخواست‌های Ajax
         if ($request->ajax()) {
             $html = view('partials.properties.catalog-list', compact('properties'))->render();
             return response()->json([
@@ -245,19 +298,29 @@ class PropertyController extends Controller
             ]);
         }
 
-        // شهرها برای فیلتر
         $cities = Cty::orderBy('order')->get();
 
-        return view('real-estate.catalog', compact('properties', 'cities', 'type', 'locations'));
+        $favoriteIds = [];
+        if (session()->has('user_id')) {
+            $id       = session('user_id');
+            $favoriteIds = Favorite::where('user_id', $id)->pluck('property_id')->toArray();
+        }
+
+        return view('real-estate.catalog', compact('properties', 'cities', 'type', 'locations', 'favoriteIds'));
     }
 
 
     public function initialize(Request $request)
     {
         $data = [];
-        if (Auth::check()) {
-            $tel = $request->session()->get('tel');
-            $data['user'] = User::where('tel', $tel)->get();
+        if (session()->has('user_id')) {
+            $id = session('user_id');
+            $data['user'] = User::where('id', $id)->get();
+            $data['favoriteIds'] = Schema::hasTable('favorites')
+                ? Favorite::where('user_id', $id)->pluck('property_id')->toArray()
+                : [];
+        } else {
+            $data['favoriteIds'] = [];
         }
 
         $data['locations'] = DB::table('neighborhoods')->where('showInMenu', true)->get();
@@ -276,8 +339,6 @@ class PropertyController extends Controller
                 ->orderBy('order', 'asc')
                 ->get();
         }
-        // بر اساس نام شهر
-
 
         if ($cityName) {
             $city = Cty::where('name', $cityName)->first();
@@ -294,9 +355,6 @@ class PropertyController extends Controller
             $neighborhoods = collect([]);
         }
 
-
-
-
         return response()->json([
             'success' => true,
             'neighborhoods' => $neighborhoods
@@ -304,42 +362,34 @@ class PropertyController extends Controller
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public function edit(Request $request, $id)
     {
         $data = $this->initialize($request);
 
-        // بررسی دسترسی
-        $property = DB::table('property')->where('id', $id)->first();
+        $property = $this->queryWithDetails()
+            ->where('property.id', $id)->first();
 
         if (!$property) {
             return redirect()->back()->with('error', 'آگهی یافت نشد.');
         }
 
-        $city = Cty::where('name', $property->city)->first();
-        $data['neighborhoods'] = Neighborhood::where('city_id', $city->id)
-            ->orderBy('order', 'asc')
-            ->get();
+        foreach ($this->detailFields as $detailField) {
+            if (! property_exists($property, $detailField)) {
+                $property->{$detailField} = null;
+            }
+        }
 
-        // نام محله برای نمایش (اگر نیاز دارید)
+        $city = Cty::where('name', $property->city)->first();
+        $data['neighborhoods'] = $city
+            ? Neighborhood::where('city_id', $city->id)->orderBy('order', 'asc')->get()
+            : collect([]);
+
         $data['selectedNeighborhoodName'] = $property->city;
 
-        // چک کردن دسترسی: ادمین یا صاحب آگهی
         $isAdmin = session()->has('admin_id');
-        $isOwner = Auth::check() && Auth::id() == $property->user_id;
+        $isOwner = session()->has('user_id')&& session('user_id') == $property->user_id;
+
+        
 
         if (!$isAdmin && !$isOwner) {
             return redirect('/')->with('error', 'شما دسترسی به ویرایش این آگهی ندارید.');
@@ -349,13 +399,9 @@ class PropertyController extends Controller
         $data['cities'] = DB::table('cties')->get();
         $data['property_id'] = $id;
 
-        // تعیین ویو مناسب بر اساس دسته‌بندی
         $categoryView = $this->getCategoryView($property->category);
         $data['categoryView'] = $categoryView;
 
-
-
-        // دیکد کردن مدیاها
         $data['mediaFiles'] = json_decode($property->media ?? '[]', true);
 
         return view('peroperty.edit', $data);
@@ -364,22 +410,19 @@ class PropertyController extends Controller
 
     public function update(Request $request, $id)
     {
-        // بررسی وجود آگهی
         $property = DB::table('property')->where('id', $id)->first();
 
         if (!$property) {
             return redirect()->back()->with('error', 'آگهی یافت نشد.');
         }
 
-        // بررسی دسترسی
         $isAdmin = session()->has('admin_id');
-        $isOwner = Auth::check() && Auth::id() == $property->user_id;
+        $isOwner = session()->has('user_id')&& session('user_id') == $property->user_id;
 
         if (!$isAdmin && !$isOwner) {
             return redirect('/')->with('error', 'شما دسترسی به ویرایش این آگهی ندارید.');
         }
 
-        // جمع‌آوری داده‌ها
         $allData = [];
         foreach ($request->except(['_token', '_method', 'media', 'deleted_images']) as $key => $value) {
             if (is_array($value)) {
@@ -389,16 +432,9 @@ class PropertyController extends Controller
             }
         }
 
-        // پردازش فیلدهای قیمتی
         $priceKeys = [
-            'mortgage',
-            'rent',
-            'price',
-            'daily_rent',
-            'regular_days',
-            'weekend',
-            'special_days',
-            'extra_person_cost'
+            'mortgage', 'rent', 'price', 'daily_rent', 'regular_days',
+            'weekend', 'special_days', 'extra_person_cost'
         ];
 
         foreach ($priceKeys as $priceKey) {
@@ -407,10 +443,9 @@ class PropertyController extends Controller
             }
         }
 
-        // به‌روزرسانی تاریخ
         $allData['date_updated'] = (string) Verta::now();
 
-        // پردازش تصاویر حذف شده
+        // Handle media
         $deletedImages = $request->input('deleted_images', []);
         $existingMedia = json_decode($property->media ?? '[]', true);
 
@@ -425,7 +460,6 @@ class PropertyController extends Controller
             }
         }
 
-        // آپلود تصاویر جدید
         $newFiles = [];
         if ($request->hasFile('media')) {
             $uploadDir = public_path('upload/property/' . $id);
@@ -443,55 +477,90 @@ class PropertyController extends Controller
             }
         }
 
-        // ترکیب تصاویر موجود و جدید
         $allMedia = array_merge($existingMedia, $newFiles);
         $allData['media'] = json_encode($allMedia);
 
-        // به‌روزرسانی در دیتابیس
-        DB::table('property')->where('id', $id)->update($allData);
+        // Split and update both tables
+        [$propertyData, $detailsData] = $this->splitData($allData);
 
-        // ریدایرکت بر اساس نقش کاربر
-        // if ($isAdmin) {
-        //     return redirect('/admin/property/list')->with('success', 'آگهی با موفقیت به‌روزرسانی شد.');
-        // }
+        DB::table('property')->where('id', $id)->update($propertyData);
+
+        if (!empty($detailsData)) {
+            $exists = DB::table('property_details')->where('property_id', $id)->exists();
+            if ($exists) {
+                DB::table('property_details')->where('property_id', $id)->update($detailsData);
+            } else {
+                $detailsData['property_id'] = $id;
+                DB::table('property_details')->insert($detailsData);
+            }
+        }
 
         return redirect('/user/myADS')->with('success', 'آگهی با موفقیت به‌روزرسانی شد.');
     }
 
-    /**
-     * حذف آگهی
-     */
     public function destroy($id)
     {
-        $property = DB::table('property')->where('id', $id)->first();
+        try {
+            $property = DB::table('property')->where('id', $id)->first();
 
-        if (!$property) {
-            return redirect()->back()->with('error', 'آگهی یافت نشد.');
-        }
-
-
-        // حذف فایل‌های آپلود شده
-        $uploadDir = public_path('upload/property/' . $id);
-        if (is_dir($uploadDir)) {
-            $files = glob($uploadDir . '/*');
-            foreach ($files as $file) {
-                if (is_file($file)) {
-                    unlink($file);
-                }
+            if (!$property) {
+                return $this->navigationResponse('/user/myADS', 'error', 'آگهی یافت نشد.');
             }
-            rmdir($uploadDir);
+
+            $isAdmin = session()->has('admin_id');
+            $isOwner = session()->has('user_id') && (string) session('user_id') === (string) $property->user_id;
+
+            if (! $isAdmin && ! $isOwner) {
+                return $this->navigationResponse('/', 'error', 'شما اجازه حذف این آگهی را ندارید.');
+            }
+
+            DB::table('property')->where('id', $id)->update([
+                'status' => 'حذف شده',
+                '_status' => 'deleted',
+            ]);
+
+            $redirectPath = $isAdmin ? '/admin/property/list' : '/user/myADS';
+
+            return $this->navigationResponse($redirectPath, 'success', 'آگهی با موفقیت حذف شد.');
+        } catch (\Throwable $exception) {
+            Log::error('Property deletion failed', [
+                'property_id' => $id,
+                'user_id' => session('user_id'),
+                'admin_id' => session('admin_id'),
+                'error' => $exception->getMessage(),
+            ]);
+
+            return $this->navigationResponse('/user/myADS', 'error', 'حذف آگهی انجام نشد.');
         }
-
-        // حذف از دیتابیس
-        DB::table('property')->where('id', $id)->delete();
-
-
-        return redirect('/user/myADS')->with('success', 'آگهی با موفقیت حذف شد.');
     }
 
-    /**
-     * دریافت ویو مربوط به دسته‌بندی
-     */
+    public function destroyGet($id)
+    {
+        return $this->destroy($id);
+    }
+
+    private function navigationResponse(string $path, string $flashKey, string $message)
+    {
+        session()->flash($flashKey, $message);
+
+        $safePath = str_starts_with($path, '/') ? $path : '/';
+        $escapedPath = htmlspecialchars($safePath, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $javascriptPath = json_encode(
+            $safePath,
+            JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT
+        );
+
+        return response(
+            '<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8">'
+            .'<meta http-equiv="refresh" content="0;url='.$escapedPath.'">'
+            .'<title>در حال انتقال...</title></head><body>'
+            .'<script>window.location.replace('.$javascriptPath.');</script>'
+            .'<a href="'.$escapedPath.'">ادامه</a></body></html>',
+            200,
+            ['Content-Type' => 'text/html; charset=UTF-8']
+        );
+    }
+
     private function getCategoryView($category)
     {
         $categoryMap = [
@@ -513,8 +582,22 @@ class PropertyController extends Controller
     public function toggleStatus($id)
     {
         $property = DB::table('property')->where('id', $id)->first();
-        $newStatus = $property->status == 'فعال' ? 'غیرفعال' : 'فعال';
-        DB::table('property')->where('id', $id)->update(['status' => $newStatus]);
+
+        $updateData = [];
+
+        if (in_array($property->status, ['حذف شده', 'منقضی'])) {
+            $updateData['status'] = 'فعال';
+            $updateData['_status'] = 'active';
+            $updateData['expires_at'] = now()->addDays(30);
+        } elseif ($property->status === 'فعال') {
+            $updateData['status'] = 'غیرفعال';
+        } else {
+            $updateData['status'] = 'فعال';
+            $updateData['_status'] = 'active';
+            $updateData['expires_at'] = now()->addDays(30);
+        }
+
+        DB::table('property')->where('id', $id)->update($updateData);
         return response()->json(['success' => true]);
     }
 

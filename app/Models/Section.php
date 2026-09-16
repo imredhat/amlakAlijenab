@@ -2,14 +2,11 @@
 
 namespace App\Models;
 
-use MongoDB\Laravel\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
 class Section extends Model
 {
-    protected $connection = 'mongodb';
-    protected $collection = 'sections';
     public $timestamps = false;
-
 
     protected $fillable = [
         'position',
@@ -18,7 +15,8 @@ class Section extends Model
         'pic',
         'link',
         'link_title',
+        'type',
         'date_created',
-        'date_updated'
+        'date_updated',
     ];
 }

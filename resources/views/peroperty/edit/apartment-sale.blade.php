@@ -139,8 +139,8 @@
     </div>
 
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
-        <label for="number_of_toilets">تعداد سرویس بهداشتی</label>
-        <input type="number" name="number_of_toilets" id="number_of_toilets" class="form-control" value="{{ old('number_of_toilets', $property->number_of_toilets ?? '') }}">
+        <label for="toilet">تعداد سرویس بهداشتی</label>
+        <input type="number" name="toilet" id="toilet" class="form-control" value="{{ old('toilet', $property->toilet ?? '') }}">
     </div>
 
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
@@ -187,6 +187,20 @@
     </div>
 
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
+        <label for="property_view">ویو</label>
+        <select name="property_view" id="property_view" class="form-control">
+            <option value="">انتخاب کنید</option>
+            <option value="دریا" {{ (old('property_view', $property->property_view ?? '') == 'دریا') ? 'selected' : '' }}>دریا</option>
+            <option value="جنگل" {{ (old('property_view', $property->property_view ?? '') == 'جنگل') ? 'selected' : '' }}>جنگل</option>
+            <option value="شهر" {{ (old('property_view', $property->property_view ?? '') == 'شهر') ? 'selected' : '' }}>شهر</option>
+            <option value="باغ" {{ (old('property_view', $property->property_view ?? '') == 'باغ') ? 'selected' : '' }}>باغ</option>
+            <option value="دشت" {{ (old('property_view', $property->property_view ?? '') == 'دشت') ? 'selected' : '' }}>دشت</option>
+            <option value="ندارد" {{ (old('property_view', $property->property_view ?? '') == 'ندارد') ? 'selected' : '' }}>ندارد</option>
+        </select>
+    </div>
+    <hr/>
+
+    <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label>
             <input type="checkbox" name="rebuilt" value="1" {{ (old('rebuilt', $property->rebuilt ?? '') == '1') ? 'checked' : '' }}> بازسازی شده است
         </label>
@@ -203,5 +217,7 @@
             <input type="checkbox" name="exchangeable" value="1" {{ (old('exchangeable', $property->exchangeable ?? '') == '1') ? 'checked' : '' }}> قابل معاوضه
         </label>
     </div>
+
+
 
 </div>

@@ -1,0 +1,201 @@
+{
+  "nodes": [
+    {
+      "id": "font_sahel",
+      "label": "Sahel",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/Sahel/Sahel.ttf:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "font_vazir",
+      "label": "Vazir",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir.ttf:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "font_vazir_bold",
+      "label": "Bold",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir-Bold.ttf:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "font_vazir_medium",
+      "label": "Medium",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir-Meduim-FD.woff:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "font_format_ttf",
+      "label": "TTF",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/Sahel/Sahel.ttf:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "font_format_woff",
+      "label": "WOFF",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/Sahel/Sahel.woff:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "font_format_woff2",
+      "label": "WOFF2",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/Sahel/Sahel.woff2:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "font_format_eot",
+      "label": "EOT",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir.eot:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "image_blank",
+      "label": "Blank Placeholder",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/blank.png:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "image_avatar",
+      "label": "Avatar",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/avatars/01.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "theme_ui_assets",
+      "label": "UI Assets",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "font_sahel",
+      "target": "font_format_ttf",
+      "label": "SUPPORTS_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/Sahel/Sahel.ttf:1"
+    },
+    {
+      "source": "font_sahel",
+      "target": "font_format_woff",
+      "label": "SUPPORTS_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/Sahel/Sahel.woff:1"
+    },
+    {
+      "source": "font_sahel",
+      "target": "font_format_woff2",
+      "label": "SUPPORTS_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/Sahel/Sahel.woff2:1"
+    },
+    {
+      "source": "font_vazir",
+      "target": "font_format_ttf",
+      "label": "SUPPORTS_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir.ttf:1"
+    },
+    {
+      "source": "font_vazir",
+      "target": "font_format_woff",
+      "label": "SUPPORTS_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir.woff:1"
+    },
+    {
+      "source": "font_vazir",
+      "target": "font_format_woff2",
+      "label": "SUPPORTS_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir.woff2:1"
+    },
+    {
+      "source": "font_vazir",
+      "target": "font_format_eot",
+      "label": "SUPPORTS_FORMAT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir.eot:1"
+    },
+    {
+      "source": "font_vazir",
+      "target": "font_vazir_bold",
+      "label": "HAS_WEIGHT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir-Bold.ttf:1"
+    },
+    {
+      "source": "font_vazir",
+      "target": "font_vazir_medium",
+      "label": "HAS_WEIGHT",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir-Meduim-FD.woff:1"
+    },
+    {
+      "source": "image_blank",
+      "target": "theme_ui_assets",
+      "label": "USED_IN",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:/Jobs/Alijenaab/public/img/blank.png:1"
+    },
+    {
+      "source": "image_avatar",
+      "target": "theme_ui_assets",
+      "label": "USED_IN",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:/Jobs/Alijenaab/public/img/avatars/01.jpg:1"
+    },
+    {
+      "source": "font_sahel",
+      "target": "theme_ui_assets",
+      "label": "USED_IN",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/Sahel/Sahel.ttf:1"
+    },
+    {
+      "source": "font_vazir",
+      "target": "theme_ui_assets",
+      "label": "USED_IN",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:/Jobs/Alijenaab/public/fonts/vazir/Vazir.ttf:1"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

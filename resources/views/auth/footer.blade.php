@@ -5,6 +5,6 @@
     <script src="{{ url('') }}/vendor/simplebar/dist/simplebar.min.js"></script>
     <script src="{{ url('') }}/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <!-- Main theme script-->
-    <script src="js/theme.min.js"></script>
+    <script src="{{ url('') }}/js/theme.min.js"></script>
   </body>
 </html>

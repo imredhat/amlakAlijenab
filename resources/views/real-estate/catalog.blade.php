@@ -103,13 +103,19 @@
                     </nav>
 
                     <!-- عنوان صفحه -->
-                    <div class="d-sm-flex align-items-center justify-content-between pb-3 pb-sm-4">
+                    <div class="d-flex align-items-center justify-content-between pb-3 pb-sm-4">
                         <h1 class="h4 mb-sm-0">
                             لیست املاک @if(request('type') === 'rent') برای اجاره @else برای فروش @endif
                         </h1>
-                        <a class="d-inline-block fw-bold text-decoration-none py-1" href="#" data-bs-toggle-class="invisible" data-bs-target="#map">
-                            <i class="fi-map me-2"></i>مشاهده نقشه
-                        </a>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-primary d-lg-none" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#filters-sidebar">
+                                <i class="fi-filter me-1"></i> فیلترها
+                            </button>
+                            <a class="d-inline-block fw-bold text-decoration-none py-1" href="#" data-bs-toggle-class="invisible" data-bs-target="#map">
+                                <i class="fi-map me-2"></i>مشاهده نقشه
+                            </a>
+                        </div>
                     </div>
 
                     <!-- مرتب‌سازی + تعداد نتایج -->
@@ -134,46 +140,6 @@
 
                     <!-- لیست املاک -->
                     <div id="properties-container" class="row g-4 py-4">
-                        <?php
-                        function getCat($type)
-                        {
-                            switch ($type) {
-                                case 'other':
-                                    return "سایر";
-                                    break;
-                                case 'pre-sale':
-                                    return "پیش فروش";
-                                    break;
-                                case 'villa-sale':
-                                    return "خرید و فروش ویلا";
-                                    break;
-                                case 'apartment-rent':
-                                    return "رهن و اجاره خانه و آپارتمان";
-                                    break;
-                                case 'apartment-sale':
-                                    return "خرید و فروش خانه و آپارتمان";
-                                    break;
-                                case 'villa-short-rent':
-                                    return "اجاره کوتاه مدت ویلا، سوئیت";
-                                    break;
-                                case 'commercial-rent':
-                                    return "رهن و اجاره اداری، تجاری و صنعتی";
-                                    break;
-                                case 'commercial-sale':
-                                    return "خرید و فروش اداری، تجاری و صنعتی";
-                                    break;
-                                case 'land':
-                                    return "زمین و باغ";
-                                    break;
-                                case 'pre-sale':
-                                    return "پیش فروش و مشارکت در ساخت";
-                                    break;
-
-                                default:
-                                    break;
-                            }
-                        }
-                        ?>
 
 
                         @if(isset($properties))
@@ -217,27 +183,148 @@
         </div>
 
 
+        <script src="{{ url('/') }}/assets/js/jquery-3.6.0.min.js"></script>
         <script>
             $(document).ready(function() {
+                var filterTimer = null;
 
-                $('#sortby').on('change', function() {
-                    let sort = $(this).val();
+                function applyFilters() {
+                    var params = {};
+                    var type = "{{ $type ?? request('type', 'sale') }}";
+                    if (type) params.type = type;
+
+                    var sort = $('#sortby').val();
+                    if (sort) params.sort = sort;
+
+                    var city = $('#city').val();
+                    if (city) params.city = city;
+
+                    var neighborhood = $('#neighborhood').val();
+                    if (neighborhood) params.neighborhood = neighborhood;
+
+                    var priceMin = ($('#price_min').val() || '').replace(/,/g, '');
+                    if (priceMin) params.price_min = priceMin;
+
+                    var priceMax = ($('#price_max').val() || '').replace(/,/g, '');
+                    if (priceMax) params.price_max = priceMax;
+
+                    var areaMin = $('#area_min').val();
+                    if (areaMin) params.area_min = areaMin;
+
+                    var areaMax = $('#area_max').val();
+                    if (areaMax) params.area_max = areaMax;
+
+                    var categories = [];
+                    $('input[name="category[]"]:checked').each(function() {
+                        categories.push($(this).val());
+                    });
+                    if (categories.length > 0) params['category[]'] = categories;
+
+                    var url = "{{ url('property/type/' . ($type ?? request('type', 'sale'))) }}";
+                    var queryString = $.param(params, true);
+                    if (queryString) url += '?' + queryString;
 
                     $.ajax({
-                        url: "{{ route('catalog') }}",
-                        method: 'GET',
-                        data: {
-                            type: "{{ request('type', 'sale') }}",
-                            sort: sort,
-                            // سایر فیلترها بعداً اضافه می‌شوند
+                        url: url,
+                        type: 'GET',
+                        dataType: 'json',
+                        beforeSend: function() {
+                            $('#properties-container').css('opacity', '0.5');
                         },
                         success: function(response) {
-                            $('#properties-container').html(response.html);
+                            $('#properties-container').html(response.html).css('opacity', '1');
                             $('#results-count').text(response.total + ' نتیجه یافت شد');
+                            window.history.pushState({}, '', url);
+                        },
+                        error: function() {
+                            $('#properties-container').css('opacity', '1');
+                        }
+                    });
+                }
+
+                // Auto-filter on every change
+                $(document).on('change', '.filter-auto, #sortby', function() {
+                    applyFilters();
+                });
+
+                // Debounced auto-filter for text inputs (price, area)
+                var debounceTimer;
+                $(document).on('input', '.price-input, #price_min, #price_max, #area_min, #area_max', function() {
+                    clearTimeout(debounceTimer);
+                    debounceTimer = setTimeout(applyFilters, 500);
+                });
+
+                // City change loads neighborhoods then auto-filters
+                $('#city').on('change', function() {
+                    var cityId = $(this).val();
+                    var neighborhoodSelect = $('#neighborhood');
+                    neighborhoodSelect.prop('disabled', true);
+                    neighborhoodSelect.html('<option value="">در حال بارگذاری...</option>');
+
+                    if (cityId) {
+                        $.ajax({
+                            url: '{{ route("get.neighborhoods") }}',
+                            type: 'GET',
+                            data: { city_name: cityId },
+                            dataType: 'json',
+                            success: function(response) {
+                                if (response.success && response.neighborhoods.length > 0) {
+                                    var options = '<option value="">انتخاب محله</option>';
+                                    $.each(response.neighborhoods, function(key, n) {
+                                        options += '<option value="' + n.name + '">' + n.name + '</option>';
+                                    });
+                                    neighborhoodSelect.html(options).prop('disabled', false);
+                                } else {
+                                    neighborhoodSelect.html('<option value="">هیچ محله‌ای یافت نشد</option>');
+                                }
+                                applyFilters();
+                            },
+                            error: function() {
+                                neighborhoodSelect.html('<option value="">خطا</option>');
+                                applyFilters();
+                            }
+                        });
+                    } else {
+                        neighborhoodSelect.html('<option value="">انتخاب محله</option>').prop('disabled', false);
+                        applyFilters();
+                    }
+                });
+
+                // Reset filters
+                $(document).on('click', '#reset-filters', function() {
+                    var type = "{{ $type ?? request('type', 'sale') }}";
+                    window.location.href = "{{ url('property/type/') }}/" + type;
+                });
+
+                // AJAX pagination
+                $(document).on('click', '.pagination a', function(e) {
+                    e.preventDefault();
+                    var url = $(this).attr('href');
+                    if (!url) return;
+
+                    $('#properties-container').css('opacity', '0.5');
+
+                    $.ajax({
+                        url: url,
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function(response) {
+                            $('#properties-container').html(response.html).css('opacity', '1');
+                            window.history.pushState({}, '', url);
+                            $('html, body').animate({ scrollTop: 0 }, 300);
                         }
                     });
                 });
 
+                // Format price inputs
+                $('.price-input').on('input', function() {
+                    var value = $(this).val().replace(/\D/g, '');
+                    $(this).val(value.replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+                });
             });
         </script>
         @include('partials.home.footer')
+
+        <style>
+            .page-link-static { cursor: default; }
+        </style>

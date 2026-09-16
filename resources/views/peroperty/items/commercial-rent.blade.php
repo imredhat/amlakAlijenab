@@ -1,46 +1,10 @@
 @include('partials.home.header')
+@include('partials.home.login')
 @include('partials.home.menu')
 
 
-<?php
-function getCat($type)
-{
-    switch ($type) {
-        case 'other':
-            return "سایر";
-            break;
-        case 'pre-sale':
-            return "پیش فروش";
-            break;
-        case 'villa-sale':
-            return "خرید و فروش ویلا";
-            break;
-        case 'apartment-rent':
-            return "رهن و اجاره خانه و آپارتمان";
-            break;
-        case 'apartment-sale':
-            return "خرید و فروش خانه و آپارتمان";
-            break;
-        case 'villa-short-rent':
-            return "اجاره کوتاه مدت ویلا، سوئیت";
-            break;
-        case 'commercial-rent':
-            return "رهن و اجاره تجاری";
-            break;
-        case 'commercial-sale':
-            return "خرید و فروش تجاری";
-            break;
-        case 'land':
-            return "زمین و باغ";
-            break;
-        case 'pre-sale':
-            return "پیش فروش و مشارکت در ساخت";
-            break;
 
-        default:
-            break;
-    }
-}
+<?php
 
 $media = url('/') . "/img/blank.png";
 $cat = $property[0]->category;
@@ -59,7 +23,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
     <nav class="mb-3 pt-md-3" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{url('/')}}">خانه</a></li>
-            <li class="breadcrumb-item"><a href="{{url('/')}}/category/{{$property[0] -> category}}">{{getCat($property[0] -> category)}}</a></li>
+            <li class="breadcrumb-item"><a href="{{url('/')}}/browse/{{$property[0] -> category}}">{{getCat($property[0] -> category)}}</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{$property[0] -> title}}</li>
         </ol>
     </nav>
@@ -111,6 +75,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                     <?php if (isset($property[0]->parking) && $property[0]->parking === 'دارد'): ?><li class="col"><i class="fi-parking mt-n1 me-2 fs-lg align-middle"></i>پارکینگ</li><?php endif; ?>
                     <?php if (isset($property[0]->storage) && $property[0]->storage === 'دارد'): ?><li class="col"><i class="fi-gearbox mt-n1 me-2 fs-lg align-middle"></i>انباری</li><?php endif; ?>
                     <?php if (isset($property[0]->elevator) && $property[0]->elevator === 'دارد'): ?><li class="col"><i class="fi-arrow-up mt-n1 me-2 fs-lg align-middle"></i>آسانسور</li><?php endif; ?>
+                    <?php if (isset($property[0]->property_view) && !empty($property[0]->property_view) && $property[0]->property_view !== 'ندارد'): ?><li class="col"><i class="fi-eye mt-n1 me-2 fs-lg align-middle"></i>ویو: <?php echo $property[0]->property_view; ?></li><?php endif; ?>
                     <?php if (isset($property[0]->toilet) && $property[0]->toilet === 'دارد'): ?><li class="col"><i class="fi-bath mt-n1 me-2 fs-lg align-middle"></i>سرویس بهداشتی</li><?php endif; ?>
                     <?php if (isset($property[0]->convertible) && $property[0]->convertible === '1'): ?><li class="col"><i class="fi-refresh mt-n1 me-2 fs-lg align-middle"></i>قابل تبدیل</li><?php endif; ?>
                     
@@ -153,7 +118,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <div><span class="badge bg-success me-2 mb-2">{{$property[0] -> status}}</span><span class="badge bg-info me-2 mb-2">جدید</span></div>
                     <div class="text-nowrap">
-                        <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2" type="button" data-bs-toggle="tooltip" title="نشان کردن"><i class="fi-heart"></i></button>
+                        <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2 favorite-btn" type="button" data-bs-toggle="tooltip" title="نشان کردن" data-property-id="{{ $property[0]->id }}"><i class="fi-heart"></i></button>
                         <div class="dropdown d-inline-block" data-bs-toggle="tooltip" title="اشتراک گذاری">
                             <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2" type="button" data-bs-toggle="dropdown"><i class="fi-share"></i></button>
                             <div class="dropdown-menu dropdown-menu-end my-1">
@@ -212,6 +177,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                                     <?php if(isset($property[0]->storage) && $property[0]->storage === 'دارد'): ?><tr><td>انباری</td><td><b>دارد</b></td></tr><?php endif; ?>
                                     <?php if(isset($property[0]->toilet) && $property[0]->toilet === 'دارد'): ?><tr><td>سرویس بهداشتی</td><td><b>دارد</b></td></tr><?php endif; ?>
                                     <?php if(isset($property[0]->convertible) && $property[0]->convertible === '1'): ?><tr><td>قابل تبدیل</td><td><b>دارد</b></td></tr><?php endif; ?>
+                                    <?php if(isset($property[0]->property_view) && !empty($property[0]->property_view) && $property[0]->property_view !== 'ندارد'): ?><tr><td>ویو</td><td><b>{{$property[0]->property_view}}</b></td></tr><?php endif; ?>
                                     
                                     <!-- امکانات عمومی -->
                                     <?php if(isset($property[0]->utilities) && is_array($property[0]->utilities)): ?>
@@ -224,6 +190,10 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                 </div>
 
                 <a class="btn btn-lg btn-primary w-100 mb-3" href="tel:{{$property[0] -> tel}}">{{$property[0] -> tel}}</a>
+
+                <!-- Agent Information -->
+                @include('partials.agent-info', ['tel' => $property[0]->tel])
+
                 <a class="d-inline-block mb-4 pb-2 text-decoration-none" href="{{url('/')}}/page/faqs"><i class="fi-help me-2 mt-n1 align-middle"></i>سوالات متداول</a>
 
                 <!-- Post meta-->
@@ -254,7 +224,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                     <div class="card-img-top card-img-hover">
                         <a class="img-overlay" href="{{url('/')}}/p/{{$s->id}}/{{str_replace(' ','-',$s->title)}}"></a>
                         <div class="content-overlay end-0 top-0 pt-3 pe-3">
-                            <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="نشان کردن"><i class="fi-heart"></i></button>
+                            <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle favorite-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="نشان کردن" data-property-id="{{ $s->id }}"><i class="fi-heart"></i></button>
                         </div>
                         <img src="{{ getPropertyImage($s) }}" alt="{{ $s -> title }}">
                     </div>

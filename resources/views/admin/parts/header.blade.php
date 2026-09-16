@@ -17,6 +17,29 @@
 	<link rel="stylesheet" href="{{ url ('/') }}/assets/css/sweetalert.min.css">
 	<link rel="stylesheet" href="{{ url ('/') }}/assets/css/quill.snow.css">
 	<link rel="stylesheet" href="{{ url ('/') }}/assets/css/style.css">
+	<!-- Dark Mode Styles-->
+	<!-- <link rel="stylesheet" href="{{ url ('/') }}/css/dark-mode.css"> -->
+	<script>
+	//   (function() {
+	//     var saved = localStorage.getItem('theme');
+	//     if (saved === 'dark') {
+	//       document.documentElement.setAttribute('data-bs-theme', 'dark');
+	//       document.documentElement.setAttribute('data-theme', 'dark');
+	//     } else if (saved === 'light') {
+	//       document.documentElement.setAttribute('data-bs-theme', 'light');
+	//       document.documentElement.setAttribute('data-theme', 'light');
+	//     } else {
+	//       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	//         document.documentElement.setAttribute('data-bs-theme', 'dark');
+	//         document.documentElement.setAttribute('data-theme', 'dark');
+	//       }
+	//     }
+
+
+	// 	document.documentElement.setAttribute('data-bs-theme', 'light');
+	//       document.documentElement.setAttribute('data-theme', 'light');
+	//   })();
+	</script>
 	
 	<link rel="icon" type="image/png" href="{{ url ('/') }}/assets/images/favicon.png">
 	<title> مدیریت سایت | املاک عالیجناب</title>

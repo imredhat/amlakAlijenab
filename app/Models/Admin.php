@@ -2,29 +2,14 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
-use MongoDB\Laravel\Eloquent\Model as Eloquent;
-use Illuminate\Auth\Authenticatable;
 
-
-
-class Admin extends Eloquent implements AuthenticatableContract // Implement the Authenticatable interface
+class Admin extends Model
 {
-    /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable, Authenticatable;
+    use HasFactory, Notifiable;
 
-
-    protected $connection = 'mongodb';
-    protected $collection = 'admins';
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
     protected $fillable = [
         'username',
         'password',
@@ -33,59 +18,19 @@ class Admin extends Eloquent implements AuthenticatableContract // Implement the
         'lname',
         'verificationCode',
         'status',
-        'type'
+        'type',
     ];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var list<string>
-     */
     protected $hidden = [
         'password',
         'remember_token',
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
     protected function casts(): array
     {
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
-    }
-
-        public function getAuthIdentifierName()
-    {
-        return '_id'; // or 'tel' if you want to use tel as the identifier
-    }
-
-    public function getAuthIdentifier()
-    {
-        return $this->getAttribute($this->getAuthIdentifierName());
-    }
-
-    public function getAuthPassword()
-    {
-        return null; // Implement if you have a password field
-    }
-
-    public function getRememberToken()
-    {
-        return null; // Implement if you want to use remember tokens
-    }
-
-    public function setRememberToken($value)
-    {
-        // Implement if you want to use remember tokens
-    }
-
-    public function getRememberTokenName()
-    {
-        return null; // Implement if you want to use remember tokens
     }
 }

@@ -1,0 +1,1073 @@
+{
+  "nodes": [
+    {
+      "id": "MiMoCode",
+      "label": "MiMoCode",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MiMo_Code_Slogan",
+      "label": "Where Models and Agents Co-Evolve",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MiMoCode_Website",
+      "label": "https://mimo.xiaomi.com/coder",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MiMoCode_Blog",
+      "label": "https://mimo.xiaomi.com/en/blog/mimo-code-long-horizon",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MiMoCode_GitHub",
+      "label": "https://github.com/XiaomiMiMo/MiMo-Code",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Terminal_Native_AI_Coding_Assistant",
+      "label": "Terminal-native AI coding assistant",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Persistent_Memory_System",
+      "label": "Persistent memory system",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MiMo_Auto",
+      "label": "MiMo Auto",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Free_For_Limited_Time",
+      "label": "Free for a limited time",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Mainstream_LLM_Provider_API",
+      "label": "Mainstream LLM provider API",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Install_MiMoCode",
+      "label": "Install MiMoCode",
+      "type": "ACTION",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:19",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Quick_Start",
+      "label": "Quick Start",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:17",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Multiple_Agents",
+      "label": "Multiple Agents",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:44",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Build_Agent",
+      "label": "Build Agent",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:44",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Plan_Agent",
+      "label": "Plan Agent",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:44",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Compose_Agent",
+      "label": "Compose Agent",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:44",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Tab_Switch",
+      "label": "Press Tab to switch",
+      "type": "ACTION",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:44",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "SQLite_FTS5",
+      "label": "SQLite FTS5",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:45",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Intelligent_Context_Management",
+      "label": "Intelligent Context Management",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:46",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Task_Tracking",
+      "label": "Task Tracking",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:47",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Subagent_System",
+      "label": "Subagent System",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:48",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Goal_Stop_Condition",
+      "label": "Goal / Stop Condition",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:49",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Compose_Mode",
+      "label": "Compose Mode",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:50",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Voice_Input",
+      "label": "Voice Input",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:51",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "TenVAD",
+      "label": "TenVAD",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:51",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MiMo_ASR",
+      "label": "MiMo ASR",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:51",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Dream_Distill",
+      "label": "Dream & Distill",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:52",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MIT_License",
+      "label": "MIT License",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:60",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Use_Restrictions",
+      "label": "Use Restrictions",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:62",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MiMo_Terms_of_Service",
+      "label": "MiMo Terms of Service",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:63",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MiMo_Trademark_Policy",
+      "label": "MiMo Trademark Policy",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:64",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Standard_Schema",
+      "label": "Standard Schema",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@standard-schema\\spec\\README.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Interoperable_TypeScript",
+      "label": "Interoperable TypeScript",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@standard-schema\\spec\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Standard_Typed",
+      "label": "Standard Typed",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@standard-schema\\spec\\README.md:28",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Standard_Schema_V1",
+      "label": "Standard Schema V1",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@standard-schema\\spec\\README.md:68",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Standard_JSON_Schema_V1",
+      "label": "Standard JSON Schema V1",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@standard-schema\\spec\\README.md:138",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Cross_Spawn",
+      "label": "cross-spawn",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\cross-spawn\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Node_Spawn_Sync",
+      "label": "Node spawn and spawnSync",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\cross-spawn\\README.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "PATHEXT_Issue",
+      "label": "PATHEXT Issue",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\cross-spawn\\README.md:27",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Shebangs_Support",
+      "label": "Shebangs Support",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\cross-spawn\\README.md:28",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Detect_Libc",
+      "label": "detect-libc",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\detect-libc\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "GNU_Glibc",
+      "label": "GNU glibc",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\detect-libc\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MUSL_Libc",
+      "label": "MUSL libc",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\detect-libc\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Effect_Core_Package",
+      "label": "Effect Core Package",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Functional_Programming",
+      "label": "Functional Programming",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:40",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Effect_Module",
+      "label": "Effect Module",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:44",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Context_Module",
+      "label": "Context Module",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:45",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Layer_Module",
+      "label": "Layer Module",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:46",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Fiber_Module",
+      "label": "Fiber Module",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:47",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Stream_Module",
+      "label": "Stream Module",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:48",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Schedule_Module",
+      "label": "Schedule Module",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:49",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Scope_Module",
+      "label": "Scope Module",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:50",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Schema_Module",
+      "label": "Schema Module",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:51",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Fast_Check",
+      "label": "fast-check",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\fast-check\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Property_Based_Testing",
+      "label": "Property Based Testing",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\fast-check\\README.md:6",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Find_My_Way_TS",
+      "label": "find-my-way-ts",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\find-my-way-ts\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "HTTP_Router",
+      "label": "HTTP Router",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\find-my-way-ts\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Radix_Tree",
+      "label": "Radix Tree",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\find-my-way-ts\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Prefix_Tree",
+      "label": "Prefix Tree",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\find-my-way-ts\\README.md:5",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "INI_Format_Parser",
+      "label": "INI Format Parser",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\ini\\README.md:2",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "IsExe",
+      "label": "isexe",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\isexe\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Executable_Check",
+      "label": "Executable Check",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\isexe\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Kubernetes_Types",
+      "label": "kubernetes-types",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\kubernetes-types\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Kubernetes_API_Types",
+      "label": "Kubernetes API Types",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\kubernetes-types\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MsgPackr",
+      "label": "msgpackr",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\msgpackr\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "MessagePack",
+      "label": "MessagePack",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\msgpackr\\README.md:10",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Structured_Record_Extension",
+      "label": "Structured Record Extension",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\msgpackr\\README.md:10",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Multipasta",
+      "label": "multipasta",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\multipasta\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Multipart_Parser",
+      "label": "Multipart Parser",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\multipasta\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Node_Gyp_Build",
+      "label": "node-gyp-build",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\node-gyp-build-optional-packages\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Prebuilds",
+      "label": "Prebuilds",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\node-gyp-build-optional-packages\\README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "Path_Key",
+      "label": "path-key",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\path-key\\readme.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "PATH_Environment_Variable",
+      "label": "PATH Environment Variable",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\path-key\\readme.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "MiMoCode",
+      "target": "MiMo_Code_Slogan",
+      "label": "HAS_SLOGAN",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:3"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "MiMoCode_Website",
+      "label": "HAS_WEBSITE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:6"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "MiMoCode_Blog",
+      "label": "HAS_BLOG",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:6"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "MiMoCode_GitHub",
+      "label": "HAS_GITHUB",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:6"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Terminal_Native_AI_Coding_Assistant",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:11"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Persistent_Memory_System",
+      "label": "HAS_FEATURE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:11"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "MiMo_Auto",
+      "label": "HAS_CHANNEL",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:13"
+    },
+    {
+      "source": "MiMo_Auto",
+      "target": "Free_For_Limited_Time",
+      "label": "HAS_ATTRIBUTE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:13"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Mainstream_LLM_Provider_API",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:13"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Install_MiMoCode",
+      "label": "HAS_ACTION",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:19"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Quick_Start",
+      "label": "HAS_SECTION",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:17"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Multiple_Agents",
+      "label": "HAS_FEATURE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:44"
+    },
+    {
+      "source": "Multiple_Agents",
+      "target": "Build_Agent",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:44"
+    },
+    {
+      "source": "Multiple_Agents",
+      "target": "Plan_Agent",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:44"
+    },
+    {
+      "source": "Multiple_Agents",
+      "target": "Compose_Agent",
+      "label": "INCLUDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:44"
+    },
+    {
+      "source": "Multiple_Agents",
+      "target": "Tab_Switch",
+      "label": "SUPPORTS_ACTION",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:44"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "SQLite_FTS5",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:45"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Intelligent_Context_Management",
+      "label": "HAS_FEATURE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:46"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Task_Tracking",
+      "label": "HAS_FEATURE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:47"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Subagent_System",
+      "label": "HAS_FEATURE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:48"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Goal_Stop_Condition",
+      "label": "HAS_FEATURE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:49"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Compose_Mode",
+      "label": "HAS_FEATURE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:50"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Voice_Input",
+      "label": "HAS_FEATURE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:51"
+    },
+    {
+      "source": "Voice_Input",
+      "target": "TenVAD",
+      "label": "POWERED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:51"
+    },
+    {
+      "source": "Voice_Input",
+      "target": "MiMo_ASR",
+      "label": "POWERED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:51"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Dream_Distill",
+      "label": "HAS_FEATURE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:52"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "MIT_License",
+      "label": "LICENSED_UNDER",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:60"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "Use_Restrictions",
+      "label": "SUBJECT_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:62"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "MiMo_Terms_of_Service",
+      "label": "SUBJECT_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:63"
+    },
+    {
+      "source": "MiMoCode",
+      "target": "MiMo_Trademark_Policy",
+      "label": "SUBJECT_TO",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@mimo-ai\\plugin\\README.md:64"
+    },
+    {
+      "source": "Standard_Schema",
+      "target": "Interoperable_TypeScript",
+      "label": "AIMS_FOR",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@standard-schema\\spec\\README.md:6"
+    },
+    {
+      "source": "Standard_Schema",
+      "target": "Standard_Typed",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@standard-schema\\spec\\README.md:28"
+    },
+    {
+      "source": "Standard_Schema",
+      "target": "Standard_Schema_V1",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@standard-schema\\spec\\README.md:68"
+    },
+    {
+      "source": "Standard_Schema",
+      "target": "Standard_JSON_Schema_V1",
+      "label": "DEFINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\@standard-schema\\spec\\README.md:138"
+    },
+    {
+      "source": "Cross_Spawn",
+      "target": "Node_Spawn_Sync",
+      "label": "PROVIDES_SOLUTION_FOR",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\cross-spawn\\README.md:13"
+    },
+    {
+      "source": "Cross_Spawn",
+      "target": "PATHEXT_Issue",
+      "label": "HANDLES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\cross-spawn\\README.md:27"
+    },
+    {
+      "source": "Cross_Spawn",
+      "target": "Shebangs_Support",
+      "label": "HANDLES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\cross-spawn\\README.md:28"
+    },
+    {
+      "source": "Detect_Libc",
+      "target": "GNU_Glibc",
+      "label": "DETECTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\detect-libc\\README.md:6"
+    },
+    {
+      "source": "Detect_Libc",
+      "target": "MUSL_Libc",
+      "label": "DETECTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\detect-libc\\README.md:6"
+    },
+    {
+      "source": "Effect_Core_Package",
+      "target": "Functional_Programming",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:40"
+    },
+    {
+      "source": "Effect_Core_Package",
+      "target": "Effect_Module",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:44"
+    },
+    {
+      "source": "Effect_Core_Package",
+      "target": "Context_Module",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:45"
+    },
+    {
+      "source": "Effect_Core_Package",
+      "target": "Layer_Module",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:46"
+    },
+    {
+      "source": "Effect_Core_Package",
+      "target": "Fiber_Module",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:47"
+    },
+    {
+      "source": "Effect_Core_Package",
+      "target": "Stream_Module",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:48"
+    },
+    {
+      "source": "Effect_Core_Package",
+      "target": "Schedule_Module",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:49"
+    },
+    {
+      "source": "Effect_Core_Package",
+      "target": "Scope_Module",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:50"
+    },
+    {
+      "source": "Effect_Core_Package",
+      "target": "Schema_Module",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\effect\\README.md:51"
+    },
+    {
+      "source": "Fast_Check",
+      "target": "Property_Based_Testing",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\fast-check\\README.md:6"
+    },
+    {
+      "source": "Find_My_Way_TS",
+      "target": "HTTP_Router",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\find-my-way-ts\\README.md:5"
+    },
+    {
+      "source": "Find_My_Way_TS",
+      "target": "Radix_Tree",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\find-my-way-ts\\README.md:5"
+    },
+    {
+      "source": "Find_My_Way_TS",
+      "target": "Prefix_Tree",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\find-my-way-ts\\README.md:5"
+    },
+    {
+      "source": "INI_Format_Parser",
+      "target": "Standard_Schema",
+      "label": "UNRELATED",
+      "type": "INFERRED",
+      "confidence": "MEDIUM",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\ini\\README.md:2"
+    },
+    {
+      "source": "IsExe",
+      "target": "Executable_Check",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\isexe\\README.md:3"
+    },
+    {
+      "source": "Kubernetes_Types",
+      "target": "Kubernetes_API_Types",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\kubernetes-types\\README.md:3"
+    },
+    {
+      "source": "MsgPackr",
+      "target": "MessagePack",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\msgpackr\\README.md:10"
+    },
+    {
+      "source": "MsgPackr",
+      "target": "Structured_Record_Extension",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\msgpackr\\README.md:10"
+    },
+    {
+      "source": "Multipasta",
+      "target": "Multipart_Parser",
+      "label": "IS_A",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\multipasta\\README.md:3"
+    },
+    {
+      "source": "Node_Gyp_Build",
+      "target": "Prebuilds",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\node-gyp-build-optional-packages\\README.md:3"
+    },
+    {
+      "source": "Path_Key",
+      "target": "PATH_Environment_Variable",
+      "label": "HANDLES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\.mimocode\\node_modules\\path-key\\readme.md:3"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -148,6 +148,21 @@
         </select>
     </div>
 
+
+    <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
+        <label for="property_view">ویو</label>
+        <select name="property_view" id="property_view" class="form-control">
+            <option value="">انتخاب کنید</option>
+            <option value="دریا" {{ (old('property_view', $property->property_view ?? '') == 'دریا') ? 'selected' : '' }}>دریا</option>
+            <option value="جنگل" {{ (old('property_view', $property->property_view ?? '') == 'جنگل') ? 'selected' : '' }}>جنگل</option>
+            <option value="شهر" {{ (old('property_view', $property->property_view ?? '') == 'شهر') ? 'selected' : '' }}>شهر</option>
+            <option value="باغ" {{ (old('property_view', $property->property_view ?? '') == 'باغ') ? 'selected' : '' }}>باغ</option>
+            <option value="دشت" {{ (old('property_view', $property->property_view ?? '') == 'دشت') ? 'selected' : '' }}>دشت</option>
+            <option value="ندارد" {{ (old('property_view', $property->property_view ?? '') == 'ندارد') ? 'selected' : '' }}>ندارد</option>
+        </select>
+    </div>
+    <hr />
+
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="physicalProgress">درصد پیشرفت فیزیکی پروژه*</label>
         <input type="number" class="form-control" id="physicalProgress" name="physicalProgress" min="0" max="100" step="0.01" value="{{ old('physicalProgress', $property->physicalProgress ?? '') }}" required>
@@ -177,5 +192,6 @@
         <label for="exchange">امکان معاوضه</label>
         <input type="checkbox" id="exchange" name="exchange" class="form-check-input" value="1" {{ (old('exchange', $property->exchange ?? '') == '1') ? 'checked' : '' }}>
     </div>
+
 
 </div>

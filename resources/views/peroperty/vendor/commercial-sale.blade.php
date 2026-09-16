@@ -1,20 +1,22 @@
- <?php
-    $img = url('/') . "/img/blank.png";
-    if (isset($media[0]) && !empty($media[0])) {
-        $img = url('/') . "/upload/property/" . $p->id . "/" . $media[0];
-    }
-    ?>
-
  <!-- Item-->
 <div class="col-sm-6 col-lg-4">
     <div class="card shadow-sm card-hover border-0 h-100">
-        <div class="card-img-top card-img-hover" style="background-image: url({{ $img }}); background-size: cover; background-position: center; height: 250px;">
-            <a class="img-overlay stretched-link" href="{{url('/')}}/p/{{$p->id}}/{{str_replace(' ','-',$p->title)}}"></a>
+        <div class="tns-carousel-wrapper card-img-top card-img-hover">
+            <a class="img-overlay" href="{{url('/')}}/p/{{$p->id}}/{{str_replace(' ','-',$p->title)}}"></a>
             <div class="position-absolute start-0 top-0 pt-3 ps-3">
                 <span class="d-table badge bg-info">{{$p->status}}</span>
             </div>
             <div class="content-overlay end-0 top-0 pt-3 pe-3">
-                <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="نشان کردن" data-bs-original-title="نشان کردن"><i class="fi-heart"></i></button>
+                <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle favorite-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="نشان کردن" data-bs-original-title="نشان کردن" data-property-id="{{ $p->id }}"><i class="fi-heart"></i></button>
+            </div>
+            <div class="tns-carousel-inner" dir="ltr">
+                @if(isset($media) && is_array($media))
+                    @foreach($media as $m)
+                        @if(!empty($m))
+                            <img src="{{ url('/') }}/upload/property/{{ $p->id }}/{{ $m }}" alt="{{ $p->title }}">
+                        @endif
+                    @endforeach
+                @endif
             </div>
         </div>
         <div class="card-body position-relative pb-3">

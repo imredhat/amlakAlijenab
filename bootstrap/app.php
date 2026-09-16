@@ -11,11 +11,22 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        // Guarantee that a session store is attached before the router and
+        // CSRF middleware run. The shared-hosting runtime was loading routes
+        // without StartSession in their effective middleware stack.
+        $middleware->append(\Illuminate\Session\Middleware\StartSession::class);
+
+        // The hosting proxy accepts a direct PHP cookie header. Keep this
+        // session cookie raw so Laravel can read the same session ID back.
+        $middleware->encryptCookies(except: [
+            'melkalijenab_session',
+        ]);
+
         $middleware->alias([
             'check.auth' => \App\Http\Middleware\CheckUserOrAdminLogin::class,
         ]);
-
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
-    })->create();
+    })
+    ->create();

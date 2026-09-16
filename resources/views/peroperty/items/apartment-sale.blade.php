@@ -1,46 +1,10 @@
 @include('partials.home.header')
+@include('partials.home.login')
 @include('partials.home.menu')
 
 
-<?php
-function getCat($type)
-{
-    switch ($type) {
-        case 'other':
-            return "سایر";
-            break;
-        case 'pre-sale':
-            return "پیش فروش";
-            break;
-        case 'villa-sale':
-            return "خرید و فروش ویلا";
-            break;
-        case 'apartment-rent':
-            return "رهن و اجاره خانه و آپارتمان";
-            break;
-        case 'apartment-sale':
-            return "خرید و فروش خانه و آپارتمان";
-            break;
-        case 'villa-short-rent':
-            return "اجاره کوتاه مدت ویلا، سوئیت";
-            break;
-        case 'commercial-rent':
-            return "رهن و اجاره اداری، تجاری و صنعتی";
-            break;
-        case 'commercial-sale':
-            return "خرید و فروش اداری، تجاری و صنعتی";
-            break;
-        case 'land':
-            return "زمین و باغ";
-            break;
-        case 'pre-sale':
-            return "پیش فروش و مشارکت در ساخت";
-            break;
 
-        default:
-            break;
-    }
-}
+<?php
 
 $media = url('/') . "/img/blank.png";
 $cat = $property[0]->category;
@@ -59,7 +23,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
     <nav class="mb-3 pt-md-3" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{url('/')}}">خانه</a></li>
-            <li class="breadcrumb-item"><a href="{{url('/')}}/category/{{$property[0] -> category}}">{{getCat($property[0] -> category)}}</a></li>
+            <li class="breadcrumb-item"><a href="{{url('/')}}/browse/{{$property[0] -> category}}">{{getCat($property[0] -> category)}}</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{$property[0] -> title}}</li>
         </ol>
     </nav>
@@ -127,13 +91,14 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                         <?php if (isset($property[0]->kitchen_type) && !empty($property[0]->kitchen_type)): ?><li class="col"><i class="fi-flame mt-n1 me-2 fs-lg align-middle"></i>آشپزخانه <?php echo $property[0]->kitchen_type; ?></li><?php endif; ?>
                         <?php if (isset($property[0]->cabinet_type) && !empty($property[0]->cabinet_type)): ?><li class="col"><i class="fi-dropbox mt-n1 me-2 fs-lg align-middle"></i>کابینت <?php echo $property[0]->cabinet_type; ?></li><?php endif; ?>
                         <?php if (isset($property[0]->floor_type) && !empty($property[0]->floor_type)): ?><li class="col"><i class="fi-layers mt-n1 me-2 fs-lg align-middle"></i>کف <?php echo $property[0]->floor_type; ?></li><?php endif; ?>
-                        <?php if (isset($property[0]->number_of_toilets) && !empty($property[0]->number_of_toilets)): ?><li class="col"><i class="fi-bath mt-n1 me-2 fs-lg align-middle"></i><?php echo $property[0]->number_of_toilets; ?> سرویس بهداشتی</li><?php endif; ?>
+                        <?php if (isset($property[0]->toilet) && !empty($property[0]->toilet)): ?><li class="col"><i class="fi-bath mt-n1 me-2 fs-lg align-middle"></i><?php echo $property[0]->toilet; ?> سرویس بهداشتی</li><?php endif; ?>
                         <?php if (isset($property[0]->unit_per_floor) && !empty($property[0]->unit_per_floor)): ?><li class="col"><i class="fi-layers mt-n1 me-2 fs-lg align-middle"></i><?php echo $property[0]->unit_per_floor; ?> واحد در طبقه</li><?php endif; ?>
                         <?php if (isset($property[0]->floors_count) && !empty($property[0]->floors_count)): ?><li class="col"><i class="fi-house-chosen mt-n1 me-2 fs-lg align-middle"></i><?php echo $property[0]->floors_count; ?> طبقه</li><?php endif; ?>
                         <?php if (isset($property[0]->building_direction) && !empty($property[0]->building_direction)): ?><li class="col"><i class="fi-arrow-back mt-n1 me-2 fs-lg align-middle"></i>جهت: <?php echo $property[0]->building_direction; ?></li><?php endif; ?>
                         <?php if (isset($property[0]->building_facade) && !empty($property[0]->building_facade)): ?><li class="col"><i class="fi-building mt-n1 me-2 fs-lg align-middle"></i>نما: <?php echo $property[0]->building_facade; ?></li><?php endif; ?>
                         <?php if (isset($property[0]->has_loan) && $property[0]->has_loan === '1'): ?><li class="col"><i class="fi-credit-card mt-n1 me-2 fs-lg align-middle"></i>وام</li><?php endif; ?>
                         <?php if (isset($property[0]->exchangeable) && $property[0]->exchangeable === '1'): ?><li class="col"><i class="fi-refresh mt-n1 me-2 fs-lg align-middle"></i>قابل معاوضه</li><?php endif; ?>
+                        <?php if (isset($property[0]->property_view) && !empty($property[0]->property_view) && $property[0]->property_view !== 'ندارد'): ?><li class="col"><i class="fi-eye mt-n1 me-2 fs-lg align-middle"></i>ویو: <?php echo $property[0]->property_view; ?></li><?php endif; ?>
                     </ul>
                 </div>
                 
@@ -170,7 +135,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                 <div class="d-flex align-items-center justify-content-between mb-3">
                     <div><span class="badge bg-success me-2 mb-2">{{$property[0] -> status}}</span><span class="badge bg-info me-2 mb-2">جدید</span></div>
                     <div class="text-nowrap">
-                        <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2" type="button" data-bs-toggle="tooltip" title="نشان کردن"><i class="fi-heart"></i></button>
+                        <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2 favorite-btn" type="button" data-bs-toggle="tooltip" title="نشان کردن" data-property-id="{{ $property[0]->id }}"><i class="fi-heart"></i></button>
                         <div class="dropdown d-inline-block" data-bs-toggle="tooltip" title="اشتراک گذاری">
                             <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2" type="button" data-bs-toggle="dropdown"><i class="fi-share"></i></button>
                             <div class="dropdown-menu dropdown-menu-end my-1">
@@ -202,7 +167,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                                     <tr><td>سال ساخت</td><td><b>{{$property[0]->construction_year ?? ''}}</b></td></tr>
                                     <tr><td>طبقه</td><td><b>{{$property[0]->floor ?? ''}}</b></td></tr>
                                     <tr><td>تعداد اتاق</td><td><b>{{$property[0]->rooms ?? ''}}</b></td></tr>
-                                    <tr><td>تعداد سرویس بهداشتی</td><td><b>{{$property[0]->number_of_toilets ?? ''}}</b></td></tr>
+                                    <tr><td>تعداد سرویس بهداشتی</td><td><b>{{$property[0]->toilet ?? ''}}</b></td></tr>
                                     <?php if(isset($property[0]->unit_per_floor) && !empty($property[0]->unit_per_floor)): ?><tr><td>تعداد واحد در طبقه</td><td><b>{{$property[0]->unit_per_floor}}</b></td></tr><?php endif; ?>
                                     <?php if(isset($property[0]->floors_count) && !empty($property[0]->floors_count)): ?><tr><td>تعداد طبقات ساختمان</td><td><b>{{$property[0]->floors_count}}</b></td></tr><?php endif; ?>
                                     <?php if(isset($property[0]->building_direction) && !empty($property[0]->building_direction)): ?><tr><td>جهت ساختمان</td><td><b>{{$property[0]->building_direction}}</b></td></tr><?php endif; ?>
@@ -212,6 +177,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                                     <?php if(isset($property[0]->has_loan) && $property[0]->has_loan === '1'): ?><tr><td>وام</td><td><b>دارد</b></td></tr><?php endif; ?>
                                     <?php if(isset($property[0]->exchangeable) && $property[0]->exchangeable === '1'): ?><tr><td>قابل معاوضه</td><td><b>دارد</b></td></tr><?php endif; ?>
                                     <?php if(isset($property[0]->cabinet_type) && !empty($property[0]->cabinet_type)): ?><tr><td>نوع کابینت</td><td><b>{{$property[0]->cabinet_type}}</b></td></tr><?php endif; ?>
+                                    <?php if(isset($property[0]->property_view) && !empty($property[0]->property_view) && $property[0]->property_view !== 'ندارد'): ?><tr><td>ویو</td><td><b>{{$property[0]->property_view}}</b></td></tr><?php endif; ?>
                                 </tbody>
                             </table>
                         </ul>
@@ -219,6 +185,33 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                 </div>
 
                 <a class="btn btn-lg btn-primary w-100 mb-3" href="tel:{{$property[0] -> tel}}">{{$property[0] -> tel}}</a>
+
+                <!-- Agent Information -->
+                @php
+                    $agent = \App\Models\User::where('tel', $property[0]->tel)->first();
+                @endphp
+                @if($agent && $agent->is_agent)
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body text-center">
+                        <img class="d-block rounded-circle mx-auto mb-3 shadow-sm"
+                             src="{{ $agent->avatar ?? asset('img/avatars/default-agent.jpg') }}"
+                             width="80" height="80" alt="{{ $agent->name }}">
+                        <h5 class="mb-1">{{ $agent->name }} {{ $agent->lname ?? '' }}</h5>
+                        <p class="text-muted mb-3">{{ $agent->agency_name ?? 'مشاور املاک' }}</p>
+                        <div class="d-flex justify-content-center mb-3">
+                            <span class="star-rating">
+                                @for($i = 1; $i <= 5; $i++)
+                                    <i class="star-rating-icon fi-star-filled active"></i>
+                                @endfor
+                            </span>
+                        </div>
+                        <a href="{{ url('/agent/' . $agent->tel) }}" class="btn btn-outline-primary btn-sm">
+                            <i class="fi-user me-2"></i>مشاهده پروفایل مشاور
+                        </a>
+                    </div>
+                </div>
+                @endif
+
                 <a class="d-inline-block mb-4 pb-2 text-decoration-none" href="{{url('/')}}/page/faqs"><i class="fi-help me-2 mt-n1 align-middle"></i>سوالات متداول</a>
 
                 <!-- Post meta-->
@@ -249,7 +242,7 @@ if (isset($property[0]->media) && count(json_decode($property[0]->media)) > 0) {
                     <div class="card-img-top card-img-hover">
                         <a class="img-overlay" href="{{url('/')}}/p/{{$s->id}}/{{str_replace(' ','-',$s->title)}}"></a>
                         <div class="content-overlay end-0 top-0 pt-3 pe-3">
-                            <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="نشان کردن"><i class="fi-heart"></i></button>
+                            <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle favorite-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="نشان کردن" data-property-id="{{ $s->id }}"><i class="fi-heart"></i></button>
                         </div>
                         <img src="{{ getPropertyImage($s) }}" alt="{{ $s -> title }}">
                     </div>

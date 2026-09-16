@@ -29,8 +29,8 @@
 
 
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
-        <label for="propertyLocation">موقعیت ملک*</label>
-        <select class="form-control" id="propertyLocation" name="propertyLocation" required>
+        <label for="property_location">موقعیت ملک*</label>
+        <select class="form-control" id="property_location" name="property_location" required>
             <option disabled value="">انتخاب</option>
             <option value="دو نبش">دو نبش</option>
             <option value="سه نبش">سه نبش</option>
@@ -46,8 +46,8 @@
     </div>
 
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
-        <label for="documentStatus">وضعیت سند*</label>
-        <select class="form-control" id="documentStatus" name="documentStatus" required>
+        <label for="document_status">وضعیت سند*</label>
+        <select class="form-control" id="document_status" name="document_status" required>
             <option disabled value="">انتخاب</option>
             <option value="سند تک‌برگ">سند تک‌برگ</option>
             <option value="سند منگوله‌دار">سند منگوله‌دار</option>
@@ -151,6 +151,19 @@
     </div>
 
     <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
+        <label for="property_view">ویو</label>
+        <select name="property_view" id="property_view" class="form-control">
+            <option value="">انتخاب کنید</option>
+            <option value="دریا">دریا</option>
+            <option value="جنگل">جنگل</option>
+            <option value="شهر">شهر</option>
+            <option value="باغ">باغ</option>
+            <option value="دشت">دشت</option>
+            <option value="ندارد">ندارد</option>
+        </select>
+    </div>
+
+    <div class="col-sm-6 pb-3 pe-3 pt-3 ps-3">
         <label for="physicalProgress">درصد پیشرفت فیزیکی پروژه*</label>
         <input type="number" class="form-control" id="physicalProgress" name="physicalProgress" min="0" max="100" step="0.01" required>
     </div>
@@ -179,4 +192,6 @@
         <label for="exchange">امکان معاوضه</label>
         <input type="checkbox" id="exchange" name="exchange" class="form-check-input">
     </div>
+
+
 </div>

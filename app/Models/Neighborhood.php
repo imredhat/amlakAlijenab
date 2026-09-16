@@ -2,27 +2,30 @@
 
 namespace App\Models;
 
-use MongoDB\Laravel\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
 class Neighborhood extends Model
 {
-    protected $connection = 'mongodb';
-    protected $table = 'neighborhoods';
-    
     protected $fillable = [
         'name',
         'tag',
         'city_id',
         'order',
         'showInMenu',
-        'image'
+        'image',
     ];
 
     protected $attributes = [
-        'showInMenu' => false 
+        'showInMenu' => false,
     ];
 
-    // رابطه با شهر
+    protected function casts(): array
+    {
+        return [
+            'showInMenu' => 'boolean',
+        ];
+    }
+
     public function city()
     {
         return $this->belongsTo(Cty::class, 'city_id');

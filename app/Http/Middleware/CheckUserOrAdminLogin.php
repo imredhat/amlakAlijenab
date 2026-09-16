@@ -2,9 +2,9 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\User;
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class CheckUserOrAdminLogin
 {
@@ -17,9 +17,15 @@ class CheckUserOrAdminLogin
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::guard('web')->check()) {
-            // اگر لاگین است، اجازه عبور بده
-            return $next($request);
+        if ($request->session()->has('user_id')) {
+            $userId = $request->session()->get('user_id');
+
+            if (User::where('id', $userId)->exists()) {
+                return $next($request);
+            }
+
+            $request->session()->forget('user_id');
+            $request->session()->save();
         }
 
         if (! $request->expectsJson()) {

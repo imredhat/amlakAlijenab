@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b60f1e43a051184cb527bab98016b13",
+    "content-hash": "28b602d07583d3d76aab2b4c228f545f",
     "packages": [
         {
             "name": "brick/math",
@@ -1235,6 +1235,64 @@
                 }
             ],
             "time": "2025-03-09T13:03:20+00:00"
+        },
+        {
+            "name": "ippanelcom/laravel-sdk",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ippanelcom/laravel-sdk.git",
+                "reference": "84098002b31593c0efc07d7a0196da9ec7441e99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ippanelcom/laravel-sdk/zipball/84098002b31593c0efc07d7a0196da9ec7441e99",
+                "reference": "84098002b31593c0efc07d7a0196da9ec7441e99",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0",
+                "php": "^7.4|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "IPPanel": "Ippanel\\Facades\\IPPanel"
+                    },
+                    "providers": [
+                        "Ippanel\\IppanelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ippanel\\": "src/IPPanel/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "IPPanel",
+                    "email": "devops@ippanel.com"
+                }
+            ],
+            "description": "Laravel SDK for IPPanel SMS API",
+            "homepage": "https://github.com/ippanelcom/laravel-sdk",
+            "keywords": [
+                "IPPanel",
+                "laravel",
+                "notification",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/ippanelcom/laravel-sdk/issues",
+                "source": "https://github.com/ippanelcom/laravel-sdk/tree/v1.0.5"
+            },
+            "time": "2025-05-23T11:48:57+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8750,5 +8808,5 @@
         "php": "^8.0"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }

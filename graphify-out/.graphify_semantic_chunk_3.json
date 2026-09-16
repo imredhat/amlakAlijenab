@@ -1,0 +1,481 @@
+{
+  "nodes": [
+    {
+      "id": "cron-expression-parser",
+      "label": "Cron Expression Parser",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "cron-expression-syntax",
+      "label": "Cron Expression Syntax",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:56",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "cron-expression-macros",
+      "label": "Cron Expression Macros",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:85",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "cron-expression-nearest-weekday",
+      "label": "Nearest Weekday Feature",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:95",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "cron-expression-last-day",
+      "label": "Last Day of Month Feature",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:105",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "cron-expression-nth-day",
+      "label": "Nth Day of Week Feature",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:112",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "cron-expression-php-library",
+      "label": "PHP Cron Expression Library",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "laravel-framework",
+      "label": "Laravel Framework",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:127",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "symfony-bundle-cron-expression",
+      "label": "Setono/CronExpressionBundle",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:128",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "crunz",
+      "label": "Crunz",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:129",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "orisai-scheduler",
+      "label": "Orisai Scheduler",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:130",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "orisai-cron-expression-explainer",
+      "label": "Orisai Cron Expression Explainer",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:131",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "email-validator-contributing",
+      "label": "Contributing Guidelines",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/egulias/email-validator/CONTRIBUTING.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "code-of-conduct",
+      "label": "Code of Conduct",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/egulias/email-validator/CONTRIBUTING.md:23",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "email-validator",
+      "label": "Email Validator Library",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/egulias/email-validator/CONTRIBUTING.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "fakerphp-faker",
+      "label": "FakerPHP Faker",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/fakerphp/faker/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "fake-data-generation",
+      "label": "Fake Data Generation",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/fakerphp/faker/README.md:10",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "faker-locales",
+      "label": "Faker Locales",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/fakerphp/faker/README.md:30",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "whoops-error-handler",
+      "label": "Whoops Error Handler",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/filp/whoops/README.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php-error-handling",
+      "label": "PHP Error Handling",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/filp/whoops/README.md",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "cors-middleware",
+      "label": "CORS Middleware",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/fruitcake/php-cors/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "cors-implementation",
+      "label": "CORS Implementation",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/fruitcake/php-cors/README.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "w3c-cors-recommendation",
+      "label": "W3C CORS Recommendation",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/fruitcake/php-cors/README.md:13",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "guzzle-http-client",
+      "label": "Guzzle HTTP Client",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/guzzle/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psr-7",
+      "label": "PSR-7 HTTP Message Interface",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/guzzle/README.md:16",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psr-18",
+      "label": "PSR-18 HTTP Client Interface",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/guzzle/README.md:18",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "guzzle-middleware",
+      "label": "Guzzle Middleware System",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/guzzle/README.md:22",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "guzzle-promises",
+      "label": "Guzzle Promises",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/promises/README.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "promise-implementation",
+      "label": "Promise Implementation",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/promises/README.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "psr-7-implementation",
+      "label": "PSR-7 Implementation",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/psr7/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "uri-template",
+      "label": "URI Template Library",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/uri-template/README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "rfc-6570",
+      "label": "RFC 6570 URI Template",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/uri-template/README.md",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "hamcrest-php",
+      "label": "Hamcrest PHP",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/vendor/hamcrest/hamcrest-php/CHANGES.txt:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "matcher-library",
+      "label": "Matcher Library",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/vendor/hamcrest/hamcrest-php/CHANGES.txt:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "cron-expression-parser",
+      "target": "cron-expression-syntax",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:56"
+    },
+    {
+      "source": "cron-expression-parser",
+      "target": "cron-expression-macros",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:85"
+    },
+    {
+      "source": "cron-expression-parser",
+      "target": "cron-expression-nearest-weekday",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:95"
+    },
+    {
+      "source": "cron-expression-parser",
+      "target": "cron-expression-last-day",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:105"
+    },
+    {
+      "source": "cron-expression-parser",
+      "target": "cron-expression-nth-day",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:112"
+    },
+    {
+      "source": "cron-expression-php-library",
+      "target": "laravel-framework",
+      "label": "USED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:127"
+    },
+    {
+      "source": "cron-expression-php-library",
+      "target": "symfony-bundle-cron-expression",
+      "label": "USED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:128"
+    },
+    {
+      "source": "cron-expression-php-library",
+      "target": "crunz",
+      "label": "USED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:129"
+    },
+    {
+      "source": "cron-expression-php-library",
+      "target": "orisai-scheduler",
+      "label": "USED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:130"
+    },
+    {
+      "source": "cron-expression-php-library",
+      "target": "orisai-cron-expression-explainer",
+      "label": "USED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/dragonmantank/cron-expression/README.md:131"
+    },
+    {
+      "source": "email-validator",
+      "target": "email-validator-contributing",
+      "label": "HAS_GUIDELINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/egulias/email-validator/CONTRIBUTING.md:1"
+    },
+    {
+      "source": "email-validator",
+      "target": "code-of-conduct",
+      "label": "HAS_GUIDELINES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/egulias/email-validator/CONTRIBUTING.md:23"
+    },
+    {
+      "source": "fakerphp-faker",
+      "target": "fake-data-generation",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/fakerphp/faker/README.md:10"
+    },
+    {
+      "source": "fakerphp-faker",
+      "target": "faker-locales",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "MEDIUM",
+      "source_location": "E:/Jobs/Alijenaab/vendor/fakerphp/faker/README.md:30"
+    },
+    {
+      "source": "whoops-error-handler",
+      "target": "php-error-handling",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/filp/whoops/README.md"
+    },
+    {
+      "source": "cors-middleware",
+      "target": "cors-implementation",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/fruitcake/php-cors/README.md:13"
+    },
+    {
+      "source": "cors-implementation",
+      "target": "w3c-cors-recommendation",
+      "label": "COMPLIES_WITH",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/fruitcake/php-cors/README.md:13"
+    },
+    {
+      "source": "guzzle-http-client",
+      "target": "psr-7",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/guzzle/README.md:16"
+    },
+    {
+      "source": "guzzle-http-client",
+      "target": "psr-18",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/guzzle/README.md:18"
+    },
+    {
+      "source": "guzzle-http-client",
+      "target": "guzzle-middleware",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/guzzle/README.md:22"
+    },
+    {
+      "source": "guzzle-http-client",
+      "target": "guzzle-promises",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/guzzle/README.md"
+    },
+    {
+      "source": "guzzle-promises",
+      "target": "promise-implementation",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/promises/README.md:3"
+    },
+    {
+      "source": "psr-7-implementation",
+      "target": "psr-7",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/psr7/README.md:1"
+    },
+    {
+      "source": "uri-template",
+      "target": "rfc-6570",
+      "label": "IMPLEMENTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/guzzlehttp/uri-template/README.md"
+    },
+    {
+      "source": "hamcrest-php",
+      "target": "matcher-library",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/vendor/hamcrest/hamcrest-php/CHANGES.txt:1"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

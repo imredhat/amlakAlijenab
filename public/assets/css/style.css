@@ -9,7 +9,7 @@ This files table contents are outlined below>>>>>
 
 *******************************************
 **/
-@import url("Vazirmatn-RD-FD-font-face.css");
+@import url("Estedad.css");
 
 :root,
 [data-bs-theme=light] {
@@ -238,7 +238,7 @@ body {
 
 
 * {
-font-family: "Vazirmatn RD FD", sans-serif!important;
+font-family: "Estedad", sans-serif!important;
 letter-spacing: 0px !important;
 }
 [type="email"], [type="number"], [type="tel"], [type="url"] {
@@ -246,14 +246,14 @@ letter-spacing: 0px !important;
 }
 .navbar .navbar-nav .nav-item .nav-link, .irs, .ql-container,.leaflet-container,.ql-editor .ql-font-serif,.ql-editor .ql-font-monospace,.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before,.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before,.ql-toolbar.ql-snow, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, span, p, li, a {
 letter-spacing: 0px !important;
-font-family: "Vazirmatn RD FD", sans-serif!important;
+font-family: "Estedad", sans-serif!important;
 }
-.odometer.odometer-auto-theme,.odometer.odometer-theme-default{direction: ltr;font-family: "Vazirmatn RD FD", sans-serif;}
+.odometer.odometer-auto-theme,.odometer.odometer-theme-default{direction: ltr;font-family: "Estedad", sans-serif;}
 .coming-soon-area .coming-soon .list ul {
   direction: ltr;
 }
 button, input, optgroup, select, textarea {
-font-family: "Vazirmatn RD FD", sans-serif;
+font-family: "Estedad", sans-serif;
 }
 #timer {
   direction: ltr;
@@ -13881,7 +13881,7 @@ padding-left: 3rem;
 /* Global Area Style
 ============================================*/
 body {
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
 }
 
 a {
@@ -13894,7 +13894,7 @@ a:hover {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   color: #260944;
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
   font-weight: 700;
 }
 
@@ -14034,7 +14034,7 @@ textarea.form-control {
   position: relative;
   text-align: center;
   -webkit-box-reflect: below -47px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
   font-size: 50px;
   font-weight: 700;
 }
@@ -14329,11 +14329,11 @@ Custom Area Style
 }
 
 .heading-font {
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
 }
 
 .body-font {
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
 }
 
 .transition {
@@ -14962,7 +14962,7 @@ a#x__NEXT__X {
 
 .calendar-content #month-year {
   font-size: 18px;
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
   text-align: center;
 }
 .calendar-content table {
@@ -15281,7 +15281,7 @@ a#x__NEXT__X {
 }
 .sidebar-area .logo .logo-text {
   font-size: 24px;
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -15301,7 +15301,7 @@ a#x__NEXT__X {
   padding: 15px 30px;
 }
 .sidebar-area .admin .admin-info .name {
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 4px;
@@ -16069,7 +16069,7 @@ transform: translate(-70px, 60px) !important;
 .right-header-content .header-right-item .notifications.dropdown .dropdown-menu .dropdown-item h4, .right-header-content .header-right-item .notifications.dropdown .dropdown-menu .dropdown-item .h4 {
   font-size: 15px;
   font-weight: 600;
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
   position: relative;
   padding-left: 20px;
 }
@@ -16524,7 +16524,7 @@ transform: translate(-70px, 60px) !important;
 .activity-timeline .activity-item h4, .activity-timeline .activity-item .h4 {
   font-size: 15px;
   font-weight: 600;
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
   position: relative;
   padding-left: 20px;
 }
@@ -17055,7 +17055,7 @@ transform: translate(-70px, 60px) !important;
 .courses-tab .nav-item .nav-link {
   background-color: #F5F7FA;
   padding: 16px 35px;
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
   border-radius: 5px;
   font-size: 18px;
   font-weight: 600;
@@ -17474,7 +17474,7 @@ transform: translate(-70px, 60px) !important;
 }
 .calendar-wrap .fc .fc-toolbar-title {
   font-size: 16px;
-  font-family: "Vazirmatn RD FD", sans-serif;
+  font-family: "Estedad", sans-serif;
 }
 .calendar-wrap .fc .fc-button-primary {
   background-color: #5B5B98;

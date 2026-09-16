@@ -1,0 +1,273 @@
+{
+  "nodes": [
+    {
+      "id": "laravel",
+      "label": "Laravel",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "taylor_otwell",
+      "label": "Taylor Otwell",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Process\\LICENSE.md:3",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "mit_license",
+      "label": "MIT License",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Process\\LICENSE.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "queue_component",
+      "label": "Queue Component",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "capsule_manager",
+      "label": "Capsule Manager",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\README.md:7",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "beanstalkd",
+      "label": "Beanstalkd",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "laravel_prompts",
+      "label": "Laravel Prompts",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\prompts\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "cli_forms",
+      "label": "CLI Forms",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\prompts\\README.md:12",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "artisan_commands",
+      "label": "Artisan Commands",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\prompts\\README.md:14",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "laravel_sail",
+      "label": "Laravel Sail",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\sail\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\sail\\README.md:11",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "chris_fidao",
+      "label": "Chris Fidao",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\sail\\LICENSE.md:4",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "vessel",
+      "label": "Vessel",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\sail\\README.md:15",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "serializable_closure",
+      "label": "Serializable Closure",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\serializable-closure\\README.md:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "opis_closure",
+      "label": "Opis Closure",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\serializable-closure\\README.md:18",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php_ffi",
+      "label": "PHP FFI",
+      "type": "ENTITY",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\serializable-closure\\README.md:18",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "php_serialization",
+      "label": "PHP Serialization",
+      "type": "CONCEPT",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\serializable-closure\\README.md:20",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "laravel",
+      "target": "taylor_otwell",
+      "label": "MAINTAINED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Process\\LICENSE.md:3"
+    },
+    {
+      "source": "laravel",
+      "target": "mit_license",
+      "label": "LICENSED_UNDER",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Process\\LICENSE.md:1"
+    },
+    {
+      "source": "laravel",
+      "target": "queue_component",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\README.md:1"
+    },
+    {
+      "source": "queue_component",
+      "target": "capsule_manager",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\README.md:7"
+    },
+    {
+      "source": "queue_component",
+      "target": "beanstalkd",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\README.md:15"
+    },
+    {
+      "source": "laravel",
+      "target": "laravel_prompts",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\prompts\\README.md:1"
+    },
+    {
+      "source": "laravel_prompts",
+      "target": "cli_forms",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\prompts\\README.md:12"
+    },
+    {
+      "source": "laravel_prompts",
+      "target": "artisan_commands",
+      "label": "SUPPORTS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\prompts\\README.md:14"
+    },
+    {
+      "source": "laravel",
+      "target": "laravel_sail",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\sail\\README.md:1"
+    },
+    {
+      "source": "laravel_sail",
+      "target": "docker",
+      "label": "USES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\sail\\README.md:11"
+    },
+    {
+      "source": "laravel_sail",
+      "target": "chris_fidao",
+      "label": "CREDITS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\sail\\README.md:15"
+    },
+    {
+      "source": "laravel_sail",
+      "target": "vessel",
+      "label": "INSPIRED_BY",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\sail\\README.md:15"
+    },
+    {
+      "source": "laravel",
+      "target": "serializable_closure",
+      "label": "CONTAINS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\serializable-closure\\README.md:1"
+    },
+    {
+      "source": "serializable_closure",
+      "target": "opis_closure",
+      "label": "FORK_OF",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\serializable-closure\\README.md:18"
+    },
+    {
+      "source": "serializable_closure",
+      "target": "php_ffi",
+      "label": "MENTIONS",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\serializable-closure\\README.md:18"
+    },
+    {
+      "source": "serializable_closure",
+      "target": "php_serialization",
+      "label": "PROVIDES",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:\\Jobs\\Alijenaab\\vendor\\laravel\\serializable-closure\\README.md:20"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

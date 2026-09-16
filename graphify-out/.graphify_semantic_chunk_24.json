@@ -1,0 +1,353 @@
+{
+  "nodes": [
+    {
+      "id": "brand_audi",
+      "label": "Audi",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/audi.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_honda",
+      "label": "Honda",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/honda.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_hyundai",
+      "label": "Hyundai",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/hyundai.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_infiniti",
+      "label": "Infiniti",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/infiniti.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_lexus",
+      "label": "Lexus",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/lexus.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_mazda",
+      "label": "Mazda",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/mazda.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_mercedes",
+      "label": "Mercedes",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/mercedes.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_mitsubishi",
+      "label": "Mitsubishi",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/mitsubishi.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_nissan",
+      "label": "Nissan",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/nissan.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_opel",
+      "label": "Opel",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/opel.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_pentel",
+      "label": "Pentel",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/pentel.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_provert",
+      "label": "Provert",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/provert.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_real_seguros",
+      "label": "Real Seguros",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/real-seguros.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_renault",
+      "label": "Renault",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/renault.svg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "brand_build",
+      "label": "Build",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/build.svg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "brand_cargil",
+      "label": "Cargil",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/cargil.svg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "brand_chase",
+      "label": "Chase",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/chase.svg:1",
+      "confidence": "MEDIUM",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "blog_image_th01",
+      "label": "Blog Image 1",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/blog/th01.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "blog_image_th02",
+      "label": "Blog Image 2",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/blog/th02.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "blog_image_th03",
+      "label": "Blog Image 3",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/blog/th03.jpg:1",
+      "confidence": "HIGH",
+      "extraction_method": "EXTRACTED"
+    },
+    {
+      "id": "logo_design",
+      "label": "Logo Design",
+      "type": "CONCEPT",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/*:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    },
+    {
+      "id": "car_finder",
+      "label": "Car Finder",
+      "type": "ENTITY",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/*:1",
+      "confidence": "HIGH",
+      "extraction_method": "INFERRED"
+    }
+  ],
+  "edges": [
+    {
+      "source": "car_finder",
+      "target": "brand_audi",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/audi.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_honda",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/honda.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_hyundai",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/hyundai.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_infiniti",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/infiniti.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_lexus",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/lexus.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_mazda",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/mazda.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_mercedes",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/mercedes.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_mitsubishi",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/mitsubishi.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_nissan",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/nissan.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_opel",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/opel.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_pentel",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/pentel.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_provert",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/provert.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_real_seguros",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/real-seguros.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_renault",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/renault.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_build",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "MEDIUM",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/build.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_cargil",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "MEDIUM",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/cargil.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "brand_chase",
+      "label": "CONTAINS_BRAND",
+      "type": "DIRECT",
+      "confidence": "MEDIUM",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/chase.svg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "blog_image_th01",
+      "label": "CONTAINS_IMAGE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/blog/th01.jpg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "blog_image_th02",
+      "label": "CONTAINS_IMAGE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/blog/th02.jpg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "blog_image_th03",
+      "label": "CONTAINS_IMAGE",
+      "type": "DIRECT",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/blog/th03.jpg:1"
+    },
+    {
+      "source": "car_finder",
+      "target": "logo_design",
+      "label": "USES_CONCEPT",
+      "type": "INFERRED",
+      "confidence": "HIGH",
+      "source_location": "E:/Jobs/Alijenaab/public/img/car-finder/brands/*:1"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

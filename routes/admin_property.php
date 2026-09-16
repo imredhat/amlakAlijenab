@@ -13,7 +13,7 @@ Route::prefix('admin')->middleware('web')->group(function () {
     Route::get('/property/view/{id}', [AdminProperty::class, 'pView'])->name('admin.property.view');
     Route::post('/property/status/{id}', [AdminProperty::class, 'updateStatus'])->name('admin.property.updateStatus');
 
-    // Route::get('/property/stats', [AdminProperty::class, 'getStats'])->name('admin.property.stats');
+    Route::get('/property/stats', [AdminProperty::class, 'getStats'])->name('admin.property.stats');
 
     Route::get('/property/edit/{id}', [AdminProperty::class, 'edit'])->name('admin.property.edit');
     Route::put('/property/update/{id}', [AdminProperty::class, 'update'])->name('admin.property.update');

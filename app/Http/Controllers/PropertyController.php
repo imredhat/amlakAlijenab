@@ -151,7 +151,22 @@ class PropertyController extends Controller
 
         try {
             $propertyId = DB::transaction(function () use ($propertyData, $detailsData, $hasDetailsTable) {
-                $propertyId = DB::table('property')->insertGetId($propertyData);
+                // Some older host databases define property.id as a primary key
+                // without AUTO_INCREMENT. Supply a safe next id for those schemas.
+                $propertyIdColumn = DB::selectOne("SHOW COLUMNS FROM property LIKE 'id'");
+                $hasAutoIncrement = $propertyIdColumn
+                    && str_contains(strtolower((string) ($propertyIdColumn->Extra ?? '')), 'auto_increment');
+
+                if (! $hasAutoIncrement && ! array_key_exists('id', $propertyData)) {
+                    $propertyData['id'] = ((int) (DB::table('property')->lockForUpdate()->max('id'))) + 1;
+                }
+
+                if ($hasAutoIncrement) {
+                    $propertyId = DB::table('property')->insertGetId($propertyData);
+                } else {
+                    DB::table('property')->insert($propertyData);
+                    $propertyId = (int) $propertyData['id'];
+                }
 
                 if ($hasDetailsTable && ! empty($detailsData)) {
                     DB::table('property_details')->insert($detailsData + [
@@ -169,6 +184,7 @@ class PropertyController extends Controller
             ]);
 
             return back()->withInput()->withErrors([
+                'database_debug' => $exception->getMessage(),
                 'property' => 'ذخیره آگهی انجام نشد. لطفاً دوباره تلاش کنید.',
             ]);
         }

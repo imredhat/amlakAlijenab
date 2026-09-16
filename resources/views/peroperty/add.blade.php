@@ -21,6 +21,18 @@
 
       <!-- Basic info-->
       <form enctype="multipart/form-data" action="{{url('')}}/property/save" method="post">
+        @csrf
+
+        @if ($errors->any())
+          <div class="alert alert-danger mb-4" role="alert">
+            <strong>ثبت آگهی انجام نشد.</strong>
+            <ul class="mb-0 mt-2">
+              @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+              @endforeach
+            </ul>
+          </div>
+        @endif
 
 
         <section class="card card-body border-0 shadow-sm p-4 mb-4" id="basic-info">
